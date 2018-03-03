@@ -1,0 +1,33 @@
+{
+    "title": "Zend Framework 3 API Reference",
+    "copyright": "(c) 2018 by Oleg Krivtsov",
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "website": "https://olegkrivtsov.github.io/zf3-api-reference/html",
+    "keywords": [
+        "php",
+        "zend framework",
+        "api",
+        "reference"
+    ],
+    "links": {
+        "Home": "https://olegkrivtsov.github.io/zf3-api-reference/html",
+        "Contribute": "https://github.com/olegkrivtsov/zf3-api-reference"
+    },
+    "components": [
+        "zendframework/zend-mvc/src"
+    ],
+    "google_analytics": {
+        "enabled": true,
+        "account_id": "UA-80824388-1"
+    },
+    "google_adsence": {
+        "enabled": true, 
+        "contents_ad": "data/contents_ad.js",
+        "chapter_upper_ad": "data/upper_ad.js",
+        "chapter_bottom_ad": "data/bottom_ad.js"
+    },
+    "disqus": {
+        "enabled": false,
+        "src": "//zf3-api-reference.disqus.com/embed.js"
+    }
+}
