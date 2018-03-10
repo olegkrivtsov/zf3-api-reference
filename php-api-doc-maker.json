@@ -14,7 +14,7 @@
         "Contribute": "https://github.com/olegkrivtsov/zf3-api-reference"
     },
     "components": [
-        "zendframework/zend-mvc/src"
+        "zendframework/zend-mvc"
     ],
     "google_analytics": {
         "enabled": true,
