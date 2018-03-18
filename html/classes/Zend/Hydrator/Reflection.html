@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Hydrator\Reflection -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-hydrator.html">zendframework/zend-hydrator</a>
+    &rarr;        <a href="../../../classes/Zend/Hydrator/Reflection.html">Class Reflection</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Reflection</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Hydrator\Reflection        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Hydrator\AbstractHydrator.html">AbstractHydrator</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Initializes a new instance of this class.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addFilter()">
+            addFilter()
+            </a>
+        </td>
+        <td>
+            Add a new filter to take care of what needs to be hydrated.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addStrategy()">
+            addStrategy()
+            </a>
+        </td>
+        <td>
+            Adds the given strategy under the given name.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#extract()">
+            extract()
+            </a>
+        </td>
+        <td>
+            Extract values from an object        </td>
+        <td>
+            <a href="../../Zend\Hydrator\Reflection.html">
+            Reflection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#extractName()">
+            extractName()
+            </a>
+        </td>
+        <td>
+            Convert a name for extraction. If no naming strategy exists, the plain value is returned.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#extractValue()">
+            extractValue()
+            </a>
+        </td>
+        <td>
+            Converts a value for extraction. If no strategy exists the plain value is returned.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFilter()">
+            getFilter()
+            </a>
+        </td>
+        <td>
+            Get the filter instance        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getNamingStrategy()">
+            getNamingStrategy()
+            </a>
+        </td>
+        <td>
+            Gets the naming strategy.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStrategy()">
+            getStrategy()
+            </a>
+        </td>
+        <td>
+            Gets the strategy with the given name.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasFilter()">
+            hasFilter()
+            </a>
+        </td>
+        <td>
+            Check whether a specific filter exists at key $name or not        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasNamingStrategy()">
+            hasNamingStrategy()
+            </a>
+        </td>
+        <td>
+            Checks if a naming strategy exists.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasStrategy()">
+            hasStrategy()
+            </a>
+        </td>
+        <td>
+            Checks if the strategy with the given name exists.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hydrate()">
+            hydrate()
+            </a>
+        </td>
+        <td>
+            Hydrate $object with the provided $data.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\Reflection.html">
+            Reflection            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hydrateName()">
+            hydrateName()
+            </a>
+        </td>
+        <td>
+            Converts a value for hydration. If no naming strategy exists, the plain value is returned.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hydrateValue()">
+            hydrateValue()
+            </a>
+        </td>
+        <td>
+            Converts a value for hydration. If no strategy exists the plain value is returned.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeFilter()">
+            removeFilter()
+            </a>
+        </td>
+        <td>
+            Remove a filter from the composition.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeNamingStrategy()">
+            removeNamingStrategy()
+            </a>
+        </td>
+        <td>
+            Removes the naming strategy        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeStrategy()">
+            removeStrategy()
+            </a>
+        </td>
+        <td>
+            Removes the strategy with the given name.        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setNamingStrategy()">
+            setNamingStrategy()
+            </a>
+        </td>
+        <td>
+            Adds the given naming strategy        </td>
+        <td>
+            <a href="../../Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Initializes a new instance of this class.</p>
+
+
+
+
+<h3 id="addFilter()">addFilter()</h3>
+
+<p>
+Add a new filter to take care of what needs to be hydrated.</p>
+
+<p>To exclude e.g. the method getServiceLocator:</p>
+<p><code>
+$composite-&gt;addFilter("servicelocator",</p>
+<pre><code>function ($property) {
+    list($class, $method) = explode('::', $property);
+    if ($method === 'getServiceLocator') {
+        return false;
+    }
+    return true;
+}, FilterComposite::CONDITION_AND
+</code></pre>
+<p>);
+</code></p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Index        </td>
+    </tr>
+        <tr>
+        <td>
+            $filter        </td>
+        <td>
+            callable|\Filter\FilterInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $condition        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addStrategy()">addStrategy()</h3>
+
+<p>
+Adds the given strategy under the given name.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $strategy        </td>
+        <td>
+            \Strategy\StrategyInterface        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="extract()">extract()</h3>
+
+<p>
+Extract values from an object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $object        </td>
+        <td>
+            object        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="extractName()">extractName()</h3>
+
+<p>
+Convert a name for extraction. If no naming strategy exists, the plain value is returned.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $object        </td>
+        <td>
+            null        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="extractValue()">extractValue()</h3>
+
+<p>
+Converts a value for extraction. If no strategy exists the plain value is returned.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $object        </td>
+        <td>
+            mixed        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getFilter()">getFilter()</h3>
+
+<p>
+Get the filter instance</p>
+
+
+
+
+<h3 id="getNamingStrategy()">getNamingStrategy()</h3>
+
+<p>
+Gets the naming strategy.</p>
+
+
+
+
+<h3 id="getStrategy()">getStrategy()</h3>
+
+<p>
+Gets the strategy with the given name.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="hasFilter()">hasFilter()</h3>
+
+<p>
+Check whether a specific filter exists at key $name or not</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Index        </td>
+    </tr>
+    </table>
+
+
+<h3 id="hasNamingStrategy()">hasNamingStrategy()</h3>
+
+<p>
+Checks if a naming strategy exists.</p>
+
+
+
+
+<h3 id="hasStrategy()">hasStrategy()</h3>
+
+<p>
+Checks if the strategy with the given name exists.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="hydrate()">hydrate()</h3>
+
+<p>
+Hydrate $object with the provided $data.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $object        </td>
+        <td>
+            object        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="hydrateName()">hydrateName()</h3>
+
+<p>
+Converts a value for hydration. If no naming strategy exists, the plain value is returned.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="hydrateValue()">hydrateValue()</h3>
+
+<p>
+Converts a value for hydration. If no strategy exists the plain value is returned.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            array        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="removeFilter()">removeFilter()</h3>
+
+<p>
+Remove a filter from the composition.</p>
+
+<p>To not extract "has" methods, you simply need to unregister it</p>
+<p><code>
+$filterComposite-&gt;removeFilter('has');
+</code></p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="removeNamingStrategy()">removeNamingStrategy()</h3>
+
+<p>
+Removes the naming strategy</p>
+
+
+
+
+<h3 id="removeStrategy()">removeStrategy()</h3>
+
+<p>
+Removes the strategy with the given name.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setNamingStrategy()">setNamingStrategy()</h3>
+
+<p>
+Adds the given naming strategy</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $strategy        </td>
+        <td>
+            \NamingStrategy\NamingStrategyInterface        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../../index.html">Components</a>
-    >>        <a href="../../../../../components/zendframework/zend-mvc.html">Component zendframework/zend-mvc</a>
-    >>        <a href="../../../../../classes/Zend/Mvc/View/Http/InjectTemplateListener.html">Class InjectTemplateListener</a>
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/zendframework/zend-mvc.html">zendframework/zend-mvc</a>
+    &rarr;        <a href="../../../../../classes/Zend/Mvc/View/Http/InjectTemplateListener.html">Class InjectTemplateListener</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -56,14 +66,21 @@
         <td>
             Zend\Mvc\View\Http\InjectTemplateListener        </td>
     </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\EventManager\AbstractListenerAggregate.html">AbstractListenerAggregate</a>                    </td>
+    </tr>
         </table>
 
 <h2>Description</h2>
 
 <div class="description">
-        
+    <p>
+        </p>
     </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -71,51 +88,262 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#attach()">
             attach()
+            </a>
         </td>
         <td>
             {@inheritDoc}        </td>
+        <td>
+            <a href="../../Zend\Mvc\View\Http\InjectTemplateListener.html">
+            InjectTemplateListener            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#detach()">
+            detach()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../Zend\EventManager\AbstractListenerAggregate.html">
+            AbstractListenerAggregate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#injectTemplate()">
             injectTemplate()
+            </a>
         </td>
         <td>
             Inject a template into the view model, if none present        </td>
+        <td>
+            <a href="../../Zend\Mvc\View\Http\InjectTemplateListener.html">
+            InjectTemplateListener            </a>
+        </td>
     </tr>
         <tr>
         <td>
-            setControllerMap()
+            <a href="#isPreferRouteMatchController()">
+            isPreferRouteMatchController()
+            </a>
         </td>
         <td>
-            Set map of controller namespace -> template pairs        </td>
+                    </td>
+        <td>
+            <a href="../../Zend\Mvc\View\Http\InjectTemplateListener.html">
+            InjectTemplateListener            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#mapController()">
             mapController()
+            </a>
         </td>
         <td>
             Maps controller to template if controller namespace is whitelisted or mapped        </td>
+        <td>
+            <a href="../../Zend\Mvc\View\Http\InjectTemplateListener.html">
+            InjectTemplateListener            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#setControllerMap()">
+            setControllerMap()
+            </a>
+        </td>
+        <td>
+            Set map of controller namespace -> template pairs        </td>
+        <td>
+            <a href="../../Zend\Mvc\View\Http\InjectTemplateListener.html">
+            InjectTemplateListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPreferRouteMatchController()">
             setPreferRouteMatchController()
+            </a>
         </td>
         <td>
             Sets the flag to instruct the listener to prefer the route match controller param
 over the class name        </td>
+        <td>
+            <a href="../../Zend\Mvc\View\Http\InjectTemplateListener.html">
+            InjectTemplateListener            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
     </tr>
         <tr>
         <td>
-            isPreferRouteMatchController()
-        </td>
+            $events        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+                    </td>
         <td>
                     </td>
     </tr>
     </table>
+
+
+<h3 id="detach()">detach()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="injectTemplate()">injectTemplate()</h3>
+
+<p>
+Inject a template into the view model, if none present</p>
+
+<p>Template is derived from the controller found in the route match, and,
+optionally, the action, if present.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \MvcEvent        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="isPreferRouteMatchController()">isPreferRouteMatchController()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="mapController()">mapController()</h3>
+
+<p>
+Maps controller to template if controller namespace is whitelisted or mapped</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controller        </td>
+        <td>
+            string        </td>
+        <td>
+            controller        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setControllerMap()">setControllerMap()</h3>
+
+<p>
+Set map of controller namespace -> template pairs</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $map        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPreferRouteMatchController()">setPreferRouteMatchController()</h3>
+
+<p>
+Sets the flag to instruct the listener to prefer the route match controller param
+over the class name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $preferRouteMatchController        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -189,7 +417,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

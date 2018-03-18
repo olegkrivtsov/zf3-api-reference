@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Db\Sql\Having -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-db.html">zendframework/zend-db</a>
+    &rarr;        <a href="../../../../classes/Zend/Db/Sql/Having.html">Class Having</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Having</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Db\Sql\Having        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Db\Sql\Predicate\Predicate.html">Predicate</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\PredicateSet.html">
+            PredicateSet            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Overloading        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addPredicate()">
+            addPredicate()
+            </a>
+        </td>
+        <td>
+            Add predicate to set        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\PredicateSet.html">
+            PredicateSet            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addPredicates()">
+            addPredicates()
+            </a>
+        </td>
+        <td>
+            Add predicates to set        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\PredicateSet.html">
+            PredicateSet            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#andPredicate()">
+            andPredicate()
+            </a>
+        </td>
+        <td>
+            Add predicate using AND operator        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\PredicateSet.html">
+            PredicateSet            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#between()">
+            between()
+            </a>
+        </td>
+        <td>
+            Create "between" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#count()">
+            count()
+            </a>
+        </td>
+        <td>
+            Get count of attached predicates        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\PredicateSet.html">
+            PredicateSet            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#equalTo()">
+            equalTo()
+            </a>
+        </td>
+        <td>
+            Create "Equal To" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#expression()">
+            expression()
+            </a>
+        </td>
+        <td>
+            Create an expression, with parameter placeholders        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getExpressionData()">
+            getExpressionData()
+            </a>
+        </td>
+        <td>
+            Get predicate parts for where statement        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\PredicateSet.html">
+            PredicateSet            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPredicates()">
+            getPredicates()
+            </a>
+        </td>
+        <td>
+            Return the predicates        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\PredicateSet.html">
+            PredicateSet            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#greaterThan()">
+            greaterThan()
+            </a>
+        </td>
+        <td>
+            Create "Greater Than" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#greaterThanOrEqualTo()">
+            greaterThanOrEqualTo()
+            </a>
+        </td>
+        <td>
+            Create "Greater Than Or Equal To" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#in()">
+            in()
+            </a>
+        </td>
+        <td>
+            Create "IN" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isNotNull()">
+            isNotNull()
+            </a>
+        </td>
+        <td>
+            Create "IS NOT NULL" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isNull()">
+            isNull()
+            </a>
+        </td>
+        <td>
+            Create "IS NULL" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#lessThan()">
+            lessThan()
+            </a>
+        </td>
+        <td>
+            Create "Less Than" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#lessThanOrEqualTo()">
+            lessThanOrEqualTo()
+            </a>
+        </td>
+        <td>
+            Create "Less Than Or Equal To" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#like()">
+            like()
+            </a>
+        </td>
+        <td>
+            Create "Like" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#literal()">
+            literal()
+            </a>
+        </td>
+        <td>
+            Create "Literal" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#nest()">
+            nest()
+            </a>
+        </td>
+        <td>
+            Begin nesting predicates        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#notBetween()">
+            notBetween()
+            </a>
+        </td>
+        <td>
+            Create "NOT BETWEEN" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#notEqualTo()">
+            notEqualTo()
+            </a>
+        </td>
+        <td>
+            Create "Not Equal To" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#notIn()">
+            notIn()
+            </a>
+        </td>
+        <td>
+            Create "NOT IN" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#notLike()">
+            notLike()
+            </a>
+        </td>
+        <td>
+            Create "notLike" predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#orPredicate()">
+            orPredicate()
+            </a>
+        </td>
+        <td>
+            Add predicate using OR operator        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\PredicateSet.html">
+            PredicateSet            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#predicate()">
+            predicate()
+            </a>
+        </td>
+        <td>
+            Use given predicate directly        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUnnest()">
+            setUnnest()
+            </a>
+        </td>
+        <td>
+            Indicate what predicate will be unnested        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#unnest()">
+            unnest()
+            </a>
+        </td>
+        <td>
+            Indicate end of nested predicate        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Predicate\Predicate.html">
+            Predicate            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $predicates        </td>
+        <td>
+            null|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $defaultCombination        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Overloading</p>
+
+<p>Overloads "or", "and", "nest", and "unnest"</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addPredicate()">addPredicate()</h3>
+
+<p>
+Add predicate to set</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $predicate        </td>
+        <td>
+            \PredicateInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $combination        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addPredicates()">addPredicates()</h3>
+
+<p>
+Add predicates to set</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $predicates        </td>
+        <td>
+            \PredicateInterface|\Closure|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $combination        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="andPredicate()">andPredicate()</h3>
+
+<p>
+Add predicate using AND operator</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $predicate        </td>
+        <td>
+            \PredicateInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="between()">between()</h3>
+
+<p>
+Create "between" predicate</p>
+
+<p>Utilizes Between predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string|\Expression        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $minValue        </td>
+        <td>
+            int|float|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $maxValue        </td>
+        <td>
+            int|float|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="count()">count()</h3>
+
+<p>
+Get count of attached predicates</p>
+
+
+
+
+<h3 id="equalTo()">equalTo()</h3>
+
+<p>
+Create "Equal To" predicate</p>
+
+<p>Utilizes Operator predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $left        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $right        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $leftType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+        <tr>
+        <td>
+            $rightType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+    </table>
+
+
+<h3 id="expression()">expression()</h3>
+
+<p>
+Create an expression, with parameter placeholders</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $parameters        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $expression        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $parameters        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getExpressionData()">getExpressionData()</h3>
+
+<p>
+Get predicate parts for where statement</p>
+
+
+
+
+<h3 id="getPredicates()">getPredicates()</h3>
+
+<p>
+Return the predicates</p>
+
+
+
+
+<h3 id="greaterThan()">greaterThan()</h3>
+
+<p>
+Create "Greater Than" predicate</p>
+
+<p>Utilizes Operator predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $left        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $right        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $leftType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+        <tr>
+        <td>
+            $rightType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+    </table>
+
+
+<h3 id="greaterThanOrEqualTo()">greaterThanOrEqualTo()</h3>
+
+<p>
+Create "Greater Than Or Equal To" predicate</p>
+
+<p>Utilizes Operator predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $left        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $right        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $leftType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+        <tr>
+        <td>
+            $rightType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+    </table>
+
+
+<h3 id="in()">in()</h3>
+
+<p>
+Create "IN" predicate</p>
+
+<p>Utilizes In predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string|\Expression        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $valueSet        </td>
+        <td>
+            array|\Zend\Db\Sql\Select        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="isNotNull()">isNotNull()</h3>
+
+<p>
+Create "IS NOT NULL" predicate</p>
+
+<p>Utilizes IsNotNull predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string|\Expression        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="isNull()">isNull()</h3>
+
+<p>
+Create "IS NULL" predicate</p>
+
+<p>Utilizes IsNull predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string|\Expression        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="lessThan()">lessThan()</h3>
+
+<p>
+Create "Less Than" predicate</p>
+
+<p>Utilizes Operator predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $left        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $right        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $leftType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+        <tr>
+        <td>
+            $rightType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+    </table>
+
+
+<h3 id="lessThanOrEqualTo()">lessThanOrEqualTo()</h3>
+
+<p>
+Create "Less Than Or Equal To" predicate</p>
+
+<p>Utilizes Operator predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $left        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $right        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $leftType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+        <tr>
+        <td>
+            $rightType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+    </table>
+
+
+<h3 id="like()">like()</h3>
+
+<p>
+Create "Like" predicate</p>
+
+<p>Utilizes Like predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string|\Expression        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $like        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="literal()">literal()</h3>
+
+<p>
+Create "Literal" predicate</p>
+
+<p>Literal predicate, for parameters, use expression()</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $literal        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="nest()">nest()</h3>
+
+<p>
+Begin nesting predicates</p>
+
+
+
+
+<h3 id="notBetween()">notBetween()</h3>
+
+<p>
+Create "NOT BETWEEN" predicate</p>
+
+<p>Utilizes NotBetween predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string|\Expression        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $minValue        </td>
+        <td>
+            int|float|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $maxValue        </td>
+        <td>
+            int|float|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="notEqualTo()">notEqualTo()</h3>
+
+<p>
+Create "Not Equal To" predicate</p>
+
+<p>Utilizes Operator predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $left        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $right        </td>
+        <td>
+            int|float|bool|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $leftType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+        <tr>
+        <td>
+            $rightType        </td>
+        <td>
+            string        </td>
+        <td>
+            TYPE_IDENTIFIER        </td>
+    </tr>
+    </table>
+
+
+<h3 id="notIn()">notIn()</h3>
+
+<p>
+Create "NOT IN" predicate</p>
+
+<p>Utilizes NotIn predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string|\Expression        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $valueSet        </td>
+        <td>
+            array|\Zend\Db\Sql\Select        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="notLike()">notLike()</h3>
+
+<p>
+Create "notLike" predicate</p>
+
+<p>Utilizes In predicate</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string|\Expression        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $notLike        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="orPredicate()">orPredicate()</h3>
+
+<p>
+Add predicate using OR operator</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $predicate        </td>
+        <td>
+            \PredicateInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="predicate()">predicate()</h3>
+
+<p>
+Use given predicate directly</p>
+
+<p>Contrary to {@link addPredicate()} this method respects formerly set
+AND / OR combination operator, thus allowing generic predicates to be
+used fluently within where chains as any other concrete predicate.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $predicate        </td>
+        <td>
+            \PredicateInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setUnnest()">setUnnest()</h3>
+
+<p>
+Indicate what predicate will be unnested</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $predicate        </td>
+        <td>
+            \Predicate        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="unnest()">unnest()</h3>
+
+<p>
+Indicate end of nested predicate</p>
+
+
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

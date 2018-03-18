@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Filter\Inflector -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-filter.html">zendframework/zend-filter</a>
+    &rarr;        <a href="../../../classes/Zend/Filter/Inflector.html">Class Inflector</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Inflector</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Filter\Inflector        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Filter\AbstractFilter.html">AbstractFilter</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Filter chain for string inflection    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__invoke()">
+            __invoke()
+            </a>
+        </td>
+        <td>
+            Invoke filter as a command        </td>
+        <td>
+            <a href="../../Zend\Filter\AbstractFilter.html">
+            AbstractFilter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addFilterRule()">
+            addFilterRule()
+            </a>
+        </td>
+        <td>
+            Add a filter rule for a spec        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addRules()">
+            addRules()
+            </a>
+        </td>
+        <td>
+            Multi-call to setting filter rules.        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearRules()">
+            clearRules()
+            </a>
+        </td>
+        <td>
+            Clears the rules currently in the inflector        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#filter()">
+            filter()
+            </a>
+        </td>
+        <td>
+            Inflect        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOptions()">
+            getOptions()
+            </a>
+        </td>
+        <td>
+            Retrieve options representing object state        </td>
+        <td>
+            <a href="../../Zend\Filter\AbstractFilter.html">
+            AbstractFilter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPluginManager()">
+            getPluginManager()
+            </a>
+        </td>
+        <td>
+            Retrieve plugin manager        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRule()">
+            getRule()
+            </a>
+        </td>
+        <td>
+            Returns a rule set by setFilterRule(), a numeric index must be provided        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRules()">
+            getRules()
+            </a>
+        </td>
+        <td>
+            Get rules        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTarget()">
+            getTarget()
+            </a>
+        </td>
+        <td>
+            Retrieve target        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTargetReplacementIdentifier()">
+            getTargetReplacementIdentifier()
+            </a>
+        </td>
+        <td>
+            Get Target Replacement Identifier        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasPcreUnicodeSupport()">
+            hasPcreUnicodeSupport()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Filter\AbstractFilter.html">
+            AbstractFilter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isThrowTargetExceptionsOn()">
+            isThrowTargetExceptionsOn()
+            </a>
+        </td>
+        <td>
+            Will exceptions be thrown?        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFilterRule()">
+            setFilterRule()
+            </a>
+        </td>
+        <td>
+            Set a filtering rule for a spec.  $ruleSet can be a string, Filter object
+or an array of strings or filter objects.        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set options        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPluginManager()">
+            setPluginManager()
+            </a>
+        </td>
+        <td>
+            Set plugin manager        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRules()">
+            setRules()
+            </a>
+        </td>
+        <td>
+            Is the same as calling addRules() with the exception that it
+clears the rules before adding them.        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStaticRule()">
+            setStaticRule()
+            </a>
+        </td>
+        <td>
+            Set a static rule for a spec.  This is a single string value        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStaticRuleReference()">
+            setStaticRuleReference()
+            </a>
+        </td>
+        <td>
+            Set Static Rule Reference.        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTarget()">
+            setTarget()
+            </a>
+        </td>
+        <td>
+            Set a Target
+ex: 'scripts/:controller/:action.:suffix'        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTargetReference()">
+            setTargetReference()
+            </a>
+        </td>
+        <td>
+            Set Target Reference        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTargetReplacementIdentifier()">
+            setTargetReplacementIdentifier()
+            </a>
+        </td>
+        <td>
+            Set the Target Replacement Identifier, by default ':'        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setThrowTargetExceptionsOn()">
+            setThrowTargetExceptionsOn()
+            </a>
+        </td>
+        <td>
+            Set Whether or not the inflector should throw an exception when a replacement
+identifier is still found within an inflected target.        </td>
+        <td>
+            <a href="../../Zend\Filter\Inflector.html">
+            Inflector            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            string|array|\Traversable        </td>
+        <td>
+            Options        </td>
+    </tr>
+    </table>
+
+
+<h3 id="__invoke()">__invoke()</h3>
+
+<p>
+Invoke filter as a command</p>
+
+<p>Proxies to {@link filter()}</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addFilterRule()">addFilterRule()</h3>
+
+<p>
+Add a filter rule for a spec</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $spec        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $ruleSet        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addRules()">addRules()</h3>
+
+<p>
+Multi-call to setting filter rules.</p>
+
+<p>If prefixed with a ":" (colon), a filter rule will be added.  If not
+prefixed, a static replacement will be added.</p>
+<p>ex:
+array(</p>
+<pre><code>':controller' =&gt; array('CamelCaseToUnderscore', 'StringToLower'),
+':action'     =&gt; array('CamelCaseToUnderscore', 'StringToLower'),
+'suffix'      =&gt; 'phtml'
+);
+</code></pre>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $rules        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="clearRules()">clearRules()</h3>
+
+<p>
+Clears the rules currently in the inflector</p>
+
+
+
+
+<h3 id="filter()">filter()</h3>
+
+<p>
+Inflect</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $source        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getOptions()">getOptions()</h3>
+
+<p>
+Retrieve options representing object state</p>
+
+
+
+
+<h3 id="getPluginManager()">getPluginManager()</h3>
+
+<p>
+Retrieve plugin manager</p>
+
+
+
+
+<h3 id="getRule()">getRule()</h3>
+
+<p>
+Returns a rule set by setFilterRule(), a numeric index must be provided</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $spec        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $index        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getRules()">getRules()</h3>
+
+<p>
+Get rules</p>
+
+<p>By default, returns all rules. If a $spec is provided, will return those
+rules if found, false otherwise.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $spec        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getTarget()">getTarget()</h3>
+
+<p>
+Retrieve target</p>
+
+
+
+
+<h3 id="getTargetReplacementIdentifier()">getTargetReplacementIdentifier()</h3>
+
+<p>
+Get Target Replacement Identifier</p>
+
+
+
+
+<h3 id="hasPcreUnicodeSupport()">hasPcreUnicodeSupport()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="isThrowTargetExceptionsOn()">isThrowTargetExceptionsOn()</h3>
+
+<p>
+Will exceptions be thrown?</p>
+
+
+
+
+<h3 id="setFilterRule()">setFilterRule()</h3>
+
+<p>
+Set a filtering rule for a spec.  $ruleSet can be a string, Filter object
+or an array of strings or filter objects.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $spec        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $ruleSet        </td>
+        <td>
+            array|string|\Zend\Filter\FilterInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set options</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPluginManager()">setPluginManager()</h3>
+
+<p>
+Set plugin manager</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $manager        </td>
+        <td>
+            \FilterPluginManager        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setRules()">setRules()</h3>
+
+<p>
+Is the same as calling addRules() with the exception that it
+clears the rules before adding them.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $rules        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setStaticRule()">setStaticRule()</h3>
+
+<p>
+Set a static rule for a spec.  This is a single string value</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setStaticRuleReference()">setStaticRuleReference()</h3>
+
+<p>
+Set Static Rule Reference.</p>
+
+<p>This allows a consuming class to pass a property or variable
+in to be referenced when its time to build the output string from the
+target.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $reference        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setTarget()">setTarget()</h3>
+
+<p>
+Set a Target
+ex: 'scripts/:controller/:action.:suffix'</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $target        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setTargetReference()">setTargetReference()</h3>
+
+<p>
+Set Target Reference</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $target        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setTargetReplacementIdentifier()">setTargetReplacementIdentifier()</h3>
+
+<p>
+Set the Target Replacement Identifier, by default ':'</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $targetReplacementIdentifier        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setThrowTargetExceptionsOn()">setThrowTargetExceptionsOn()</h3>
+
+<p>
+Set Whether or not the inflector should throw an exception when a replacement
+identifier is still found within an inflected target.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $throwTargetExceptionsOn        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

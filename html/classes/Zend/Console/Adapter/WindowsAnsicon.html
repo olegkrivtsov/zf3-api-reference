@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Console\Adapter\WindowsAnsicon -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-console.html">zendframework/zend-console</a>
+    &rarr;        <a href="../../../../classes/Zend/Console/Adapter/WindowsAnsicon.html">Class WindowsAnsicon</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        WindowsAnsicon</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Console\Adapter\WindowsAnsicon        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Console\Adapter\Posix.html">Posix</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    MS Windows with ANSICON console adapter    </p>
+    <p>This adapter requires ANSICON extension to be installed. It can be obtained from:</p>
+<pre><code> https://github.com/adoxa/ansicon
+</code></pre>
+<p>ANSICON has to be loaded and enabled before using this adapter. It's best to install
+it using following command:</p>
+<pre><code> ansicon -I
+</code></pre>
+<p>Console should not run in UTF8 code page (65001), because ANSICON does not behave well with it.
+It's best to use non-unicode code page 437, 850, 851, 852 or similar. Run "help mode" for more
+information on how to change Windows console code page.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clear()">
+            clear()
+            </a>
+        </td>
+        <td>
+            Clear console screen        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearLine()">
+            clearLine()
+            </a>
+        </td>
+        <td>
+            Clear line at cursor position        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearScreen()">
+            clearScreen()
+            </a>
+        </td>
+        <td>
+            Clear console screen        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#colorize()">
+            colorize()
+            </a>
+        </td>
+        <td>
+            Prepare a string that will be rendered in color.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\Posix.html">
+            Posix            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#encodeText()">
+            encodeText()
+            </a>
+        </td>
+        <td>
+            Encode a text to match console encoding        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCharset()">
+            getCharset()
+            </a>
+        </td>
+        <td>
+            Get charset currently in use by this adapter.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultCharset()">
+            getDefaultCharset()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeight()">
+            getHeight()
+            </a>
+        </td>
+        <td>
+            Determine and return current console height.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSize()">
+            getSize()
+            </a>
+        </td>
+        <td>
+            Determine and return current console width and height.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTitle()">
+            getTitle()
+            </a>
+        </td>
+        <td>
+            Return current console window title.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWidth()">
+            getWidth()
+            </a>
+        </td>
+        <td>
+            Determine and return current console width.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hideCursor()">
+            hideCursor()
+            </a>
+        </td>
+        <td>
+            Hide console cursor        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\Posix.html">
+            Posix            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isUtf8()">
+            isUtf8()
+            </a>
+        </td>
+        <td>
+            Check if console is UTF-8 compatible        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#readChar()">
+            readChar()
+            </a>
+        </td>
+        <td>
+            Read a single character from the console input        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#readLine()">
+            readLine()
+            </a>
+        </td>
+        <td>
+            Read a single line from the console input        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resetColor()">
+            resetColor()
+            </a>
+        </td>
+        <td>
+            Reset color to console default.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\Posix.html">
+            Posix            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setBgColor()">
+            setBgColor()
+            </a>
+        </td>
+        <td>
+            Change current drawing background color        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\Posix.html">
+            Posix            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCharset()">
+            setCharset()
+            </a>
+        </td>
+        <td>
+            Set Console charset to use.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\WindowsAnsicon.html">
+            WindowsAnsicon            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setColor()">
+            setColor()
+            </a>
+        </td>
+        <td>
+            Change current drawing color.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\Posix.html">
+            Posix            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPos()">
+            setPos()
+            </a>
+        </td>
+        <td>
+            Set cursor position        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\Posix.html">
+            Posix            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#showCursor()">
+            showCursor()
+            </a>
+        </td>
+        <td>
+            Show console cursor        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\Posix.html">
+            Posix            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#write()">
+            write()
+            </a>
+        </td>
+        <td>
+            Write a chunk of text to console.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#writeAt()">
+            writeAt()
+            </a>
+        </td>
+        <td>
+            Write a piece of text at the coordinates of $x and $y        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#writeBox()">
+            writeBox()
+            </a>
+        </td>
+        <td>
+            Write a box at the specified coordinates.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#writeLine()">
+            writeLine()
+            </a>
+        </td>
+        <td>
+            Write a single line of text to console and advance cursor to the next line.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\Posix.html">
+            Posix            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#writeText()">
+            writeText()
+            </a>
+        </td>
+        <td>
+            Alias for write()        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#writeTextBlock()">
+            writeTextBlock()
+            </a>
+        </td>
+        <td>
+            Write a block of text at the given coordinates, matching the supplied width and height.        </td>
+        <td>
+            <a href="../../Zend\Console\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="clear()">clear()</h3>
+
+<p>
+Clear console screen</p>
+
+
+
+
+<h3 id="clearLine()">clearLine()</h3>
+
+<p>
+Clear line at cursor position</p>
+
+
+
+
+<h3 id="clearScreen()">clearScreen()</h3>
+
+<p>
+Clear console screen</p>
+
+
+
+
+<h3 id="colorize()">colorize()</h3>
+
+<p>
+Prepare a string that will be rendered in color.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $string        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $color        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $bgColor        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="encodeText()">encodeText()</h3>
+
+<p>
+Encode a text to match console encoding</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $text        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getCharset()">getCharset()</h3>
+
+<p>
+Get charset currently in use by this adapter.</p>
+
+
+
+
+<h3 id="getDefaultCharset()">getDefaultCharset()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getHeight()">getHeight()</h3>
+
+<p>
+Determine and return current console height.</p>
+
+
+
+
+<h3 id="getSize()">getSize()</h3>
+
+<p>
+Determine and return current console width and height.</p>
+
+
+
+
+<h3 id="getTitle()">getTitle()</h3>
+
+<p>
+Return current console window title.</p>
+
+
+
+
+<h3 id="getWidth()">getWidth()</h3>
+
+<p>
+Determine and return current console width.</p>
+
+
+
+
+<h3 id="hideCursor()">hideCursor()</h3>
+
+<p>
+Hide console cursor</p>
+
+
+
+
+<h3 id="isUtf8()">isUtf8()</h3>
+
+<p>
+Check if console is UTF-8 compatible</p>
+
+
+
+
+<h3 id="readChar()">readChar()</h3>
+
+<p>
+Read a single character from the console input</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $mask        </td>
+        <td>
+            string|null        </td>
+        <td>
+            A        </td>
+    </tr>
+    </table>
+
+
+<h3 id="readLine()">readLine()</h3>
+
+<p>
+Read a single line from the console input</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $maxLength        </td>
+        <td>
+            int        </td>
+        <td>
+            Maximum        </td>
+    </tr>
+    </table>
+
+
+<h3 id="resetColor()">resetColor()</h3>
+
+<p>
+Reset color to console default.</p>
+
+
+
+
+<h3 id="setBgColor()">setBgColor()</h3>
+
+<p>
+Change current drawing background color</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $bgColor        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setCharset()">setCharset()</h3>
+
+<p>
+Set Console charset to use.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $charset        </td>
+        <td>
+            \CharsetInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setColor()">setColor()</h3>
+
+<p>
+Change current drawing color.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $color        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPos()">setPos()</h3>
+
+<p>
+Set cursor position</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $x        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $y        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="showCursor()">showCursor()</h3>
+
+<p>
+Show console cursor</p>
+
+
+
+
+<h3 id="write()">write()</h3>
+
+<p>
+Write a chunk of text to console.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $text        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $color        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $bgColor        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="writeAt()">writeAt()</h3>
+
+<p>
+Write a piece of text at the coordinates of $x and $y</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $text        </td>
+        <td>
+            string        </td>
+        <td>
+            Text        </td>
+    </tr>
+        <tr>
+        <td>
+            $x        </td>
+        <td>
+            int        </td>
+        <td>
+            Console        </td>
+    </tr>
+        <tr>
+        <td>
+            $y        </td>
+        <td>
+            int        </td>
+        <td>
+            Console        </td>
+    </tr>
+        <tr>
+        <td>
+            $color        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $bgColor        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="writeBox()">writeBox()</h3>
+
+<p>
+Write a box at the specified coordinates.</p>
+
+<p>If X or Y coordinate value is negative, it will be calculated as the distance from far right or bottom edge
+of the console (respectively).</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $x1        </td>
+        <td>
+            int        </td>
+        <td>
+            Top-left        </td>
+    </tr>
+        <tr>
+        <td>
+            $y1        </td>
+        <td>
+            int        </td>
+        <td>
+            Top-left        </td>
+    </tr>
+        <tr>
+        <td>
+            $x2        </td>
+        <td>
+            int        </td>
+        <td>
+            Bottom-right        </td>
+    </tr>
+        <tr>
+        <td>
+            $y2        </td>
+        <td>
+            int        </td>
+        <td>
+            Bottom-right        </td>
+    </tr>
+        <tr>
+        <td>
+            $lineStyle        </td>
+        <td>
+            int        </td>
+        <td>
+            (optional)        </td>
+    </tr>
+        <tr>
+        <td>
+            $fillStyle        </td>
+        <td>
+            int        </td>
+        <td>
+            (optional)        </td>
+    </tr>
+        <tr>
+        <td>
+            $color        </td>
+        <td>
+            int        </td>
+        <td>
+            (optional)        </td>
+    </tr>
+        <tr>
+        <td>
+            $bgColor        </td>
+        <td>
+            int        </td>
+        <td>
+            (optional)        </td>
+    </tr>
+        <tr>
+        <td>
+            $fillColor        </td>
+        <td>
+            null|int        </td>
+        <td>
+            (optional)        </td>
+    </tr>
+        <tr>
+        <td>
+            $fillBgColor        </td>
+        <td>
+            null|int        </td>
+        <td>
+            (optional)        </td>
+    </tr>
+    </table>
+
+
+<h3 id="writeLine()">writeLine()</h3>
+
+<p>
+Write a single line of text to console and advance cursor to the next line.</p>
+
+<p>This override works around a bug in some terminals that cause the background color
+to fill the next line after EOL. To remedy this, we are sending the colored string with
+appropriate color reset sequences before sending EOL character.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $text        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $color        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $bgColor        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="writeText()">writeText()</h3>
+
+<p>
+Alias for write()</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $text        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $color        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $bgColor        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="writeTextBlock()">writeTextBlock()</h3>
+
+<p>
+Write a block of text at the given coordinates, matching the supplied width and height.</p>
+
+<p>In case a line of text does not fit desired width, it will be wrapped to the next line.
+In case the whole text does not fit in desired height, it will be truncated.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $text        </td>
+        <td>
+            string        </td>
+        <td>
+            Text        </td>
+    </tr>
+        <tr>
+        <td>
+            $width        </td>
+        <td>
+            int        </td>
+        <td>
+            Maximum        </td>
+    </tr>
+        <tr>
+        <td>
+            $height        </td>
+        <td>
+            int|null        </td>
+        <td>
+            Maximum        </td>
+    </tr>
+        <tr>
+        <td>
+            $x        </td>
+        <td>
+            int        </td>
+        <td>
+            Block        </td>
+    </tr>
+        <tr>
+        <td>
+            $y        </td>
+        <td>
+            int        </td>
+        <td>
+            Block        </td>
+    </tr>
+        <tr>
+        <td>
+            $color        </td>
+        <td>
+            null|int        </td>
+        <td>
+            (optional)        </td>
+    </tr>
+        <tr>
+        <td>
+            $bgColor        </td>
+        <td>
+            null|int        </td>
+        <td>
+            (optional)        </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

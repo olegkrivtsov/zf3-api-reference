@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Db\Sql\Platform\Oracle\SelectDecorator -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../../components/zendframework/zend-db.html">zendframework/zend-db</a>
+    &rarr;        <a href="../../../../../../classes/Zend/Db/Sql/Platform/Oracle/SelectDecorator.html">Class SelectDecorator</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        SelectDecorator</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Db\Sql\Platform\Oracle\SelectDecorator        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Db\Sql\Select.html">Select</a>                    </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../Zend\Db\Sql\Platform\PlatformDecoratorInterface.html">PlatformDecoratorInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__clone()">
+            __clone()
+            </a>
+        </td>
+        <td>
+            __clone        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Variable overloading        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#columns()">
+            columns()
+            </a>
+        </td>
+        <td>
+            Specify columns from which to select        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#combine()">
+            combine()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#from()">
+            from()
+            </a>
+        </td>
+        <td>
+            Create from clause        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRawState()">
+            getRawState()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSqlString()">
+            getSqlString()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\AbstractSql.html">
+            AbstractSql            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#group()">
+            group()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#having()">
+            having()
+            </a>
+        </td>
+        <td>
+            Create having clause        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isTableReadOnly()">
+            isTableReadOnly()
+            </a>
+        </td>
+        <td>
+            Returns whether the table is read only or not.        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#join()">
+            join()
+            </a>
+        </td>
+        <td>
+            Create join clause        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#limit()">
+            limit()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#offset()">
+            offset()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#order()">
+            order()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#prepareStatement()">
+            prepareStatement()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\AbstractPreparableSql.html">
+            AbstractPreparableSql            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#quantifier()">
+            quantifier()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#reset()">
+            reset()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSpecification()">
+            setSpecification()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSubject()">
+            setSubject()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Platform\Oracle\SelectDecorator.html">
+            SelectDecorator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#where()">
+            where()
+            </a>
+        </td>
+        <td>
+            Create where clause        </td>
+        <td>
+            <a href="../../Zend\Db\Sql\Select.html">
+            Select            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__clone()">__clone()</h3>
+
+<p>
+__clone</p>
+
+<p>Resets the where object each time the Select is cloned.</p>
+
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            null|string|array|\TableIdentifier        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Variable overloading</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="columns()">columns()</h3>
+
+<p>
+Specify columns from which to select</p>
+
+<p>Possible valid states:</p>
+<p>array(*)</p>
+<p>array(value, ...)
+  value can be strings or Expression objects</p>
+<p>array(string =&gt; value, ...)
+  key string will be use as alias,
+  value can be string or Expression objects</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $columns        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $prefixColumnsWithTable        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="combine()">combine()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $select        </td>
+        <td>
+            \Select        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $modifier        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="from()">from()</h3>
+
+<p>
+Create from clause</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $table        </td>
+        <td>
+            string|array|\TableIdentifier        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getRawState()">getRawState()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getSqlString()">getSqlString()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $adapterPlatform        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="group()">group()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $group        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="having()">having()</h3>
+
+<p>
+Create having clause</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $predicate        </td>
+        <td>
+            \Where|\Closure|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $combination        </td>
+        <td>
+            string        </td>
+        <td>
+            One        </td>
+    </tr>
+    </table>
+
+
+<h3 id="isTableReadOnly()">isTableReadOnly()</h3>
+
+<p>
+Returns whether the table is read only or not.</p>
+
+
+
+
+<h3 id="join()">join()</h3>
+
+<p>
+Create join clause</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string|array|\TableIdentifier        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $on        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $columns        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+            one        </td>
+    </tr>
+    </table>
+
+
+<h3 id="limit()">limit()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $limit        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="offset()">offset()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $offset        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="order()">order()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $order        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="prepareStatement()">prepareStatement()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $adapter        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $statementContainer        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="quantifier()">quantifier()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $quantifier        </td>
+        <td>
+            string|\Expression        </td>
+        <td>
+            DISTINCT|ALL        </td>
+    </tr>
+    </table>
+
+
+<h3 id="reset()">reset()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $part        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setSpecification()">setSpecification()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $specification        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $index        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $specification        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setSubject()">setSubject()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $select        </td>
+        <td>
+            \Select        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="where()">where()</h3>
+
+<p>
+Create where clause</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $predicate        </td>
+        <td>
+            \Where|\Closure|string|array|\Predicate\PredicateInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $combination        </td>
+        <td>
+            string        </td>
+        <td>
+            One        </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

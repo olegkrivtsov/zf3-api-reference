@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../index.html">Components</a>
-    >>        <a href="../../../../components/zendframework/zend-form.html">Component zendframework/zend-form</a>
-    >>        <a href="../../../../classes/Zend/Form/FormElementManager/FormElementManagerTrait.html">Class FormElementManagerTrait</a>
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-form.html">zendframework/zend-form</a>
+    &rarr;        <a href="../../../../classes/Zend/Form/FormElementManager/FormElementManagerTrait.html">Class FormElementManagerTrait</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Interface 
@@ -61,8 +71,151 @@
 <h2>Description</h2>
 
 <div class="description">
-        
-    </div>
+    <p>
+    Trait providing common logic between FormElementManager implementations.    </p>
+    <p>Trait does not define properties, as the properties common between the
+two versions are originally defined in their parent class, causing a
+resolution conflict.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#get()">
+            get()
+            </a>
+        </td>
+        <td>
+            Retrieve a service from the manager by name        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerTrait.html">
+            FormElementManagerTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFactoryFromName()">
+            getFactoryFromName()
+            </a>
+        </td>
+        <td>
+            Try to pull factory from the creation context, or instantiates it from its name        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerTrait.html">
+            FormElementManagerTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHydratorFromName()">
+            getHydratorFromName()
+            </a>
+        </td>
+        <td>
+            Try to pull hydrator from the creation context, or instantiates it from its name        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerTrait.html">
+            FormElementManagerTrait            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="get()">get()</h3>
+
+<p>
+Retrieve a service from the manager by name</p>
+
+<p>Allows passing an array of options to use when creating the instance.
+createFromInvokable() will use these and pass them to the instance
+constructor if not null and a non-empty array.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $usePeeringServiceManagers        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getFactoryFromName()">getFactoryFromName()</h3>
+
+<p>
+Try to pull factory from the creation context, or instantiates it from its name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $factoryName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getHydratorFromName()">getHydratorFromName()</h3>
+
+<p>
+Try to pull hydrator from the creation context, or instantiates it from its name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $hydratorName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
 
 
 
@@ -138,7 +291,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

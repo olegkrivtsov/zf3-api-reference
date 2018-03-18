@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../index.html">Components</a>
-    >>        <a href="../../../../components/zendframework/zend-modulemanager.html">Component zendframework/zend-modulemanager</a>
-    >>        <a href="../../../../classes/Zend/ModuleManager/Feature/ConsoleUsageProviderInterface.html">Class ConsoleUsageProviderInterface</a>
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-modulemanager.html">zendframework/zend-modulemanager</a>
+    &rarr;        <a href="../../../../classes/Zend/ModuleManager/Feature/ConsoleUsageProviderInterface.html">Class ConsoleUsageProviderInterface</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Interface 
@@ -61,9 +71,9 @@
 <h2>Description</h2>
 
 <div class="description">
-        
+    <p>
+        </p>
     </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -71,15 +81,63 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#getConsoleUsage()">
             getConsoleUsage()
+            </a>
         </td>
         <td>
             Returns an array or a string containing usage information for this module's Console commands.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Feature\ConsoleUsageProviderInterface.html">
+            ConsoleUsageProviderInterface            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="getConsoleUsage()">getConsoleUsage()</h3>
+
+<p>
+Returns an array or a string containing usage information for this module's Console commands.</p>
+
+<p>The method is called with active Zend\Console\Adapter\AdapterInterface that can be used to directly access
+Console and send output.</p>
+<p>If the result is a string it will be shown directly in the console window.
+If the result is an array, its contents will be formatted to console window width. The array must
+have the following format:</p>
+<pre><code>return array(
+           'Usage information line that should be shown as-is',
+           'Another line of usage info',
+
+           '--parameter'        =&gt;   'A short description of that parameter',
+           '-another-parameter' =&gt;   'A short description of another parameter',
+           ...
+       )
+</code></pre>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $console        </td>
+        <td>
+            \AdapterInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -153,7 +211,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../index.html">Components</a>
-    >>        <a href="../../../../components/zendframework/zend-eventmanager.html">Component zendframework/zend-eventmanager</a>
-    >>        <a href="../../../../classes/Zend/EventManager/Filter/FilterIterator.html">Class FilterIterator</a>
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-eventmanager.html">zendframework/zend-eventmanager</a>
+    &rarr;        <a href="../../../../classes/Zend/EventManager/Filter/FilterIterator.html">Class FilterIterator</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -56,16 +66,23 @@
         <td>
             Zend\EventManager\Filter\FilterIterator        </td>
     </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Stdlib\FastPriorityQueue.html">FastPriorityQueue</a>                    </td>
+    </tr>
         </table>
 
 <h2>Description</h2>
 
 <div class="description">
+    <p>
     Specialized priority queue implementation for use with an intercepting
-filter chain.    
+filter chain.    </p>
     <p>Allows removal</p>
 </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -73,36 +90,185 @@ filter chain.
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#contains()">
             contains()
+            </a>
         </td>
         <td>
             Does the queue contain a given value?        </td>
+        <td>
+            <a href="../../Zend\EventManager\Filter\FilterIterator.html">
+            FilterIterator            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#insert()">
             insert()
+            </a>
         </td>
         <td>
             Insert a value into the queue.        </td>
-    </tr>
-        <tr>
         <td>
-            remove()
+            <a href="../../Zend\EventManager\Filter\FilterIterator.html">
+            FilterIterator            </a>
         </td>
-        <td>
-            Remove a value from the queue        </td>
     </tr>
         <tr>
         <td>
+            <a href="#next()">
             next()
+            </a>
         </td>
         <td>
             Iterate the next filter in the chain        </td>
+        <td>
+            <a href="../../Zend\EventManager\Filter\FilterIterator.html">
+            FilterIterator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#remove()">
+            remove()
+            </a>
+        </td>
+        <td>
+            Remove a value from the queue        </td>
+        <td>
+            <a href="../../Zend\EventManager\Filter\FilterIterator.html">
+            FilterIterator            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="contains()">contains()</h3>
+
+<p>
+Does the queue contain a given value?</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $datum        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="insert()">insert()</h3>
+
+<p>
+Insert a value into the queue.</p>
+
+<p>Requires a callable.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            callable        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="next()">next()</h3>
+
+<p>
+Iterate the next filter in the chain</p>
+
+<p>Iterates and calls the next filter in the chain.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $context        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $chain        </td>
+        <td>
+            \FilterIterator        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="remove()">remove()</h3>
+
+<p>
+Remove a value from the queue</p>
+
+<p>This is an expensive operation. It must first iterate through all values,
+and then re-populate itself. Use only if absolutely necessary.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $datum        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -176,7 +342,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

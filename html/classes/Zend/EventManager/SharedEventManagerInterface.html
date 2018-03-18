@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../index.html">Components</a>
-    >>        <a href="../../../components/zendframework/zend-eventmanager.html">Component zendframework/zend-eventmanager</a>
-    >>        <a href="../../../classes/Zend/EventManager/SharedEventManagerInterface.html">Class SharedEventManagerInterface</a>
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-eventmanager.html">zendframework/zend-eventmanager</a>
+    &rarr;        <a href="../../../classes/Zend/EventManager/SharedEventManagerInterface.html">Class SharedEventManagerInterface</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Interface 
@@ -61,9 +71,9 @@
 <h2>Description</h2>
 
 <div class="description">
-    Interface for shared event listener collections    
+    <p>
+    Interface for shared event listener collections    </p>
     </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -71,36 +81,215 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#attach()">
             attach()
+            </a>
         </td>
         <td>
             Attach a listener to an event emitted by components with specific identifiers.        </td>
-    </tr>
-        <tr>
         <td>
-            detach()
+            <a href="../../Zend\EventManager\SharedEventManagerInterface.html">
+            SharedEventManagerInterface            </a>
         </td>
-        <td>
-            Detach a shared listener.        </td>
     </tr>
         <tr>
         <td>
-            getListeners()
-        </td>
-        <td>
-            Retrieve all listeners for given identifiers        </td>
-    </tr>
-        <tr>
-        <td>
+            <a href="#clearListeners()">
             clearListeners()
+            </a>
         </td>
         <td>
             Clear all listeners for a given identifier, optionally for a specific event        </td>
+        <td>
+            <a href="../../Zend\EventManager\SharedEventManagerInterface.html">
+            SharedEventManagerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#detach()">
+            detach()
+            </a>
+        </td>
+        <td>
+            Detach a shared listener.        </td>
+        <td>
+            <a href="../../Zend\EventManager\SharedEventManagerInterface.html">
+            SharedEventManagerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getListeners()">
+            getListeners()
+            </a>
+        </td>
+        <td>
+            Retrieve all listeners for given identifiers        </td>
+        <td>
+            <a href="../../Zend\EventManager\SharedEventManagerInterface.html">
+            SharedEventManagerInterface            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+Attach a listener to an event emitted by components with specific identifiers.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+        <tr>
+        <td>
+            $eventName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $listener        </td>
+        <td>
+            callable        </td>
+        <td>
+            Listener        </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+            int        </td>
+        <td>
+            Priority        </td>
+    </tr>
+    </table>
+
+
+<h3 id="clearListeners()">clearListeners()</h3>
+
+<p>
+Clear all listeners for a given identifier, optionally for a specific event</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $eventName        </td>
+        <td>
+            null|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="detach()">detach()</h3>
+
+<p>
+Detach a shared listener.</p>
+
+<p>Allows detaching a listener from one or more events to which it may be
+attached.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $listener        </td>
+        <td>
+            callable        </td>
+        <td>
+            Listener        </td>
+    </tr>
+        <tr>
+        <td>
+            $identifier        </td>
+        <td>
+            null|string        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+        <tr>
+        <td>
+            $eventName        </td>
+        <td>
+            null|string        </td>
+        <td>
+            Event        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getListeners()">getListeners()</h3>
+
+<p>
+Retrieve all listeners for given identifiers</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $identifiers        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $eventName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -174,7 +363,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

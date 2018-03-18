@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Crypt\Symmetric\Mcrypt -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-crypt.html">zendframework/zend-crypt</a>
+    &rarr;        <a href="../../../../classes/Zend/Crypt/Symmetric/Mcrypt.html">Class Mcrypt</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Mcrypt</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Crypt\Symmetric\Mcrypt        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../Zend\Crypt\Symmetric\SymmetricInterface.html">SymmetricInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Symmetric encryption using the Mcrypt extension    </p>
+    <p>NOTE: DO NOT USE only this class to encrypt data.
+This class doesn't provide authentication and integrity check over the data.
+PLEASE USE Zend\Crypt\BlockCipher instead!</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#decrypt()">
+            decrypt()
+            </a>
+        </td>
+        <td>
+            Decrypt        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#encrypt()">
+            encrypt()
+            </a>
+        </td>
+        <td>
+            Encrypt        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAlgorithm()">
+            getAlgorithm()
+            </a>
+        </td>
+        <td>
+            Get the encryption algorithm        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBlockSize()">
+            getBlockSize()
+            </a>
+        </td>
+        <td>
+            Get the block size        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getKey()">
+            getKey()
+            </a>
+        </td>
+        <td>
+            Get the encryption key        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getKeySize()">
+            getKeySize()
+            </a>
+        </td>
+        <td>
+            Get the maximum key size for the selected cipher and mode of operation        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMode()">
+            getMode()
+            </a>
+        </td>
+        <td>
+            Get the cipher mode        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOriginalSalt()">
+            getOriginalSalt()
+            </a>
+        </td>
+        <td>
+            Get the original salt value        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPadding()">
+            getPadding()
+            </a>
+        </td>
+        <td>
+            Get the padding object        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPaddingPluginManager()">
+            getPaddingPluginManager()
+            </a>
+        </td>
+        <td>
+            Returns the padding plugin manager.  If it doesn't exist it's created.        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSalt()">
+            getSalt()
+            </a>
+        </td>
+        <td>
+            Get the salt (IV) according to the size requested by the algorithm        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSaltSize()">
+            getSaltSize()
+            </a>
+        </td>
+        <td>
+            Get the salt (IV) size        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSupportedAlgorithms()">
+            getSupportedAlgorithms()
+            </a>
+        </td>
+        <td>
+            Get the supported algorithms        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSupportedModes()">
+            getSupportedModes()
+            </a>
+        </td>
+        <td>
+            Get all supported encryption modes        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAlgorithm()">
+            setAlgorithm()
+            </a>
+        </td>
+        <td>
+            Set the encryption algorithm (cipher)        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setKey()">
+            setKey()
+            </a>
+        </td>
+        <td>
+            Set the encryption key
+If the key is longer than maximum supported, it will be truncated by getKey().        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMode()">
+            setMode()
+            </a>
+        </td>
+        <td>
+            Set the cipher mode        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set default options        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPadding()">
+            setPadding()
+            </a>
+        </td>
+        <td>
+            Set the padding object        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPaddingPluginManager()">
+            setPaddingPluginManager()
+            </a>
+        </td>
+        <td>
+            Set the padding plugin manager        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSalt()">
+            setSalt()
+            </a>
+        </td>
+        <td>
+            Set the salt (IV)        </td>
+        <td>
+            <a href="../../Zend\Crypt\Symmetric\Mcrypt.html">
+            Mcrypt            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="decrypt()">decrypt()</h3>
+
+<p>
+Decrypt</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="encrypt()">encrypt()</h3>
+
+<p>
+Encrypt</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getAlgorithm()">getAlgorithm()</h3>
+
+<p>
+Get the encryption algorithm</p>
+
+
+
+
+<h3 id="getBlockSize()">getBlockSize()</h3>
+
+<p>
+Get the block size</p>
+
+
+
+
+<h3 id="getKey()">getKey()</h3>
+
+<p>
+Get the encryption key</p>
+
+
+
+
+<h3 id="getKeySize()">getKeySize()</h3>
+
+<p>
+Get the maximum key size for the selected cipher and mode of operation</p>
+
+
+
+
+<h3 id="getMode()">getMode()</h3>
+
+<p>
+Get the cipher mode</p>
+
+
+
+
+<h3 id="getOriginalSalt()">getOriginalSalt()</h3>
+
+<p>
+Get the original salt value</p>
+
+
+
+
+<h3 id="getPadding()">getPadding()</h3>
+
+<p>
+Get the padding object</p>
+
+
+
+
+<h3 id="getPaddingPluginManager()">getPaddingPluginManager()</h3>
+
+<p>
+Returns the padding plugin manager.  If it doesn't exist it's created.</p>
+
+
+
+
+<h3 id="getSalt()">getSalt()</h3>
+
+<p>
+Get the salt (IV) according to the size requested by the algorithm</p>
+
+
+
+
+<h3 id="getSaltSize()">getSaltSize()</h3>
+
+<p>
+Get the salt (IV) size</p>
+
+
+
+
+<h3 id="getSupportedAlgorithms()">getSupportedAlgorithms()</h3>
+
+<p>
+Get the supported algorithms</p>
+
+
+
+
+<h3 id="getSupportedModes()">getSupportedModes()</h3>
+
+<p>
+Get all supported encryption modes</p>
+
+
+
+
+<h3 id="setAlgorithm()">setAlgorithm()</h3>
+
+<p>
+Set the encryption algorithm (cipher)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $algo        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setKey()">setKey()</h3>
+
+<p>
+Set the encryption key
+If the key is longer than maximum supported, it will be truncated by getKey().</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setMode()">setMode()</h3>
+
+<p>
+Set the cipher mode</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $mode        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set default options</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPadding()">setPadding()</h3>
+
+<p>
+Set the padding object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $padding        </td>
+        <td>
+            \Padding\PaddingInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPaddingPluginManager()">setPaddingPluginManager()</h3>
+
+<p>
+Set the padding plugin manager</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugins        </td>
+        <td>
+            string|\ContainerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setSalt()">setSalt()</h3>
+
+<p>
+Set the salt (IV)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $salt        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../index.html">Components</a>
-    >>        <a href="../../../../components/zendframework/zend-modulemanager.html">Component zendframework/zend-modulemanager</a>
-    >>        <a href="../../../../classes/Zend/ModuleManager/Listener/ConfigListener.html">Class ConfigListener</a>
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-modulemanager.html">zendframework/zend-modulemanager</a>
+    &rarr;        <a href="../../../../classes/Zend/ModuleManager/Listener/ConfigListener.html">Class ConfigListener</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -56,23 +66,28 @@
         <td>
             Zend\ModuleManager\Listener\ConfigListener        </td>
     </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\ModuleManager\Listener\AbstractListener.html">AbstractListener</a>                    </td>
+    </tr>
             <tr>
         <td>
             Implements:
         </td>
         <td>
-                        ConfigMergerInterface,
-                        ListenerAggregateInterface,
-                    </td>
+                                    <a href="../../Zend\ModuleManager\Listener\ConfigMergerInterface.html">ConfigMergerInterface</a>,                         <a href="../../Zend\EventManager\ListenerAggregateInterface.html">ListenerAggregateInterface</a>                    </td>
     </tr>
     </table>
 
 <h2>Description</h2>
 
 <div class="description">
-    Config listener    
+    <p>
+    Config listener    </p>
     </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -80,92 +95,512 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#__construct()">
             __construct()
+            </a>
         </td>
         <td>
             __construct        </td>
-    </tr>
-        <tr>
         <td>
-            attach()
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
         </td>
-        <td>
-            {@inheritDoc}        </td>
     </tr>
         <tr>
         <td>
-            onloadModulesPre()
-        </td>
-        <td>
-            Pass self to the ModuleEvent object early so everyone has access.        </td>
-    </tr>
-        <tr>
-        <td>
-            onLoadModule()
-        </td>
-        <td>
-            Merge the config for each module        </td>
-    </tr>
-        <tr>
-        <td>
-            onMergeConfig()
-        </td>
-        <td>
-            Merge all config files matched by the given glob()s        </td>
-    </tr>
-        <tr>
-        <td>
-            onLoadModules()
-        </td>
-        <td>
-            Optionally cache merged config        </td>
-    </tr>
-        <tr>
-        <td>
-            getMergedConfig()
-        </td>
-        <td>
-            getMergedConfig        </td>
-    </tr>
-        <tr>
-        <td>
-            setMergedConfig()
-        </td>
-        <td>
-            setMergedConfig        </td>
-    </tr>
-        <tr>
-        <td>
-            addConfigGlobPaths()
-        </td>
-        <td>
-            Add an array of glob paths of config files to merge after loading modules        </td>
-    </tr>
-        <tr>
-        <td>
+            <a href="#addConfigGlobPath()">
             addConfigGlobPath()
+            </a>
         </td>
         <td>
             Add a glob path of config files to merge after loading modules        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
     </tr>
         <tr>
         <td>
-            addConfigStaticPaths()
+            <a href="#addConfigGlobPaths()">
+            addConfigGlobPaths()
+            </a>
         </td>
         <td>
-            Add an array of static paths of config files to merge after loading modules        </td>
+            Add an array of glob paths of config files to merge after loading modules        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#addConfigStaticPath()">
             addConfigStaticPath()
+            </a>
         </td>
         <td>
             Add a static path of config files to merge after loading modules        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addConfigStaticPaths()">
+            addConfigStaticPaths()
+            </a>
+        </td>
+        <td>
+            Add an array of static paths of config files to merge after loading modules        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#attach()">
+            attach()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMergedConfig()">
+            getMergedConfig()
+            </a>
+        </td>
+        <td>
+            getMergedConfig        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOptions()">
+            getOptions()
+            </a>
+        </td>
+        <td>
+            Get options.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\AbstractListener.html">
+            AbstractListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#onLoadModule()">
+            onLoadModule()
+            </a>
+        </td>
+        <td>
+            Merge the config for each module        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#onLoadModules()">
+            onLoadModules()
+            </a>
+        </td>
+        <td>
+            Optionally cache merged config        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#onMergeConfig()">
+            onMergeConfig()
+            </a>
+        </td>
+        <td>
+            Merge all config files matched by the given glob()s        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#onloadModulesPre()">
+            onloadModulesPre()
+            </a>
+        </td>
+        <td>
+            Pass self to the ModuleEvent object early so everyone has access.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMergedConfig()">
+            setMergedConfig()
+            </a>
+        </td>
+        <td>
+            setMergedConfig        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\ConfigListener.html">
+            ConfigListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set options.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\AbstractListener.html">
+            AbstractListener            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+__construct</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            \ListenerOptions        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addConfigGlobPath()">addConfigGlobPath()</h3>
+
+<p>
+Add a glob path of config files to merge after loading modules</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $globPath        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addConfigGlobPaths()">addConfigGlobPaths()</h3>
+
+<p>
+Add an array of glob paths of config files to merge after loading modules</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $globPaths        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addConfigStaticPath()">addConfigStaticPath()</h3>
+
+<p>
+Add a static path of config files to merge after loading modules</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $staticPath        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addConfigStaticPaths()">addConfigStaticPaths()</h3>
+
+<p>
+Add an array of static paths of config files to merge after loading modules</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $staticPaths        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getMergedConfig()">getMergedConfig()</h3>
+
+<p>
+getMergedConfig</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $returnConfigAsObject        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getOptions()">getOptions()</h3>
+
+<p>
+Get options.</p>
+
+
+
+
+<h3 id="onLoadModule()">onLoadModule()</h3>
+
+<p>
+Merge the config for each module</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \ModuleEvent        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="onLoadModules()">onLoadModules()</h3>
+
+<p>
+Optionally cache merged config</p>
+
+<p>This is only attached if config is not cached.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \ModuleEvent        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="onMergeConfig()">onMergeConfig()</h3>
+
+<p>
+Merge all config files matched by the given glob()s</p>
+
+<p>This is only attached if config is not cached.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \ModuleEvent        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="onloadModulesPre()">onloadModulesPre()</h3>
+
+<p>
+Pass self to the ModuleEvent object early so everyone has access.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \ModuleEvent        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setMergedConfig()">setMergedConfig()</h3>
+
+<p>
+setMergedConfig</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set options.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            \ListenerOptions        </td>
+        <td>
+            the        </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -239,7 +674,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

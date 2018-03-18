@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\View\Helper\Navigation -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-view.html">zendframework/zend-view</a>
+    &rarr;        <a href="../../../../classes/Zend/View/Helper/Navigation.html">Class Navigation</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Navigation</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\View\Helper\Navigation        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">AbstractHelper</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Proxy helper for retrieving navigational helpers and forwarding calls    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__call()">
+            __call()
+            </a>
+        </td>
+        <td>
+            Magic overload: Proxy to other navigation helpers or the container        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__invoke()">
+            __invoke()
+            </a>
+        </td>
+        <td>
+            Helper entry point        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Magic overload: Proxy to {@link render()}.        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#accept()">
+            accept()
+            </a>
+        </td>
+        <td>
+            Determines whether a page should be accepted when iterating        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#findActive()">
+            findActive()
+            </a>
+        </td>
+        <td>
+            Finds the deepest active page in the given container        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#findHelper()">
+            findHelper()
+            </a>
+        </td>
+        <td>
+            Returns the helper matching $proxy        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAcl()">
+            getAcl()
+            </a>
+        </td>
+        <td>
+            Returns ACL or null if it isn't set using {@link setAcl()} or
+{@link setDefaultAcl()}        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getContainer()">
+            getContainer()
+            </a>
+        </td>
+        <td>
+            Returns the navigation container helper operates on by default        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultProxy()">
+            getDefaultProxy()
+            </a>
+        </td>
+        <td>
+            Returns the default proxy to use in {@link render()}        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEventManager()">
+            getEventManager()
+            </a>
+        </td>
+        <td>
+            Get the event manager, if present.        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getIndent()">
+            getIndent()
+            </a>
+        </td>
+        <td>
+            Returns indentation        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getInjectAcl()">
+            getInjectAcl()
+            </a>
+        </td>
+        <td>
+            Returns whether ACL should be injected when proxying        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getInjectContainer()">
+            getInjectContainer()
+            </a>
+        </td>
+        <td>
+            Returns whether container should be injected when proxying        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getInjectTranslator()">
+            getInjectTranslator()
+            </a>
+        </td>
+        <td>
+            Returns whether translator should be injected when proxying        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMaxDepth()">
+            getMaxDepth()
+            </a>
+        </td>
+        <td>
+            Returns maximum depth a page can have to be included when rendering        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMinDepth()">
+            getMinDepth()
+            </a>
+        </td>
+        <td>
+            Returns minimum depth a page must have to be included when rendering        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPluginManager()">
+            getPluginManager()
+            </a>
+        </td>
+        <td>
+            Retrieve plugin loader for navigation helpers        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRenderInvisible()">
+            getRenderInvisible()
+            </a>
+        </td>
+        <td>
+            Return renderInvisible flag        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRole()">
+            getRole()
+            </a>
+        </td>
+        <td>
+            Returns ACL role to use when iterating pages, or null if it isn't set
+using {@link setRole()} or {@link setDefaultRole()}        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getServiceLocator()">
+            getServiceLocator()
+            </a>
+        </td>
+        <td>
+            Get the service locator.        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUseAcl()">
+            getUseAcl()
+            </a>
+        </td>
+        <td>
+            Returns whether ACL should be used        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasAcl()">
+            hasAcl()
+            </a>
+        </td>
+        <td>
+            Checks if the helper has an ACL instance        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasContainer()">
+            hasContainer()
+            </a>
+        </td>
+        <td>
+            Checks if the helper has a container        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasRole()">
+            hasRole()
+            </a>
+        </td>
+        <td>
+            Checks if the helper has an ACL role        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#htmlify()">
+            htmlify()
+            </a>
+        </td>
+        <td>
+            Returns an HTML string containing an 'a' element for the given page        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#render()">
+            render()
+            </a>
+        </td>
+        <td>
+            Renders helper        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAcl()">
+            setAcl()
+            </a>
+        </td>
+        <td>
+            Sets ACL to use when iterating pages        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setContainer()">
+            setContainer()
+            </a>
+        </td>
+        <td>
+            Sets navigation container the helper operates on by default        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultAcl()">
+            setDefaultAcl()
+            </a>
+        </td>
+        <td>
+            Sets default ACL to use if another ACL is not explicitly set        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultProxy()">
+            setDefaultProxy()
+            </a>
+        </td>
+        <td>
+            Sets the default proxy to use in {@link render()}        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultRole()">
+            setDefaultRole()
+            </a>
+        </td>
+        <td>
+            Sets default ACL role(s) to use when iterating pages if not explicitly
+set later with {@link setRole()}        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEventManager()">
+            setEventManager()
+            </a>
+        </td>
+        <td>
+            Set the event manager.        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setIndent()">
+            setIndent()
+            </a>
+        </td>
+        <td>
+            Set the indentation string for using in {@link render()}, optionally a
+number of spaces to indent with        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setInjectAcl()">
+            setInjectAcl()
+            </a>
+        </td>
+        <td>
+            Sets whether ACL should be injected when proxying        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setInjectContainer()">
+            setInjectContainer()
+            </a>
+        </td>
+        <td>
+            Sets whether container should be injected when proxying        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setInjectTranslator()">
+            setInjectTranslator()
+            </a>
+        </td>
+        <td>
+            Sets whether translator should be injected when proxying        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMaxDepth()">
+            setMaxDepth()
+            </a>
+        </td>
+        <td>
+            Sets the maximum depth a page can have to be included when rendering        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMinDepth()">
+            setMinDepth()
+            </a>
+        </td>
+        <td>
+            Sets the minimum depth a page must have to be included when rendering        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPluginManager()">
+            setPluginManager()
+            </a>
+        </td>
+        <td>
+            Set manager for retrieving navigation helpers        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRenderInvisible()">
+            setRenderInvisible()
+            </a>
+        </td>
+        <td>
+            Render invisible items?        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRole()">
+            setRole()
+            </a>
+        </td>
+        <td>
+            Sets ACL role(s) to use when iterating pages        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setServiceLocator()">
+            setServiceLocator()
+            </a>
+        </td>
+        <td>
+            Set the service locator.        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUseAcl()">
+            setUseAcl()
+            </a>
+        </td>
+        <td>
+            Sets whether ACL should be used        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation\AbstractHelper.html">
+            AbstractHelper            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setView()">
+            setView()
+            </a>
+        </td>
+        <td>
+            Set the View object        </td>
+        <td>
+            <a href="../../Zend\View\Helper\Navigation.html">
+            Navigation            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__call()">__call()</h3>
+
+<p>
+Magic overload: Proxy to other navigation helpers or the container</p>
+
+<p>Examples of usage from a view script or layout:
+<code>
+// proxy to Menu helper and render container:
+echo $this-&gt;navigation()-&gt;menu();</p>
+<p>// proxy to Breadcrumbs helper and set indentation:
+$this-&gt;navigation()-&gt;breadcrumbs()-&gt;setIndent(8);</p>
+<p>// proxy to container and find all pages with 'blog' route:
+$blogPages = $this-&gt;navigation()-&gt;findAllByRoute('blog');
+</code></p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+            helper        </td>
+    </tr>
+        <tr>
+        <td>
+            $arguments        </td>
+        <td>
+            array        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+
+<h3 id="__invoke()">__invoke()</h3>
+
+<p>
+Helper entry point</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+            string|\AbstractContainer        </td>
+        <td>
+            container        </td>
+    </tr>
+    </table>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Magic overload: Proxy to {@link render()}.</p>
+
+<p>This method will trigger an E_USER_ERROR if rendering the helper causes
+an exception to be thrown.</p>
+<p>Implements {@link HelperInterface::__toString()}.</p>
+
+
+
+<h3 id="accept()">accept()</h3>
+
+<p>
+Determines whether a page should be accepted when iterating</p>
+
+<p>Default listener may be 'overridden' by attaching listener to 'isAllowed'
+method. Listener must be 'short circuited' if overriding default ACL
+listener.</p>
+<p>Rules:</p>
+<ul>
+<li>If a page is not visible it is not accepted, unless RenderInvisible has
+been set to true</li>
+<li>If $useAcl is true (default is true):<ul>
+<li>Page is accepted if listener returns true, otherwise false</li>
+</ul>
+</li>
+<li>If page is accepted and $recursive is true, the page
+will not be accepted if it is the descendant of a non-accepted page</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $page        </td>
+        <td>
+            \AbstractPage        </td>
+        <td>
+            page        </td>
+    </tr>
+        <tr>
+        <td>
+            $recursive        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+
+<h3 id="findActive()">findActive()</h3>
+
+<p>
+Finds the deepest active page in the given container</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+            \Navigation\AbstractContainer        </td>
+        <td>
+            container        </td>
+    </tr>
+        <tr>
+        <td>
+            $minDepth        </td>
+        <td>
+            int|null        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+        <tr>
+        <td>
+            $maxDepth        </td>
+        <td>
+            int|null        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+
+<h3 id="findHelper()">findHelper()</h3>
+
+<p>
+Returns the helper matching $proxy</p>
+
+<p>The helper must implement the interface
+{@link Zend\View\Helper\Navigation\Helper}.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $proxy        </td>
+        <td>
+            string        </td>
+        <td>
+            helper        </td>
+    </tr>
+        <tr>
+        <td>
+            $strict        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getAcl()">getAcl()</h3>
+
+<p>
+Returns ACL or null if it isn't set using {@link setAcl()} or
+{@link setDefaultAcl()}</p>
+
+<p>Implements {@link HelperInterface::getAcl()}.</p>
+
+
+
+<h3 id="getContainer()">getContainer()</h3>
+
+<p>
+Returns the navigation container helper operates on by default</p>
+
+<p>Implements {@link HelperInterface::getContainer()}.</p>
+<p>If no container is set, a new container will be instantiated and
+stored in the helper.</p>
+
+
+
+<h3 id="getDefaultProxy()">getDefaultProxy()</h3>
+
+<p>
+Returns the default proxy to use in {@link render()}</p>
+
+
+
+
+<h3 id="getEventManager()">getEventManager()</h3>
+
+<p>
+Get the event manager, if present.</p>
+
+<p>Internally, the helper will lazy-load an EM instance the first time it
+requires one, but ideally it should be injected during instantiation.</p>
+
+
+
+<h3 id="getIndent()">getIndent()</h3>
+
+<p>
+Returns indentation</p>
+
+
+
+
+<h3 id="getInjectAcl()">getInjectAcl()</h3>
+
+<p>
+Returns whether ACL should be injected when proxying</p>
+
+
+
+
+<h3 id="getInjectContainer()">getInjectContainer()</h3>
+
+<p>
+Returns whether container should be injected when proxying</p>
+
+
+
+
+<h3 id="getInjectTranslator()">getInjectTranslator()</h3>
+
+<p>
+Returns whether translator should be injected when proxying</p>
+
+
+
+
+<h3 id="getMaxDepth()">getMaxDepth()</h3>
+
+<p>
+Returns maximum depth a page can have to be included when rendering</p>
+
+
+
+
+<h3 id="getMinDepth()">getMinDepth()</h3>
+
+<p>
+Returns minimum depth a page must have to be included when rendering</p>
+
+
+
+
+<h3 id="getPluginManager()">getPluginManager()</h3>
+
+<p>
+Retrieve plugin loader for navigation helpers</p>
+
+<p>Lazy-loads an instance of Navigation\HelperLoader if none currently
+registered.</p>
+
+
+
+<h3 id="getRenderInvisible()">getRenderInvisible()</h3>
+
+<p>
+Return renderInvisible flag</p>
+
+
+
+
+<h3 id="getRole()">getRole()</h3>
+
+<p>
+Returns ACL role to use when iterating pages, or null if it isn't set
+using {@link setRole()} or {@link setDefaultRole()}</p>
+
+<p>Implements {@link HelperInterface::getRole()}.</p>
+
+
+
+<h3 id="getServiceLocator()">getServiceLocator()</h3>
+
+<p>
+Get the service locator.</p>
+
+<p>Used internally to pull named navigation containers to render.</p>
+
+
+
+<h3 id="getUseAcl()">getUseAcl()</h3>
+
+<p>
+Returns whether ACL should be used</p>
+
+<p>Implements {@link HelperInterface::getUseAcl()}.</p>
+
+
+
+<h3 id="hasAcl()">hasAcl()</h3>
+
+<p>
+Checks if the helper has an ACL instance</p>
+
+<p>Implements {@link HelperInterface::hasAcl()}.</p>
+
+
+
+<h3 id="hasContainer()">hasContainer()</h3>
+
+<p>
+Checks if the helper has a container</p>
+
+<p>Implements {@link HelperInterface::hasContainer()}.</p>
+
+
+
+<h3 id="hasRole()">hasRole()</h3>
+
+<p>
+Checks if the helper has an ACL role</p>
+
+<p>Implements {@link HelperInterface::hasRole()}.</p>
+
+
+
+<h3 id="htmlify()">htmlify()</h3>
+
+<p>
+Returns an HTML string containing an 'a' element for the given page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $page        </td>
+        <td>
+            \AbstractPage        </td>
+        <td>
+            page        </td>
+    </tr>
+    </table>
+
+
+<h3 id="render()">render()</h3>
+
+<p>
+Renders helper</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+            \AbstractContainer        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setAcl()">setAcl()</h3>
+
+<p>
+Sets ACL to use when iterating pages</p>
+
+<p>Implements {@link HelperInterface::setAcl()}.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $acl        </td>
+        <td>
+            \Acl\AclInterface        </td>
+        <td>
+            ACL        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setContainer()">setContainer()</h3>
+
+<p>
+Sets navigation container the helper operates on by default</p>
+
+<p>Implements {@link HelperInterface::setContainer()}.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+            string|\Navigation\AbstractContainer        </td>
+        <td>
+            Default        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setDefaultAcl()">setDefaultAcl()</h3>
+
+<p>
+Sets default ACL to use if another ACL is not explicitly set</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $acl        </td>
+        <td>
+            \Acl\AclInterface        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setDefaultProxy()">setDefaultProxy()</h3>
+
+<p>
+Sets the default proxy to use in {@link render()}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $proxy        </td>
+        <td>
+            string        </td>
+        <td>
+            default        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setDefaultRole()">setDefaultRole()</h3>
+
+<p>
+Sets default ACL role(s) to use when iterating pages if not explicitly
+set later with {@link setRole()}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $role        </td>
+        <td>
+            mixed        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setEventManager()">setEventManager()</h3>
+
+<p>
+Set the event manager.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+            \EventManagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setIndent()">setIndent()</h3>
+
+<p>
+Set the indentation string for using in {@link render()}, optionally a
+number of spaces to indent with</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $indent        </td>
+        <td>
+            string|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setInjectAcl()">setInjectAcl()</h3>
+
+<p>
+Sets whether ACL should be injected when proxying</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $injectAcl        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setInjectContainer()">setInjectContainer()</h3>
+
+<p>
+Sets whether container should be injected when proxying</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $injectContainer        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setInjectTranslator()">setInjectTranslator()</h3>
+
+<p>
+Sets whether translator should be injected when proxying</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $injectTranslator        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setMaxDepth()">setMaxDepth()</h3>
+
+<p>
+Sets the maximum depth a page can have to be included when rendering</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $maxDepth        </td>
+        <td>
+            int        </td>
+        <td>
+            Default        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setMinDepth()">setMinDepth()</h3>
+
+<p>
+Sets the minimum depth a page must have to be included when rendering</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $minDepth        </td>
+        <td>
+            int        </td>
+        <td>
+            Default        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPluginManager()">setPluginManager()</h3>
+
+<p>
+Set manager for retrieving navigation helpers</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugins        </td>
+        <td>
+            \Navigation\PluginManager        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setRenderInvisible()">setRenderInvisible()</h3>
+
+<p>
+Render invisible items?</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $renderInvisible        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setRole()">setRole()</h3>
+
+<p>
+Sets ACL role(s) to use when iterating pages</p>
+
+<p>Implements {@link HelperInterface::setRole()}.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $role        </td>
+        <td>
+            mixed        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setServiceLocator()">setServiceLocator()</h3>
+
+<p>
+Set the service locator.</p>
+
+<p>Used internally to pull named navigation containers to render.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $serviceLocator        </td>
+        <td>
+            \ContainerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setUseAcl()">setUseAcl()</h3>
+
+<p>
+Sets whether ACL should be used</p>
+
+<p>Implements {@link HelperInterface::setUseAcl()}.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $useAcl        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setView()">setView()</h3>
+
+<p>
+Set the View object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $view        </td>
+        <td>
+            \Renderer        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

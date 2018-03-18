@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Http\Request -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-http.html">zendframework/zend-http</a>
+    &rarr;        <a href="../../../classes/Zend/Http/Request.html">Class Request</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Request</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Http\Request        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Http\AbstractMessage.html">AbstractMessage</a>                    </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../Zend\Stdlib\RequestInterface.html">RequestInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    HTTP Request    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Allow PHP casting of this object        </td>
+        <td>
+            <a href="../../Zend\Http\AbstractMessage.html">
+            AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fromString()">
+            fromString()
+            </a>
+        </td>
+        <td>
+            A factory that produces a Request object from a well-formed Http Request string        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAllowCustomMethods()">
+            getAllowCustomMethods()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCookie()">
+            getCookie()
+            </a>
+        </td>
+        <td>
+            Return the Cookie header, this is the same as calling $request->getHeaders()->get('Cookie');        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFiles()">
+            getFiles()
+            </a>
+        </td>
+        <td>
+            Return the parameter container responsible for file parameters or a single file.        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeader()">
+            getHeader()
+            </a>
+        </td>
+        <td>
+            Get all headers of a certain name/type.        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeaders()">
+            getHeaders()
+            </a>
+        </td>
+        <td>
+            Return the header container responsible for headers or all headers of a certain name/type        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMethod()">
+            getMethod()
+            </a>
+        </td>
+        <td>
+            Return the method for this request        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPost()">
+            getPost()
+            </a>
+        </td>
+        <td>
+            Return the parameter container responsible for post parameters or a single post parameter.        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getQuery()">
+            getQuery()
+            </a>
+        </td>
+        <td>
+            Return the parameter container responsible for query parameters or a single query parameter        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUri()">
+            getUri()
+            </a>
+        </td>
+        <td>
+            Return the URI for this request object        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUriString()">
+            getUriString()
+            </a>
+        </td>
+        <td>
+            Return the URI for this request object as a string        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getVersion()">
+            getVersion()
+            </a>
+        </td>
+        <td>
+            Return the HTTP version for this request        </td>
+        <td>
+            <a href="../../Zend\Http\AbstractMessage.html">
+            AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isConnect()">
+            isConnect()
+            </a>
+        </td>
+        <td>
+            Is this a CONNECT method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isDelete()">
+            isDelete()
+            </a>
+        </td>
+        <td>
+            Is this a DELETE method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isFlashRequest()">
+            isFlashRequest()
+            </a>
+        </td>
+        <td>
+            Is this a Flash request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isGet()">
+            isGet()
+            </a>
+        </td>
+        <td>
+            Is this a GET method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isHead()">
+            isHead()
+            </a>
+        </td>
+        <td>
+            Is this a HEAD method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isOptions()">
+            isOptions()
+            </a>
+        </td>
+        <td>
+            Is this an OPTIONS method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isPatch()">
+            isPatch()
+            </a>
+        </td>
+        <td>
+            Is this a PATCH method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isPost()">
+            isPost()
+            </a>
+        </td>
+        <td>
+            Is this a POST method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isPropFind()">
+            isPropFind()
+            </a>
+        </td>
+        <td>
+            Is this a PROPFIND method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isPut()">
+            isPut()
+            </a>
+        </td>
+        <td>
+            Is this a PUT method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isTrace()">
+            isTrace()
+            </a>
+        </td>
+        <td>
+            Is this a TRACE method request?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isXmlHttpRequest()">
+            isXmlHttpRequest()
+            </a>
+        </td>
+        <td>
+            Is the request a Javascript XMLHttpRequest?        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#renderRequestLine()">
+            renderRequestLine()
+            </a>
+        </td>
+        <td>
+            Return the formatted request line (first line) for this http request        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAllowCustomMethods()">
+            setAllowCustomMethods()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFiles()">
+            setFiles()
+            </a>
+        </td>
+        <td>
+            Provide an alternate Parameter Container implementation for file parameters in this object,
+(this is NOT the primary API for value setting, for that see getFiles())        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHeaders()">
+            setHeaders()
+            </a>
+        </td>
+        <td>
+            Provide an alternate Parameter Container implementation for headers in this object,
+(this is NOT the primary API for value setting, for that see getHeaders())        </td>
+        <td>
+            <a href="../../Zend\Http\AbstractMessage.html">
+            AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMethod()">
+            setMethod()
+            </a>
+        </td>
+        <td>
+            Set the method for this request        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPost()">
+            setPost()
+            </a>
+        </td>
+        <td>
+            Provide an alternate Parameter Container implementation for post parameters in this object,
+(this is NOT the primary API for value setting, for that see getPost())        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setQuery()">
+            setQuery()
+            </a>
+        </td>
+        <td>
+            Provide an alternate Parameter Container implementation for query parameters in this object,
+(this is NOT the primary API for value setting, for that see getQuery())        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUri()">
+            setUri()
+            </a>
+        </td>
+        <td>
+            Set the URI/URL for this request, this can be a string or an instance of Zend\Uri\Http        </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setVersion()">
+            setVersion()
+            </a>
+        </td>
+        <td>
+            Set the HTTP version for this object, one of 1.0 or 1.1
+(AbstractMessage::VERSION_10, AbstractMessage::VERSION_11)        </td>
+        <td>
+            <a href="../../Zend\Http\AbstractMessage.html">
+            AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toString()">
+            toString()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Http\Request.html">
+            Request            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Allow PHP casting of this object</p>
+
+
+
+
+<h3 id="fromString()">fromString()</h3>
+
+<p>
+A factory that produces a Request object from a well-formed Http Request string</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $string        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $allowCustomMethods        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getAllowCustomMethods()">getAllowCustomMethods()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getCookie()">getCookie()</h3>
+
+<p>
+Return the Cookie header, this is the same as calling $request->getHeaders()->get('Cookie');</p>
+
+
+
+
+<h3 id="getFiles()">getFiles()</h3>
+
+<p>
+Return the parameter container responsible for file parameters or a single file.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string|null        </td>
+        <td>
+            Parameter        </td>
+    </tr>
+        <tr>
+        <td>
+            $default        </td>
+        <td>
+            mixed|null        </td>
+        <td>
+            Default        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getHeader()">getHeader()</h3>
+
+<p>
+Get all headers of a certain name/type.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string|null        </td>
+        <td>
+            Header        </td>
+    </tr>
+        <tr>
+        <td>
+            $default        </td>
+        <td>
+            mixed|null        </td>
+        <td>
+            Default        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getHeaders()">getHeaders()</h3>
+
+<p>
+Return the header container responsible for headers or all headers of a certain name/type</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string|null        </td>
+        <td>
+            Header        </td>
+    </tr>
+        <tr>
+        <td>
+            $default        </td>
+        <td>
+            mixed|null        </td>
+        <td>
+            Default        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getMethod()">getMethod()</h3>
+
+<p>
+Return the method for this request</p>
+
+
+
+
+<h3 id="getPost()">getPost()</h3>
+
+<p>
+Return the parameter container responsible for post parameters or a single post parameter.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string|null        </td>
+        <td>
+            Parameter        </td>
+    </tr>
+        <tr>
+        <td>
+            $default        </td>
+        <td>
+            mixed|null        </td>
+        <td>
+            Default        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getQuery()">getQuery()</h3>
+
+<p>
+Return the parameter container responsible for query parameters or a single query parameter</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string|null        </td>
+        <td>
+            Parameter        </td>
+    </tr>
+        <tr>
+        <td>
+            $default        </td>
+        <td>
+            mixed|null        </td>
+        <td>
+            Default        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getUri()">getUri()</h3>
+
+<p>
+Return the URI for this request object</p>
+
+
+
+
+<h3 id="getUriString()">getUriString()</h3>
+
+<p>
+Return the URI for this request object as a string</p>
+
+
+
+
+<h3 id="getVersion()">getVersion()</h3>
+
+<p>
+Return the HTTP version for this request</p>
+
+
+
+
+<h3 id="isConnect()">isConnect()</h3>
+
+<p>
+Is this a CONNECT method request?</p>
+
+
+
+
+<h3 id="isDelete()">isDelete()</h3>
+
+<p>
+Is this a DELETE method request?</p>
+
+
+
+
+<h3 id="isFlashRequest()">isFlashRequest()</h3>
+
+<p>
+Is this a Flash request?</p>
+
+
+
+
+<h3 id="isGet()">isGet()</h3>
+
+<p>
+Is this a GET method request?</p>
+
+
+
+
+<h3 id="isHead()">isHead()</h3>
+
+<p>
+Is this a HEAD method request?</p>
+
+
+
+
+<h3 id="isOptions()">isOptions()</h3>
+
+<p>
+Is this an OPTIONS method request?</p>
+
+
+
+
+<h3 id="isPatch()">isPatch()</h3>
+
+<p>
+Is this a PATCH method request?</p>
+
+
+
+
+<h3 id="isPost()">isPost()</h3>
+
+<p>
+Is this a POST method request?</p>
+
+
+
+
+<h3 id="isPropFind()">isPropFind()</h3>
+
+<p>
+Is this a PROPFIND method request?</p>
+
+
+
+
+<h3 id="isPut()">isPut()</h3>
+
+<p>
+Is this a PUT method request?</p>
+
+
+
+
+<h3 id="isTrace()">isTrace()</h3>
+
+<p>
+Is this a TRACE method request?</p>
+
+
+
+
+<h3 id="isXmlHttpRequest()">isXmlHttpRequest()</h3>
+
+<p>
+Is the request a Javascript XMLHttpRequest?</p>
+
+<p>Should work with Prototype/Script.aculo.us, possibly others.</p>
+
+
+
+<h3 id="renderRequestLine()">renderRequestLine()</h3>
+
+<p>
+Return the formatted request line (first line) for this http request</p>
+
+
+
+
+<h3 id="setAllowCustomMethods()">setAllowCustomMethods()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $strictMethods        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setFiles()">setFiles()</h3>
+
+<p>
+Provide an alternate Parameter Container implementation for file parameters in this object,
+(this is NOT the primary API for value setting, for that see getFiles())</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $files        </td>
+        <td>
+            \ParametersInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setHeaders()">setHeaders()</h3>
+
+<p>
+Provide an alternate Parameter Container implementation for headers in this object,
+(this is NOT the primary API for value setting, for that see getHeaders())</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $headers        </td>
+        <td>
+            \Headers        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setMethod()">setMethod()</h3>
+
+<p>
+Set the method for this request</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPost()">setPost()</h3>
+
+<p>
+Provide an alternate Parameter Container implementation for post parameters in this object,
+(this is NOT the primary API for value setting, for that see getPost())</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $post        </td>
+        <td>
+            \Zend\Stdlib\ParametersInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setQuery()">setQuery()</h3>
+
+<p>
+Provide an alternate Parameter Container implementation for query parameters in this object,
+(this is NOT the primary API for value setting, for that see getQuery())</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $query        </td>
+        <td>
+            \Zend\Stdlib\ParametersInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setUri()">setUri()</h3>
+
+<p>
+Set the URI/URL for this request, this can be a string or an instance of Zend\Uri\Http</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|\HttpUri        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setVersion()">setVersion()</h3>
+
+<p>
+Set the HTTP version for this object, one of 1.0 or 1.1
+(AbstractMessage::VERSION_10, AbstractMessage::VERSION_11)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $version        </td>
+        <td>
+            string        </td>
+        <td>
+            (Must        </td>
+    </tr>
+    </table>
+
+
+<h3 id="toString()">toString()</h3>
+
+<p>
+</p>
+
+
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../index.html">Components</a>
-    >>        <a href="../../../components/zendframework/zend-modulemanager.html">Component zendframework/zend-modulemanager</a>
-    >>        <a href="../../../classes/Zend/ModuleManager/ModuleManagerInterface.html">Class ModuleManagerInterface</a>
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-modulemanager.html">zendframework/zend-modulemanager</a>
+    &rarr;        <a href="../../../classes/Zend/ModuleManager/ModuleManagerInterface.html">Class ModuleManagerInterface</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Interface 
@@ -61,17 +71,16 @@
             Extends:
         </td>
         <td>
-                        EventManagerAwareInterface,
-                    </td>
+                                    <a href="../../Zend\EventManager\EventManagerAwareInterface.html">EventManagerAwareInterface</a>                    </td>
     </tr>
         </table>
 
 <h2>Description</h2>
 
 <div class="description">
-    Module manager interface    
+    <p>
+    Module manager interface    </p>
     </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -79,43 +88,221 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
-            loadModules()
+            <a href="#getEventManager()">
+            getEventManager()
+            </a>
         </td>
         <td>
-            Load the provided modules.        </td>
-    </tr>
-        <tr>
+            Retrieve the event manager        </td>
         <td>
-            loadModule()
+            <a href="../../Zend\EventManager\EventsCapableInterface.html">
+            EventsCapableInterface            </a>
         </td>
-        <td>
-            Load a specific module by name.        </td>
     </tr>
         <tr>
         <td>
+            <a href="#getLoadedModules()">
             getLoadedModules()
+            </a>
         </td>
         <td>
             Get an array of the loaded modules.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\ModuleManagerInterface.html">
+            ModuleManagerInterface            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#getModules()">
             getModules()
+            </a>
         </td>
         <td>
             Get the array of module names that this manager should load.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\ModuleManagerInterface.html">
+            ModuleManagerInterface            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#loadModule()">
+            loadModule()
+            </a>
+        </td>
+        <td>
+            Load a specific module by name.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\ModuleManagerInterface.html">
+            ModuleManagerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#loadModules()">
+            loadModules()
+            </a>
+        </td>
+        <td>
+            Load the provided modules.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\ModuleManagerInterface.html">
+            ModuleManagerInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEventManager()">
+            setEventManager()
+            </a>
+        </td>
+        <td>
+            Inject an EventManager instance        </td>
+        <td>
+            <a href="../../Zend\EventManager\EventManagerAwareInterface.html">
+            EventManagerAwareInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setModules()">
             setModules()
+            </a>
         </td>
         <td>
             Set an array or Traversable of module names that this module manager should load.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\ModuleManagerInterface.html">
+            ModuleManagerInterface            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="getEventManager()">getEventManager()</h3>
+
+<p>
+Retrieve the event manager</p>
+
+<p>Lazy-loads an EventManager instance if none registered.</p>
+
+
+
+<h3 id="getLoadedModules()">getLoadedModules()</h3>
+
+<p>
+Get an array of the loaded modules.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $loadModules        </td>
+        <td>
+            bool        </td>
+        <td>
+            If        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getModules()">getModules()</h3>
+
+<p>
+Get the array of module names that this manager should load.</p>
+
+
+
+
+<h3 id="loadModule()">loadModule()</h3>
+
+<p>
+Load a specific module by name.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $moduleName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="loadModules()">loadModules()</h3>
+
+<p>
+Load the provided modules.</p>
+
+
+
+
+<h3 id="setEventManager()">setEventManager()</h3>
+
+<p>
+Inject an EventManager instance</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $eventManager        </td>
+        <td>
+            \EventManagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setModules()">setModules()</h3>
+
+<p>
+Set an array or Traversable of module names that this module manager should load.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $modules        </td>
+        <td>
+            mixed        </td>
+        <td>
+            array        </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -189,7 +376,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Captcha\Dumb -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-captcha.html">zendframework/zend-captcha</a>
+    &rarr;        <a href="../../../classes/Zend/Captcha/Dumb.html">Class Dumb</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Dumb</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Captcha\Dumb        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Captcha\AbstractWord.html">AbstractWord</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Example dumb word-based captcha    </p>
+    <p>Note that only rendering is necessary for word-based captcha</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#generate()">
+            generate()
+            </a>
+        </td>
+        <td>
+            Generate new session ID and new word        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHelperName()">
+            getHelperName()
+            </a>
+        </td>
+        <td>
+            Retrieve optional view helper name to use when rendering this captcha        </td>
+        <td>
+            <a href="../../Zend\Captcha\Dumb.html">
+            Dumb            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getId()">
+            getId()
+            </a>
+        </td>
+        <td>
+            Retrieve captcha ID        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLabel()">
+            getLabel()
+            </a>
+        </td>
+        <td>
+            Retrieve the label for the CAPTCHA        </td>
+        <td>
+            <a href="../../Zend\Captcha\Dumb.html">
+            Dumb            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getName()">
+            getName()
+            </a>
+        </td>
+        <td>
+            Get name        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOptions()">
+            getOptions()
+            </a>
+        </td>
+        <td>
+            Retrieve options representing object state        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSession()">
+            getSession()
+            </a>
+        </td>
+        <td>
+            Get session object        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSessionClass()">
+            getSessionClass()
+            </a>
+        </td>
+        <td>
+            Retrieve session class to utilize        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTimeout()">
+            getTimeout()
+            </a>
+        </td>
+        <td>
+            Get session token timeout        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUseNumbers()">
+            getUseNumbers()
+            </a>
+        </td>
+        <td>
+            Numbers should be included in the pattern?        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWord()">
+            getWord()
+            </a>
+        </td>
+        <td>
+            Get captcha word        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWordlen()">
+            getWordlen()
+            </a>
+        </td>
+        <td>
+            Retrieve word length to use when generating captcha        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isValid()">
+            isValid()
+            </a>
+        </td>
+        <td>
+            Validate the word        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setKeepSession()">
+            setKeepSession()
+            </a>
+        </td>
+        <td>
+            Sets if session should be preserved on generate()        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLabel()">
+            setLabel()
+            </a>
+        </td>
+        <td>
+            Set the label for the CAPTCHA        </td>
+        <td>
+            <a href="../../Zend\Captcha\Dumb.html">
+            Dumb            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setName()">
+            setName()
+            </a>
+        </td>
+        <td>
+            Set name        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOption()">
+            setOption()
+            </a>
+        </td>
+        <td>
+            Set single option for the object        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set object state from options array        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSession()">
+            setSession()
+            </a>
+        </td>
+        <td>
+            Set session namespace object        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSessionClass()">
+            setSessionClass()
+            </a>
+        </td>
+        <td>
+            Set session class for persistence        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTimeout()">
+            setTimeout()
+            </a>
+        </td>
+        <td>
+            Set timeout for session token        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUseNumbers()">
+            setUseNumbers()
+            </a>
+        </td>
+        <td>
+            Set if numbers should be included in the pattern        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWordlen()">
+            setWordlen()
+            </a>
+        </td>
+        <td>
+            Set word length of captcha        </td>
+        <td>
+            <a href="../../Zend\Captcha\AbstractWord.html">
+            AbstractWord            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="generate()">generate()</h3>
+
+<p>
+Generate new session ID and new word</p>
+
+
+
+
+<h3 id="getHelperName()">getHelperName()</h3>
+
+<p>
+Retrieve optional view helper name to use when rendering this captcha</p>
+
+
+
+
+<h3 id="getId()">getId()</h3>
+
+<p>
+Retrieve captcha ID</p>
+
+
+
+
+<h3 id="getLabel()">getLabel()</h3>
+
+<p>
+Retrieve the label for the CAPTCHA</p>
+
+
+
+
+<h3 id="getName()">getName()</h3>
+
+<p>
+Get name</p>
+
+
+
+
+<h3 id="getOptions()">getOptions()</h3>
+
+<p>
+Retrieve options representing object state</p>
+
+
+
+
+<h3 id="getSession()">getSession()</h3>
+
+<p>
+Get session object</p>
+
+
+
+
+<h3 id="getSessionClass()">getSessionClass()</h3>
+
+<p>
+Retrieve session class to utilize</p>
+
+
+
+
+<h3 id="getTimeout()">getTimeout()</h3>
+
+<p>
+Get session token timeout</p>
+
+
+
+
+<h3 id="getUseNumbers()">getUseNumbers()</h3>
+
+<p>
+Numbers should be included in the pattern?</p>
+
+
+
+
+<h3 id="getWord()">getWord()</h3>
+
+<p>
+Get captcha word</p>
+
+
+
+
+<h3 id="getWordlen()">getWordlen()</h3>
+
+<p>
+Retrieve word length to use when generating captcha</p>
+
+
+
+
+<h3 id="isValid()">isValid()</h3>
+
+<p>
+Validate the word</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $context        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setKeepSession()">setKeepSession()</h3>
+
+<p>
+Sets if session should be preserved on generate()</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keepSession        </td>
+        <td>
+            bool        </td>
+        <td>
+            Should        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setLabel()">setLabel()</h3>
+
+<p>
+Set the label for the CAPTCHA</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $label        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setName()">setName()</h3>
+
+<p>
+Set name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOption()">setOption()</h3>
+
+<p>
+Set single option for the object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set object state from options array</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setSession()">setSession()</h3>
+
+<p>
+Set session namespace object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $session        </td>
+        <td>
+            \Container        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setSessionClass()">setSessionClass()</h3>
+
+<p>
+Set session class for persistence</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $sessionClass        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setTimeout()">setTimeout()</h3>
+
+<p>
+Set timeout for session token</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $ttl        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setUseNumbers()">setUseNumbers()</h3>
+
+<p>
+Set if numbers should be included in the pattern</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $useNumbers        </td>
+        <td>
+            bool        </td>
+        <td>
+            numbers        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setWordlen()">setWordlen()</h3>
+
+<p>
+Set word length of captcha</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $wordlen        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

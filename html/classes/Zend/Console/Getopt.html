@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Console\Getopt -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-console.html">zendframework/zend-console</a>
+    &rarr;        <a href="../../../classes/Zend/Console/Getopt.html">Class Getopt</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Getopt</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Console\Getopt        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Getopt is a class to parse options for command-line
+applications.    </p>
+    <p>Terminology:
+Argument: an element of the argv array.  This may be part of an option,
+  or it may be a non-option command-line argument.
+Flag: the letter or word set off by a '-' or '--'.  Example: in '--output filename',
+  '--output' is the flag.
+Parameter: the additional argument that is associated with the option.
+  Example: in '--output filename', the 'filename' is the parameter.
+Option: the combination of a flag and its parameter, if any.
+  Example: in '--output filename', the whole thing is the option.</p>
+<p>The following features are supported:</p>
+<ul>
+<li>Short flags like '-a'.  Short flags are preceded by a single
+dash.  Short flags may be clustered e.g. '-abc', which is the
+same as '-a' '-b' '-c'.</li>
+<li>Long flags like '--verbose'.  Long flags are preceded by a
+double dash.  Long flags may not be clustered.</li>
+<li>Options may have a parameter, e.g. '--output filename'.</li>
+<li>Parameters for long flags may also be set off with an equals sign,
+e.g. '--output=filename'.</li>
+<li>Parameters for long flags may be checked as string, word, or integer.</li>
+<li>Automatic generation of a helpful usage message.</li>
+<li>Signal end of options with '--'; subsequent arguments are treated
+as non-option arguments, even if they begin with '-'.</li>
+<li>Raise exception Zend\Console\Exception* in several cases
+when invalid flags or parameters are given.  Usage message is
+returned in the exception object.</li>
+</ul>
+<p>The format for specifying options uses a PHP associative array.
+The key is has the format of a list of pipe-separated flag names,
+followed by an optional '=' to indicate a required parameter or
+'-' to indicate an optional parameter.  Following that, the type
+of parameter may be specified as 's' for string, 'w' for word,
+or 'i' for integer.</p>
+<p>Examples:</p>
+<ul>
+<li>'user|username|u=s'  this means '--user' or '--username' or '-u'
+are synonyms, and the option requires a string parameter.</li>
+<li>'p=i'  this means '-p' requires an integer parameter.  No synonyms.</li>
+<li>'verbose|v-i'  this means '--verbose' or '-v' are synonyms, and
+they take an optional integer parameter.</li>
+<li>'help|h'  this means '--help' or '-h' are synonyms, and
+they take no parameter.</li>
+</ul>
+<p>The values in the associative array are strings that are used as
+brief descriptions of the options when printing a usage message.</p>
+<p>The simpler format for specifying options used by PHP's getopt()
+function is also supported.  This is similar to GNU getopt and shell
+getopt format.</p>
+<p>Example:  'abc:' means options '-a', '-b', and '-c'
+are legal, and the latter requires a string parameter.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            The constructor takes one to three parameters.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Return the state of the option seen on the command line of the
+current application invocation.  This function returns true, or the
+parameter to the option, if any.  If the option was not given,
+this function returns null.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__isset()">
+            __isset()
+            </a>
+        </td>
+        <td>
+            Test whether a given option has been seen.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__set()">
+            __set()
+            </a>
+        </td>
+        <td>
+            Set the value for a given option.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Return the current set of options and parameters seen as a string.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__unset()">
+            __unset()
+            </a>
+        </td>
+        <td>
+            Unset an option.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addArguments()">
+            addArguments()
+            </a>
+        </td>
+        <td>
+            Define additional command-line arguments.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addRules()">
+            addRules()
+            </a>
+        </td>
+        <td>
+            Define additional option rules.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getArguments()">
+            getArguments()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOption()">
+            getOption()
+            </a>
+        </td>
+        <td>
+            Return the state of the option seen on the command line of the
+current application invocation.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOptions()">
+            getOptions()
+            </a>
+        </td>
+        <td>
+            Return a list of options that have been seen in the current argv.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRemainingArgs()">
+            getRemainingArgs()
+            </a>
+        </td>
+        <td>
+            Return the arguments from the command-line following all options found.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUsageMessage()">
+            getUsageMessage()
+            </a>
+        </td>
+        <td>
+            Return a useful option reference, formatted for display in an
+error message.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#parse()">
+            parse()
+            </a>
+        </td>
+        <td>
+            Parse command-line arguments and find both long and short
+options.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAliases()">
+            setAliases()
+            </a>
+        </td>
+        <td>
+            Define aliases for options.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setArguments()">
+            setArguments()
+            </a>
+        </td>
+        <td>
+            Define full set of command-line arguments.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHelp()">
+            setHelp()
+            </a>
+        </td>
+        <td>
+            Define help messages for options.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOption()">
+            setOption()
+            </a>
+        </td>
+        <td>
+            Define one configuration option as a key/value pair.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptionCallback()">
+            setOptionCallback()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Define multiple configuration options from an associative array.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toArray()">
+            toArray()
+            </a>
+        </td>
+        <td>
+            Return the current set of options and parameters seen
+as an array of canonical options and parameters.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toJson()">
+            toJson()
+            </a>
+        </td>
+        <td>
+            Return the current set of options and parameters seen in Json format.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toString()">
+            toString()
+            </a>
+        </td>
+        <td>
+            Return the current set of options and parameters seen as a string.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toXml()">
+            toXml()
+            </a>
+        </td>
+        <td>
+            Return the current set of options and parameters seen in XML format.        </td>
+        <td>
+            <a href="../../Zend\Console\Getopt.html">
+            Getopt            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+The constructor takes one to three parameters.</p>
+
+<p>The first parameter is $rules, which may be a string for
+gnu-style format, or a structured array for Zend-style format.</p>
+<p>The second parameter is $argv, and it is optional.  If not
+specified, $argv is inferred from the global argv.</p>
+<p>The third parameter is an array of configuration parameters
+to control the behavior of this instance of Getopt; it is optional.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $rules        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $argv        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $getoptConfig        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Return the state of the option seen on the command line of the
+current application invocation.  This function returns true, or the
+parameter to the option, if any.  If the option was not given,
+this function returns null.</p>
+
+<p>The magic __get method works in the context of naming the option
+as a virtual member of this class.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__isset()">__isset()</h3>
+
+<p>
+Test whether a given option has been seen.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__set()">__set()</h3>
+
+<p>
+Set the value for a given option.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Return the current set of options and parameters seen as a string.</p>
+
+
+
+
+<h3 id="__unset()">__unset()</h3>
+
+<p>
+Unset an option.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addArguments()">addArguments()</h3>
+
+<p>
+Define additional command-line arguments.</p>
+
+<p>These are appended to those defined when the constructor was called.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $argv        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addRules()">addRules()</h3>
+
+<p>
+Define additional option rules.</p>
+
+<p>These are appended to the rules defined when the constructor was called.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $rules        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getArguments()">getArguments()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getOption()">getOption()</h3>
+
+<p>
+Return the state of the option seen on the command line of the
+current application invocation.</p>
+
+<p>This function returns true, or the parameter value to the option, if any.
+If the option was not given, this function returns false.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $flag        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getOptions()">getOptions()</h3>
+
+<p>
+Return a list of options that have been seen in the current argv.</p>
+
+
+
+
+<h3 id="getRemainingArgs()">getRemainingArgs()</h3>
+
+<p>
+Return the arguments from the command-line following all options found.</p>
+
+
+
+
+<h3 id="getUsageMessage()">getUsageMessage()</h3>
+
+<p>
+Return a useful option reference, formatted for display in an
+error message.</p>
+
+<p>Note that this usage information is provided in most Exceptions
+generated by this class.</p>
+
+
+
+<h3 id="parse()">parse()</h3>
+
+<p>
+Parse command-line arguments and find both long and short
+options.</p>
+
+<p>Also find option parameters, and remaining arguments after
+all options have been parsed.</p>
+
+
+
+<h3 id="setAliases()">setAliases()</h3>
+
+<p>
+Define aliases for options.</p>
+
+<p>The parameter $aliasMap is an associative array
+mapping option name (short or long) to an alias.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $aliasMap        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setArguments()">setArguments()</h3>
+
+<p>
+Define full set of command-line arguments.</p>
+
+<p>These replace any currently defined.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $argv        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setHelp()">setHelp()</h3>
+
+<p>
+Define help messages for options.</p>
+
+<p>The parameter $helpMap is an associative array
+mapping option name (short or long) to the help string.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $helpMap        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOption()">setOption()</h3>
+
+<p>
+Define one configuration option as a key/value pair.</p>
+
+<p>These are not program options, but properties to configure
+the behavior of Zend\Console\Getopt.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $configKey        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $configValue        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptionCallback()">setOptionCallback()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $option        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $callback        </td>
+        <td>
+            callable        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Define multiple configuration options from an associative array.</p>
+
+<p>These are not program options, but properties to configure
+the behavior of Zend\Console\Getopt.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $getoptConfig        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="toArray()">toArray()</h3>
+
+<p>
+Return the current set of options and parameters seen
+as an array of canonical options and parameters.</p>
+
+<p>Clusters have been expanded, and option aliases
+have been mapped to their primary option names.</p>
+
+
+
+<h3 id="toJson()">toJson()</h3>
+
+<p>
+Return the current set of options and parameters seen in Json format.</p>
+
+
+
+
+<h3 id="toString()">toString()</h3>
+
+<p>
+Return the current set of options and parameters seen as a string.</p>
+
+
+
+
+<h3 id="toXml()">toXml()</h3>
+
+<p>
+Return the current set of options and parameters seen in XML format.</p>
+
+
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

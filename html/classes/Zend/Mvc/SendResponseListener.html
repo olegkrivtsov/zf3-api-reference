@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../index.html">Components</a>
-    >>        <a href="../../../components/zendframework/zend-mvc.html">Component zendframework/zend-mvc</a>
-    >>        <a href="../../../classes/Zend/Mvc/SendResponseListener.html">Class SendResponseListener</a>
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-mvc.html">zendframework/zend-mvc</a>
+    &rarr;        <a href="../../../classes/Zend/Mvc/SendResponseListener.html">Class SendResponseListener</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -56,22 +66,28 @@
         <td>
             Zend\Mvc\SendResponseListener        </td>
     </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\EventManager\AbstractListenerAggregate.html">AbstractListenerAggregate</a>                    </td>
+    </tr>
             <tr>
         <td>
             Implements:
         </td>
         <td>
-                        EventManagerAwareInterface,
-                    </td>
+                                    <a href="../../Zend\EventManager\EventManagerAwareInterface.html">EventManagerAwareInterface</a>                    </td>
     </tr>
     </table>
 
 <h2>Description</h2>
 
 <div class="description">
-        
+    <p>
+        </p>
     </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -79,50 +95,244 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
-            setEventManager()
-        </td>
-        <td>
-            Inject an EventManager instance        </td>
-    </tr>
-        <tr>
-        <td>
-            getEventManager()
-        </td>
-        <td>
-            Retrieve the event manager        </td>
-    </tr>
-        <tr>
-        <td>
+            <a href="#attach()">
             attach()
+            </a>
         </td>
         <td>
             Attach the aggregate to the specified event manager        </td>
+        <td>
+            <a href="../../Zend\Mvc\SendResponseListener.html">
+            SendResponseListener            </a>
+        </td>
     </tr>
         <tr>
         <td>
-            sendResponse()
+            <a href="#detach()">
+            detach()
+            </a>
         </td>
         <td>
-            Send the response        </td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../Zend\EventManager\AbstractListenerAggregate.html">
+            AbstractListenerAggregate            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#getEvent()">
             getEvent()
+            </a>
         </td>
         <td>
             Get the send response event        </td>
+        <td>
+            <a href="../../Zend\Mvc\SendResponseListener.html">
+            SendResponseListener            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#getEventManager()">
+            getEventManager()
+            </a>
+        </td>
+        <td>
+            Retrieve the event manager        </td>
+        <td>
+            <a href="../../Zend\Mvc\SendResponseListener.html">
+            SendResponseListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#sendResponse()">
+            sendResponse()
+            </a>
+        </td>
+        <td>
+            Send the response        </td>
+        <td>
+            <a href="../../Zend\Mvc\SendResponseListener.html">
+            SendResponseListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEvent()">
             setEvent()
+            </a>
         </td>
         <td>
             Set the send response event        </td>
+        <td>
+            <a href="../../Zend\Mvc\SendResponseListener.html">
+            SendResponseListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEventManager()">
+            setEventManager()
+            </a>
+        </td>
+        <td>
+            Inject an EventManager instance        </td>
+        <td>
+            <a href="../../Zend\Mvc\SendResponseListener.html">
+            SendResponseListener            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+Attach the aggregate to the specified event manager</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+            \EventManagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="detach()">detach()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getEvent()">getEvent()</h3>
+
+<p>
+Get the send response event</p>
+
+
+
+
+<h3 id="getEventManager()">getEventManager()</h3>
+
+<p>
+Retrieve the event manager</p>
+
+<p>Lazy-loads an EventManager instance if none registered.</p>
+
+
+
+<h3 id="sendResponse()">sendResponse()</h3>
+
+<p>
+Send the response</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \MvcEvent        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setEvent()">setEvent()</h3>
+
+<p>
+Set the send response event</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $e        </td>
+        <td>
+            \SendResponseEvent        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setEventManager()">setEventManager()</h3>
+
+<p>
+Inject an EventManager instance</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $eventManager        </td>
+        <td>
+            \EventManagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -196,7 +406,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../index.html">Components</a>
-    >>        <a href="../../../components/zendframework/zend-eventmanager.html">Component zendframework/zend-eventmanager</a>
-    >>        <a href="../../../classes/Zend/EventManager/EventManagerAwareTrait.html">Class EventManagerAwareTrait</a>
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-eventmanager.html">zendframework/zend-eventmanager</a>
+    &rarr;        <a href="../../../classes/Zend/EventManager/EventManagerAwareTrait.html">Class EventManagerAwareTrait</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Interface 
@@ -61,8 +71,86 @@
 <h2>Description</h2>
 
 <div class="description">
-        
-    </div>
+    <p>
+    A trait for objects that provide events.    </p>
+    <p>If you use this trait in an object, you will probably want to also implement
+EventManagerAwareInterface, which will make it so the default initializer in
+a ZF2 MVC application will automatically inject an instance of the
+EventManager into your object when it is pulled from the ServiceManager.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEventManager()">
+            getEventManager()
+            </a>
+        </td>
+        <td>
+            Retrieve the event manager        </td>
+        <td>
+            <a href="../../Zend\EventManager\EventManagerAwareTrait.html">
+            EventManagerAwareTrait            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEventManager()">
+            setEventManager()
+            </a>
+        </td>
+        <td>
+            Set the event manager instance used by this context.        </td>
+        <td>
+            <a href="../../Zend\EventManager\EventManagerAwareTrait.html">
+            EventManagerAwareTrait            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="getEventManager()">getEventManager()</h3>
+
+<p>
+Retrieve the event manager</p>
+
+<p>Lazy-loads an EventManager instance if none registered.</p>
+
+
+
+<h3 id="setEventManager()">setEventManager()</h3>
+
+<p>
+Set the event manager instance used by this context.</p>
+
+<p>For convenience, this method will also set the class name / LSB name as
+identifiers, in addition to any string or array of strings set to the
+$this-&gt;eventIdentifier property.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+            \EventManagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
 
 
 
@@ -138,7 +226,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

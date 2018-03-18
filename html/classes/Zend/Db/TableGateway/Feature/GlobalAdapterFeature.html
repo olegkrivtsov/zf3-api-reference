@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Db\TableGateway\Feature\GlobalAdapterFeature -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/zendframework/zend-db.html">zendframework/zend-db</a>
+    &rarr;        <a href="../../../../../classes/Zend/Db/TableGateway/Feature/GlobalAdapterFeature.html">Class GlobalAdapterFeature</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        GlobalAdapterFeature</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Db\TableGateway\Feature\GlobalAdapterFeature        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Db\TableGateway\Feature\AbstractFeature.html">AbstractFeature</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__call()">
+            __call()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__clone()">
+            __clone()
+            </a>
+        </td>
+        <td>
+            __clone        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            __get        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__set()">
+            __set()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#delete()">
+            delete()
+            </a>
+        </td>
+        <td>
+            Delete        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#deleteWith()">
+            deleteWith()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAdapter()">
+            getAdapter()
+            </a>
+        </td>
+        <td>
+            Get adapter        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getColumns()">
+            getColumns()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFeatureSet()">
+            getFeatureSet()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastInsertValue()">
+            getLastInsertValue()
+            </a>
+        </td>
+        <td>
+            Get last insert value        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMagicMethodSpecifications()">
+            getMagicMethodSpecifications()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\Feature\AbstractFeature.html">
+            AbstractFeature            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getName()">
+            getName()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\Feature\AbstractFeature.html">
+            AbstractFeature            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResultSetPrototype()">
+            getResultSetPrototype()
+            </a>
+        </td>
+        <td>
+            Get select result prototype        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSql()">
+            getSql()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStaticAdapter()">
+            getStaticAdapter()
+            </a>
+        </td>
+        <td>
+            Get static adapter        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\Feature\GlobalAdapterFeature.html">
+            GlobalAdapterFeature            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTable()">
+            getTable()
+            </a>
+        </td>
+        <td>
+            Get table name        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#initialize()">
+            initialize()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\Feature\AbstractFeature.html">
+            AbstractFeature            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#insert()">
+            insert()
+            </a>
+        </td>
+        <td>
+            Insert        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#insertWith()">
+            insertWith()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isInitialized()">
+            isInitialized()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#preInitialize()">
+            preInitialize()
+            </a>
+        </td>
+        <td>
+            after initialization, retrieve the original adapter as "master"        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\Feature\GlobalAdapterFeature.html">
+            GlobalAdapterFeature            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#select()">
+            select()
+            </a>
+        </td>
+        <td>
+            Select        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#selectWith()">
+            selectWith()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStaticAdapter()">
+            setStaticAdapter()
+            </a>
+        </td>
+        <td>
+            Set static adapter        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\Feature\GlobalAdapterFeature.html">
+            GlobalAdapterFeature            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTableGateway()">
+            setTableGateway()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\Feature\AbstractFeature.html">
+            AbstractFeature            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#update()">
+            update()
+            </a>
+        </td>
+        <td>
+            Update        </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#updateWith()">
+            updateWith()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\TableGateway\AbstractTableGateway.html">
+            AbstractTableGateway            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__call()">__call()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $arguments        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $arguments        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__clone()">__clone()</h3>
+
+<p>
+__clone</p>
+
+
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+__get</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $property        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__set()">__set()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $property        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="delete()">delete()</h3>
+
+<p>
+Delete</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $where        </td>
+        <td>
+            \Where|\Closure|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="deleteWith()">deleteWith()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $delete        </td>
+        <td>
+            \Delete        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getAdapter()">getAdapter()</h3>
+
+<p>
+Get adapter</p>
+
+
+
+
+<h3 id="getColumns()">getColumns()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getFeatureSet()">getFeatureSet()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getLastInsertValue()">getLastInsertValue()</h3>
+
+<p>
+Get last insert value</p>
+
+
+
+
+<h3 id="getMagicMethodSpecifications()">getMagicMethodSpecifications()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getName()">getName()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getResultSetPrototype()">getResultSetPrototype()</h3>
+
+<p>
+Get select result prototype</p>
+
+
+
+
+<h3 id="getSql()">getSql()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getStaticAdapter()">getStaticAdapter()</h3>
+
+<p>
+Get static adapter</p>
+
+
+
+
+<h3 id="getTable()">getTable()</h3>
+
+<p>
+Get table name</p>
+
+
+
+
+<h3 id="initialize()">initialize()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="insert()">insert()</h3>
+
+<p>
+Insert</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $set        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="insertWith()">insertWith()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $insert        </td>
+        <td>
+            \Insert        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="isInitialized()">isInitialized()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="preInitialize()">preInitialize()</h3>
+
+<p>
+after initialization, retrieve the original adapter as "master"</p>
+
+
+
+
+<h3 id="select()">select()</h3>
+
+<p>
+Select</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $where        </td>
+        <td>
+            \Where|\Closure|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="selectWith()">selectWith()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $select        </td>
+        <td>
+            \Select        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setStaticAdapter()">setStaticAdapter()</h3>
+
+<p>
+Set static adapter</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $adapter        </td>
+        <td>
+            \Adapter        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setTableGateway()">setTableGateway()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $tableGateway        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="update()">update()</h3>
+
+<p>
+Update</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $set        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $where        </td>
+        <td>
+            string|array|\Closure        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $joins        </td>
+        <td>
+            null|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="updateWith()">updateWith()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $update        </td>
+        <td>
+            \Zend\Db\Sql\Update        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

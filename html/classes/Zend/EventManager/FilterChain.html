@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../index.html">Components</a>
-    >>        <a href="../../../components/zendframework/zend-eventmanager.html">Component zendframework/zend-eventmanager</a>
-    >>        <a href="../../../classes/Zend/EventManager/FilterChain.html">Class FilterChain</a>
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-eventmanager.html">zendframework/zend-eventmanager</a>
+    &rarr;        <a href="../../../classes/Zend/EventManager/FilterChain.html">Class FilterChain</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -61,17 +71,16 @@
             Implements:
         </td>
         <td>
-                        Filter\FilterInterface,
-                    </td>
+                                    <a href="../../Zend\EventManager\Filter\FilterInterface.html">FilterInterface</a>                    </td>
     </tr>
     </table>
 
 <h2>Description</h2>
 
 <div class="description">
-    FilterChain: intercepting filter manager    
+    <p>
+    FilterChain: intercepting filter manager    </p>
     </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -79,57 +88,225 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#__construct()">
             __construct()
+            </a>
         </td>
         <td>
             Constructor        </td>
-    </tr>
-        <tr>
         <td>
-            run()
+            <a href="../../Zend\EventManager\FilterChain.html">
+            FilterChain            </a>
         </td>
-        <td>
-            Apply the filters        </td>
     </tr>
         <tr>
         <td>
+            <a href="#attach()">
             attach()
+            </a>
         </td>
         <td>
             Connect a filter to the chain        </td>
-    </tr>
-        <tr>
         <td>
-            detach()
+            <a href="../../Zend\EventManager\FilterChain.html">
+            FilterChain            </a>
         </td>
-        <td>
-            Detach a filter from the chain        </td>
     </tr>
         <tr>
         <td>
-            getFilters()
-        </td>
-        <td>
-            Retrieve all filters        </td>
-    </tr>
-        <tr>
-        <td>
+            <a href="#clearFilters()">
             clearFilters()
+            </a>
         </td>
         <td>
             Clear all filters        </td>
+        <td>
+            <a href="../../Zend\EventManager\FilterChain.html">
+            FilterChain            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#detach()">
+            detach()
+            </a>
+        </td>
+        <td>
+            Detach a filter from the chain        </td>
+        <td>
+            <a href="../../Zend\EventManager\FilterChain.html">
+            FilterChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFilters()">
+            getFilters()
+            </a>
+        </td>
+        <td>
+            Retrieve all filters        </td>
+        <td>
+            <a href="../../Zend\EventManager\FilterChain.html">
+            FilterChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResponses()">
             getResponses()
+            </a>
         </td>
         <td>
             Return current responses        </td>
+        <td>
+            <a href="../../Zend\EventManager\FilterChain.html">
+            FilterChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#run()">
+            run()
+            </a>
+        </td>
+        <td>
+            Apply the filters        </td>
+        <td>
+            <a href="../../Zend\EventManager\FilterChain.html">
+            FilterChain            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+<p>Initializes Filter\FilterIterator in which filters will be aggregated</p>
+
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+Connect a filter to the chain</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $callback        </td>
+        <td>
+            callable        </td>
+        <td>
+            PHP        </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+            int        </td>
+        <td>
+            Priority        </td>
+    </tr>
+    </table>
+
+
+<h3 id="clearFilters()">clearFilters()</h3>
+
+<p>
+Clear all filters</p>
+
+
+
+
+<h3 id="detach()">detach()</h3>
+
+<p>
+Detach a filter from the chain</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $filter        </td>
+        <td>
+            callable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getFilters()">getFilters()</h3>
+
+<p>
+Retrieve all filters</p>
+
+
+
+
+<h3 id="getResponses()">getResponses()</h3>
+
+<p>
+Return current responses</p>
+
+<p>Only available while the chain is still being iterated. Returns the
+current ResponseCollection.</p>
+
+
+
+<h3 id="run()">run()</h3>
+
+<p>
+Apply the filters</p>
+
+<p>Begins iteration of the filters.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $context        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Object        </td>
+    </tr>
+        <tr>
+        <td>
+            $argv        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Associative        </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -203,7 +380,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

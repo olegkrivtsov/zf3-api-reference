@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../index.html">Components</a>
-    >>        <a href="../../../components/zendframework/zend-mvc.html">Component zendframework/zend-mvc</a>
-    >>        <a href="../../../classes/Zend/Mvc/Application.html">Class Application</a>
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-mvc.html">zendframework/zend-mvc</a>
+    &rarr;        <a href="../../../classes/Zend/Mvc/Application.html">Class Application</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -61,16 +71,15 @@
             Implements:
         </td>
         <td>
-                        ApplicationInterface,
-                        EventManagerAwareInterface,
-                    </td>
+                                    <a href="../../Zend\Mvc\ApplicationInterface.html">ApplicationInterface</a>,                         <a href="../../Zend\EventManager\EventManagerAwareInterface.html">EventManagerAwareInterface</a>                    </td>
     </tr>
     </table>
 
 <h2>Description</h2>
 
 <div class="description">
-    Main application class for invoking applications    
+    <p>
+    Main application class for invoking applications    </p>
     <p>Expects the user will provide a configured ServiceManager, configured with
 the following services:</p>
 <ul>
@@ -98,92 +107,349 @@ if you wish to setup your own listeners and/or workflow; alternately, you
 can simply extend the class to override such behavior.</p>
 </div>
 
-
 <h2 id="methods">Methods</h2>
 
 <table class="table">
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#__construct()">
             __construct()
+            </a>
         </td>
         <td>
             Constructor        </td>
-    </tr>
-        <tr>
         <td>
-            getConfig()
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
         </td>
-        <td>
-            Retrieve the application configuration        </td>
     </tr>
         <tr>
         <td>
+            <a href="#bootstrap()">
             bootstrap()
+            </a>
         </td>
         <td>
             Bootstrap the application        </td>
+        <td>
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
+        </td>
     </tr>
         <tr>
         <td>
-            getServiceManager()
+            <a href="#getConfig()">
+            getConfig()
+            </a>
         </td>
         <td>
-            Retrieve the service manager        </td>
-    </tr>
-        <tr>
+            Retrieve the application configuration        </td>
         <td>
-            getRequest()
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
         </td>
-        <td>
-            Get the request object        </td>
     </tr>
         <tr>
         <td>
-            getResponse()
-        </td>
-        <td>
-            Get the response object        </td>
-    </tr>
-        <tr>
-        <td>
-            getMvcEvent()
-        </td>
-        <td>
-            Get the MVC event instance        </td>
-    </tr>
-        <tr>
-        <td>
-            setEventManager()
-        </td>
-        <td>
-            Set the event manager instance        </td>
-    </tr>
-        <tr>
-        <td>
+            <a href="#getEventManager()">
             getEventManager()
+            </a>
         </td>
         <td>
             Retrieve the event manager        </td>
+        <td>
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#getMvcEvent()">
+            getMvcEvent()
+            </a>
+        </td>
+        <td>
+            Get the MVC event instance        </td>
+        <td>
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRequest()">
+            getRequest()
+            </a>
+        </td>
+        <td>
+            Get the request object        </td>
+        <td>
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResponse()">
+            getResponse()
+            </a>
+        </td>
+        <td>
+            Get the response object        </td>
+        <td>
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getServiceManager()">
+            getServiceManager()
+            </a>
+        </td>
+        <td>
+            Retrieve the service manager        </td>
+        <td>
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#init()">
             init()
+            </a>
         </td>
         <td>
             Static method for quick and easy initialization of the Application.        </td>
+        <td>
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#run()">
             run()
+            </a>
         </td>
         <td>
             Run the application        </td>
+        <td>
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEventManager()">
+            setEventManager()
+            </a>
+        </td>
+        <td>
+            Set the event manager instance        </td>
+        <td>
+            <a href="../../Zend\Mvc\Application.html">
+            Application            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $serviceManager        </td>
+        <td>
+            \ServiceManager        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+            null|\EventManagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            null|\RequestInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            null|\ResponseInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="bootstrap()">bootstrap()</h3>
+
+<p>
+Bootstrap the application</p>
+
+<p>Defines and binds the MvcEvent, and passes it the request, response, and
+router. Attaches the ViewManager as a listener. Triggers the bootstrap
+event.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $listeners        </td>
+        <td>
+            array        </td>
+        <td>
+            List        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getConfig()">getConfig()</h3>
+
+<p>
+Retrieve the application configuration</p>
+
+
+
+
+<h3 id="getEventManager()">getEventManager()</h3>
+
+<p>
+Retrieve the event manager</p>
+
+<p>Lazy-loads an EventManager instance if none registered.</p>
+
+
+
+<h3 id="getMvcEvent()">getMvcEvent()</h3>
+
+<p>
+Get the MVC event instance</p>
+
+
+
+
+<h3 id="getRequest()">getRequest()</h3>
+
+<p>
+Get the request object</p>
+
+
+
+
+<h3 id="getResponse()">getResponse()</h3>
+
+<p>
+Get the response object</p>
+
+
+
+
+<h3 id="getServiceManager()">getServiceManager()</h3>
+
+<p>
+Retrieve the service manager</p>
+
+
+
+
+<h3 id="init()">init()</h3>
+
+<p>
+Static method for quick and easy initialization of the Application.</p>
+
+<p>If you use this init() method, you cannot specify a service with the
+name of 'ApplicationConfig' in your service manager config. This name is
+reserved to hold the array from application.config.php.</p>
+<p>The following services can only be overridden from application.config.php:</p>
+<ul>
+<li>ModuleManager</li>
+<li>SharedEventManager</li>
+<li>EventManager &amp; Zend\EventManager\EventManagerInterface</li>
+</ul>
+<p>All other services are configured after module loading, thus can be
+overridden by modules.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $configuration        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="run()">run()</h3>
+
+<p>
+Run the application</p>
+
+
+
+
+<h3 id="setEventManager()">setEventManager()</h3>
+
+<p>
+Set the event manager instance</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $eventManager        </td>
+        <td>
+            \EventManagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -257,7 +523,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Crypt\PublicKey\DiffieHellman -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-crypt.html">zendframework/zend-crypt</a>
+    &rarr;        <a href="../../../../classes/Zend/Crypt/PublicKey/DiffieHellman.html">Class DiffieHellman</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        DiffieHellman</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Crypt\PublicKey\DiffieHellman        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    PHP implementation of the Diffie-Hellman public key encryption algorithm.    </p>
+    <p>Allows two unassociated parties to establish a joint shared secret key
+to be used in encrypting subsequent communications.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor; if set construct the object using the parameter array to
+set values for Prime, Generator and Private.        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#computeSecretKey()">
+            computeSecretKey()
+            </a>
+        </td>
+        <td>
+            Compute the shared secret key based on the public key received from the
+the second party to this transaction. This should agree to the secret
+key the second party computes on our own public key.        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#generateKeys()">
+            generateKeys()
+            </a>
+        </td>
+        <td>
+            Generate own public key. If a private number has not already been set,
+one will be generated at this stage.        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getGenerator()">
+            getGenerator()
+            </a>
+        </td>
+        <td>
+            Getter for the value of the generator number        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPrime()">
+            getPrime()
+            </a>
+        </td>
+        <td>
+            Getter for the value of the prime number        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPrivateKey()">
+            getPrivateKey()
+            </a>
+        </td>
+        <td>
+            Getter for the value of the private number        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPublicKey()">
+            getPublicKey()
+            </a>
+        </td>
+        <td>
+            Returns own public key for communication to the second party to this transaction        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSharedSecretKey()">
+            getSharedSecretKey()
+            </a>
+        </td>
+        <td>
+            Return the computed shared secret key from the DiffieHellman transaction        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasPrivateKey()">
+            hasPrivateKey()
+            </a>
+        </td>
+        <td>
+            Check whether a private key currently exists.        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setGenerator()">
+            setGenerator()
+            </a>
+        </td>
+        <td>
+            Setter for the value of the generator number        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPrime()">
+            setPrime()
+            </a>
+        </td>
+        <td>
+            Setter for the value of the prime number        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPrivateKey()">
+            setPrivateKey()
+            </a>
+        </td>
+        <td>
+            Setter for the value of the private number        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPublicKey()">
+            setPublicKey()
+            </a>
+        </td>
+        <td>
+            Setter for the value of the public number        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#useOpensslExtension()">
+            useOpensslExtension()
+            </a>
+        </td>
+        <td>
+            Set whether to use openssl extension        </td>
+        <td>
+            <a href="../../Zend\Crypt\PublicKey\DiffieHellman.html">
+            DiffieHellman            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor; if set construct the object using the parameter array to
+set values for Prime, Generator and Private.</p>
+
+<p>If a Private Key is not set, one will be generated at random.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $prime        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $generator        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $privateKey        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $privateKeyFormat        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="computeSecretKey()">computeSecretKey()</h3>
+
+<p>
+Compute the shared secret key based on the public key received from the
+the second party to this transaction. This should agree to the secret
+key the second party computes on our own public key.</p>
+
+<p>Once in agreement, the key is known to only to both parties.
+By default, the function expects the public key to be in binary form
+which is the typical format when being transmitted.</p>
+<p>If you need the binary form of the shared secret key, call
+getSharedSecretKey() with the optional parameter for Binary output.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $publicKey        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $publicKeyFormat        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $secretKeyFormat        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="generateKeys()">generateKeys()</h3>
+
+<p>
+Generate own public key. If a private number has not already been set,
+one will be generated at this stage.</p>
+
+
+
+
+<h3 id="getGenerator()">getGenerator()</h3>
+
+<p>
+Getter for the value of the generator number</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getPrime()">getPrime()</h3>
+
+<p>
+Getter for the value of the prime number</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getPrivateKey()">getPrivateKey()</h3>
+
+<p>
+Getter for the value of the private number</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getPublicKey()">getPublicKey()</h3>
+
+<p>
+Returns own public key for communication to the second party to this transaction</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getSharedSecretKey()">getSharedSecretKey()</h3>
+
+<p>
+Return the computed shared secret key from the DiffieHellman transaction</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="hasPrivateKey()">hasPrivateKey()</h3>
+
+<p>
+Check whether a private key currently exists.</p>
+
+
+
+
+<h3 id="setGenerator()">setGenerator()</h3>
+
+<p>
+Setter for the value of the generator number</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $number        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPrime()">setPrime()</h3>
+
+<p>
+Setter for the value of the prime number</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $number        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPrivateKey()">setPrivateKey()</h3>
+
+<p>
+Setter for the value of the private number</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $number        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPublicKey()">setPublicKey()</h3>
+
+<p>
+Setter for the value of the public number</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $number        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $format        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="useOpensslExtension()">useOpensslExtension()</h3>
+
+<p>
+Set whether to use openssl extension</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $flag        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Http\Response\Stream -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-http.html">zendframework/zend-http</a>
+    &rarr;        <a href="../../../../classes/Zend/Http/Response/Stream.html">Class Stream</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Stream</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Http\Response\Stream        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Http\Response.html">Response</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Represents an HTTP response message as PHP stream resource    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__destruct()">
+            __destruct()
+            </a>
+        </td>
+        <td>
+            Destructor        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Allow PHP casting of this object        </td>
+        <td>
+            <a href="../../Zend\Http\AbstractMessage.html">
+            AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fromStream()">
+            fromStream()
+            </a>
+        </td>
+        <td>
+            Create a new Zend\Http\Response\Stream object from a stream        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fromString()">
+            fromString()
+            </a>
+        </td>
+        <td>
+            Populate object from string        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBody()">
+            getBody()
+            </a>
+        </td>
+        <td>
+            Get the response body as string        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCleanup()">
+            getCleanup()
+            </a>
+        </td>
+        <td>
+            Get the cleanup trigger        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getContentLength()">
+            getContentLength()
+            </a>
+        </td>
+        <td>
+            Get content length        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCookie()">
+            getCookie()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeaders()">
+            getHeaders()
+            </a>
+        </td>
+        <td>
+            Return the header container responsible for headers        </td>
+        <td>
+            <a href="../../Zend\Http\AbstractMessage.html">
+            AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRawBody()">
+            getRawBody()
+            </a>
+        </td>
+        <td>
+            Get the raw response body (as transferred "on wire") as string        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getReasonPhrase()">
+            getReasonPhrase()
+            </a>
+        </td>
+        <td>
+            Get HTTP status message        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStatusCode()">
+            getStatusCode()
+            </a>
+        </td>
+        <td>
+            Retrieve HTTP status code        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStream()">
+            getStream()
+            </a>
+        </td>
+        <td>
+            Get the response as stream        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStreamName()">
+            getStreamName()
+            </a>
+        </td>
+        <td>
+            Get file name associated with the stream        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getVersion()">
+            getVersion()
+            </a>
+        </td>
+        <td>
+            Return the HTTP version for this request        </td>
+        <td>
+            <a href="../../Zend\Http\AbstractMessage.html">
+            AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isClientError()">
+            isClientError()
+            </a>
+        </td>
+        <td>
+            Does the status code indicate a client error?        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isForbidden()">
+            isForbidden()
+            </a>
+        </td>
+        <td>
+            Is the request forbidden due to ACLs?        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isGone()">
+            isGone()
+            </a>
+        </td>
+        <td>
+            Does the status code indicate the resource is gone?        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isInformational()">
+            isInformational()
+            </a>
+        </td>
+        <td>
+            Is the current status "informational"?        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isNotFound()">
+            isNotFound()
+            </a>
+        </td>
+        <td>
+            Does the status code indicate the resource is not found?        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isOk()">
+            isOk()
+            </a>
+        </td>
+        <td>
+            Do we have a normal, OK response?        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isRedirect()">
+            isRedirect()
+            </a>
+        </td>
+        <td>
+            Do we have a redirect?        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isServerError()">
+            isServerError()
+            </a>
+        </td>
+        <td>
+            Does the status code reflect a server error?        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isSuccess()">
+            isSuccess()
+            </a>
+        </td>
+        <td>
+            Was the response successful?        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#renderStatusLine()">
+            renderStatusLine()
+            </a>
+        </td>
+        <td>
+            Render the status line header        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCleanup()">
+            setCleanup()
+            </a>
+        </td>
+        <td>
+            Set the cleanup trigger        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setContentLength()">
+            setContentLength()
+            </a>
+        </td>
+        <td>
+            Set content length        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCustomStatusCode()">
+            setCustomStatusCode()
+            </a>
+        </td>
+        <td>
+            Set custom HTTP status code        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHeaders()">
+            setHeaders()
+            </a>
+        </td>
+        <td>
+            Provide an alternate Parameter Container implementation for headers in this object,
+(this is NOT the primary API for value setting, for that see getHeaders())        </td>
+        <td>
+            <a href="../../Zend\Http\AbstractMessage.html">
+            AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setReasonPhrase()">
+            setReasonPhrase()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStatusCode()">
+            setStatusCode()
+            </a>
+        </td>
+        <td>
+            Set HTTP status code and (optionally) message        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStream()">
+            setStream()
+            </a>
+        </td>
+        <td>
+            Set the response stream        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStreamName()">
+            setStreamName()
+            </a>
+        </td>
+        <td>
+            Set file name associated with the stream        </td>
+        <td>
+            <a href="../../Zend\Http\Response\Stream.html">
+            Stream            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setVersion()">
+            setVersion()
+            </a>
+        </td>
+        <td>
+            Set the HTTP version for this object, one of 1.0 or 1.1
+(AbstractMessage::VERSION_10, AbstractMessage::VERSION_11)        </td>
+        <td>
+            <a href="../../Zend\Http\AbstractMessage.html">
+            AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toString()">
+            toString()
+            </a>
+        </td>
+        <td>
+            Render entire response as HTTP response string        </td>
+        <td>
+            <a href="../../Zend\Http\Response.html">
+            Response            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__destruct()">__destruct()</h3>
+
+<p>
+Destructor</p>
+
+
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Allow PHP casting of this object</p>
+
+
+
+
+<h3 id="fromStream()">fromStream()</h3>
+
+<p>
+Create a new Zend\Http\Response\Stream object from a stream</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $responseString        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $stream        </td>
+        <td>
+            resource        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="fromString()">fromString()</h3>
+
+<p>
+Populate object from string</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $string        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getBody()">getBody()</h3>
+
+<p>
+Get the response body as string</p>
+
+<p>This method returns the body of the HTTP response (the content), as it
+should be in it's readable version - that is, after decoding it (if it
+was decoded), deflating it (if it was gzip compressed), etc.</p>
+<p>If you want to get the raw body (as transferred on wire) use
+$this-&gt;getRawBody() instead.</p>
+
+
+
+<h3 id="getCleanup()">getCleanup()</h3>
+
+<p>
+Get the cleanup trigger</p>
+
+
+
+
+<h3 id="getContentLength()">getContentLength()</h3>
+
+<p>
+Get content length</p>
+
+
+
+
+<h3 id="getCookie()">getCookie()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getHeaders()">getHeaders()</h3>
+
+<p>
+Return the header container responsible for headers</p>
+
+
+
+
+<h3 id="getRawBody()">getRawBody()</h3>
+
+<p>
+Get the raw response body (as transferred "on wire") as string</p>
+
+<p>If the body is encoded (with Transfer-Encoding, not content-encoding -
+IE "chunked" body), gzip compressed, etc. it will not be decoded.</p>
+
+
+
+<h3 id="getReasonPhrase()">getReasonPhrase()</h3>
+
+<p>
+Get HTTP status message</p>
+
+
+
+
+<h3 id="getStatusCode()">getStatusCode()</h3>
+
+<p>
+Retrieve HTTP status code</p>
+
+
+
+
+<h3 id="getStream()">getStream()</h3>
+
+<p>
+Get the response as stream</p>
+
+
+
+
+<h3 id="getStreamName()">getStreamName()</h3>
+
+<p>
+Get file name associated with the stream</p>
+
+
+
+
+<h3 id="getVersion()">getVersion()</h3>
+
+<p>
+Return the HTTP version for this request</p>
+
+
+
+
+<h3 id="isClientError()">isClientError()</h3>
+
+<p>
+Does the status code indicate a client error?</p>
+
+
+
+
+<h3 id="isForbidden()">isForbidden()</h3>
+
+<p>
+Is the request forbidden due to ACLs?</p>
+
+
+
+
+<h3 id="isGone()">isGone()</h3>
+
+<p>
+Does the status code indicate the resource is gone?</p>
+
+
+
+
+<h3 id="isInformational()">isInformational()</h3>
+
+<p>
+Is the current status "informational"?</p>
+
+
+
+
+<h3 id="isNotFound()">isNotFound()</h3>
+
+<p>
+Does the status code indicate the resource is not found?</p>
+
+
+
+
+<h3 id="isOk()">isOk()</h3>
+
+<p>
+Do we have a normal, OK response?</p>
+
+
+
+
+<h3 id="isRedirect()">isRedirect()</h3>
+
+<p>
+Do we have a redirect?</p>
+
+
+
+
+<h3 id="isServerError()">isServerError()</h3>
+
+<p>
+Does the status code reflect a server error?</p>
+
+
+
+
+<h3 id="isSuccess()">isSuccess()</h3>
+
+<p>
+Was the response successful?</p>
+
+
+
+
+<h3 id="renderStatusLine()">renderStatusLine()</h3>
+
+<p>
+Render the status line header</p>
+
+
+
+
+<h3 id="setCleanup()">setCleanup()</h3>
+
+<p>
+Set the cleanup trigger</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $cleanup        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setContentLength()">setContentLength()</h3>
+
+<p>
+Set content length</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $contentLength        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setCustomStatusCode()">setCustomStatusCode()</h3>
+
+<p>
+Set custom HTTP status code</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setHeaders()">setHeaders()</h3>
+
+<p>
+Provide an alternate Parameter Container implementation for headers in this object,
+(this is NOT the primary API for value setting, for that see getHeaders())</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $headers        </td>
+        <td>
+            \Headers        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setReasonPhrase()">setReasonPhrase()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $reasonPhrase        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setStatusCode()">setStatusCode()</h3>
+
+<p>
+Set HTTP status code and (optionally) message</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setStream()">setStream()</h3>
+
+<p>
+Set the response stream</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $stream        </td>
+        <td>
+            resource        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setStreamName()">setStreamName()</h3>
+
+<p>
+Set file name associated with the stream</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $streamName        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setVersion()">setVersion()</h3>
+
+<p>
+Set the HTTP version for this object, one of 1.0 or 1.1
+(AbstractMessage::VERSION_10, AbstractMessage::VERSION_11)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $version        </td>
+        <td>
+            string        </td>
+        <td>
+            (Must        </td>
+    </tr>
+    </table>
+
+
+<h3 id="toString()">toString()</h3>
+
+<p>
+Render entire response as HTTP response string</p>
+
+
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

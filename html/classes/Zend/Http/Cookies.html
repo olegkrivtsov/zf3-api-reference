@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Http\Cookies -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-http.html">zendframework/zend-http</a>
+    &rarr;        <a href="../../../classes/Zend/Http/Cookies.html">Class Cookies</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Cookies</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Http\Cookies        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Http\Headers.html">Headers</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    A Zend\Http\Cookies object is designed to contain and maintain HTTP cookies, and should
+be used along with Zend\Http\Client in order to manage cookies across HTTP requests and
+responses.    </p>
+    <p>The class contains an array of Zend\Http\Header\Cookie objects. Cookies can be added
+automatically from a request or manually. Then, the Cookies class can find and return the
+cookies needed for a specific HTTP request.</p>
+<p>A special parameter can be passed to all methods of this class that return cookies: Cookies
+can be returned either in their native form (as Zend\Http\Header\Cookie objects) or as strings -
+the later is suitable for sending as the value of the "Cookie" header in an HTTP request.
+You can also choose, when returning more than one cookie, whether to get an array of strings
+(by passing Zend\Http\Client\Cookies::COOKIE_STRING_ARRAY) or one unified string for all cookies
+(by passing Zend\Http\Client\Cookies::COOKIE_STRING_CONCAT).</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addCookie()">
+            addCookie()
+            </a>
+        </td>
+        <td>
+            Add a cookie to the class. Cookie should be passed either as a Zend\Http\Header\SetCookie object
+or as a string - in which case an object is created from the string.        </td>
+        <td>
+            <a href="../../Zend\Http\Cookies.html">
+            Cookies            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addCookiesFromResponse()">
+            addCookiesFromResponse()
+            </a>
+        </td>
+        <td>
+            Parse an HTTP response, adding all the cookies set in that response        </td>
+        <td>
+            <a href="../../Zend\Http\Cookies.html">
+            Cookies            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addHeader()">
+            addHeader()
+            </a>
+        </td>
+        <td>
+            Add a Header to this container, for raw values @see addHeaderLine() and addHeaders()        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addHeaderLine()">
+            addHeaderLine()
+            </a>
+        </td>
+        <td>
+            Add a raw header line, either in name => value, or as a single string 'name: value'        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addHeaders()">
+            addHeaders()
+            </a>
+        </td>
+        <td>
+            Add many headers at once        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearHeaders()">
+            clearHeaders()
+            </a>
+        </td>
+        <td>
+            Clear all headers        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#count()">
+            count()
+            </a>
+        </td>
+        <td>
+            Return the number of headers in this contain, if all headers have not been parsed, actual count could
+increase if MultipleHeader objects exist in the Request/Response.  If you need an exact count, iterate        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#current()">
+            current()
+            </a>
+        </td>
+        <td>
+            Return the current value for this iterator, lazy loading it if need be        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#forceLoading()">
+            forceLoading()
+            </a>
+        </td>
+        <td>
+            By calling this, it will force parsing and loading of all headers, after this count() will be accurate        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fromResponse()">
+            fromResponse()
+            </a>
+        </td>
+        <td>
+            Create a new Cookies object and automatically load into it all the
+cookies set in a Response object. If $uri is set, it will be
+considered as the requested URI for setting default domain and path
+of the cookie.        </td>
+        <td>
+            <a href="../../Zend\Http\Cookies.html">
+            Cookies            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fromString()">
+            fromString()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Http\Cookies.html">
+            Cookies            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#get()">
+            get()
+            </a>
+        </td>
+        <td>
+            Get all headers of a certain name/type        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAllCookies()">
+            getAllCookies()
+            </a>
+        </td>
+        <td>
+            Get all cookies in the cookie jar as an array        </td>
+        <td>
+            <a href="../../Zend\Http\Cookies.html">
+            Cookies            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCookie()">
+            getCookie()
+            </a>
+        </td>
+        <td>
+            Get a specific cookie according to a URI and name        </td>
+        <td>
+            <a href="../../Zend\Http\Cookies.html">
+            Cookies            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMatchingCookies()">
+            getMatchingCookies()
+            </a>
+        </td>
+        <td>
+            Return an array of all cookies matching a specific request according to the request URI,
+whether session cookies should be sent or not, and the time to consider as "now" when
+checking cookie expiry time.        </td>
+        <td>
+            <a href="../../Zend\Http\Cookies.html">
+            Cookies            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPluginClassLoader()">
+            getPluginClassLoader()
+            </a>
+        </td>
+        <td>
+            Return an instance of a PluginClassLocator, lazyload and inject map if necessary        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#has()">
+            has()
+            </a>
+        </td>
+        <td>
+            Test for existence of a type of header        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isEmpty()">
+            isEmpty()
+            </a>
+        </td>
+        <td>
+            Tells if the array of cookies is empty        </td>
+        <td>
+            <a href="../../Zend\Http\Cookies.html">
+            Cookies            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#key()">
+            key()
+            </a>
+        </td>
+        <td>
+            Return the current key for this object as an iterator        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#next()">
+            next()
+            </a>
+        </td>
+        <td>
+            Advance the pointer for this object as an iterator        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeHeader()">
+            removeHeader()
+            </a>
+        </td>
+        <td>
+            Remove a Header from the container        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#reset()">
+            reset()
+            </a>
+        </td>
+        <td>
+            Empties the cookieJar of any cookie        </td>
+        <td>
+            <a href="../../Zend\Http\Cookies.html">
+            Cookies            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#rewind()">
+            rewind()
+            </a>
+        </td>
+        <td>
+            Reset the internal pointer for this object as an iterator        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPluginClassLoader()">
+            setPluginClassLoader()
+            </a>
+        </td>
+        <td>
+            Set an alternate implementation for the PluginClassLoader        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toArray()">
+            toArray()
+            </a>
+        </td>
+        <td>
+            Return the headers container as an array        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toString()">
+            toString()
+            </a>
+        </td>
+        <td>
+            Render all headers at once        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#valid()">
+            valid()
+            </a>
+        </td>
+        <td>
+            Is this iterator still valid?        </td>
+        <td>
+            <a href="../../Zend\Http\Headers.html">
+            Headers            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="addCookie()">addCookie()</h3>
+
+<p>
+Add a cookie to the class. Cookie should be passed either as a Zend\Http\Header\SetCookie object
+or as a string - in which case an object is created from the string.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $cookie        </td>
+        <td>
+            \SetCookie|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $refUri        </td>
+        <td>
+            \Uri\Uri|string        </td>
+        <td>
+            Optional        </td>
+    </tr>
+    </table>
+
+
+<h3 id="addCookiesFromResponse()">addCookiesFromResponse()</h3>
+
+<p>
+Parse an HTTP response, adding all the cookies set in that response</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            \Response        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $refUri        </td>
+        <td>
+            \Uri\Uri|string        </td>
+        <td>
+            Requested        </td>
+    </tr>
+    </table>
+
+
+<h3 id="addHeader()">addHeader()</h3>
+
+<p>
+Add a Header to this container, for raw values @see addHeaderLine() and addHeaders()</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $header        </td>
+        <td>
+            \Header\HeaderInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addHeaderLine()">addHeaderLine()</h3>
+
+<p>
+Add a raw header line, either in name => value, or as a single string 'name: value'</p>
+
+<p>This method allows for lazy-loading in that the parsing and instantiation of Header object
+will be delayed until they are retrieved by either get() or current()</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $headerFieldNameOrLine        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $fieldValue        </td>
+        <td>
+            string        </td>
+        <td>
+            optional        </td>
+    </tr>
+    </table>
+
+
+<h3 id="addHeaders()">addHeaders()</h3>
+
+<p>
+Add many headers at once</p>
+
+<p>Expects an array (or Traversable object) of type/value pairs.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $headers        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="clearHeaders()">clearHeaders()</h3>
+
+<p>
+Clear all headers</p>
+
+<p>Removes all headers from queue</p>
+
+
+
+<h3 id="count()">count()</h3>
+
+<p>
+Return the number of headers in this contain, if all headers have not been parsed, actual count could
+increase if MultipleHeader objects exist in the Request/Response.  If you need an exact count, iterate</p>
+
+
+
+
+<h3 id="current()">current()</h3>
+
+<p>
+Return the current value for this iterator, lazy loading it if need be</p>
+
+
+
+
+<h3 id="forceLoading()">forceLoading()</h3>
+
+<p>
+By calling this, it will force parsing and loading of all headers, after this count() will be accurate</p>
+
+
+
+
+<h3 id="fromResponse()">fromResponse()</h3>
+
+<p>
+Create a new Cookies object and automatically load into it all the
+cookies set in a Response object. If $uri is set, it will be
+considered as the requested URI for setting default domain and path
+of the cookie.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            \Response        </td>
+        <td>
+            HTTP        </td>
+    </tr>
+        <tr>
+        <td>
+            $refUri        </td>
+        <td>
+            \Uri\Uri|string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="fromString()">fromString()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+                    </td>
+        <td>
+            $string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $string        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="get()">get()</h3>
+
+<p>
+Get all headers of a certain name/type</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getAllCookies()">getAllCookies()</h3>
+
+<p>
+Get all cookies in the cookie jar as an array</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $retAs        </td>
+        <td>
+            int        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getCookie()">getCookie()</h3>
+
+<p>
+Get a specific cookie according to a URI and name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            \Uri\Uri|string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $cookieName        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $retAs        </td>
+        <td>
+            int        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getMatchingCookies()">getMatchingCookies()</h3>
+
+<p>
+Return an array of all cookies matching a specific request according to the request URI,
+whether session cookies should be sent or not, and the time to consider as "now" when
+checking cookie expiry time.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|\Uri\Uri        </td>
+        <td>
+            URI        </td>
+    </tr>
+        <tr>
+        <td>
+            $matchSessionCookies        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+        <tr>
+        <td>
+            $retAs        </td>
+        <td>
+            int        </td>
+        <td>
+            Whether        </td>
+    </tr>
+        <tr>
+        <td>
+            $now        </td>
+        <td>
+            int        </td>
+        <td>
+            Override        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getPluginClassLoader()">getPluginClassLoader()</h3>
+
+<p>
+Return an instance of a PluginClassLocator, lazyload and inject map if necessary</p>
+
+
+
+
+<h3 id="has()">has()</h3>
+
+<p>
+Test for existence of a type of header</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="isEmpty()">isEmpty()</h3>
+
+<p>
+Tells if the array of cookies is empty</p>
+
+
+
+
+<h3 id="key()">key()</h3>
+
+<p>
+Return the current key for this object as an iterator</p>
+
+
+
+
+<h3 id="next()">next()</h3>
+
+<p>
+Advance the pointer for this object as an iterator</p>
+
+
+
+
+<h3 id="removeHeader()">removeHeader()</h3>
+
+<p>
+Remove a Header from the container</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $header        </td>
+        <td>
+            \Header\HeaderInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="reset()">reset()</h3>
+
+<p>
+Empties the cookieJar of any cookie</p>
+
+
+
+
+<h3 id="rewind()">rewind()</h3>
+
+<p>
+Reset the internal pointer for this object as an iterator</p>
+
+
+
+
+<h3 id="setPluginClassLoader()">setPluginClassLoader()</h3>
+
+<p>
+Set an alternate implementation for the PluginClassLoader</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pluginClassLoader        </td>
+        <td>
+            \Zend\Loader\PluginClassLocator        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="toArray()">toArray()</h3>
+
+<p>
+Return the headers container as an array</p>
+
+
+
+
+<h3 id="toString()">toString()</h3>
+
+<p>
+Render all headers at once</p>
+
+<p>This method handles the normal iteration of headers; it is up to the
+concrete classes to prepend with the appropriate status/request line.</p>
+
+
+
+<h3 id="valid()">valid()</h3>
+
+<p>
+Is this iterator still valid?</p>
+
+
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

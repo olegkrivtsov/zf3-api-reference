@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../index.html">Components</a>
-    >>        <a href="../../../../components/zendframework/zend-form.html">Component zendframework/zend-form</a>
-    >>        <a href="../../../../classes/Zend/Form/FormElementManager/FormElementManagerV3Polyfill.html">Class FormElementManagerV3Polyfill</a>
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-form.html">zendframework/zend-form</a>
+    &rarr;        <a href="../../../../classes/Zend/Form/FormElementManager/FormElementManagerV3Polyfill.html">Class FormElementManagerV3Polyfill</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -56,15 +66,22 @@
         <td>
             Zend\Form\FormElementManager\FormElementManagerV3Polyfill        </td>
     </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\ServiceManager\AbstractPluginManager.html">AbstractPluginManager</a>                    </td>
+    </tr>
         </table>
 
 <h2>Description</h2>
 
 <div class="description">
-    zend-servicemanager v3-compatible plugin manager implementation for form elements.    
+    <p>
+    zend-servicemanager v3-compatible plugin manager implementation for form elements.    </p>
     <p>Enforces that elements retrieved are instances of ElementInterface.</p>
 </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -72,43 +89,226 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
-            injectFactory()
-        </td>
-        <td>
-            Inject the factory to any element that implements FormFactoryAwareInterface        </td>
-    </tr>
-        <tr>
-        <td>
+            <a href="#callElementInit()">
             callElementInit()
+            </a>
         </td>
         <td>
             Call init() on any element that implements InitializableInterface        </td>
-    </tr>
-        <tr>
         <td>
-            setInvokableClass()
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV3Polyfill.html">
+            FormElementManagerV3Polyfill            </a>
         </td>
-        <td>
-            Override setInvokableClass        </td>
     </tr>
         <tr>
         <td>
-            validate()
-        </td>
-        <td>
-            Validate the plugin is of the expected type (v3).        </td>
-    </tr>
-        <tr>
-        <td>
+            <a href="#configure()">
             configure()
+            </a>
         </td>
         <td>
             Overrides parent::configure in order to ensure default initializers are in expected positions.        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV3Polyfill.html">
+            FormElementManagerV3Polyfill            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#injectFactory()">
+            injectFactory()
+            </a>
+        </td>
+        <td>
+            Inject the factory to any element that implements FormFactoryAwareInterface        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV3Polyfill.html">
+            FormElementManagerV3Polyfill            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setInvokableClass()">
+            setInvokableClass()
+            </a>
+        </td>
+        <td>
+            Override setInvokableClass        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV3Polyfill.html">
+            FormElementManagerV3Polyfill            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validate()">
+            validate()
+            </a>
+        </td>
+        <td>
+            Validate the plugin is of the expected type (v3).        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV3Polyfill.html">
+            FormElementManagerV3Polyfill            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="callElementInit()">callElementInit()</h3>
+
+<p>
+Call init() on any element that implements InitializableInterface</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+            \ContainerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $instance        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Instance        </td>
+    </tr>
+    </table>
+
+
+<h3 id="configure()">configure()</h3>
+
+<p>
+Overrides parent::configure in order to ensure default initializers are in expected positions.</p>
+
+<p>Always pushes <code>injectFactory</code> to top of initializer stack, and
+<code>callElementInit</code> to the bottom.</p>
+<p>{@inheritDoc}</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="injectFactory()">injectFactory()</h3>
+
+<p>
+Inject the factory to any element that implements FormFactoryAwareInterface</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+            \ContainerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $instance        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Instance        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setInvokableClass()">setInvokableClass()</h3>
+
+<p>
+Override setInvokableClass</p>
+
+<p>Overrides setInvokableClass to:</p>
+<ul>
+<li>add a factory mapping $invokableClass to ElementFactory::class</li>
+<li>alias $name to $invokableClass</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            null|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="validate()">validate()</h3>
+
+<p>
+Validate the plugin is of the expected type (v3).</p>
+
+<p>Validates against <code>$instanceOf</code>.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugin        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -182,7 +382,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

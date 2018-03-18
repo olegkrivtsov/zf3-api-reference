@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../index.html">Components</a>
-    >>        <a href="../../../../components/zendframework/zend-mvc.html">Component zendframework/zend-mvc</a>
-    >>        <a href="../../../../classes/Zend/Mvc/Controller/PluginManager.html">Class PluginManager</a>
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-mvc.html">zendframework/zend-mvc</a>
+    &rarr;        <a href="../../../../classes/Zend/Mvc/Controller/PluginManager.html">Class PluginManager</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -56,16 +66,23 @@
         <td>
             Zend\Mvc\Controller\PluginManager        </td>
     </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\ServiceManager\AbstractPluginManager.html">AbstractPluginManager</a>                    </td>
+    </tr>
         </table>
 
 <h2>Description</h2>
 
 <div class="description">
-    Plugin manager implementation for controllers    
+    <p>
+    Plugin manager implementation for controllers    </p>
     <p>Registers a number of default plugins, and contains an initializer for
 injecting plugins with the current controller.</p>
 </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -73,43 +90,193 @@ injecting plugins with the current controller.</p>
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#get()">
             get()
+            </a>
         </td>
         <td>
             Retrieve a registered instance        </td>
-    </tr>
-        <tr>
         <td>
-            setController()
+            <a href="../../Zend\Mvc\Controller\PluginManager.html">
+            PluginManager            </a>
         </td>
-        <td>
-            Set controller        </td>
     </tr>
         <tr>
         <td>
+            <a href="#getController()">
             getController()
+            </a>
         </td>
         <td>
             Retrieve controller instance        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\PluginManager.html">
+            PluginManager            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#injectController()">
             injectController()
+            </a>
         </td>
         <td>
             Inject a helper instance with the registered controller        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\PluginManager.html">
+            PluginManager            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#setController()">
+            setController()
+            </a>
+        </td>
+        <td>
+            Set controller        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\PluginManager.html">
+            PluginManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validate()">
             validate()
+            </a>
         </td>
         <td>
             Validate a plugin        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\PluginManager.html">
+            PluginManager            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="get()">get()</h3>
+
+<p>
+Retrieve a registered instance</p>
+
+<p>After the plugin is retrieved from the service locator, inject the
+controller in the plugin every time it is requested. This is required
+because a controller can use a plugin and another controller can be
+dispatched afterwards. If this second controller uses the same plugin
+as the first controller, the reference to the controller inside the
+plugin is lost.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getController()">getController()</h3>
+
+<p>
+Retrieve controller instance</p>
+
+
+
+
+<h3 id="injectController()">injectController()</h3>
+
+<p>
+Inject a helper instance with the registered controller</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugin        </td>
+        <td>
+            object        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setController()">setController()</h3>
+
+<p>
+Set controller</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controller        </td>
+        <td>
+            \DispatchableInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="validate()">validate()</h3>
+
+<p>
+Validate a plugin</p>
+
+<p>{@inheritDoc}</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugin        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -183,7 +350,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

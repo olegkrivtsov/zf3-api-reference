@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Cache\Pattern\PatternOptions -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-cache.html">zendframework/zend-cache</a>
+    &rarr;        <a href="../../../../classes/Zend/Cache/Pattern/PatternOptions.html">Class PatternOptions</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        PatternOptions</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Cache\Pattern\PatternOptions        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Stdlib\AbstractOptions.html">AbstractOptions</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCacheByDefault()">
+            getCacheByDefault()
+            </a>
+        </td>
+        <td>
+            Do we cache by default?        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCacheOutput()">
+            getCacheOutput()
+            </a>
+        </td>
+        <td>
+            Will we cache output?        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getClass()">
+            getClass()
+            </a>
+        </td>
+        <td>
+            Get class name        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getClassCacheMethods()">
+            getClassCacheMethods()
+            </a>
+        </td>
+        <td>
+            Get list of methods from which to cache return values        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getClassNonCacheMethods()">
+            getClassNonCacheMethods()
+            </a>
+        </td>
+        <td>
+            Get list of methods from which NOT to cache return values        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDirPermission()">
+            getDirPermission()
+            </a>
+        </td>
+        <td>
+            Gets directory permission        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFileLocking()">
+            getFileLocking()
+            </a>
+        </td>
+        <td>
+            Is file locking enabled?        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFilePermission()">
+            getFilePermission()
+            </a>
+        </td>
+        <td>
+            Gets file permission        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getIndexFilename()">
+            getIndexFilename()
+            </a>
+        </td>
+        <td>
+            Get value for index filename        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getObject()">
+            getObject()
+            </a>
+        </td>
+        <td>
+            Get object to cache        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getObjectCacheMagicProperties()">
+            getObjectCacheMagicProperties()
+            </a>
+        </td>
+        <td>
+            Should we cache magic properties?        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getObjectCacheMethods()">
+            getObjectCacheMethods()
+            </a>
+        </td>
+        <td>
+            Get list of object methods for which to cache return values        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getObjectKey()">
+            getObjectKey()
+            </a>
+        </td>
+        <td>
+            Get object key        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getObjectNonCacheMethods()">
+            getObjectNonCacheMethods()
+            </a>
+        </td>
+        <td>
+            Get list of object methods for which NOT to cache return values        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPublicDir()">
+            getPublicDir()
+            </a>
+        </td>
+        <td>
+            Get location of public directory        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStorage()">
+            getStorage()
+            </a>
+        </td>
+        <td>
+            Get storage adapter        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUmask()">
+            getUmask()
+            </a>
+        </td>
+        <td>
+            Get umask        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCacheByDefault()">
+            setCacheByDefault()
+            </a>
+        </td>
+        <td>
+            Set flag indicating whether or not to cache by default        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCacheOutput()">
+            setCacheOutput()
+            </a>
+        </td>
+        <td>
+            Set whether or not to cache output        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setClass()">
+            setClass()
+            </a>
+        </td>
+        <td>
+            Set class name        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setClassCacheMethods()">
+            setClassCacheMethods()
+            </a>
+        </td>
+        <td>
+            Set list of method return values to cache        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setClassNonCacheMethods()">
+            setClassNonCacheMethods()
+            </a>
+        </td>
+        <td>
+            Set list of method return values NOT to cache        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDirPermission()">
+            setDirPermission()
+            </a>
+        </td>
+        <td>
+            Set directory permission        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFileLocking()">
+            setFileLocking()
+            </a>
+        </td>
+        <td>
+            Set whether or not file locking should be used        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFilePermission()">
+            setFilePermission()
+            </a>
+        </td>
+        <td>
+            Set file permission        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setIndexFilename()">
+            setIndexFilename()
+            </a>
+        </td>
+        <td>
+            Set value for index filename        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setObject()">
+            setObject()
+            </a>
+        </td>
+        <td>
+            Set object to cache        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setObjectCacheMagicProperties()">
+            setObjectCacheMagicProperties()
+            </a>
+        </td>
+        <td>
+            Set flag indicating whether or not to cache magic properties        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setObjectCacheMethods()">
+            setObjectCacheMethods()
+            </a>
+        </td>
+        <td>
+            Set list of object methods for which to cache return values        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setObjectKey()">
+            setObjectKey()
+            </a>
+        </td>
+        <td>
+            Set the object key part.        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setObjectNonCacheMethods()">
+            setObjectNonCacheMethods()
+            </a>
+        </td>
+        <td>
+            Set list of object methods for which NOT to cache return values        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPublicDir()">
+            setPublicDir()
+            </a>
+        </td>
+        <td>
+            Set location of public directory        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStorage()">
+            setStorage()
+            </a>
+        </td>
+        <td>
+            Set storage adapter        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUmask()">
+            setUmask()
+            </a>
+        </td>
+        <td>
+            Set umask        </td>
+        <td>
+            <a href="../../Zend\Cache\Pattern\PatternOptions.html">
+            PatternOptions            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getCacheByDefault()">getCacheByDefault()</h3>
+
+<p>
+Do we cache by default?</p>
+
+<p>Used by:</p>
+<ul>
+<li>ClassCache</li>
+<li>ObjectCache</li>
+</ul>
+
+
+
+<h3 id="getCacheOutput()">getCacheOutput()</h3>
+
+<p>
+Will we cache output?</p>
+
+<p>Used by:</p>
+<ul>
+<li>CallbackCache</li>
+<li>ClassCache</li>
+<li>ObjectCache</li>
+</ul>
+
+
+
+<h3 id="getClass()">getClass()</h3>
+
+<p>
+Get class name</p>
+
+<p>Used by:</p>
+<ul>
+<li>ClassCache</li>
+</ul>
+
+
+
+<h3 id="getClassCacheMethods()">getClassCacheMethods()</h3>
+
+<p>
+Get list of methods from which to cache return values</p>
+
+<p>Used by:</p>
+<ul>
+<li>ClassCache</li>
+</ul>
+
+
+
+<h3 id="getClassNonCacheMethods()">getClassNonCacheMethods()</h3>
+
+<p>
+Get list of methods from which NOT to cache return values</p>
+
+<p>Used by:</p>
+<ul>
+<li>ClassCache</li>
+</ul>
+
+
+
+<h3 id="getDirPermission()">getDirPermission()</h3>
+
+<p>
+Gets directory permission</p>
+
+
+
+
+<h3 id="getFileLocking()">getFileLocking()</h3>
+
+<p>
+Is file locking enabled?</p>
+
+<p>Used by:</p>
+<ul>
+<li>CaptureCache</li>
+</ul>
+
+
+
+<h3 id="getFilePermission()">getFilePermission()</h3>
+
+<p>
+Gets file permission</p>
+
+
+
+
+<h3 id="getIndexFilename()">getIndexFilename()</h3>
+
+<p>
+Get value for index filename</p>
+
+
+
+
+<h3 id="getObject()">getObject()</h3>
+
+<p>
+Get object to cache</p>
+
+
+
+
+<h3 id="getObjectCacheMagicProperties()">getObjectCacheMagicProperties()</h3>
+
+<p>
+Should we cache magic properties?</p>
+
+<p>Used by:</p>
+<ul>
+<li>ObjectCache</li>
+</ul>
+
+
+
+<h3 id="getObjectCacheMethods()">getObjectCacheMethods()</h3>
+
+<p>
+Get list of object methods for which to cache return values</p>
+
+
+
+
+<h3 id="getObjectKey()">getObjectKey()</h3>
+
+<p>
+Get object key</p>
+
+<p>Used by:</p>
+<ul>
+<li>ObjectCache</li>
+</ul>
+
+
+
+<h3 id="getObjectNonCacheMethods()">getObjectNonCacheMethods()</h3>
+
+<p>
+Get list of object methods for which NOT to cache return values</p>
+
+
+
+
+<h3 id="getPublicDir()">getPublicDir()</h3>
+
+<p>
+Get location of public directory</p>
+
+<p>Used by:</p>
+<ul>
+<li>CaptureCache</li>
+</ul>
+
+
+
+<h3 id="getStorage()">getStorage()</h3>
+
+<p>
+Get storage adapter</p>
+
+<p>Used by:</p>
+<ul>
+<li>CallbackCache</li>
+<li>ClassCache</li>
+<li>ObjectCache</li>
+<li>OutputCache</li>
+</ul>
+
+
+
+<h3 id="getUmask()">getUmask()</h3>
+
+<p>
+Get umask</p>
+
+<p>Used by:</p>
+<ul>
+<li>CaptureCache</li>
+</ul>
+
+
+
+<h3 id="setCacheByDefault()">setCacheByDefault()</h3>
+
+<p>
+Set flag indicating whether or not to cache by default</p>
+
+<p>Used by:</p>
+<ul>
+<li>ClassCache</li>
+<li>ObjectCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $cacheByDefault        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setCacheOutput()">setCacheOutput()</h3>
+
+<p>
+Set whether or not to cache output</p>
+
+<p>Used by:</p>
+<ul>
+<li>CallbackCache</li>
+<li>ClassCache</li>
+<li>ObjectCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $cacheOutput        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setClass()">setClass()</h3>
+
+<p>
+Set class name</p>
+
+<p>Used by:</p>
+<ul>
+<li>ClassCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setClassCacheMethods()">setClassCacheMethods()</h3>
+
+<p>
+Set list of method return values to cache</p>
+
+<p>Used by:</p>
+<ul>
+<li>ClassCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $classCacheMethods        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setClassNonCacheMethods()">setClassNonCacheMethods()</h3>
+
+<p>
+Set list of method return values NOT to cache</p>
+
+<p>Used by:</p>
+<ul>
+<li>ClassCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $classNonCacheMethods        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setDirPermission()">setDirPermission()</h3>
+
+<p>
+Set directory permission</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $dirPermission        </td>
+        <td>
+            bool|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setFileLocking()">setFileLocking()</h3>
+
+<p>
+Set whether or not file locking should be used</p>
+
+<p>Used by:</p>
+<ul>
+<li>CaptureCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $fileLocking        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setFilePermission()">setFilePermission()</h3>
+
+<p>
+Set file permission</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $filePermission        </td>
+        <td>
+            bool|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setIndexFilename()">setIndexFilename()</h3>
+
+<p>
+Set value for index filename</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $indexFilename        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setObject()">setObject()</h3>
+
+<p>
+Set object to cache</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $object        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setObjectCacheMagicProperties()">setObjectCacheMagicProperties()</h3>
+
+<p>
+Set flag indicating whether or not to cache magic properties</p>
+
+<p>Used by:</p>
+<ul>
+<li>ObjectCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $objectCacheMagicProperties        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setObjectCacheMethods()">setObjectCacheMethods()</h3>
+
+<p>
+Set list of object methods for which to cache return values</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $objectCacheMethods        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setObjectKey()">setObjectKey()</h3>
+
+<p>
+Set the object key part.</p>
+
+<p>Used to generate a callback key in order to speed up key generation.</p>
+<p>Used by:</p>
+<ul>
+<li>ObjectCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $objectKey        </td>
+        <td>
+            null|string        </td>
+        <td>
+            The        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setObjectNonCacheMethods()">setObjectNonCacheMethods()</h3>
+
+<p>
+Set list of object methods for which NOT to cache return values</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $objectNonCacheMethods        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setPublicDir()">setPublicDir()</h3>
+
+<p>
+Set location of public directory</p>
+
+<p>Used by:</p>
+<ul>
+<li>CaptureCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $publicDir        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setStorage()">setStorage()</h3>
+
+<p>
+Set storage adapter</p>
+
+<p>Required for the following Pattern classes:</p>
+<ul>
+<li>CallbackCache</li>
+<li>ClassCache</li>
+<li>ObjectCache</li>
+<li>OutputCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $storage        </td>
+        <td>
+            string|array|\Storage        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setUmask()">setUmask()</h3>
+
+<p>
+Set umask</p>
+
+<p>Used by:</p>
+<ul>
+<li>CaptureCache</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $umask        </td>
+        <td>
+            bool|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

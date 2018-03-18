@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Db\Metadata\Object\ConstraintObject -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/zendframework/zend-db.html">zendframework/zend-db</a>
+    &rarr;        <a href="../../../../../classes/Zend/Db/Metadata/Object/ConstraintObject.html">Class ConstraintObject</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        ConstraintObject</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Db\Metadata\Object\ConstraintObject        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCheckClause()">
+            getCheckClause()
+            </a>
+        </td>
+        <td>
+            Get Check Clause.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getColumns()">
+            getColumns()
+            </a>
+        </td>
+        <td>
+            Get Columns.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDeleteRule()">
+            getDeleteRule()
+            </a>
+        </td>
+        <td>
+            Get Delete Rule.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMatchOption()">
+            getMatchOption()
+            </a>
+        </td>
+        <td>
+            Get Match Option.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getName()">
+            getName()
+            </a>
+        </td>
+        <td>
+            Get name        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getReferencedColumns()">
+            getReferencedColumns()
+            </a>
+        </td>
+        <td>
+            Get Referenced Columns.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getReferencedTableName()">
+            getReferencedTableName()
+            </a>
+        </td>
+        <td>
+            Get Referenced Table Name.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getReferencedTableSchema()">
+            getReferencedTableSchema()
+            </a>
+        </td>
+        <td>
+            Get Referenced Table Schema.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSchemaName()">
+            getSchemaName()
+            </a>
+        </td>
+        <td>
+            Get schema name        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTableName()">
+            getTableName()
+            </a>
+        </td>
+        <td>
+            Get table name        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getType()">
+            getType()
+            </a>
+        </td>
+        <td>
+            Get type        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUpdateRule()">
+            getUpdateRule()
+            </a>
+        </td>
+        <td>
+            Get Update Rule.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasColumns()">
+            hasColumns()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isCheck()">
+            isCheck()
+            </a>
+        </td>
+        <td>
+            Is foreign key        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isForeignKey()">
+            isForeignKey()
+            </a>
+        </td>
+        <td>
+            Is foreign key        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isPrimaryKey()">
+            isPrimaryKey()
+            </a>
+        </td>
+        <td>
+            Is primary key        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isUnique()">
+            isUnique()
+            </a>
+        </td>
+        <td>
+            Is unique key        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCheckClause()">
+            setCheckClause()
+            </a>
+        </td>
+        <td>
+            Set Check Clause.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setColumns()">
+            setColumns()
+            </a>
+        </td>
+        <td>
+            Set Columns.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDeleteRule()">
+            setDeleteRule()
+            </a>
+        </td>
+        <td>
+            Set Delete Rule.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMatchOption()">
+            setMatchOption()
+            </a>
+        </td>
+        <td>
+            Set Match Option.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setName()">
+            setName()
+            </a>
+        </td>
+        <td>
+            Set name        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setReferencedColumns()">
+            setReferencedColumns()
+            </a>
+        </td>
+        <td>
+            Set Referenced Columns.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setReferencedTableName()">
+            setReferencedTableName()
+            </a>
+        </td>
+        <td>
+            Set Referenced Table Name.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setReferencedTableSchema()">
+            setReferencedTableSchema()
+            </a>
+        </td>
+        <td>
+            Set Referenced Table Schema.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSchemaName()">
+            setSchemaName()
+            </a>
+        </td>
+        <td>
+            Set schema name        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTableName()">
+            setTableName()
+            </a>
+        </td>
+        <td>
+            Set table name        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setType()">
+            setType()
+            </a>
+        </td>
+        <td>
+            Set type        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUpdateRule()">
+            setUpdateRule()
+            </a>
+        </td>
+        <td>
+            Set Update Rule.        </td>
+        <td>
+            <a href="../../Zend\Db\Metadata\Object\ConstraintObject.html">
+            ConstraintObject            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $tableName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $schemaName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getCheckClause()">getCheckClause()</h3>
+
+<p>
+Get Check Clause.</p>
+
+
+
+
+<h3 id="getColumns()">getColumns()</h3>
+
+<p>
+Get Columns.</p>
+
+
+
+
+<h3 id="getDeleteRule()">getDeleteRule()</h3>
+
+<p>
+Get Delete Rule.</p>
+
+
+
+
+<h3 id="getMatchOption()">getMatchOption()</h3>
+
+<p>
+Get Match Option.</p>
+
+
+
+
+<h3 id="getName()">getName()</h3>
+
+<p>
+Get name</p>
+
+
+
+
+<h3 id="getReferencedColumns()">getReferencedColumns()</h3>
+
+<p>
+Get Referenced Columns.</p>
+
+
+
+
+<h3 id="getReferencedTableName()">getReferencedTableName()</h3>
+
+<p>
+Get Referenced Table Name.</p>
+
+
+
+
+<h3 id="getReferencedTableSchema()">getReferencedTableSchema()</h3>
+
+<p>
+Get Referenced Table Schema.</p>
+
+
+
+
+<h3 id="getSchemaName()">getSchemaName()</h3>
+
+<p>
+Get schema name</p>
+
+
+
+
+<h3 id="getTableName()">getTableName()</h3>
+
+<p>
+Get table name</p>
+
+
+
+
+<h3 id="getType()">getType()</h3>
+
+<p>
+Get type</p>
+
+
+
+
+<h3 id="getUpdateRule()">getUpdateRule()</h3>
+
+<p>
+Get Update Rule.</p>
+
+
+
+
+<h3 id="hasColumns()">hasColumns()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="isCheck()">isCheck()</h3>
+
+<p>
+Is foreign key</p>
+
+
+
+
+<h3 id="isForeignKey()">isForeignKey()</h3>
+
+<p>
+Is foreign key</p>
+
+
+
+
+<h3 id="isPrimaryKey()">isPrimaryKey()</h3>
+
+<p>
+Is primary key</p>
+
+
+
+
+<h3 id="isUnique()">isUnique()</h3>
+
+<p>
+Is unique key</p>
+
+
+
+
+<h3 id="setCheckClause()">setCheckClause()</h3>
+
+<p>
+Set Check Clause.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $checkClause        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setColumns()">setColumns()</h3>
+
+<p>
+Set Columns.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $columns        </td>
+        <td>
+            string[]        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setDeleteRule()">setDeleteRule()</h3>
+
+<p>
+Set Delete Rule.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $deleteRule        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setMatchOption()">setMatchOption()</h3>
+
+<p>
+Set Match Option.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $matchOption        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setName()">setName()</h3>
+
+<p>
+Set name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setReferencedColumns()">setReferencedColumns()</h3>
+
+<p>
+Set Referenced Columns.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $referencedColumns        </td>
+        <td>
+            string[]        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setReferencedTableName()">setReferencedTableName()</h3>
+
+<p>
+Set Referenced Table Name.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $referencedTableName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setReferencedTableSchema()">setReferencedTableSchema()</h3>
+
+<p>
+Set Referenced Table Schema.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $referencedTableSchema        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setSchemaName()">setSchemaName()</h3>
+
+<p>
+Set schema name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $schemaName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setTableName()">setTableName()</h3>
+
+<p>
+Set table name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $tableName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setType()">setType()</h3>
+
+<p>
+Set type</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setUpdateRule()">setUpdateRule()</h3>
+
+<p>
+Set Update Rule.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $updateRule        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

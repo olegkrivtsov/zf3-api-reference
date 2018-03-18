@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Http\Client -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-http.html">zendframework/zend-http</a>
+    &rarr;        <a href="../../../classes/Zend/Http/Client.html">Class Client</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Client</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Http\Client        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../Zend\Http\Stdlib\DispatchableInterface.html">DispatchableInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Http client    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addCookie()">
+            addCookie()
+            </a>
+        </td>
+        <td>
+            Add a cookie        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearAuth()">
+            clearAuth()
+            </a>
+        </td>
+        <td>
+            Clear http authentication        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearCookies()">
+            clearCookies()
+            </a>
+        </td>
+        <td>
+            Clear all the cookies        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#dispatch()">
+            dispatch()
+            </a>
+        </td>
+        <td>
+            Dispatch        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#encodeAuthHeader()">
+            encodeAuthHeader()
+            </a>
+        </td>
+        <td>
+            Create a HTTP authentication "Authorization:" header according to the
+specified user, password and authentication method.        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#encodeFormData()">
+            encodeFormData()
+            </a>
+        </td>
+        <td>
+            Encode data to a multipart/form-data part suitable for a POST request.        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAdapter()">
+            getAdapter()
+            </a>
+        </td>
+        <td>
+            Load the connection adapter        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getArgSeparator()">
+            getArgSeparator()
+            </a>
+        </td>
+        <td>
+            Get the query string argument separator        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCookies()">
+            getCookies()
+            </a>
+        </td>
+        <td>
+            Return the current cookies        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEncType()">
+            getEncType()
+            </a>
+        </td>
+        <td>
+            Get the encoding type        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeader()">
+            getHeader()
+            </a>
+        </td>
+        <td>
+            Get the header value of the request        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastRawRequest()">
+            getLastRawRequest()
+            </a>
+        </td>
+        <td>
+            Get the last request (as a string)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastRawResponse()">
+            getLastRawResponse()
+            </a>
+        </td>
+        <td>
+            Get the last response (as a string)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMethod()">
+            getMethod()
+            </a>
+        </td>
+        <td>
+            Get the HTTP method        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRedirectionsCount()">
+            getRedirectionsCount()
+            </a>
+        </td>
+        <td>
+            Get the redirections count        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRequest()">
+            getRequest()
+            </a>
+        </td>
+        <td>
+            Get Request        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResponse()">
+            getResponse()
+            </a>
+        </td>
+        <td>
+            Get Response        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStream()">
+            getStream()
+            </a>
+        </td>
+        <td>
+            Get status of streaming for received data        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUri()">
+            getUri()
+            </a>
+        </td>
+        <td>
+            Get uri (from the request)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasHeader()">
+            hasHeader()
+            </a>
+        </td>
+        <td>
+            Check if exists the header type specified        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeFileUpload()">
+            removeFileUpload()
+            </a>
+        </td>
+        <td>
+            Remove a file to upload        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#reset()">
+            reset()
+            </a>
+        </td>
+        <td>
+            Fully reset the HTTP client (auth, cookies, request, response, etc.)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resetParameters()">
+            resetParameters()
+            </a>
+        </td>
+        <td>
+            Reset all the HTTP parameters (request, response, etc)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#send()">
+            send()
+            </a>
+        </td>
+        <td>
+            Send HTTP request        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAdapter()">
+            setAdapter()
+            </a>
+        </td>
+        <td>
+            Load the connection adapter        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setArgSeparator()">
+            setArgSeparator()
+            </a>
+        </td>
+        <td>
+            Set the query string argument separator        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAuth()">
+            setAuth()
+            </a>
+        </td>
+        <td>
+            Create a HTTP authentication "Authorization:" header according to the
+specified user, password and authentication method.        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCookies()">
+            setCookies()
+            </a>
+        </td>
+        <td>
+            Set an array of cookies        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEncType()">
+            setEncType()
+            </a>
+        </td>
+        <td>
+            Set the encoding type and the boundary (if any)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFileUpload()">
+            setFileUpload()
+            </a>
+        </td>
+        <td>
+            Set a file to upload (using a POST request)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHeaders()">
+            setHeaders()
+            </a>
+        </td>
+        <td>
+            Set the headers (for the request)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMethod()">
+            setMethod()
+            </a>
+        </td>
+        <td>
+            Set the HTTP method (to the request)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set configuration parameters for this HTTP client        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setParameterGet()">
+            setParameterGet()
+            </a>
+        </td>
+        <td>
+            Set the GET parameters        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setParameterPost()">
+            setParameterPost()
+            </a>
+        </td>
+        <td>
+            Set the POST parameters        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRawBody()">
+            setRawBody()
+            </a>
+        </td>
+        <td>
+            Set raw body (for advanced use cases)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRequest()">
+            setRequest()
+            </a>
+        </td>
+        <td>
+            Set request        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setResponse()">
+            setResponse()
+            </a>
+        </td>
+        <td>
+            Set response        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStream()">
+            setStream()
+            </a>
+        </td>
+        <td>
+            Set streaming for received data        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUri()">
+            setUri()
+            </a>
+        </td>
+        <td>
+            Set Uri (to the request)        </td>
+        <td>
+            <a href="../../Zend\Http\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addCookie()">addCookie()</h3>
+
+<p>
+Add a cookie</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $cookie        </td>
+        <td>
+            array|\ArrayIterator|\Header\SetCookie|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $expire        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $domain        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $secure        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $httponly        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $maxAge        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $version        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="clearAuth()">clearAuth()</h3>
+
+<p>
+Clear http authentication</p>
+
+
+
+
+<h3 id="clearCookies()">clearCookies()</h3>
+
+<p>
+Clear all the cookies</p>
+
+
+
+
+<h3 id="dispatch()">dispatch()</h3>
+
+<p>
+Dispatch</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            \Stdlib\RequestInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            \Stdlib\ResponseInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="encodeAuthHeader()">encodeAuthHeader()</h3>
+
+<p>
+Create a HTTP authentication "Authorization:" header according to the
+specified user, password and authentication method.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $user        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $password        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="encodeFormData()">encodeFormData()</h3>
+
+<p>
+Encode data to a multipart/form-data part suitable for a POST request.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $boundary        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $filename        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $headers        </td>
+        <td>
+            array        </td>
+        <td>
+            Associative        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getAdapter()">getAdapter()</h3>
+
+<p>
+Load the connection adapter</p>
+
+
+
+
+<h3 id="getArgSeparator()">getArgSeparator()</h3>
+
+<p>
+Get the query string argument separator</p>
+
+
+
+
+<h3 id="getCookies()">getCookies()</h3>
+
+<p>
+Return the current cookies</p>
+
+
+
+
+<h3 id="getEncType()">getEncType()</h3>
+
+<p>
+Get the encoding type</p>
+
+
+
+
+<h3 id="getHeader()">getHeader()</h3>
+
+<p>
+Get the header value of the request</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getLastRawRequest()">getLastRawRequest()</h3>
+
+<p>
+Get the last request (as a string)</p>
+
+
+
+
+<h3 id="getLastRawResponse()">getLastRawResponse()</h3>
+
+<p>
+Get the last response (as a string)</p>
+
+
+
+
+<h3 id="getMethod()">getMethod()</h3>
+
+<p>
+Get the HTTP method</p>
+
+
+
+
+<h3 id="getRedirectionsCount()">getRedirectionsCount()</h3>
+
+<p>
+Get the redirections count</p>
+
+
+
+
+<h3 id="getRequest()">getRequest()</h3>
+
+<p>
+Get Request</p>
+
+
+
+
+<h3 id="getResponse()">getResponse()</h3>
+
+<p>
+Get Response</p>
+
+
+
+
+<h3 id="getStream()">getStream()</h3>
+
+<p>
+Get status of streaming for received data</p>
+
+
+
+
+<h3 id="getUri()">getUri()</h3>
+
+<p>
+Get uri (from the request)</p>
+
+
+
+
+<h3 id="hasHeader()">hasHeader()</h3>
+
+<p>
+Check if exists the header type specified</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="removeFileUpload()">removeFileUpload()</h3>
+
+<p>
+Remove a file to upload</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $filename        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="reset()">reset()</h3>
+
+<p>
+Fully reset the HTTP client (auth, cookies, request, response, etc.)</p>
+
+
+
+
+<h3 id="resetParameters()">resetParameters()</h3>
+
+<p>
+Reset all the HTTP parameters (request, response, etc)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $clearCookies        </td>
+        <td>
+            bool        </td>
+        <td>
+            Also        </td>
+    </tr>
+        <tr>
+        <td>
+            $clearAuth        </td>
+        <td>
+            bool        </td>
+        <td>
+            Also        </td>
+    </tr>
+    </table>
+
+
+<h3 id="send()">send()</h3>
+
+<p>
+Send HTTP request</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            \Request        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setAdapter()">setAdapter()</h3>
+
+<p>
+Load the connection adapter</p>
+
+<p>While this method is not called more than one for a client, it is
+separated from -&gt;request() to preserve logic and readability</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $adapter        </td>
+        <td>
+            \Client\Adapter\AdapterInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setArgSeparator()">setArgSeparator()</h3>
+
+<p>
+Set the query string argument separator</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $argSeparator        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setAuth()">setAuth()</h3>
+
+<p>
+Create a HTTP authentication "Authorization:" header according to the
+specified user, password and authentication method.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $user        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $password        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setCookies()">setCookies()</h3>
+
+<p>
+Set an array of cookies</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $cookies        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setEncType()">setEncType()</h3>
+
+<p>
+Set the encoding type and the boundary (if any)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $encType        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $boundary        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setFileUpload()">setFileUpload()</h3>
+
+<p>
+Set a file to upload (using a POST request)</p>
+
+<p>Can be used in two ways:</p>
+<ol>
+<li>$data is null (default): $filename is treated as the name if a local file which
+will be read and sent. Will try to guess the content type using mime_content_type().</li>
+<li>$data is set - $filename is sent as the file name, but $data is sent as the file
+contents and no file is read from the file system. In this case, you need to
+manually set the Content-Type ($ctype) or it will default to
+application/octet-stream.</li>
+</ol>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $filename        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+        <tr>
+        <td>
+            $formname        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            string        </td>
+        <td>
+            Data        </td>
+    </tr>
+        <tr>
+        <td>
+            $ctype        </td>
+        <td>
+            string        </td>
+        <td>
+            Content        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setHeaders()">setHeaders()</h3>
+
+<p>
+Set the headers (for the request)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $headers        </td>
+        <td>
+            \Headers|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setMethod()">setMethod()</h3>
+
+<p>
+Set the HTTP method (to the request)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set configuration parameters for this HTTP client</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setParameterGet()">setParameterGet()</h3>
+
+<p>
+Set the GET parameters</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $query        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setParameterPost()">setParameterPost()</h3>
+
+<p>
+Set the POST parameters</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $post        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setRawBody()">setRawBody()</h3>
+
+<p>
+Set raw body (for advanced use cases)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $body        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setRequest()">setRequest()</h3>
+
+<p>
+Set request</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            \Request        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setResponse()">setResponse()</h3>
+
+<p>
+Set response</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $response        </td>
+        <td>
+            \Response        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setStream()">setStream()</h3>
+
+<p>
+Set streaming for received data</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $streamfile        </td>
+        <td>
+            string|bool        </td>
+        <td>
+            Stream        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setUri()">setUri()</h3>
+
+<p>
+Set Uri (to the request)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|\Http        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

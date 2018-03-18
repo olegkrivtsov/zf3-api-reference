@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../index.html">Components</a>
-    >>        <a href="../../../../components/zendframework/zend-modulemanager.html">Component zendframework/zend-modulemanager</a>
-    >>        <a href="../../../../classes/Zend/ModuleManager/Listener/DefaultListenerAggregate.html">Class DefaultListenerAggregate</a>
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-modulemanager.html">zendframework/zend-modulemanager</a>
+    &rarr;        <a href="../../../../classes/Zend/ModuleManager/Listener/DefaultListenerAggregate.html">Class DefaultListenerAggregate</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -56,22 +66,28 @@
         <td>
             Zend\ModuleManager\Listener\DefaultListenerAggregate        </td>
     </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\ModuleManager\Listener\AbstractListener.html">AbstractListener</a>                    </td>
+    </tr>
             <tr>
         <td>
             Implements:
         </td>
         <td>
-                        ListenerAggregateInterface,
-                    </td>
+                                    <a href="../../Zend\EventManager\ListenerAggregateInterface.html">ListenerAggregateInterface</a>                    </td>
     </tr>
     </table>
 
 <h2>Description</h2>
 
 <div class="description">
-    Default listener aggregate    
+    <p>
+    Default listener aggregate    </p>
     </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -79,36 +95,243 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            __construct        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\AbstractListener.html">
+            AbstractListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#attach()">
             attach()
+            </a>
         </td>
         <td>
             Attach one or more listeners        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\DefaultListenerAggregate.html">
+            DefaultListenerAggregate            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#detach()">
             detach()
+            </a>
         </td>
         <td>
             Detach all previously attached listeners        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\DefaultListenerAggregate.html">
+            DefaultListenerAggregate            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#getConfigListener()">
             getConfigListener()
+            </a>
         </td>
         <td>
             Get the config merger.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\DefaultListenerAggregate.html">
+            DefaultListenerAggregate            </a>
+        </td>
     </tr>
         <tr>
         <td>
+            <a href="#getOptions()">
+            getOptions()
+            </a>
+        </td>
+        <td>
+            Get options.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\AbstractListener.html">
+            AbstractListener            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setConfigListener()">
             setConfigListener()
+            </a>
         </td>
         <td>
             Set the config merger to use.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\DefaultListenerAggregate.html">
+            DefaultListenerAggregate            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set options.        </td>
+        <td>
+            <a href="../../Zend\ModuleManager\Listener\AbstractListener.html">
+            AbstractListener            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+__construct</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            \ListenerOptions        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+Attach one or more listeners</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+            \EventManagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="detach()">detach()</h3>
+
+<p>
+Detach all previously attached listeners</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $events        </td>
+        <td>
+            \EventManagerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getConfigListener()">getConfigListener()</h3>
+
+<p>
+Get the config merger.</p>
+
+
+
+
+<h3 id="getOptions()">getOptions()</h3>
+
+<p>
+Get options.</p>
+
+
+
+
+<h3 id="setConfigListener()">setConfigListener()</h3>
+
+<p>
+Set the config merger to use.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $configListener        </td>
+        <td>
+            \ConfigMergerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set options.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            \ListenerOptions        </td>
+        <td>
+            the        </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -182,7 +405,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

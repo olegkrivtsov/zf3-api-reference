@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Cache\Storage\Adapter\Memory -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/zendframework/zend-cache.html">zendframework/zend-cache</a>
+    &rarr;        <a href="../../../../../classes/Zend/Cache/Storage/Adapter/Memory.html">Class Memory</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Memory</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Cache\Storage\Adapter\Memory        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">AbstractAdapter</a>                    </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../Zend\Cache\Storage\AvailableSpaceCapableInterface.html">AvailableSpaceCapableInterface</a>,                         <a href="../../Zend\Cache\Storage\ClearByPrefixInterface.html">ClearByPrefixInterface</a>,                         <a href="../../Zend\Cache\Storage\ClearByNamespaceInterface.html">ClearByNamespaceInterface</a>,                         <a href="../../Zend\Cache\Storage\ClearExpiredInterface.html">ClearExpiredInterface</a>,                         <a href="../../Zend\Cache\Storage\FlushableInterface.html">FlushableInterface</a>,                         <a href="../../Zend\Cache\Storage\IterableInterface.html">IterableInterface</a>,                         <a href="../../Zend\Cache\Storage\TaggableInterface.html">TaggableInterface</a>,                         <a href="../../Zend\Cache\Storage\TotalSpaceCapableInterface.html">TotalSpaceCapableInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__destruct()">
+            __destruct()
+            </a>
+        </td>
+        <td>
+            Destructor        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addItem()">
+            addItem()
+            </a>
+        </td>
+        <td>
+            Add an item.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addItems()">
+            addItems()
+            </a>
+        </td>
+        <td>
+            Add multiple items.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addPlugin()">
+            addPlugin()
+            </a>
+        </td>
+        <td>
+            Register a plugin        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#checkAndSetItem()">
+            checkAndSetItem()
+            </a>
+        </td>
+        <td>
+            Set an item only if token matches        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearByNamespace()">
+            clearByNamespace()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearByPrefix()">
+            clearByPrefix()
+            </a>
+        </td>
+        <td>
+            Remove items matching given prefix        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearByTags()">
+            clearByTags()
+            </a>
+        </td>
+        <td>
+            Remove items matching given tags.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearExpired()">
+            clearExpired()
+            </a>
+        </td>
+        <td>
+            Remove expired items        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#decrementItem()">
+            decrementItem()
+            </a>
+        </td>
+        <td>
+            Decrement an item.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#decrementItems()">
+            decrementItems()
+            </a>
+        </td>
+        <td>
+            Decrement multiple items.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#flush()">
+            flush()
+            </a>
+        </td>
+        <td>
+            Flush the whole storage        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAvailableSpace()">
+            getAvailableSpace()
+            </a>
+        </td>
+        <td>
+            Get available space in bytes        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCaching()">
+            getCaching()
+            </a>
+        </td>
+        <td>
+            Get caching enabled.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCapabilities()">
+            getCapabilities()
+            </a>
+        </td>
+        <td>
+            Get capabilities of this adapter        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEventManager()">
+            getEventManager()
+            </a>
+        </td>
+        <td>
+            Get the event manager        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getItem()">
+            getItem()
+            </a>
+        </td>
+        <td>
+            Get an item.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getItems()">
+            getItems()
+            </a>
+        </td>
+        <td>
+            Get multiple items.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getIterator()">
+            getIterator()
+            </a>
+        </td>
+        <td>
+            Get the storage iterator        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMetadata()">
+            getMetadata()
+            </a>
+        </td>
+        <td>
+            Get metadata of an item.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMetadatas()">
+            getMetadatas()
+            </a>
+        </td>
+        <td>
+            Get multiple metadata        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOptions()">
+            getOptions()
+            </a>
+        </td>
+        <td>
+            Get options.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPluginRegistry()">
+            getPluginRegistry()
+            </a>
+        </td>
+        <td>
+            Return registry of plugins        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTags()">
+            getTags()
+            </a>
+        </td>
+        <td>
+            Get tags of an item by given key        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTotalSpace()">
+            getTotalSpace()
+            </a>
+        </td>
+        <td>
+            Get total space in bytes        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasItem()">
+            hasItem()
+            </a>
+        </td>
+        <td>
+            Test if an item exists.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasItems()">
+            hasItems()
+            </a>
+        </td>
+        <td>
+            Test multiple items.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasPlugin()">
+            hasPlugin()
+            </a>
+        </td>
+        <td>
+            Check if a plugin is registered        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#incrementItem()">
+            incrementItem()
+            </a>
+        </td>
+        <td>
+            Increment an item.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#incrementItems()">
+            incrementItems()
+            </a>
+        </td>
+        <td>
+            Increment multiple items.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeItem()">
+            removeItem()
+            </a>
+        </td>
+        <td>
+            Remove an item.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeItems()">
+            removeItems()
+            </a>
+        </td>
+        <td>
+            Remove multiple items.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removePlugin()">
+            removePlugin()
+            </a>
+        </td>
+        <td>
+            Unregister an already registered plugin        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#replaceItem()">
+            replaceItem()
+            </a>
+        </td>
+        <td>
+            Replace an existing item.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#replaceItems()">
+            replaceItems()
+            </a>
+        </td>
+        <td>
+            Replace multiple existing items.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCaching()">
+            setCaching()
+            </a>
+        </td>
+        <td>
+            Enable/Disable caching.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setItem()">
+            setItem()
+            </a>
+        </td>
+        <td>
+            Store an item.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setItems()">
+            setItems()
+            </a>
+        </td>
+        <td>
+            Store multiple items.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set options.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTags()">
+            setTags()
+            </a>
+        </td>
+        <td>
+            Set tags to an item by given key.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\Memory.html">
+            Memory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#touchItem()">
+            touchItem()
+            </a>
+        </td>
+        <td>
+            Reset lifetime of an item        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#touchItems()">
+            touchItems()
+            </a>
+        </td>
+        <td>
+            Reset lifetime of multiple items.        </td>
+        <td>
+            <a href="../../Zend\Cache\Storage\Adapter\AbstractAdapter.html">
+            AbstractAdapter            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            null|array|\Traversable|\AdapterOptions        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__destruct()">__destruct()</h3>
+
+<p>
+Destructor</p>
+
+<p>detach all registered plugins to free
+event handles of event manager</p>
+
+
+
+<h3 id="addItem()">addItem()</h3>
+
+<p>
+Add an item.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addItems()">addItems()</h3>
+
+<p>
+Add multiple items.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keyValuePairs        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addPlugin()">addPlugin()</h3>
+
+<p>
+Register a plugin</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugin        </td>
+        <td>
+            \Plugin\PluginInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="checkAndSetItem()">checkAndSetItem()</h3>
+
+<p>
+Set an item only if token matches</p>
+
+<p>It uses the token received from getItem() to check if the item has
+changed before overwriting it.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $token        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="clearByNamespace()">clearByNamespace()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="clearByPrefix()">clearByPrefix()</h3>
+
+<p>
+Remove items matching given prefix</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $prefix        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="clearByTags()">clearByTags()</h3>
+
+<p>
+Remove items matching given tags.</p>
+
+<p>If $disjunction only one of the given tags must match
+else all given tags must match.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $tags        </td>
+        <td>
+            string[]        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $disjunction        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="clearExpired()">clearExpired()</h3>
+
+<p>
+Remove expired items</p>
+
+
+
+
+<h3 id="decrementItem()">decrementItem()</h3>
+
+<p>
+Decrement an item.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="decrementItems()">decrementItems()</h3>
+
+<p>
+Decrement multiple items.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keyValuePairs        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="flush()">flush()</h3>
+
+<p>
+Flush the whole storage</p>
+
+
+
+
+<h3 id="getAvailableSpace()">getAvailableSpace()</h3>
+
+<p>
+Get available space in bytes</p>
+
+
+
+
+<h3 id="getCaching()">getCaching()</h3>
+
+<p>
+Get caching enabled.</p>
+
+<p>Alias of getWritable and getReadable.</p>
+
+
+
+<h3 id="getCapabilities()">getCapabilities()</h3>
+
+<p>
+Get capabilities of this adapter</p>
+
+
+
+
+<h3 id="getEventManager()">getEventManager()</h3>
+
+<p>
+Get the event manager</p>
+
+
+
+
+<h3 id="getItem()">getItem()</h3>
+
+<p>
+Get an item.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $success        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $casToken        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getItems()">getItems()</h3>
+
+<p>
+Get multiple items.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keys        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getIterator()">getIterator()</h3>
+
+<p>
+Get the storage iterator</p>
+
+
+
+
+<h3 id="getMetadata()">getMetadata()</h3>
+
+<p>
+Get metadata of an item.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getMetadatas()">getMetadatas()</h3>
+
+<p>
+Get multiple metadata</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keys        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getOptions()">getOptions()</h3>
+
+<p>
+Get options.</p>
+
+
+
+
+<h3 id="getPluginRegistry()">getPluginRegistry()</h3>
+
+<p>
+Return registry of plugins</p>
+
+
+
+
+<h3 id="getTags()">getTags()</h3>
+
+<p>
+Get tags of an item by given key</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getTotalSpace()">getTotalSpace()</h3>
+
+<p>
+Get total space in bytes</p>
+
+
+
+
+<h3 id="hasItem()">hasItem()</h3>
+
+<p>
+Test if an item exists.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="hasItems()">hasItems()</h3>
+
+<p>
+Test multiple items.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keys        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="hasPlugin()">hasPlugin()</h3>
+
+<p>
+Check if a plugin is registered</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugin        </td>
+        <td>
+            \Plugin\PluginInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="incrementItem()">incrementItem()</h3>
+
+<p>
+Increment an item.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="incrementItems()">incrementItems()</h3>
+
+<p>
+Increment multiple items.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keyValuePairs        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="removeItem()">removeItem()</h3>
+
+<p>
+Remove an item.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="removeItems()">removeItems()</h3>
+
+<p>
+Remove multiple items.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keys        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="removePlugin()">removePlugin()</h3>
+
+<p>
+Unregister an already registered plugin</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugin        </td>
+        <td>
+            \Plugin\PluginInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="replaceItem()">replaceItem()</h3>
+
+<p>
+Replace an existing item.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="replaceItems()">replaceItems()</h3>
+
+<p>
+Replace multiple existing items.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keyValuePairs        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setCaching()">setCaching()</h3>
+
+<p>
+Enable/Disable caching.</p>
+
+<p>Alias of setWritable and setReadable.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $flag        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setItem()">setItem()</h3>
+
+<p>
+Store an item.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setItems()">setItems()</h3>
+
+<p>
+Store multiple items.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keyValuePairs        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set options.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable|\MemoryOptions        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setTags()">setTags()</h3>
+
+<p>
+Set tags to an item by given key.</p>
+
+<p>An empty array will remove all tags.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $tags        </td>
+        <td>
+            string[]        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="touchItem()">touchItem()</h3>
+
+<p>
+Reset lifetime of an item</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="touchItems()">touchItems()</h3>
+
+<p>
+Reset lifetime of multiple items.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keys        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

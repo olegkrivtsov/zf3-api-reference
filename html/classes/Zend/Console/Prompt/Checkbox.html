@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Console\Prompt\Checkbox -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-console.html">zendframework/zend-console</a>
+    &rarr;        <a href="../../../../classes/Zend/Console/Prompt/Checkbox.html">Class Checkbox</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Checkbox</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Console\Prompt\Checkbox        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Console\Prompt\AbstractPrompt.html">AbstractPrompt</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Ask the user to select any number of pre-defined options        </td>
+        <td>
+            <a href="../../Zend\Console\Prompt\Checkbox.html">
+            Checkbox            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getConsole()">
+            getConsole()
+            </a>
+        </td>
+        <td>
+            Return console adapter to use when showing prompt.        </td>
+        <td>
+            <a href="../../Zend\Console\Prompt\AbstractPrompt.html">
+            AbstractPrompt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastResponse()">
+            getLastResponse()
+            </a>
+        </td>
+        <td>
+            Return last answer to this prompt.        </td>
+        <td>
+            <a href="../../Zend\Console\Prompt\AbstractPrompt.html">
+            AbstractPrompt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#prompt()">
+            prompt()
+            </a>
+        </td>
+        <td>
+            Create an instance of this prompt, show it and return response.        </td>
+        <td>
+            <a href="../../Zend\Console\Prompt\AbstractPrompt.html">
+            AbstractPrompt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setConsole()">
+            setConsole()
+            </a>
+        </td>
+        <td>
+            Set console adapter to use when showing prompt.        </td>
+        <td>
+            <a href="../../Zend\Console\Prompt\AbstractPrompt.html">
+            AbstractPrompt            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#show()">
+            show()
+            </a>
+        </td>
+        <td>
+            Show a list of options and prompt the user to select any number of them.        </td>
+        <td>
+            <a href="../../Zend\Console\Prompt\Checkbox.html">
+            Checkbox            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Ask the user to select any number of pre-defined options</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $promptText        </td>
+        <td>
+            string        </td>
+        <td>
+            The        </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Transversable        </td>
+        <td>
+            Allowed        </td>
+    </tr>
+        <tr>
+        <td>
+            $echo        </td>
+        <td>
+            bool        </td>
+        <td>
+            True        </td>
+    </tr>
+        <tr>
+        <td>
+            $ignoreCase        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getConsole()">getConsole()</h3>
+
+<p>
+Return console adapter to use when showing prompt.</p>
+
+
+
+
+<h3 id="getLastResponse()">getLastResponse()</h3>
+
+<p>
+Return last answer to this prompt.</p>
+
+
+
+
+<h3 id="prompt()">prompt()</h3>
+
+<p>
+Create an instance of this prompt, show it and return response.</p>
+
+<p>This is a convenience method for creating statically creating prompts, i.e.:</p>
+<p>$name = Zend\Console\Prompt\Line::prompt("Enter your name: ");</p>
+
+
+
+<h3 id="setConsole()">setConsole()</h3>
+
+<p>
+Set console adapter to use when showing prompt.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $adapter        </td>
+        <td>
+            \ConsoleAdapter        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="show()">show()</h3>
+
+<p>
+Show a list of options and prompt the user to select any number of them.</p>
+
+
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

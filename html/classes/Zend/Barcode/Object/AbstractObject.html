@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Barcode\Object\AbstractObject -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-barcode.html">zendframework/zend-barcode</a>
+    &rarr;        <a href="../../../../classes/Zend/Barcode/Object/AbstractObject.html">Class AbstractObject</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        AbstractObject</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Barcode\Object\AbstractObject        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../Zend\Barcode\Object\ObjectInterface.html">ObjectInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Class for generate Barcode    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#checkParams()">
+            checkParams()
+            </a>
+        </td>
+        <td>
+            Checking of parameters after all settings        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#draw()">
+            draw()
+            </a>
+        </td>
+        <td>
+            Complete drawing of the barcode        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBackgroundColor()">
+            getBackgroundColor()
+            </a>
+        </td>
+        <td>
+            Retrieve background color of the image        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBarHeight()">
+            getBarHeight()
+            </a>
+        </td>
+        <td>
+            Get height of the barcode bar        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBarThickWidth()">
+            getBarThickWidth()
+            </a>
+        </td>
+        <td>
+            Get thickness of thick bar        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBarThinWidth()">
+            getBarThinWidth()
+            </a>
+        </td>
+        <td>
+            Get thickness of thin bar        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getBarcodeNamespace()">
+            getBarcodeNamespace()
+            </a>
+        </td>
+        <td>
+            Retrieve barcode namespace        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDrawText()">
+            getDrawText()
+            </a>
+        </td>
+        <td>
+            Retrieve if drawing of text to encode is enabled        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFactor()">
+            getFactor()
+            </a>
+        </td>
+        <td>
+            Get factor applying to
+thinBarWidth - thickBarWidth - barHeight - fontSize        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFont()">
+            getFont()
+            </a>
+        </td>
+        <td>
+            Retrieve the font        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFontSize()">
+            getFontSize()
+            </a>
+        </td>
+        <td>
+            Retrieve the size of the font in case of TTF        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getForeColor()">
+            getForeColor()
+            </a>
+        </td>
+        <td>
+            Retrieve color of the barcode and text        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHeight()">
+            getHeight()
+            </a>
+        </td>
+        <td>
+            Get height of the result object        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getInstructions()">
+            getInstructions()
+            </a>
+        </td>
+        <td>
+            Retrieve the set of drawing instructions        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOffsetLeft()">
+            getOffsetLeft()
+            </a>
+        </td>
+        <td>
+            Calculate the offset from the left of the object
+if an orientation is activated        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOffsetTop()">
+            getOffsetTop()
+            </a>
+        </td>
+        <td>
+            Calculate the offset from the top of the object
+if an orientation is activated        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOrientation()">
+            getOrientation()
+            </a>
+        </td>
+        <td>
+            Retrieve orientation of barcode and text        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getQuietZone()">
+            getQuietZone()
+            </a>
+        </td>
+        <td>
+            Quiet zone before first bar
+and after the last bar        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRawText()">
+            getRawText()
+            </a>
+        </td>
+        <td>
+            Retrieve text to encode        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStretchText()">
+            getStretchText()
+            </a>
+        </td>
+        <td>
+            Retrieve if the adjustment of the position of the characters
+to the position of the bars is enabled        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getText()">
+            getText()
+            </a>
+        </td>
+        <td>
+            Retrieve text to encode        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTextToDisplay()">
+            getTextToDisplay()
+            </a>
+        </td>
+        <td>
+            Retrieve text to display        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getType()">
+            getType()
+            </a>
+        </td>
+        <td>
+            Retrieve type of barcode        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWidth()">
+            getWidth()
+            </a>
+        </td>
+        <td>
+            Get width of the result object        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWithBorder()">
+            getWithBorder()
+            </a>
+        </td>
+        <td>
+            Retrieve if border are draw or not        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWithChecksum()">
+            getWithChecksum()
+            </a>
+        </td>
+        <td>
+            Retrieve if the checksum character is automatically
+added to the barcode text        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWithChecksumInText()">
+            getWithChecksumInText()
+            </a>
+        </td>
+        <td>
+            Retrieve if the checksum character is automatically
+added to the barcode text        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWithQuietZones()">
+            getWithQuietZones()
+            </a>
+        </td>
+        <td>
+            Retrieve if quiet zones are draw or not        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setBackgroundColor()">
+            setBackgroundColor()
+            </a>
+        </td>
+        <td>
+            Set the color of the background        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setBarHeight()">
+            setBarHeight()
+            </a>
+        </td>
+        <td>
+            Set height of the barcode bar        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setBarThickWidth()">
+            setBarThickWidth()
+            </a>
+        </td>
+        <td>
+            Set thickness of thick bar        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setBarThinWidth()">
+            setBarThinWidth()
+            </a>
+        </td>
+        <td>
+            Set thickness of thin bar        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setBarcodeNamespace()">
+            setBarcodeNamespace()
+            </a>
+        </td>
+        <td>
+            Set barcode namespace for autoloading        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDrawText()">
+            setDrawText()
+            </a>
+        </td>
+        <td>
+            Activate/deactivate drawing of text to encode        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFactor()">
+            setFactor()
+            </a>
+        </td>
+        <td>
+            Set factor applying to
+thinBarWidth - thickBarWidth - barHeight - fontSize        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFont()">
+            setFont()
+            </a>
+        </td>
+        <td>
+            Set the font:
+ - if integer between 1 and 5, use gd built-in fonts
+ - if string, $value is assumed to be the path to a TTF font        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFontSize()">
+            setFontSize()
+            </a>
+        </td>
+        <td>
+            Set the size of the font in case of TTF        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setForeColor()">
+            setForeColor()
+            </a>
+        </td>
+        <td>
+            Set color of the barcode and text        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set barcode state from options array        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOrientation()">
+            setOrientation()
+            </a>
+        </td>
+        <td>
+            Set orientation of barcode and text        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setReverseColor()">
+            setReverseColor()
+            </a>
+        </td>
+        <td>
+            Allow fast inversion of font/bars color and background color        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStretchText()">
+            setStretchText()
+            </a>
+        </td>
+        <td>
+            Activate/deactivate the adjustment of the position
+of the characters to the position of the bars        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setText()">
+            setText()
+            </a>
+        </td>
+        <td>
+            Set text to encode        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWithBorder()">
+            setWithBorder()
+            </a>
+        </td>
+        <td>
+            Activate/deactivate drawing of the bar        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWithChecksum()">
+            setWithChecksum()
+            </a>
+        </td>
+        <td>
+            Activate/deactivate the automatic generation
+of the checksum character
+added to the barcode text        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWithChecksumInText()">
+            setWithChecksumInText()
+            </a>
+        </td>
+        <td>
+            Activate/deactivate the automatic generation
+of the checksum character
+added to the barcode text        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWithQuietZones()">
+            setWithQuietZones()
+            </a>
+        </td>
+        <td>
+            Activate/deactivate drawing of the quiet zones        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validateText()">
+            validateText()
+            </a>
+        </td>
+        <td>
+            Check for invalid characters        </td>
+        <td>
+            <a href="../../Zend\Barcode\Object\AbstractObject.html">
+            AbstractObject            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="checkParams()">checkParams()</h3>
+
+<p>
+Checking of parameters after all settings</p>
+
+
+
+
+<h3 id="draw()">draw()</h3>
+
+<p>
+Complete drawing of the barcode</p>
+
+
+
+
+<h3 id="getBackgroundColor()">getBackgroundColor()</h3>
+
+<p>
+Retrieve background color of the image</p>
+
+
+
+
+<h3 id="getBarHeight()">getBarHeight()</h3>
+
+<p>
+Get height of the barcode bar</p>
+
+
+
+
+<h3 id="getBarThickWidth()">getBarThickWidth()</h3>
+
+<p>
+Get thickness of thick bar</p>
+
+
+
+
+<h3 id="getBarThinWidth()">getBarThinWidth()</h3>
+
+<p>
+Get thickness of thin bar</p>
+
+
+
+
+<h3 id="getBarcodeNamespace()">getBarcodeNamespace()</h3>
+
+<p>
+Retrieve barcode namespace</p>
+
+
+
+
+<h3 id="getDrawText()">getDrawText()</h3>
+
+<p>
+Retrieve if drawing of text to encode is enabled</p>
+
+
+
+
+<h3 id="getFactor()">getFactor()</h3>
+
+<p>
+Get factor applying to
+thinBarWidth - thickBarWidth - barHeight - fontSize</p>
+
+
+
+
+<h3 id="getFont()">getFont()</h3>
+
+<p>
+Retrieve the font</p>
+
+
+
+
+<h3 id="getFontSize()">getFontSize()</h3>
+
+<p>
+Retrieve the size of the font in case of TTF</p>
+
+
+
+
+<h3 id="getForeColor()">getForeColor()</h3>
+
+<p>
+Retrieve color of the barcode and text</p>
+
+
+
+
+<h3 id="getHeight()">getHeight()</h3>
+
+<p>
+Get height of the result object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $recalculate        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getInstructions()">getInstructions()</h3>
+
+<p>
+Retrieve the set of drawing instructions</p>
+
+
+
+
+<h3 id="getOffsetLeft()">getOffsetLeft()</h3>
+
+<p>
+Calculate the offset from the left of the object
+if an orientation is activated</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $recalculate        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getOffsetTop()">getOffsetTop()</h3>
+
+<p>
+Calculate the offset from the top of the object
+if an orientation is activated</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $recalculate        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getOrientation()">getOrientation()</h3>
+
+<p>
+Retrieve orientation of barcode and text</p>
+
+
+
+
+<h3 id="getQuietZone()">getQuietZone()</h3>
+
+<p>
+Quiet zone before first bar
+and after the last bar</p>
+
+
+
+
+<h3 id="getRawText()">getRawText()</h3>
+
+<p>
+Retrieve text to encode</p>
+
+
+
+
+<h3 id="getStretchText()">getStretchText()</h3>
+
+<p>
+Retrieve if the adjustment of the position of the characters
+to the position of the bars is enabled</p>
+
+
+
+
+<h3 id="getText()">getText()</h3>
+
+<p>
+Retrieve text to encode</p>
+
+
+
+
+<h3 id="getTextToDisplay()">getTextToDisplay()</h3>
+
+<p>
+Retrieve text to display</p>
+
+
+
+
+<h3 id="getType()">getType()</h3>
+
+<p>
+Retrieve type of barcode</p>
+
+
+
+
+<h3 id="getWidth()">getWidth()</h3>
+
+<p>
+Get width of the result object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $recalculate        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getWithBorder()">getWithBorder()</h3>
+
+<p>
+Retrieve if border are draw or not</p>
+
+
+
+
+<h3 id="getWithChecksum()">getWithChecksum()</h3>
+
+<p>
+Retrieve if the checksum character is automatically
+added to the barcode text</p>
+
+
+
+
+<h3 id="getWithChecksumInText()">getWithChecksumInText()</h3>
+
+<p>
+Retrieve if the checksum character is automatically
+added to the barcode text</p>
+
+
+
+
+<h3 id="getWithQuietZones()">getWithQuietZones()</h3>
+
+<p>
+Retrieve if quiet zones are draw or not</p>
+
+
+
+
+<h3 id="setBackgroundColor()">setBackgroundColor()</h3>
+
+<p>
+Set the color of the background</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setBarHeight()">setBarHeight()</h3>
+
+<p>
+Set height of the barcode bar</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setBarThickWidth()">setBarThickWidth()</h3>
+
+<p>
+Set thickness of thick bar</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setBarThinWidth()">setBarThinWidth()</h3>
+
+<p>
+Set thickness of thin bar</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setBarcodeNamespace()">setBarcodeNamespace()</h3>
+
+<p>
+Set barcode namespace for autoloading</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setDrawText()">setDrawText()</h3>
+
+<p>
+Activate/deactivate drawing of text to encode</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setFactor()">setFactor()</h3>
+
+<p>
+Set factor applying to
+thinBarWidth - thickBarWidth - barHeight - fontSize</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int|float|string|bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setFont()">setFont()</h3>
+
+<p>
+Set the font:
+ - if integer between 1 and 5, use gd built-in fonts
+ - if string, $value is assumed to be the path to a TTF font</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setFontSize()">setFontSize()</h3>
+
+<p>
+Set the size of the font in case of TTF</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            float        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setForeColor()">setForeColor()</h3>
+
+<p>
+Set color of the barcode and text</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set barcode state from options array</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setOrientation()">setOrientation()</h3>
+
+<p>
+Set orientation of barcode and text</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            int|float|string|bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setReverseColor()">setReverseColor()</h3>
+
+<p>
+Allow fast inversion of font/bars color and background color</p>
+
+
+
+
+<h3 id="setStretchText()">setStretchText()</h3>
+
+<p>
+Activate/deactivate the adjustment of the position
+of the characters to the position of the bars</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setText()">setText()</h3>
+
+<p>
+Set text to encode</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setWithBorder()">setWithBorder()</h3>
+
+<p>
+Activate/deactivate drawing of the bar</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setWithChecksum()">setWithChecksum()</h3>
+
+<p>
+Activate/deactivate the automatic generation
+of the checksum character
+added to the barcode text</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setWithChecksumInText()">setWithChecksumInText()</h3>
+
+<p>
+Activate/deactivate the automatic generation
+of the checksum character
+added to the barcode text</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setWithQuietZones()">setWithQuietZones()</h3>
+
+<p>
+Activate/deactivate drawing of the quiet zones</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="validateText()">validateText()</h3>
+
+<p>
+Check for invalid characters</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            string        </td>
+        <td>
+            Text        </td>
+    </tr>
+    </table>
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

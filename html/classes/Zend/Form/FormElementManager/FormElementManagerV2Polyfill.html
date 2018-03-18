@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../index.html">Components</a>
-    >>        <a href="../../../../components/zendframework/zend-form.html">Component zendframework/zend-form</a>
-    >>        <a href="../../../../classes/Zend/Form/FormElementManager/FormElementManagerV2Polyfill.html">Class FormElementManagerV2Polyfill</a>
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-form.html">zendframework/zend-form</a>
+    &rarr;        <a href="../../../../classes/Zend/Form/FormElementManager/FormElementManagerV2Polyfill.html">Class FormElementManagerV2Polyfill</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -56,15 +66,22 @@
         <td>
             Zend\Form\FormElementManager\FormElementManagerV2Polyfill        </td>
     </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\ServiceManager\AbstractPluginManager.html">AbstractPluginManager</a>                    </td>
+    </tr>
         </table>
 
 <h2>Description</h2>
 
 <div class="description">
-    zend-servicemanager v2-compatible plugin manager implementation for form elements.    
+    <p>
+    zend-servicemanager v2-compatible plugin manager implementation for form elements.    </p>
     <p>Enforces that elements retrieved are instances of ElementInterface.</p>
 </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -72,50 +89,295 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#__construct()">
             __construct()
+            </a>
         </td>
         <td>
             Constructor        </td>
-    </tr>
-        <tr>
         <td>
-            injectFactory()
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV2Polyfill.html">
+            FormElementManagerV2Polyfill            </a>
         </td>
-        <td>
-            Inject the factory to any element that implements FormFactoryAwareInterface        </td>
     </tr>
         <tr>
         <td>
-            callElementInit()
-        </td>
-        <td>
-            Call init() on any element that implements InitializableInterface        </td>
-    </tr>
-        <tr>
-        <td>
-            setInvokableClass()
-        </td>
-        <td>
-            Override setInvokableClass        </td>
-    </tr>
-        <tr>
-        <td>
-            validatePlugin()
-        </td>
-        <td>
-            Validate the plugin is of the expected type.        </td>
-    </tr>
-        <tr>
-        <td>
+            <a href="#addInitializer()">
             addInitializer()
+            </a>
         </td>
         <td>
             Overrides parent::addInitializer in order to ensure default initializers are in expected positions.        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV2Polyfill.html">
+            FormElementManagerV2Polyfill            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#callElementInit()">
+            callElementInit()
+            </a>
+        </td>
+        <td>
+            Call init() on any element that implements InitializableInterface        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV2Polyfill.html">
+            FormElementManagerV2Polyfill            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#injectFactory()">
+            injectFactory()
+            </a>
+        </td>
+        <td>
+            Inject the factory to any element that implements FormFactoryAwareInterface        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV2Polyfill.html">
+            FormElementManagerV2Polyfill            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setInvokableClass()">
+            setInvokableClass()
+            </a>
+        </td>
+        <td>
+            Override setInvokableClass        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV2Polyfill.html">
+            FormElementManagerV2Polyfill            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validatePlugin()">
+            validatePlugin()
+            </a>
+        </td>
+        <td>
+            Validate the plugin is of the expected type.        </td>
+        <td>
+            <a href="../../Zend\Form\FormElementManager\FormElementManagerV2Polyfill.html">
+            FormElementManagerV2Polyfill            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+<p>Overrides parent constructor in order to add the initializer methods injectFactory()
+and callElementInit().</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $configOrContainerInstance        </td>
+        <td>
+            null|\ConfigInterface|\ContainerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $v3config        </td>
+        <td>
+            array        </td>
+        <td>
+            If        </td>
+    </tr>
+        <tr>
+        <td>
+            $configInstanceOrParentLocator        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="addInitializer()">addInitializer()</h3>
+
+<p>
+Overrides parent::addInitializer in order to ensure default initializers are in expected positions.</p>
+
+<p>Always pushes <code>injectFactory</code> to top of initializer stack, and
+<code>callElementInit</code> to the bottom.</p>
+<p>{@inheritDoc}</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $initializer        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $topOfStack        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="callElementInit()">callElementInit()</h3>
+
+<p>
+Call init() on any element that implements InitializableInterface</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $instance        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Instance        </td>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+            \ContainerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="injectFactory()">injectFactory()</h3>
+
+<p>
+Inject the factory to any element that implements FormFactoryAwareInterface</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $instance        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Instance        </td>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+            \ContainerInterface        </td>
+        <td>
+            Container        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setInvokableClass()">setInvokableClass()</h3>
+
+<p>
+Override setInvokableClass</p>
+
+<p>Overrides setInvokableClass to:</p>
+<ul>
+<li>add a factory mapping $invokableClass to ElementFactory::class</li>
+<li>alias $name to $invokableClass</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $invokableClass        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $shared        </td>
+        <td>
+            null|bool        </td>
+        <td>
+            Ignored.        </td>
+    </tr>
+    </table>
+
+
+<h3 id="validatePlugin()">validatePlugin()</h3>
+
+<p>
+Validate the plugin is of the expected type.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugin        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -189,7 +451,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>

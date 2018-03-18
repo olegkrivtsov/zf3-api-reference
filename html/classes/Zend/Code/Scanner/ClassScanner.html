@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Code\Scanner\ClassScanner -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-code.html">zendframework/zend-code</a>
+    &rarr;        <a href="../../../../classes/Zend/Code/Scanner/ClassScanner.html">Class ClassScanner</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        ClassScanner</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Code\Scanner\ClassScanner        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../Zend\Code\Scanner\ScannerInterface.html">ScannerInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#export()">
+            export()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAnnotations()">
+            getAnnotations()
+            </a>
+        </td>
+        <td>
+            Get annotations        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getConstant()">
+            getConstant()
+            </a>
+        </td>
+        <td>
+            Return a single constant by given name or index of info        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getConstantNames()">
+            getConstantNames()
+            </a>
+        </td>
+        <td>
+            Return a list of constant names        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getConstants()">
+            getConstants()
+            </a>
+        </td>
+        <td>
+            Return a list of constants        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDocBlock()">
+            getDocBlock()
+            </a>
+        </td>
+        <td>
+            Return documentation block        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDocComment()">
+            getDocComment()
+            </a>
+        </td>
+        <td>
+            Return documentation comment        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getInterfaces()">
+            getInterfaces()
+            </a>
+        </td>
+        <td>
+            Return a list of interface names        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLineEnd()">
+            getLineEnd()
+            </a>
+        </td>
+        <td>
+            Return number of last line        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLineStart()">
+            getLineStart()
+            </a>
+        </td>
+        <td>
+            Return number of first line        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMethod()">
+            getMethod()
+            </a>
+        </td>
+        <td>
+            Return a single method by given name or index of info        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMethodNames()">
+            getMethodNames()
+            </a>
+        </td>
+        <td>
+            Return a list of method names        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMethods()">
+            getMethods()
+            </a>
+        </td>
+        <td>
+            Return a list of methods        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getName()">
+            getName()
+            </a>
+        </td>
+        <td>
+            Return a name of class        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getParentClass()">
+            getParentClass()
+            </a>
+        </td>
+        <td>
+            Return a name of parent class        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getProperties()">
+            getProperties()
+            </a>
+        </td>
+        <td>
+            Return a list of properties        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getProperty()">
+            getProperty()
+            </a>
+        </td>
+        <td>
+            Return a single property by given name or index of info        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPropertyNames()">
+            getPropertyNames()
+            </a>
+        </td>
+        <td>
+            Return a list of property names        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getShortName()">
+            getShortName()
+            </a>
+        </td>
+        <td>
+            Return short name of class        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTraitAliases()">
+            getTraitAliases()
+            </a>
+        </td>
+        <td>
+            Retrieve a list of aliased traits used by the class.        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTraitNames()">
+            getTraitNames()
+            </a>
+        </td>
+        <td>
+            Retrieve a list of trait names used by this class.        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTraits()">
+            getTraits()
+            </a>
+        </td>
+        <td>
+            Retrieve any traits used by the class.        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasConstant()">
+            hasConstant()
+            </a>
+        </td>
+        <td>
+            Verify if class has constant        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasMethod()">
+            hasMethod()
+            </a>
+        </td>
+        <td>
+            Verify if class has method by given name        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasParentClass()">
+            hasParentClass()
+            </a>
+        </td>
+        <td>
+            Verify if class has parent        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasProperty()">
+            hasProperty()
+            </a>
+        </td>
+        <td>
+            Verify if class has property        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isAbstract()">
+            isAbstract()
+            </a>
+        </td>
+        <td>
+            Verify if class is an abstract class        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isFinal()">
+            isFinal()
+            </a>
+        </td>
+        <td>
+            Verify if class is final        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isInstantiable()">
+            isInstantiable()
+            </a>
+        </td>
+        <td>
+            Verify if class is instantiable        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isInterface()">
+            isInterface()
+            </a>
+        </td>
+        <td>
+            Verify if class is an interface        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isTrait()">
+            isTrait()
+            </a>
+        </td>
+        <td>
+            Verify if class is a trait        </td>
+        <td>
+            <a href="../../Zend\Code\Scanner\ClassScanner.html">
+            ClassScanner            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $classTokens        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $nameInformation        </td>
+        <td>
+            \NameInformation|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="export()">export()</h3>
+
+<p>
+</p>
+
+
+
+
+<h3 id="getAnnotations()">getAnnotations()</h3>
+
+<p>
+Get annotations</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $annotationManager        </td>
+        <td>
+            \Annotation\AnnotationManager        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getConstant()">getConstant()</h3>
+
+<p>
+Return a single constant by given name or index of info</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $constantNameOrInfoIndex        </td>
+        <td>
+            string|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getConstantNames()">getConstantNames()</h3>
+
+<p>
+Return a list of constant names</p>
+
+
+
+
+<h3 id="getConstants()">getConstants()</h3>
+
+<p>
+Return a list of constants</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namesOnly        </td>
+        <td>
+            bool        </td>
+        <td>
+            Set        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getDocBlock()">getDocBlock()</h3>
+
+<p>
+Return documentation block</p>
+
+
+
+
+<h3 id="getDocComment()">getDocComment()</h3>
+
+<p>
+Return documentation comment</p>
+
+
+
+
+<h3 id="getInterfaces()">getInterfaces()</h3>
+
+<p>
+Return a list of interface names</p>
+
+
+
+
+<h3 id="getLineEnd()">getLineEnd()</h3>
+
+<p>
+Return number of last line</p>
+
+
+
+
+<h3 id="getLineStart()">getLineStart()</h3>
+
+<p>
+Return number of first line</p>
+
+
+
+
+<h3 id="getMethod()">getMethod()</h3>
+
+<p>
+Return a single method by given name or index of info</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $methodNameOrInfoIndex        </td>
+        <td>
+            string|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getMethodNames()">getMethodNames()</h3>
+
+<p>
+Return a list of method names</p>
+
+
+
+
+<h3 id="getMethods()">getMethods()</h3>
+
+<p>
+Return a list of methods</p>
+
+
+
+
+<h3 id="getName()">getName()</h3>
+
+<p>
+Return a name of class</p>
+
+
+
+
+<h3 id="getParentClass()">getParentClass()</h3>
+
+<p>
+Return a name of parent class</p>
+
+
+
+
+<h3 id="getProperties()">getProperties()</h3>
+
+<p>
+Return a list of properties</p>
+
+
+
+
+<h3 id="getProperty()">getProperty()</h3>
+
+<p>
+Return a single property by given name or index of info</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $propertyNameOrInfoIndex        </td>
+        <td>
+            string|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="getPropertyNames()">getPropertyNames()</h3>
+
+<p>
+Return a list of property names</p>
+
+
+
+
+<h3 id="getShortName()">getShortName()</h3>
+
+<p>
+Return short name of class</p>
+
+
+
+
+<h3 id="getTraitAliases()">getTraitAliases()</h3>
+
+<p>
+Retrieve a list of aliased traits used by the class.</p>
+
+
+
+
+<h3 id="getTraitNames()">getTraitNames()</h3>
+
+<p>
+Retrieve a list of trait names used by this class.</p>
+
+
+
+
+<h3 id="getTraits()">getTraits()</h3>
+
+<p>
+Retrieve any traits used by the class.</p>
+
+
+
+
+<h3 id="hasConstant()">hasConstant()</h3>
+
+<p>
+Verify if class has constant</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="hasMethod()">hasMethod()</h3>
+
+<p>
+Verify if class has method by given name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="hasParentClass()">hasParentClass()</h3>
+
+<p>
+Verify if class has parent</p>
+
+
+
+
+<h3 id="hasProperty()">hasProperty()</h3>
+
+<p>
+Verify if class has property</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="isAbstract()">isAbstract()</h3>
+
+<p>
+Verify if class is an abstract class</p>
+
+
+
+
+<h3 id="isFinal()">isFinal()</h3>
+
+<p>
+Verify if class is final</p>
+
+
+
+
+<h3 id="isInstantiable()">isInstantiable()</h3>
+
+<p>
+Verify if class is instantiable</p>
+
+
+
+
+<h3 id="isInterface()">isInterface()</h3>
+
+<p>
+Verify if class is an interface</p>
+
+
+
+
+<h3 id="isTrait()">isTrait()</h3>
+
+<p>
+Verify if class is a trait</p>
+
+
+
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80824388-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -32,14 +32,24 @@
     </div>
 </header>    
 <div id="container">
+
 <!-- Navigation -->
 <div class="breadcrumbs">
-            <a href="../../../../../index.html">Components</a>
-    >>        <a href="../../../../../components/zendframework/zend-mvc.html">Component zendframework/zend-mvc</a>
-    >>        <a href="../../../../../classes/Zend/Mvc/Controller/Plugin/Forward.html">Class Forward</a>
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/zendframework/zend-mvc.html">zendframework/zend-mvc</a>
+    &rarr;        <a href="../../../../../classes/Zend/Mvc/Controller/Plugin/Forward.html">Class Forward</a>
         </div>
 
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <!-- Content -->
 <div id="chapter_content">
     <h1>Class 
@@ -56,14 +66,21 @@
         <td>
             Zend\Mvc\Controller\Plugin\Forward        </td>
     </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../Zend\Mvc\Controller\Plugin\AbstractPlugin.html">AbstractPlugin</a>                    </td>
+    </tr>
         </table>
 
 <h2>Description</h2>
 
 <div class="description">
-        
+    <p>
+        </p>
     </div>
-
 
 <h2 id="methods">Methods</h2>
 
@@ -71,43 +88,247 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
+        <th>Defined By</th>
     </tr>
         <tr>
         <td>
+            <a href="#__construct()">
             __construct()
+            </a>
         </td>
         <td>
                     </td>
-    </tr>
-        <tr>
         <td>
-            setMaxNestedForwards()
+            <a href="../../Zend\Mvc\Controller\Plugin\Forward.html">
+            Forward            </a>
         </td>
-        <td>
-            Set maximum number of nested forwards allowed        </td>
     </tr>
         <tr>
         <td>
-            getListenersToDetach()
-        </td>
-        <td>
-            Get information on listeners that need to be detached before dispatching.        </td>
-    </tr>
-        <tr>
-        <td>
-            setListenersToDetach()
-        </td>
-        <td>
-            Set information on listeners that need to be detached before dispatching.        </td>
-    </tr>
-        <tr>
-        <td>
+            <a href="#dispatch()">
             dispatch()
+            </a>
         </td>
         <td>
             Dispatch another controller        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\Plugin\Forward.html">
+            Forward            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getController()">
+            getController()
+            </a>
+        </td>
+        <td>
+            Get the current controller instance        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\Plugin\AbstractPlugin.html">
+            AbstractPlugin            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getListenersToDetach()">
+            getListenersToDetach()
+            </a>
+        </td>
+        <td>
+            Get information on listeners that need to be detached before dispatching.        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\Plugin\Forward.html">
+            Forward            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setController()">
+            setController()
+            </a>
+        </td>
+        <td>
+            Set the current controller instance        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\Plugin\AbstractPlugin.html">
+            AbstractPlugin            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setListenersToDetach()">
+            setListenersToDetach()
+            </a>
+        </td>
+        <td>
+            Set information on listeners that need to be detached before dispatching.        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\Plugin\Forward.html">
+            Forward            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMaxNestedForwards()">
+            setMaxNestedForwards()
+            </a>
+        </td>
+        <td>
+            Set maximum number of nested forwards allowed        </td>
+        <td>
+            <a href="../../Zend\Mvc\Controller\Plugin\Forward.html">
+            Forward            </a>
+        </td>
     </tr>
     </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controllers        </td>
+        <td>
+            \ControllerManager        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="dispatch()">dispatch()</h3>
+
+<p>
+Dispatch another controller</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Controller        </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            null|array        </td>
+        <td>
+            Parameters        </td>
+    </tr>
+    </table>
+
+
+<h3 id="getController()">getController()</h3>
+
+<p>
+Get the current controller instance</p>
+
+
+
+
+<h3 id="getListenersToDetach()">getListenersToDetach()</h3>
+
+<p>
+Get information on listeners that need to be detached before dispatching.</p>
+
+<p>Each entry in the array contains three keys:</p>
+<p>id (identifier for event-emitting component),
+event (the hooked event)
+and class (the class of listener that should be detached).</p>
+
+
+
+<h3 id="setController()">setController()</h3>
+
+<p>
+Set the current controller instance</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controller        </td>
+        <td>
+            \Dispatchable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
+<h3 id="setListenersToDetach()">setListenersToDetach()</h3>
+
+<p>
+Set information on listeners that need to be detached before dispatching.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $listeners        </td>
+        <td>
+            array        </td>
+        <td>
+            Listener        </td>
+    </tr>
+    </table>
+
+
+<h3 id="setMaxNestedForwards()">setMaxNestedForwards()</h3>
+
+<p>
+Set maximum number of nested forwards allowed</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $maxNestedForwards        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+
 
 
 <!-- Ads -->
@@ -181,7 +402,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '', 'auto');
+  ga('create', 'UA-80824388-1', 'auto');
   ga('send', 'pageview');
 
 </script>
