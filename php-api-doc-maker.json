@@ -14,7 +14,30 @@
         "Contribute": "https://github.com/olegkrivtsov/zf3-api-reference"
     },
     "components": [
-        "zendframework/zend-mvc"
+        "zendframework/zend-authentication",
+        "zendframework/zend-barcode",
+        "zendframework/zend-cache",
+        "zendframework/zend-captcha",
+        "zendframework/zend-code",
+        "zendframework/zend-config",
+        "zendframework/zend-console",
+        "zendframework/zend-crypt",
+        "zendframework/zend-db",
+        "zendframework/zend-dom",
+        "zendframework/zend-escaper",
+        "zendframework/zend-eventmanager",
+        "zendframework/zend-filter",
+        "zendframework/zend-form",
+        "zendframework/zend-http",
+        "zendframework/zend-hydrator",
+        "zendframework/zend-inputfilter",
+        "zendframework/zend-i18n",
+        "zendframework/zend-json",
+        "zendframework/zend-log",
+        "zendframework/zend-mail",
+        "zendframework/zend-modulemanager",
+        "zendframework/zend-mvc",
+        "zendframework/zend-view"
     ],
     "google_analytics": {
         "enabled": true,
@@ -22,9 +45,7 @@
     },
     "google_adsence": {
         "enabled": true, 
-        "contents_ad": "data/contents_ad.js",
-        "chapter_upper_ad": "data/upper_ad.js",
-        "chapter_bottom_ad": "data/bottom_ad.js"
+        "upper_ad": "data/upper_ad.js"
     },
     "disqus": {
         "enabled": false,

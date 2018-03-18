@@ -22,6 +22,10 @@
         "zendframework/zend-crypt": "^3.1",
         "zendframework/zend-serializer": "^2.8",
         "zendframework/zend-log": "^2.9",
-        "zendframework/zend-i18n": "^2.7"
+        "zendframework/zend-i18n": "^2.7",
+        "zendframework/zend-barcode": "^2.7",
+        "zendframework/zend-cache": "^2.7",
+        "zendframework/zend-db": "^2.9",
+        "zendframework/zend-mail": "^2.8"
     }
 }
