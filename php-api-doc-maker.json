@@ -57,7 +57,7 @@
         "zendframework/zend-uri",
         "zendframework/zend-validator",
         "zendframework/zend-view",
-        "zendramework/zend-xmlrpc"
+        "zendframework/zend-xmlrpc"
     ],
     "google_analytics": {
         "enabled": true,
