@@ -1,0 +1,2320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Soap\Client -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-soap.html">zendframework/zend-soap</a>
+    &rarr;        <a href="../../../classes/Zend/Soap/Client.html">Class Client</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Client</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Soap\Client        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/Zend\Server\Client.html">Client</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__call()">
+            __call()
+            </a>
+        </td>
+        <td>
+            Perform a SOAP call        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#_doRequest()">
+            _doRequest()
+            </a>
+        </td>
+        <td>
+            Do request proxy method.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addSoapInputHeader()">
+            addSoapInputHeader()
+            </a>
+        </td>
+        <td>
+            Add SOAP input header        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#call()">
+            call()
+            </a>
+        </td>
+        <td>
+            Send an RPC request to the service for a specific method.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getClassmap()">
+            getClassmap()
+            </a>
+        </td>
+        <td>
+            Retrieve classmap        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCompressionOptions()">
+            getCompressionOptions()
+            </a>
+        </td>
+        <td>
+            Get Compression options        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEncoding()">
+            getEncoding()
+            </a>
+        </td>
+        <td>
+            Get encoding        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEncodingMethod()">
+            getEncodingMethod()
+            </a>
+        </td>
+        <td>
+            Get message encoding method        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFunctions()">
+            getFunctions()
+            </a>
+        </td>
+        <td>
+            Return a list of available functions        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHttpLogin()">
+            getHttpLogin()
+            </a>
+        </td>
+        <td>
+            Retrieve HTTP Login        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHttpPassword()">
+            getHttpPassword()
+            </a>
+        </td>
+        <td>
+            Retrieve HTTP Password        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHttpsCertPassphrase()">
+            getHttpsCertPassphrase()
+            </a>
+        </td>
+        <td>
+            Get HTTPS client certificate passphrase        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHttpsCertificate()">
+            getHttpsCertificate()
+            </a>
+        </td>
+        <td>
+            Get HTTPS client certificate path        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getKeepAlive()">
+            getKeepAlive()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastMethod()">
+            getLastMethod()
+            </a>
+        </td>
+        <td>
+            Retrieve last invoked method        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastRequest()">
+            getLastRequest()
+            </a>
+        </td>
+        <td>
+            Retrieve request XML        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastRequestHeaders()">
+            getLastRequestHeaders()
+            </a>
+        </td>
+        <td>
+            Retrieve request headers        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastResponse()">
+            getLastResponse()
+            </a>
+        </td>
+        <td>
+            Get response XML        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastResponseHeaders()">
+            getLastResponseHeaders()
+            </a>
+        </td>
+        <td>
+            Retrieve response headers (as string)        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastSoapOutputHeaderObjects()">
+            getLastSoapOutputHeaderObjects()
+            </a>
+        </td>
+        <td>
+            Get last SOAP output headers        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLocation()">
+            getLocation()
+            </a>
+        </td>
+        <td>
+            Retrieve URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOptions()">
+            getOptions()
+            </a>
+        </td>
+        <td>
+            Return array of options suitable for using with SoapClient constructor        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getProxyHost()">
+            getProxyHost()
+            </a>
+        </td>
+        <td>
+            Retrieve proxy host        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getProxyLogin()">
+            getProxyLogin()
+            </a>
+        </td>
+        <td>
+            Retrieve proxy login        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getProxyPassword()">
+            getProxyPassword()
+            </a>
+        </td>
+        <td>
+            Retrieve proxy password        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getProxyPort()">
+            getProxyPort()
+            </a>
+        </td>
+        <td>
+            Retrieve proxy port        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSoapClient()">
+            getSoapClient()
+            </a>
+        </td>
+        <td>
+            Get SoapClient object        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSoapFeatures()">
+            getSoapFeatures()
+            </a>
+        </td>
+        <td>
+            Return current SOAP Features options        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSoapVersion()">
+            getSoapVersion()
+            </a>
+        </td>
+        <td>
+            Get SOAP version        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSslMethod()">
+            getSslMethod()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStreamContext()">
+            getStreamContext()
+            </a>
+        </td>
+        <td>
+            Get Stream Context        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStyle()">
+            getStyle()
+            </a>
+        </td>
+        <td>
+            Get request style        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTypemap()">
+            getTypemap()
+            </a>
+        </td>
+        <td>
+            Retrieve typemap        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTypes()">
+            getTypes()
+            </a>
+        </td>
+        <td>
+            Return a list of SOAP types        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUri()">
+            getUri()
+            </a>
+        </td>
+        <td>
+            Retrieve URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUserAgent()">
+            getUserAgent()
+            </a>
+        </td>
+        <td>
+            Get current string to use in User-Agent header        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWSDL()">
+            getWSDL()
+            </a>
+        </td>
+        <td>
+            Get wsdl        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWSDLCache()">
+            getWSDLCache()
+            </a>
+        </td>
+        <td>
+            Get current SOAP WSDL Caching option        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resetSoapInputHeaders()">
+            resetSoapInputHeaders()
+            </a>
+        </td>
+        <td>
+            Reset SOAP input headers        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setClassmap()">
+            setClassmap()
+            </a>
+        </td>
+        <td>
+            Set classmap        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCompressionOptions()">
+            setCompressionOptions()
+            </a>
+        </td>
+        <td>
+            Set compression options        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCookie()">
+            setCookie()
+            </a>
+        </td>
+        <td>
+            Set cookie        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEncoding()">
+            setEncoding()
+            </a>
+        </td>
+        <td>
+            Set encoding        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEncodingMethod()">
+            setEncodingMethod()
+            </a>
+        </td>
+        <td>
+            Set message encoding method        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHttpLogin()">
+            setHttpLogin()
+            </a>
+        </td>
+        <td>
+            Set HTTP login        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHttpPassword()">
+            setHttpPassword()
+            </a>
+        </td>
+        <td>
+            Set HTTP password        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHttpsCertPassphrase()">
+            setHttpsCertPassphrase()
+            </a>
+        </td>
+        <td>
+            Set HTTPS client certificate passphrase        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHttpsCertificate()">
+            setHttpsCertificate()
+            </a>
+        </td>
+        <td>
+            Set HTTPS client certificate path        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setKeepAlive()">
+            setKeepAlive()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLocation()">
+            setLocation()
+            </a>
+        </td>
+        <td>
+            Set Location        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set Options        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setProxyHost()">
+            setProxyHost()
+            </a>
+        </td>
+        <td>
+            Set proxy host        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setProxyLogin()">
+            setProxyLogin()
+            </a>
+        </td>
+        <td>
+            Set proxy login        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setProxyPassword()">
+            setProxyPassword()
+            </a>
+        </td>
+        <td>
+            Set proxy password        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setProxyPort()">
+            setProxyPort()
+            </a>
+        </td>
+        <td>
+            Set proxy port        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSoapClient()">
+            setSoapClient()
+            </a>
+        </td>
+        <td>
+            Set SoapClient object        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSoapFeatures()">
+            setSoapFeatures()
+            </a>
+        </td>
+        <td>
+            Set the SOAP Feature options.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSoapVersion()">
+            setSoapVersion()
+            </a>
+        </td>
+        <td>
+            Set SOAP version        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSslMethod()">
+            setSslMethod()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStreamContext()">
+            setStreamContext()
+            </a>
+        </td>
+        <td>
+            Set Stream Context        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStyle()">
+            setStyle()
+            </a>
+        </td>
+        <td>
+            Set request style        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTypemap()">
+            setTypemap()
+            </a>
+        </td>
+        <td>
+            Set typemap with xml to php type mappings with appropriate validation.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUri()">
+            setUri()
+            </a>
+        </td>
+        <td>
+            Set URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUserAgent()">
+            setUserAgent()
+            </a>
+        </td>
+        <td>
+            Set the string to use in User-Agent header        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWSDL()">
+            setWSDL()
+            </a>
+        </td>
+        <td>
+            Set wsdl        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWSDLCache()">
+            setWSDLCache()
+            </a>
+        </td>
+        <td>
+            Set the SOAP WSDL Caching Options        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validateUrn()">
+            validateUrn()
+            </a>
+        </td>
+        <td>
+            Check for valid URN        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Client.html">
+            Client            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__call()">__call()</h3>
+
+<p>
+Perform a SOAP call</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $arguments        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $wsdl        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="_doRequest()">_doRequest()</h3>
+
+<p>
+Do request proxy method.</p>
+
+<p>May be overridden in subclasses</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $client        </td>
+        <td>
+            \Client\Common        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $location        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $action        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $version        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $oneWay        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="addSoapInputHeader()">addSoapInputHeader()</h3>
+
+<p>
+Add SOAP input header</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $header        </td>
+        <td>
+            \SoapHeader        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $permanent        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="call()">call()</h3>
+
+<p>
+Send an RPC request to the service for a specific method.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            array        </td>
+        <td>
+            List        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed Returned results.</p>
+
+
+<h3 id="getClassmap()">getClassmap()</h3>
+
+<p>
+Retrieve classmap</p>
+
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getCompressionOptions()">getCompressionOptions()</h3>
+
+<p>
+Get Compression options</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getEncoding()">getEncoding()</h3>
+
+<p>
+Get encoding</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getEncodingMethod()">getEncodingMethod()</h3>
+
+<p>
+Get message encoding method</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getFunctions()">getFunctions()</h3>
+
+<p>
+Return a list of available functions</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getHttpLogin()">getHttpLogin()</h3>
+
+<p>
+Retrieve HTTP Login</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getHttpPassword()">getHttpPassword()</h3>
+
+<p>
+Retrieve HTTP Password</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getHttpsCertPassphrase()">getHttpsCertPassphrase()</h3>
+
+<p>
+Get HTTPS client certificate passphrase</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getHttpsCertificate()">getHttpsCertificate()</h3>
+
+<p>
+Get HTTPS client certificate path</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getKeepAlive()">getKeepAlive()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="getLastMethod()">getLastMethod()</h3>
+
+<p>
+Retrieve last invoked method</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getLastRequest()">getLastRequest()</h3>
+
+<p>
+Retrieve request XML</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getLastRequestHeaders()">getLastRequestHeaders()</h3>
+
+<p>
+Retrieve request headers</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getLastResponse()">getLastResponse()</h3>
+
+<p>
+Get response XML</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getLastResponseHeaders()">getLastResponseHeaders()</h3>
+
+<p>
+Retrieve response headers (as string)</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getLastSoapOutputHeaderObjects()">getLastSoapOutputHeaderObjects()</h3>
+
+<p>
+Get last SOAP output headers</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getLocation()">getLocation()</h3>
+
+<p>
+Retrieve URI</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getOptions()">getOptions()</h3>
+
+<p>
+Return array of options suitable for using with SoapClient constructor</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getProxyHost()">getProxyHost()</h3>
+
+<p>
+Retrieve proxy host</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getProxyLogin()">getProxyLogin()</h3>
+
+<p>
+Retrieve proxy login</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getProxyPassword()">getProxyPassword()</h3>
+
+<p>
+Retrieve proxy password</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getProxyPort()">getProxyPort()</h3>
+
+<p>
+Retrieve proxy port</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getSoapClient()">getSoapClient()</h3>
+
+<p>
+Get SoapClient object</p>
+
+
+
+<p>Returns: \SoapClient </p>
+
+
+<h3 id="getSoapFeatures()">getSoapFeatures()</h3>
+
+<p>
+Return current SOAP Features options</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getSoapVersion()">getSoapVersion()</h3>
+
+<p>
+Get SOAP version</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getSslMethod()">getSslMethod()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getStreamContext()">getStreamContext()</h3>
+
+<p>
+Get Stream Context</p>
+
+
+
+<p>Returns: resource </p>
+
+
+<h3 id="getStyle()">getStyle()</h3>
+
+<p>
+Get request style</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getTypemap()">getTypemap()</h3>
+
+<p>
+Retrieve typemap</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getTypes()">getTypes()</h3>
+
+<p>
+Return a list of SOAP types</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getUri()">getUri()</h3>
+
+<p>
+Retrieve URI</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getUserAgent()">getUserAgent()</h3>
+
+<p>
+Get current string to use in User-Agent header</p>
+
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getWSDL()">getWSDL()</h3>
+
+<p>
+Get wsdl</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getWSDLCache()">getWSDLCache()</h3>
+
+<p>
+Get current SOAP WSDL Caching option</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="resetSoapInputHeaders()">resetSoapInputHeaders()</h3>
+
+<p>
+Reset SOAP input headers</p>
+
+
+
+<p>Returns: self </p>
+
+
+<h3 id="setClassmap()">setClassmap()</h3>
+
+<p>
+Set classmap</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $classmap        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setCompressionOptions()">setCompressionOptions()</h3>
+
+<p>
+Set compression options</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $compressionOptions        </td>
+        <td>
+            int|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setCookie()">setCookie()</h3>
+
+<p>
+Set cookie</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $cookieName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $cookieValue        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setEncoding()">setEncoding()</h3>
+
+<p>
+Set encoding</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $encoding        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setEncodingMethod()">setEncodingMethod()</h3>
+
+<p>
+Set message encoding method</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $use        </td>
+        <td>
+            int        </td>
+        <td>
+            One        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setHttpLogin()">setHttpLogin()</h3>
+
+<p>
+Set HTTP login</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $login        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setHttpPassword()">setHttpPassword()</h3>
+
+<p>
+Set HTTP password</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $password        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setHttpsCertPassphrase()">setHttpsCertPassphrase()</h3>
+
+<p>
+Set HTTPS client certificate passphrase</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $passphrase        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setHttpsCertificate()">setHttpsCertificate()</h3>
+
+<p>
+Set HTTPS client certificate path</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $localCert        </td>
+        <td>
+            string        </td>
+        <td>
+            local        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setKeepAlive()">setKeepAlive()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keepAlive        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setLocation()">setLocation()</h3>
+
+<p>
+Set Location</p>
+
+<p>URI in Web Service the target namespace</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $location        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set Options</p>
+
+<p>Allows setting options as an associative array of option =&gt; value pairs.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setProxyHost()">setProxyHost()</h3>
+
+<p>
+Set proxy host</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $proxyHost        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setProxyLogin()">setProxyLogin()</h3>
+
+<p>
+Set proxy login</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $proxyLogin        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setProxyPassword()">setProxyPassword()</h3>
+
+<p>
+Set proxy password</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $proxyPassword        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setProxyPort()">setProxyPort()</h3>
+
+<p>
+Set proxy port</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $proxyPort        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setSoapClient()">setSoapClient()</h3>
+
+<p>
+Set SoapClient object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $soapClient        </td>
+        <td>
+            \SoapClient        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setSoapFeatures()">setSoapFeatures()</h3>
+
+<p>
+Set the SOAP Feature options.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $feature        </td>
+        <td>
+            string|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setSoapVersion()">setSoapVersion()</h3>
+
+<p>
+Set SOAP version</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $version        </td>
+        <td>
+            int        </td>
+        <td>
+            One        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setSslMethod()">setSslMethod()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $sslMethod        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setStreamContext()">setStreamContext()</h3>
+
+<p>
+Set Stream Context</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $context        </td>
+        <td>
+            resource        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setStyle()">setStyle()</h3>
+
+<p>
+Set request style</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $style        </td>
+        <td>
+            int        </td>
+        <td>
+            One        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setTypemap()">setTypemap()</h3>
+
+<p>
+Set typemap with xml to php type mappings with appropriate validation.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $typeMap        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setUri()">setUri()</h3>
+
+<p>
+Set URI</p>
+
+<p>URI in Web Service the target namespace</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setUserAgent()">setUserAgent()</h3>
+
+<p>
+Set the string to use in User-Agent header</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $userAgent        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setWSDL()">setWSDL()</h3>
+
+<p>
+Set wsdl</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $wsdl        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setWSDLCache()">setWSDLCache()</h3>
+
+<p>
+Set the SOAP WSDL Caching Options</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $caching        </td>
+        <td>
+            string|int|bool|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="validateUrn()">validateUrn()</h3>
+
+<p>
+Check for valid URN</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $urn        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

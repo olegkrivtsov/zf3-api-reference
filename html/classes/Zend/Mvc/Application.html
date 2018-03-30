@@ -71,7 +71,7 @@
             Implements:
         </td>
         <td>
-                                    <a href="../../Zend\Mvc\ApplicationInterface.html">ApplicationInterface</a>,                         <a href="../../Zend\EventManager\EventManagerAwareInterface.html">EventManagerAwareInterface</a>                    </td>
+                                    <a href="../../../classes/Zend\Mvc\ApplicationInterface.html">ApplicationInterface</a>,                         <a href="../../../classes/Zend\EventManager\EventManagerAwareInterface.html">EventManagerAwareInterface</a>                    </td>
     </tr>
     </table>
 
@@ -124,7 +124,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Constructor        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -137,7 +137,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Bootstrap the application        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -150,7 +150,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Retrieve the application configuration        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -163,7 +163,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Retrieve the event manager        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -176,7 +176,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Get the MVC event instance        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -189,7 +189,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Get the request object        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -202,7 +202,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Get the response object        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -215,7 +215,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Retrieve the service manager        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -228,7 +228,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Static method for quick and easy initialization of the Application.        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -241,7 +241,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Run the application        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -254,7 +254,7 @@ can simply extend the class to override such behavior.</p>
         <td>
             Set the event manager instance        </td>
         <td>
-            <a href="../../Zend\Mvc\Application.html">
+            <a href="../../../classes/Zend\Mvc\Application.html">
             Application            </a>
         </td>
     </tr>
@@ -309,6 +309,8 @@ Constructor</p>
     </tr>
     </table>
 
+<p>Returns: </p>
+
 
 <h3 id="bootstrap()">bootstrap()</h3>
 
@@ -335,6 +337,8 @@ event.</p>
     </tr>
     </table>
 
+<p>Returns: \Application </p>
+
 
 <h3 id="getConfig()">getConfig()</h3>
 
@@ -342,6 +346,8 @@ event.</p>
 Retrieve the application configuration</p>
 
 
+
+<p>Returns: array|object </p>
 
 
 <h3 id="getEventManager()">getEventManager()</h3>
@@ -352,6 +358,8 @@ Retrieve the event manager</p>
 <p>Lazy-loads an EventManager instance if none registered.</p>
 
 
+<p>Returns: \EventManagerInterface </p>
+
 
 <h3 id="getMvcEvent()">getMvcEvent()</h3>
 
@@ -359,6 +367,8 @@ Retrieve the event manager</p>
 Get the MVC event instance</p>
 
 
+
+<p>Returns: \MvcEvent </p>
 
 
 <h3 id="getRequest()">getRequest()</h3>
@@ -368,6 +378,8 @@ Get the request object</p>
 
 
 
+<p>Returns: \Zend\Stdlib\RequestInterface </p>
+
 
 <h3 id="getResponse()">getResponse()</h3>
 
@@ -376,6 +388,8 @@ Get the response object</p>
 
 
 
+<p>Returns: \ResponseInterface </p>
+
 
 <h3 id="getServiceManager()">getServiceManager()</h3>
 
@@ -383,6 +397,8 @@ Get the response object</p>
 Retrieve the service manager</p>
 
 
+
+<p>Returns: \ServiceManager </p>
 
 
 <h3 id="init()">init()</h3>
@@ -418,6 +434,8 @@ overridden by modules.</p>
     </tr>
     </table>
 
+<p>Returns: \Application </p>
+
 
 <h3 id="run()">run()</h3>
 
@@ -425,6 +443,8 @@ overridden by modules.</p>
 Run the application</p>
 
 
+
+<p>Returns: self </p>
 
 
 <h3 id="setEventManager()">setEventManager()</h3>
@@ -449,6 +469,7 @@ Set the event manager instance</p>
     </tr>
     </table>
 
+<p>Returns: \Application </p>
 
 
 
@@ -523,7 +544,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-80824388-1', 'auto');
+  ga('create', 'UA-115800598-1', 'auto');
   ga('send', 'pageview');
 
 </script>

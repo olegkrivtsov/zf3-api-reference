@@ -71,7 +71,7 @@
             Extends:
         </td>
         <td>
-                                    <a href="../../Zend\Stdlib\AbstractOptions.html">AbstractOptions</a>                    </td>
+                                    <a href="../../../../classes/Zend\Stdlib\AbstractOptions.html">AbstractOptions</a>                    </td>
     </tr>
         </table>
 
@@ -92,6 +92,71 @@
     </tr>
         <tr>
         <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../../classes/Zend\Stdlib\AbstractOptions.html">
+            AbstractOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Get a configuration property        </td>
+        <td>
+            <a href="../../../../classes/Zend\Stdlib\AbstractOptions.html">
+            AbstractOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__isset()">
+            __isset()
+            </a>
+        </td>
+        <td>
+            Test if a configuration property is null        </td>
+        <td>
+            <a href="../../../../classes/Zend\Stdlib\AbstractOptions.html">
+            AbstractOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__set()">
+            __set()
+            </a>
+        </td>
+        <td>
+            Set a configuration property        </td>
+        <td>
+            <a href="../../../../classes/Zend\Stdlib\AbstractOptions.html">
+            AbstractOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__unset()">
+            __unset()
+            </a>
+        </td>
+        <td>
+            Set a configuration property to NULL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Stdlib\AbstractOptions.html">
+            AbstractOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
             <a href="#getCallback()">
             getCallback()
             </a>
@@ -99,7 +164,7 @@
         <td>
             Get callback used to generate a file name        </td>
         <td>
-            <a href="../../Zend\Mail\Transport\FileOptions.html">
+            <a href="../../../../classes/Zend\Mail\Transport\FileOptions.html">
             FileOptions            </a>
         </td>
     </tr>
@@ -112,7 +177,7 @@
         <td>
             Get path        </td>
         <td>
-            <a href="../../Zend\Mail\Transport\FileOptions.html">
+            <a href="../../../../classes/Zend\Mail\Transport\FileOptions.html">
             FileOptions            </a>
         </td>
     </tr>
@@ -125,8 +190,21 @@
         <td>
             Set callback used to generate a file name        </td>
         <td>
-            <a href="../../Zend\Mail\Transport\FileOptions.html">
+            <a href="../../../../classes/Zend\Mail\Transport\FileOptions.html">
             FileOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFromArray()">
+            setFromArray()
+            </a>
+        </td>
+        <td>
+            Set one or more configuration properties        </td>
+        <td>
+            <a href="../../../../classes/Zend\Stdlib\AbstractOptions.html">
+            AbstractOptions            </a>
         </td>
     </tr>
         <tr>
@@ -138,13 +216,159 @@
         <td>
             Set path to stored mail files        </td>
         <td>
-            <a href="../../Zend\Mail\Transport\FileOptions.html">
+            <a href="../../../../classes/Zend\Mail\Transport\FileOptions.html">
             FileOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toArray()">
+            toArray()
+            </a>
+        </td>
+        <td>
+            Cast to array        </td>
+        <td>
+            <a href="../../../../classes/Zend\Stdlib\AbstractOptions.html">
+            AbstractOptions            </a>
         </td>
     </tr>
     </table>
 
 <h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Get a configuration property</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="__isset()">__isset()</h3>
+
+<p>
+Test if a configuration property is null</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="__set()">__set()</h3>
+
+<p>
+Set a configuration property</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="__unset()">__unset()</h3>
+
+<p>
+Set a configuration property to NULL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
 
 
 <h3 id="getCallback()">getCallback()</h3>
@@ -154,6 +378,8 @@ Get callback used to generate a file name</p>
 
 
 
+<p>Returns: callable </p>
+
 
 <h3 id="getPath()">getPath()</h3>
 
@@ -162,6 +388,8 @@ Get path</p>
 
 <p>If none is set, uses value from sys_get_temp_dir()</p>
 
+
+<p>Returns: string </p>
 
 
 <h3 id="setCallback()">setCallback()</h3>
@@ -186,6 +414,33 @@ Set callback used to generate a file name</p>
     </tr>
     </table>
 
+<p>Returns: \FileOptions </p>
+
+
+<h3 id="setFromArray()">setFromArray()</h3>
+
+<p>
+Set one or more configuration properties</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable|\AbstractOptions        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractOptions Provides fluent interface</p>
+
 
 <h3 id="setPath()">setPath()</h3>
 
@@ -209,6 +464,17 @@ Set path to stored mail files</p>
     </tr>
     </table>
 
+<p>Returns: \FileOptions </p>
+
+
+<h3 id="toArray()">toArray()</h3>
+
+<p>
+Cast to array</p>
+
+
+
+<p>Returns: array </p>
 
 
 
@@ -283,7 +549,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-80824388-1', 'auto');
+  ga('create', 'UA-115800598-1', 'auto');
   ga('send', 'pageview');
 
 </script>

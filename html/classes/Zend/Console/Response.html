@@ -71,14 +71,14 @@
             Extends:
         </td>
         <td>
-                                    <a href="../../Zend\Stdlib\Message.html">Message</a>                    </td>
+                                    <a href="../../../classes/Zend\Stdlib\Message.html">Message</a>                    </td>
     </tr>
             <tr>
         <td>
             Implements:
         </td>
         <td>
-                                    <a href="../../Zend\Stdlib\ResponseInterface.html">ResponseInterface</a>                    </td>
+                                    <a href="../../../classes/Zend\Stdlib\ResponseInterface.html">ResponseInterface</a>                    </td>
     </tr>
     </table>
 
@@ -106,8 +106,21 @@
         <td>
             Check if content was sent        </td>
         <td>
-            <a href="../../Zend\Console\Response.html">
+            <a href="../../../classes/Zend\Console\Response.html">
             Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getContent()">
+            getContent()
+            </a>
+        </td>
+        <td>
+            Get message content        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
         </td>
     </tr>
         <tr>
@@ -119,8 +132,21 @@
         <td>
                     </td>
         <td>
-            <a href="../../Zend\Console\Response.html">
+            <a href="../../../classes/Zend\Console\Response.html">
             Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMetadata()">
+            getMetadata()
+            </a>
+        </td>
+        <td>
+            Retrieve all metadata or a single metadatum as specified by key        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
         </td>
     </tr>
         <tr>
@@ -132,7 +158,7 @@
         <td>
                     </td>
         <td>
-            <a href="../../Zend\Console\Response.html">
+            <a href="../../../classes/Zend\Console\Response.html">
             Response            </a>
         </td>
     </tr>
@@ -145,8 +171,21 @@
         <td>
             Send content        </td>
         <td>
-            <a href="../../Zend\Console\Response.html">
+            <a href="../../../classes/Zend\Console\Response.html">
             Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setContent()">
+            setContent()
+            </a>
+        </td>
+        <td>
+            Set message content        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
         </td>
     </tr>
         <tr>
@@ -158,8 +197,34 @@
         <td>
             Set the error level that will be returned to shell.        </td>
         <td>
-            <a href="../../Zend\Console\Response.html">
+            <a href="../../../classes/Zend\Console\Response.html">
             Response            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMetadata()">
+            setMetadata()
+            </a>
+        </td>
+        <td>
+            Set message metadata        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toString()">
+            toString()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
         </td>
     </tr>
     </table>
@@ -174,6 +239,18 @@ Check if content was sent</p>
 
 
 
+<p>Returns: bool </p>
+
+
+<h3 id="getContent()">getContent()</h3>
+
+<p>
+Get message content</p>
+
+
+
+<p>Returns: mixed </p>
+
 
 <h3 id="getErrorLevel()">getErrorLevel()</h3>
 
@@ -181,6 +258,41 @@ Check if content was sent</p>
 </p>
 
 
+
+<p>Returns: void</p>
+
+
+<h3 id="getMetadata()">getMetadata()</h3>
+
+<p>
+Retrieve all metadata or a single metadatum as specified by key</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            null|string|int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $default        </td>
+        <td>
+            null|mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
 
 
 <h3 id="send()">send()</h3>
@@ -190,6 +302,8 @@ Check if content was sent</p>
 
 
 
+<p>Returns: </p>
+
 
 <h3 id="sendContent()">sendContent()</h3>
 
@@ -197,6 +311,33 @@ Check if content was sent</p>
 Send content</p>
 
 
+
+<p>Returns: \Response </p>
+
+
+<h3 id="setContent()">setContent()</h3>
+
+<p>
+Set message content</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
 
 
 <h3 id="setErrorLevel()">setErrorLevel()</h3>
@@ -221,6 +362,52 @@ Set the error level that will be returned to shell.</p>
     </tr>
     </table>
 
+<p>Returns: \Response </p>
+
+
+<h3 id="setMetadata()">setMetadata()</h3>
+
+<p>
+Set message metadata</p>
+
+<p>Non-destructive setting of message metadata; always adds to the metadata, never overwrites
+the entire metadata container.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $spec        </td>
+        <td>
+            string|int|array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
+
+<h3 id="toString()">toString()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: string </p>
 
 
 
@@ -295,7 +482,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-80824388-1', 'auto');
+  ga('create', 'UA-115800598-1', 'auto');
   ga('send', 'pageview');
 
 </script>

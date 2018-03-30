@@ -71,7 +71,7 @@
             Extends:
         </td>
         <td>
-                                    <a href="../../Zend\Stdlib\Message.html">Message</a>                    </td>
+                                    <a href="../../../classes/Zend\Stdlib\Message.html">Message</a>                    </td>
     </tr>
         </table>
 
@@ -99,8 +99,21 @@
         <td>
             Allow PHP casting of this object        </td>
         <td>
-            <a href="../../Zend\Http\AbstractMessage.html">
+            <a href="../../../classes/Zend\Http\AbstractMessage.html">
             AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getContent()">
+            getContent()
+            </a>
+        </td>
+        <td>
+            Get message content        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
         </td>
     </tr>
         <tr>
@@ -112,8 +125,21 @@
         <td>
             Return the header container responsible for headers        </td>
         <td>
-            <a href="../../Zend\Http\AbstractMessage.html">
+            <a href="../../../classes/Zend\Http\AbstractMessage.html">
             AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMetadata()">
+            getMetadata()
+            </a>
+        </td>
+        <td>
+            Retrieve all metadata or a single metadatum as specified by key        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
         </td>
     </tr>
         <tr>
@@ -125,8 +151,21 @@
         <td>
             Return the HTTP version for this request        </td>
         <td>
-            <a href="../../Zend\Http\AbstractMessage.html">
+            <a href="../../../classes/Zend\Http\AbstractMessage.html">
             AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setContent()">
+            setContent()
+            </a>
+        </td>
+        <td>
+            Set message content        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
         </td>
     </tr>
         <tr>
@@ -139,8 +178,21 @@
             Provide an alternate Parameter Container implementation for headers in this object,
 (this is NOT the primary API for value setting, for that see getHeaders())        </td>
         <td>
-            <a href="../../Zend\Http\AbstractMessage.html">
+            <a href="../../../classes/Zend\Http\AbstractMessage.html">
             AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setMetadata()">
+            setMetadata()
+            </a>
+        </td>
+        <td>
+            Set message metadata        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
         </td>
     </tr>
         <tr>
@@ -153,8 +205,21 @@
             Set the HTTP version for this object, one of 1.0 or 1.1
 (AbstractMessage::VERSION_10, AbstractMessage::VERSION_11)        </td>
         <td>
-            <a href="../../Zend\Http\AbstractMessage.html">
+            <a href="../../../classes/Zend\Http\AbstractMessage.html">
             AbstractMessage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toString()">
+            toString()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\Message.html">
+            Message            </a>
         </td>
     </tr>
     </table>
@@ -169,6 +234,18 @@ Allow PHP casting of this object</p>
 
 
 
+<p>Returns: string </p>
+
+
+<h3 id="getContent()">getContent()</h3>
+
+<p>
+Get message content</p>
+
+
+
+<p>Returns: mixed </p>
+
 
 <h3 id="getHeaders()">getHeaders()</h3>
 
@@ -177,6 +254,41 @@ Return the header container responsible for headers</p>
 
 
 
+<p>Returns: \Headers </p>
+
+
+<h3 id="getMetadata()">getMetadata()</h3>
+
+<p>
+Retrieve all metadata or a single metadatum as specified by key</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            null|string|int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $default        </td>
+        <td>
+            null|mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
 
 <h3 id="getVersion()">getVersion()</h3>
 
@@ -184,6 +296,33 @@ Return the header container responsible for headers</p>
 Return the HTTP version for this request</p>
 
 
+
+<p>Returns: string </p>
+
+
+<h3 id="setContent()">setContent()</h3>
+
+<p>
+Set message content</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
 
 
 <h3 id="setHeaders()">setHeaders()</h3>
@@ -209,6 +348,43 @@ Provide an alternate Parameter Container implementation for headers in this obje
     </tr>
     </table>
 
+<p>Returns: \AbstractMessage </p>
+
+
+<h3 id="setMetadata()">setMetadata()</h3>
+
+<p>
+Set message metadata</p>
+
+<p>Non-destructive setting of message metadata; always adds to the metadata, never overwrites
+the entire metadata container.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $spec        </td>
+        <td>
+            string|int|array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Message </p>
+
 
 <h3 id="setVersion()">setVersion()</h3>
 
@@ -233,6 +409,17 @@ Set the HTTP version for this object, one of 1.0 or 1.1
     </tr>
     </table>
 
+<p>Returns: \AbstractMessage </p>
+
+
+<h3 id="toString()">toString()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: string </p>
 
 
 
@@ -307,7 +494,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-80824388-1', 'auto');
+  ga('create', 'UA-115800598-1', 'auto');
   ga('send', 'pageview');
 
 </script>

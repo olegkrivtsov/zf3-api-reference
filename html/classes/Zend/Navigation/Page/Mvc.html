@@ -1,0 +1,3391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Navigation\Page\Mvc -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-navigation.html">zendframework/zend-navigation</a>
+    &rarr;        <a href="../../../../classes/Zend/Navigation/Page/Mvc.html">Class Mvc</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Mvc</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Navigation\Page\Mvc        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">AbstractPage</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Represents a page that is defined using controller, action, route
+name and route params to assemble the href    </p>
+    <p>The two constants defined were originally provided via the zend-mvc class
+ModuleRouteListener; to remove the requirement on that component, they are
+reproduced here.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__call()">
+            __call()
+            </a>
+        </td>
+        <td>
+            Magic overload: Proxy calls to finder methods        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Page constructor        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Returns a property, or null if it doesn't exist        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__isset()">
+            __isset()
+            </a>
+        </td>
+        <td>
+            Checks if a property is set        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__set()">
+            __set()
+            </a>
+        </td>
+        <td>
+            Sets a custom property        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Returns page label        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__unset()">
+            __unset()
+            </a>
+        </td>
+        <td>
+            Unsets the given custom property        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addFactory()">
+            addFactory()
+            </a>
+        </td>
+        <td>
+            Add static factory for self::factory function        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addPage()">
+            addPage()
+            </a>
+        </td>
+        <td>
+            Adds a page to the container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addPages()">
+            addPages()
+            </a>
+        </td>
+        <td>
+            Adds several pages at once        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addRel()">
+            addRel()
+            </a>
+        </td>
+        <td>
+            Adds a forward relation to the page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addRev()">
+            addRev()
+            </a>
+        </td>
+        <td>
+            Adds a reverse relation to the page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#count()">
+            count()
+            </a>
+        </td>
+        <td>
+            Returns number of pages in container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#current()">
+            current()
+            </a>
+        </td>
+        <td>
+            Returns current page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#factory()">
+            factory()
+            </a>
+        </td>
+        <td>
+            Factory for Zend\Navigation\Page classes        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#findAllBy()">
+            findAllBy()
+            </a>
+        </td>
+        <td>
+            Returns all child pages matching $property == $value, or an empty array
+if no pages are found        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#findBy()">
+            findBy()
+            </a>
+        </td>
+        <td>
+            Returns page(s) matching $property == $value        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#findOneBy()">
+            findOneBy()
+            </a>
+        </td>
+        <td>
+            Returns a child page matching $property == $value, or null if not found        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#get()">
+            get()
+            </a>
+        </td>
+        <td>
+            Returns the value of the given property        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAction()">
+            getAction()
+            </a>
+        </td>
+        <td>
+            Returns action name to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getActive()">
+            getActive()
+            </a>
+        </td>
+        <td>
+            Proxy to isActive()        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getChildren()">
+            getChildren()
+            </a>
+        </td>
+        <td>
+            Returns the child container.        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getClass()">
+            getClass()
+            </a>
+        </td>
+        <td>
+            Returns page class (CSS)        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getController()">
+            getController()
+            </a>
+        </td>
+        <td>
+            Returns controller name to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCustomProperties()">
+            getCustomProperties()
+            </a>
+        </td>
+        <td>
+            Returns custom properties as an array        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultRoute()">
+            getDefaultRoute()
+            </a>
+        </td>
+        <td>
+            Get default route name        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultRouter()">
+            getDefaultRouter()
+            </a>
+        </td>
+        <td>
+            Gets the default router for assembling URLs.        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefinedRel()">
+            getDefinedRel()
+            </a>
+        </td>
+        <td>
+            Returns an array containing the defined forward relations        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefinedRev()">
+            getDefinedRev()
+            </a>
+        </td>
+        <td>
+            Returns an array containing the defined reverse relations        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFragment()">
+            getFragment()
+            </a>
+        </td>
+        <td>
+            Returns fragment identifier        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHref()">
+            getHref()
+            </a>
+        </td>
+        <td>
+            Returns href for this page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getId()">
+            getId()
+            </a>
+        </td>
+        <td>
+            Returns page id        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLabel()">
+            getLabel()
+            </a>
+        </td>
+        <td>
+            Returns page label        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOrder()">
+            getOrder()
+            </a>
+        </td>
+        <td>
+            Returns page order used in parent container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPages()">
+            getPages()
+            </a>
+        </td>
+        <td>
+            Returns pages in the container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getParams()">
+            getParams()
+            </a>
+        </td>
+        <td>
+            Returns params to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getParent()">
+            getParent()
+            </a>
+        </td>
+        <td>
+            Returns parent container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPermission()">
+            getPermission()
+            </a>
+        </td>
+        <td>
+            Returns permission associated with this page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPrivilege()">
+            getPrivilege()
+            </a>
+        </td>
+        <td>
+            Returns ACL privilege associated with this page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getQuery()">
+            getQuery()
+            </a>
+        </td>
+        <td>
+            Returns URL query part to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRel()">
+            getRel()
+            </a>
+        </td>
+        <td>
+            Returns the page's forward links to other pages        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResource()">
+            getResource()
+            </a>
+        </td>
+        <td>
+            Returns ACL resource associated with this page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRev()">
+            getRev()
+            </a>
+        </td>
+        <td>
+            Returns the page's reverse links to other pages        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRoute()">
+            getRoute()
+            </a>
+        </td>
+        <td>
+            Returns route name to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRouteMatch()">
+            getRouteMatch()
+            </a>
+        </td>
+        <td>
+            Get the route match.        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRouter()">
+            getRouter()
+            </a>
+        </td>
+        <td>
+            Get the router.        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTarget()">
+            getTarget()
+            </a>
+        </td>
+        <td>
+            Returns page target        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTextDomain()">
+            getTextDomain()
+            </a>
+        </td>
+        <td>
+            Returns text domain for translation        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTitle()">
+            getTitle()
+            </a>
+        </td>
+        <td>
+            Returns page title        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getVisible()">
+            getVisible()
+            </a>
+        </td>
+        <td>
+            Proxy to isVisible()        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasChildren()">
+            hasChildren()
+            </a>
+        </td>
+        <td>
+            Proxy to hasPages()        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasPage()">
+            hasPage()
+            </a>
+        </td>
+        <td>
+            Checks if the container has the given page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasPages()">
+            hasPages()
+            </a>
+        </td>
+        <td>
+            Returns true if container contains any pages        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hashCode()">
+            hashCode()
+            </a>
+        </td>
+        <td>
+            Returns a hash code value for the page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isActive()">
+            isActive()
+            </a>
+        </td>
+        <td>
+            Returns whether page should be considered active or not        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isVisible()">
+            isVisible()
+            </a>
+        </td>
+        <td>
+            Returns a boolean value indicating whether the page is visible        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#key()">
+            key()
+            </a>
+        </td>
+        <td>
+            Returns hash code of current page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#next()">
+            next()
+            </a>
+        </td>
+        <td>
+            Moves index pointer to next page in the container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#notifyOrderUpdated()">
+            notifyOrderUpdated()
+            </a>
+        </td>
+        <td>
+            Notifies container that the order of pages are updated        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removePage()">
+            removePage()
+            </a>
+        </td>
+        <td>
+            Removes the given page from the container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removePages()">
+            removePages()
+            </a>
+        </td>
+        <td>
+            Removes all pages in container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeRel()">
+            removeRel()
+            </a>
+        </td>
+        <td>
+            Removes a forward relation from the page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeRev()">
+            removeRev()
+            </a>
+        </td>
+        <td>
+            Removes a reverse relation from the page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#rewind()">
+            rewind()
+            </a>
+        </td>
+        <td>
+            Sets index pointer to first page in the container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#set()">
+            set()
+            </a>
+        </td>
+        <td>
+            Sets the given property        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAction()">
+            setAction()
+            </a>
+        </td>
+        <td>
+            Sets action name to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setActive()">
+            setActive()
+            </a>
+        </td>
+        <td>
+            Sets whether page should be considered active or not        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setClass()">
+            setClass()
+            </a>
+        </td>
+        <td>
+            Sets page CSS class        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setController()">
+            setController()
+            </a>
+        </td>
+        <td>
+            Sets controller name to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultRoute()">
+            setDefaultRoute()
+            </a>
+        </td>
+        <td>
+            Set default route name        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultRouter()">
+            setDefaultRouter()
+            </a>
+        </td>
+        <td>
+            Sets the default router for assembling URLs.        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFragment()">
+            setFragment()
+            </a>
+        </td>
+        <td>
+            Sets a fragment identifier        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setId()">
+            setId()
+            </a>
+        </td>
+        <td>
+            Sets page id        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLabel()">
+            setLabel()
+            </a>
+        </td>
+        <td>
+            Sets page label        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Sets page properties using options from an associative array        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOrder()">
+            setOrder()
+            </a>
+        </td>
+        <td>
+            Sets page order to use in parent container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPages()">
+            setPages()
+            </a>
+        </td>
+        <td>
+            Sets pages this container should have, removing existing pages        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setParams()">
+            setParams()
+            </a>
+        </td>
+        <td>
+            Sets params to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setParent()">
+            setParent()
+            </a>
+        </td>
+        <td>
+            Sets parent container        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPermission()">
+            setPermission()
+            </a>
+        </td>
+        <td>
+            Sets permission associated with this page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPrivilege()">
+            setPrivilege()
+            </a>
+        </td>
+        <td>
+            Sets ACL privilege associated with this page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setQuery()">
+            setQuery()
+            </a>
+        </td>
+        <td>
+            Sets URL query part to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRel()">
+            setRel()
+            </a>
+        </td>
+        <td>
+            Sets the page's forward links to other pages        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setResource()">
+            setResource()
+            </a>
+        </td>
+        <td>
+            Sets ACL resource associated with this page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRev()">
+            setRev()
+            </a>
+        </td>
+        <td>
+            Sets the page's reverse links to other pages        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRoute()">
+            setRoute()
+            </a>
+        </td>
+        <td>
+            Sets route name to use when assembling URL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRouteMatch()">
+            setRouteMatch()
+            </a>
+        </td>
+        <td>
+            Set route match object from which parameters will be retrieved        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRouter()">
+            setRouter()
+            </a>
+        </td>
+        <td>
+            Sets router for assembling URLs        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTarget()">
+            setTarget()
+            </a>
+        </td>
+        <td>
+            Sets page target        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTextDomain()">
+            setTextDomain()
+            </a>
+        </td>
+        <td>
+            Sets text domain for translation        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTitle()">
+            setTitle()
+            </a>
+        </td>
+        <td>
+            Sets page title        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUseRouteMatch()">
+            setUseRouteMatch()
+            </a>
+        </td>
+        <td>
+            Set whether the page should use route match params for assembling link uri        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setVisible()">
+            setVisible()
+            </a>
+        </td>
+        <td>
+            Sets whether the page should be visible or not        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\AbstractPage.html">
+            AbstractPage            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toArray()">
+            toArray()
+            </a>
+        </td>
+        <td>
+            Returns an array representation of the page        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#useRouteMatch()">
+            useRouteMatch()
+            </a>
+        </td>
+        <td>
+            Get the useRouteMatch flag        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\Page\Mvc.html">
+            Mvc            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#valid()">
+            valid()
+            </a>
+        </td>
+        <td>
+            Checks if container index is valid        </td>
+        <td>
+            <a href="../../../../classes/Zend\Navigation\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__call()">__call()</h3>
+
+<p>
+Magic overload: Proxy calls to finder methods</p>
+
+<p>Examples of finder calls:
+<code>
+// METHOD                    // SAME AS
+$nav-&gt;findByLabel('foo');    // $nav-&gt;findOneBy('label', 'foo');
+$nav-&gt;findOneByLabel('foo'); // $nav-&gt;findOneBy('label', 'foo');
+$nav-&gt;findAllByClass('foo'); // $nav-&gt;findAllBy('class', 'foo');
+</code></p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string        </td>
+        <td>
+            method        </td>
+    </tr>
+        <tr>
+        <td>
+            $arguments        </td>
+        <td>
+            array        </td>
+        <td>
+            method        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Page constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Returns a property, or null if it doesn't exist</p>
+
+<p>Magic overload for enabling <code>$page-&gt;propname</code>.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            property        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed property value or null</p>
+
+
+<h3 id="__isset()">__isset()</h3>
+
+<p>
+Checks if a property is set</p>
+
+<p>Magic overload for enabling <code>isset($page-&gt;propname)</code>.</p>
+<p>Returns true if the property is native (id, class, title, etc), and
+true or false if it's a custom property (depending on whether the
+property actually is set).</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            property        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool whether the given property exists</p>
+
+
+<h3 id="__set()">__set()</h3>
+
+<p>
+Sets a custom property</p>
+
+<p>Magic overload for enabling <code>$page-&gt;propname = $value</code>.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            property        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            value        </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Returns page label</p>
+
+<p>Magic overload for enabling <code>echo $page</code>.</p>
+
+
+<p>Returns: string page label</p>
+
+
+<h3 id="__unset()">__unset()</h3>
+
+<p>
+Unsets the given custom property</p>
+
+<p>Magic overload for enabling <code>unset($page-&gt;propname)</code>.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            property        </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="addFactory()">addFactory()</h3>
+
+<p>
+Add static factory for self::factory function</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $callback        </td>
+        <td>
+            callable        </td>
+        <td>
+            Any        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="addPage()">addPage()</h3>
+
+<p>
+Adds a page to the container</p>
+
+<p>This method will inject the container as the given page's parent by
+calling {@link Page\AbstractPage::setParent()}.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $page        </td>
+        <td>
+            \Page\AbstractPage|array|\Traversable        </td>
+        <td>
+            page        </td>
+    </tr>
+    </table>
+
+<p>Returns: self fluent interface, returns self</p>
+
+
+<h3 id="addPages()">addPages()</h3>
+
+<p>
+Adds several pages at once</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pages        </td>
+        <td>
+            array|\Traversable|\AbstractContainer        </td>
+        <td>
+            pages        </td>
+    </tr>
+    </table>
+
+<p>Returns: self fluent interface, returns self</p>
+
+
+<h3 id="addRel()">addRel()</h3>
+
+<p>
+Adds a forward relation to the page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $relation        </td>
+        <td>
+            string        </td>
+        <td>
+            relation        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            value        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="addRev()">addRev()</h3>
+
+<p>
+Adds a reverse relation to the page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $relation        </td>
+        <td>
+            string        </td>
+        <td>
+            relation        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            value        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="count()">count()</h3>
+
+<p>
+Returns number of pages in container</p>
+
+<p>Implements Countable interface.</p>
+
+
+<p>Returns: int number of pages in the container</p>
+
+
+<h3 id="current()">current()</h3>
+
+<p>
+Returns current page</p>
+
+<p>Implements RecursiveIterator interface.</p>
+
+
+<p>Returns: \Page\AbstractPage current page or null</p>
+
+
+<h3 id="factory()">factory()</h3>
+
+<p>
+Factory for Zend\Navigation\Page classes</p>
+
+<p>A specific type to construct can be specified by specifying the key
+'type' in $options. If type is 'uri' or 'mvc', the type will be resolved
+to Zend\Navigation\Page\Uri or Zend\Navigation\Page\Mvc. Any other value
+for 'type' will be considered the full name of the class to construct.
+A valid custom page class must extend Zend\Navigation\Page\AbstractPage.</p>
+<p>If 'type' is not given, the type of page to construct will be determined
+by the following rules:</p>
+<ul>
+<li>If $options contains either of the keys 'action', 'controller',
+or 'route', a Zend\Navigation\Page\Mvc page will be created.</li>
+<li>If $options contains the key 'uri', a Zend\Navigation\Page\Uri page
+will be created.</li>
+</ul>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+            options        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage a page instance</p>
+
+
+<h3 id="findAllBy()">findAllBy()</h3>
+
+<p>
+Returns all child pages matching $property == $value, or an empty array
+if no pages are found</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $property        </td>
+        <td>
+            string        </td>
+        <td>
+            name        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            value        </td>
+    </tr>
+    </table>
+
+<p>Returns: array array containing only Page\AbstractPage instances</p>
+
+
+<h3 id="findBy()">findBy()</h3>
+
+<p>
+Returns page(s) matching $property == $value</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $property        </td>
+        <td>
+            string        </td>
+        <td>
+            name        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            value        </td>
+    </tr>
+        <tr>
+        <td>
+            $all        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Page\AbstractPage|null matching page or null</p>
+
+
+<h3 id="findOneBy()">findOneBy()</h3>
+
+<p>
+Returns a child page matching $property == $value, or null if not found</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $property        </td>
+        <td>
+            string        </td>
+        <td>
+            name        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            value        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Page\AbstractPage|null matching page or null</p>
+
+
+<h3 id="get()">get()</h3>
+
+<p>
+Returns the value of the given property</p>
+
+<p>If the given property is native (id, class, title, etc), the matching
+get method will be used. Otherwise, it will return the matching custom
+property, or null if not found.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $property        </td>
+        <td>
+            string        </td>
+        <td>
+            property        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed the property's value or null</p>
+
+
+<h3 id="getAction()">getAction()</h3>
+
+<p>
+Returns action name to use when assembling URL</p>
+
+
+
+<p>Returns: string|null action name</p>
+
+
+<h3 id="getActive()">getActive()</h3>
+
+<p>
+Proxy to isActive()</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $recursive        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool whether page should be considered active</p>
+
+
+<h3 id="getChildren()">getChildren()</h3>
+
+<p>
+Returns the child container.</p>
+
+<p>Implements RecursiveIterator interface.</p>
+
+
+<p>Returns: \Page\AbstractPage|null </p>
+
+
+<h3 id="getClass()">getClass()</h3>
+
+<p>
+Returns page class (CSS)</p>
+
+
+
+<p>Returns: string|null page's CSS class or null</p>
+
+
+<h3 id="getController()">getController()</h3>
+
+<p>
+Returns controller name to use when assembling URL</p>
+
+
+
+<p>Returns: string|null controller name or null</p>
+
+
+<h3 id="getCustomProperties()">getCustomProperties()</h3>
+
+<p>
+Returns custom properties as an array</p>
+
+
+
+<p>Returns: array an array containing custom properties</p>
+
+
+<h3 id="getDefaultRoute()">getDefaultRoute()</h3>
+
+<p>
+Get default route name</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getDefaultRouter()">getDefaultRouter()</h3>
+
+<p>
+Gets the default router for assembling URLs.</p>
+
+
+
+<p>Returns: \RouteStackInterface </p>
+
+
+<h3 id="getDefinedRel()">getDefinedRel()</h3>
+
+<p>
+Returns an array containing the defined forward relations</p>
+
+
+
+<p>Returns: array defined forward relations</p>
+
+
+<h3 id="getDefinedRev()">getDefinedRev()</h3>
+
+<p>
+Returns an array containing the defined reverse relations</p>
+
+
+
+<p>Returns: array defined reverse relations</p>
+
+
+<h3 id="getFragment()">getFragment()</h3>
+
+<p>
+Returns fragment identifier</p>
+
+
+
+<p>Returns: string|null fragment identifier</p>
+
+
+<h3 id="getHref()">getHref()</h3>
+
+<p>
+Returns href for this page</p>
+
+<p>This method uses {@link RouteStackInterface} to assemble
+the href based on the page's properties.</p>
+
+
+<p>Returns: string page href</p>
+
+
+<h3 id="getId()">getId()</h3>
+
+<p>
+Returns page id</p>
+
+
+
+<p>Returns: string|null page id or null</p>
+
+
+<h3 id="getLabel()">getLabel()</h3>
+
+<p>
+Returns page label</p>
+
+
+
+<p>Returns: string page label or null</p>
+
+
+<h3 id="getOrder()">getOrder()</h3>
+
+<p>
+Returns page order used in parent container</p>
+
+
+
+<p>Returns: int|null page order or null</p>
+
+
+<h3 id="getPages()">getPages()</h3>
+
+<p>
+Returns pages in the container</p>
+
+
+
+<p>Returns: array array of Page\AbstractPage instances</p>
+
+
+<h3 id="getParams()">getParams()</h3>
+
+<p>
+Returns params to use when assembling URL</p>
+
+
+
+<p>Returns: array page params</p>
+
+
+<h3 id="getParent()">getParent()</h3>
+
+<p>
+Returns parent container</p>
+
+
+
+<p>Returns: \AbstractContainer|null parent container or null</p>
+
+
+<h3 id="getPermission()">getPermission()</h3>
+
+<p>
+Returns permission associated with this page</p>
+
+
+
+<p>Returns: mixed|null permission or null</p>
+
+
+<h3 id="getPrivilege()">getPrivilege()</h3>
+
+<p>
+Returns ACL privilege associated with this page</p>
+
+
+
+<p>Returns: string|null ACL privilege or null</p>
+
+
+<h3 id="getQuery()">getQuery()</h3>
+
+<p>
+Returns URL query part to use when assembling URL</p>
+
+
+
+<p>Returns: array|string|null URL query part (as an array or string) or null</p>
+
+
+<h3 id="getRel()">getRel()</h3>
+
+<p>
+Returns the page's forward links to other pages</p>
+
+<p>This method returns an associative array of forward links to other pages,
+where each element's key is the name of the relation (e.g. alternate,
+prev, next, help, etc), and the value is a mixed value that could somehow
+be considered a page.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $relation        </td>
+        <td>
+            string        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: array an array of relations. If $relation is not
+specified, all relations will be returned in
+an associative array.</p>
+
+
+<h3 id="getResource()">getResource()</h3>
+
+<p>
+Returns ACL resource associated with this page</p>
+
+
+
+<p>Returns: string|\AclResource|null ACL resource or null</p>
+
+
+<h3 id="getRev()">getRev()</h3>
+
+<p>
+Returns the page's reverse links to other pages</p>
+
+<p>This method returns an associative array of forward links to other pages,
+where each element's key is the name of the relation (e.g. alternate,
+prev, next, help, etc), and the value is a mixed value that could somehow
+be considered a page.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $relation        </td>
+        <td>
+            string        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: array an array of relations. If $relation is not
+specified, all relations will be returned in
+an associative array.</p>
+
+
+<h3 id="getRoute()">getRoute()</h3>
+
+<p>
+Returns route name to use when assembling URL</p>
+
+
+
+<p>Returns: string route name</p>
+
+
+<h3 id="getRouteMatch()">getRouteMatch()</h3>
+
+<p>
+Get the route match.</p>
+
+
+
+<p>Returns: \RouteMatch </p>
+
+
+<h3 id="getRouter()">getRouter()</h3>
+
+<p>
+Get the router.</p>
+
+
+
+<p>Returns: null|\RouteStackInterface|\MvcRouter\RouteStackInterface </p>
+
+
+<h3 id="getTarget()">getTarget()</h3>
+
+<p>
+Returns page target</p>
+
+
+
+<p>Returns: string|null page target or null</p>
+
+
+<h3 id="getTextDomain()">getTextDomain()</h3>
+
+<p>
+Returns text domain for translation</p>
+
+
+
+<p>Returns: mixed|null text domain or null</p>
+
+
+<h3 id="getTitle()">getTitle()</h3>
+
+<p>
+Returns page title</p>
+
+
+
+<p>Returns: string|null page title or null</p>
+
+
+<h3 id="getVisible()">getVisible()</h3>
+
+<p>
+Proxy to isVisible()</p>
+
+<p>Returns a boolean value indicating whether the page is visible</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $recursive        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool whether page should be considered visible</p>
+
+
+<h3 id="hasChildren()">hasChildren()</h3>
+
+<p>
+Proxy to hasPages()</p>
+
+<p>Implements RecursiveIterator interface.</p>
+
+
+<p>Returns: bool whether container has any pages</p>
+
+
+<h3 id="hasPage()">hasPage()</h3>
+
+<p>
+Checks if the container has the given page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $page        </td>
+        <td>
+            \Page\AbstractPage        </td>
+        <td>
+            page        </td>
+    </tr>
+        <tr>
+        <td>
+            $recursive        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool whether page is in container</p>
+
+
+<h3 id="hasPages()">hasPages()</h3>
+
+<p>
+Returns true if container contains any pages</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $onlyVisible        </td>
+        <td>
+            bool        </td>
+        <td>
+            whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool whether container has any pages</p>
+
+
+<h3 id="hashCode()">hashCode()</h3>
+
+<p>
+Returns a hash code value for the page</p>
+
+
+
+<p>Returns: string a hash code value for this page</p>
+
+
+<h3 id="isActive()">isActive()</h3>
+
+<p>
+Returns whether page should be considered active or not</p>
+
+<p>This method will compare the page properties against the route matches
+composed in the object.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $recursive        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool whether page should be considered active or not</p>
+
+
+<h3 id="isVisible()">isVisible()</h3>
+
+<p>
+Returns a boolean value indicating whether the page is visible</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $recursive        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool whether page should be considered visible</p>
+
+
+<h3 id="key()">key()</h3>
+
+<p>
+Returns hash code of current page</p>
+
+<p>Implements RecursiveIterator interface.</p>
+
+
+<p>Returns: string hash code of current page</p>
+
+
+<h3 id="next()">next()</h3>
+
+<p>
+Moves index pointer to next page in the container</p>
+
+<p>Implements RecursiveIterator interface.</p>
+
+
+<p>Returns: void </p>
+
+
+<h3 id="notifyOrderUpdated()">notifyOrderUpdated()</h3>
+
+<p>
+Notifies container that the order of pages are updated</p>
+
+
+
+<p>Returns: void </p>
+
+
+<h3 id="removePage()">removePage()</h3>
+
+<p>
+Removes the given page from the container</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $page        </td>
+        <td>
+            \Page\AbstractPage|int        </td>
+        <td>
+            page        </td>
+    </tr>
+        <tr>
+        <td>
+            $recursive        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool whether the removal was successful</p>
+
+
+<h3 id="removePages()">removePages()</h3>
+
+<p>
+Removes all pages in container</p>
+
+
+
+<p>Returns: self fluent interface, returns self</p>
+
+
+<h3 id="removeRel()">removeRel()</h3>
+
+<p>
+Removes a forward relation from the page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $relation        </td>
+        <td>
+            string        </td>
+        <td>
+            name        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="removeRev()">removeRev()</h3>
+
+<p>
+Removes a reverse relation from the page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $relation        </td>
+        <td>
+            string        </td>
+        <td>
+            name        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="rewind()">rewind()</h3>
+
+<p>
+Sets index pointer to first page in the container</p>
+
+<p>Implements RecursiveIterator interface.</p>
+
+
+<p>Returns: void </p>
+
+
+<h3 id="set()">set()</h3>
+
+<p>
+Sets the given property</p>
+
+<p>If the given property is native (id, class, title, etc), the matching
+set method will be used. Otherwise, it will be set as a custom property.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $property        </td>
+        <td>
+            string        </td>
+        <td>
+            property        </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+            value        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setAction()">setAction()</h3>
+
+<p>
+Sets action name to use when assembling URL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $action        </td>
+        <td>
+            string        </td>
+        <td>
+            action        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Mvc fluent interface, returns self</p>
+
+
+<h3 id="setActive()">setActive()</h3>
+
+<p>
+Sets whether page should be considered active or not</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $active        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setClass()">setClass()</h3>
+
+<p>
+Sets page CSS class</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            string|null        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setController()">setController()</h3>
+
+<p>
+Sets controller name to use when assembling URL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controller        </td>
+        <td>
+            string|null        </td>
+        <td>
+            controller        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Mvc fluent interface, returns self</p>
+
+
+<h3 id="setDefaultRoute()">setDefaultRoute()</h3>
+
+<p>
+Set default route name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $route        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="setDefaultRouter()">setDefaultRouter()</h3>
+
+<p>
+Sets the default router for assembling URLs.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $router        </td>
+        <td>
+            \RouteStackInterface        </td>
+        <td>
+            Router        </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="setFragment()">setFragment()</h3>
+
+<p>
+Sets a fragment identifier</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $fragment        </td>
+        <td>
+            string        </td>
+        <td>
+            new        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setId()">setId()</h3>
+
+<p>
+Sets page id</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $id        </td>
+        <td>
+            string|null        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setLabel()">setLabel()</h3>
+
+<p>
+Sets page label</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $label        </td>
+        <td>
+            string        </td>
+        <td>
+            new        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Sets page properties using options from an associative array</p>
+
+<p>Each key in the array corresponds to the according set*() method, and
+each word is separated by underscores, e.g. the option 'target'
+corresponds to setTarget(), and the option 'reset_params' corresponds to
+the method setResetParams().</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+            associative        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setOrder()">setOrder()</h3>
+
+<p>
+Sets page order to use in parent container</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $order        </td>
+        <td>
+            int        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setPages()">setPages()</h3>
+
+<p>
+Sets pages this container should have, removing existing pages</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pages        </td>
+        <td>
+            array        </td>
+        <td>
+            pages        </td>
+    </tr>
+    </table>
+
+<p>Returns: self fluent interface, returns self</p>
+
+
+<h3 id="setParams()">setParams()</h3>
+
+<p>
+Sets params to use when assembling URL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            array|null        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Mvc fluent interface, returns self</p>
+
+
+<h3 id="setParent()">setParent()</h3>
+
+<p>
+Sets parent container</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $parent        </td>
+        <td>
+            \AbstractContainer        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setPermission()">setPermission()</h3>
+
+<p>
+Sets permission associated with this page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $permission        </td>
+        <td>
+            mixed|null        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setPrivilege()">setPrivilege()</h3>
+
+<p>
+Sets ACL privilege associated with this page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $privilege        </td>
+        <td>
+            string|null        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setQuery()">setQuery()</h3>
+
+<p>
+Sets URL query part to use when assembling URL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $query        </td>
+        <td>
+            array|string|null        </td>
+        <td>
+            URL        </td>
+    </tr>
+    </table>
+
+<p>Returns: self fluent interface, returns self</p>
+
+
+<h3 id="setRel()">setRel()</h3>
+
+<p>
+Sets the page's forward links to other pages</p>
+
+<p>This method expects an associative array of forward links to other pages,
+where each element's key is the name of the relation (e.g. alternate,
+prev, next, help, etc), and the value is a mixed value that could somehow
+be considered a page.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $relations        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setResource()">setResource()</h3>
+
+<p>
+Sets ACL resource associated with this page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $resource        </td>
+        <td>
+            string|\AclResource        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setRev()">setRev()</h3>
+
+<p>
+Sets the page's reverse links to other pages</p>
+
+<p>This method expects an associative array of reverse links to other pages,
+where each element's key is the name of the relation (e.g. alternate,
+prev, next, help, etc), and the value is a mixed value that could somehow
+be considered a page.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $relations        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setRoute()">setRoute()</h3>
+
+<p>
+Sets route name to use when assembling URL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $route        </td>
+        <td>
+            string        </td>
+        <td>
+            Route        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Mvc Fluent interface, returns self.</p>
+
+
+<h3 id="setRouteMatch()">setRouteMatch()</h3>
+
+<p>
+Set route match object from which parameters will be retrieved</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $matches        </td>
+        <td>
+            \RouteMatch|\MvcRouter\RouteMatch        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Mvc fluent interface, returns self</p>
+
+
+<h3 id="setRouter()">setRouter()</h3>
+
+<p>
+Sets router for assembling URLs</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $router        </td>
+        <td>
+            \RouteStackInterface|\MvcRouter\RouteStackInterface        </td>
+        <td>
+            Router        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Mvc Fluent interface, returns self</p>
+
+
+<h3 id="setTarget()">setTarget()</h3>
+
+<p>
+Sets page target</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $target        </td>
+        <td>
+            string|null        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setTextDomain()">setTextDomain()</h3>
+
+<p>
+Sets text domain for translation</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $textDomain        </td>
+        <td>
+            string|null        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setTitle()">setTitle()</h3>
+
+<p>
+Sets page title</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $title        </td>
+        <td>
+            string        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="setUseRouteMatch()">setUseRouteMatch()</h3>
+
+<p>
+Set whether the page should use route match params for assembling link uri</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $useRouteMatch        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Mvc </p>
+
+
+<h3 id="setVisible()">setVisible()</h3>
+
+<p>
+Sets whether the page should be visible or not</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $visible        </td>
+        <td>
+            bool        </td>
+        <td>
+            [optional]        </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractPage fluent interface, returns self</p>
+
+
+<h3 id="toArray()">toArray()</h3>
+
+<p>
+Returns an array representation of the page</p>
+
+
+
+<p>Returns: array associative array containing all page properties</p>
+
+
+<h3 id="useRouteMatch()">useRouteMatch()</h3>
+
+<p>
+Get the useRouteMatch flag</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="valid()">valid()</h3>
+
+<p>
+Checks if container index is valid</p>
+
+<p>Implements RecursiveIterator interface.</p>
+
+
+<p>Returns: bool </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -71,7 +71,7 @@
             Extends:
         </td>
         <td>
-                                    <a href="../../Zend\Validator\ValidatorInterface.html">ValidatorInterface</a>                    </td>
+                                    <a href="../../../classes/Zend\Validator\ValidatorInterface.html">ValidatorInterface</a>                    </td>
     </tr>
         </table>
 
@@ -100,7 +100,7 @@
         <td>
             Generate a new captcha        </td>
         <td>
-            <a href="../../Zend\Captcha\AdapterInterface.html">
+            <a href="../../../classes/Zend\Captcha\AdapterInterface.html">
             AdapterInterface            </a>
         </td>
     </tr>
@@ -113,8 +113,23 @@
         <td>
             Get helper name to use when rendering this captcha type        </td>
         <td>
-            <a href="../../Zend\Captcha\AdapterInterface.html">
+            <a href="../../../classes/Zend\Captcha\AdapterInterface.html">
             AdapterInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMessages()">
+            getMessages()
+            </a>
+        </td>
+        <td>
+            Returns an array of messages that explain why the most recent isValid()
+call returned false. The array keys are validation failure message identifiers,
+and the array values are the corresponding human-readable message strings.        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorInterface.html">
+            ValidatorInterface            </a>
         </td>
     </tr>
         <tr>
@@ -126,8 +141,21 @@
         <td>
             Get captcha name        </td>
         <td>
-            <a href="../../Zend\Captcha\AdapterInterface.html">
+            <a href="../../../classes/Zend\Captcha\AdapterInterface.html">
             AdapterInterface            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isValid()">
+            isValid()
+            </a>
+        </td>
+        <td>
+            Returns true if and only if $value meets the validation requirements        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorInterface.html">
+            ValidatorInterface            </a>
         </td>
     </tr>
         <tr>
@@ -139,7 +167,7 @@
         <td>
             Set captcha name        </td>
         <td>
-            <a href="../../Zend\Captcha\AdapterInterface.html">
+            <a href="../../../classes/Zend\Captcha\AdapterInterface.html">
             AdapterInterface            </a>
         </td>
     </tr>
@@ -155,6 +183,8 @@ Generate a new captcha</p>
 
 
 
+<p>Returns: string new captcha ID</p>
+
 
 <h3 id="getHelperName()">getHelperName()</h3>
 
@@ -163,6 +193,22 @@ Get helper name to use when rendering this captcha type</p>
 
 
 
+<p>Returns: string </p>
+
+
+<h3 id="getMessages()">getMessages()</h3>
+
+<p>
+Returns an array of messages that explain why the most recent isValid()
+call returned false. The array keys are validation failure message identifiers,
+and the array values are the corresponding human-readable message strings.</p>
+
+<p>If isValid() was never called or if the most recent isValid() call
+returned true, then this method returns an empty array.</p>
+
+
+<p>Returns: array </p>
+
 
 <h3 id="getName()">getName()</h3>
 
@@ -170,6 +216,36 @@ Get helper name to use when rendering this captcha type</p>
 Get captcha name</p>
 
 
+
+<p>Returns: string </p>
+
+
+<h3 id="isValid()">isValid()</h3>
+
+<p>
+Returns true if and only if $value meets the validation requirements</p>
+
+<p>If $value fails validation, then this method returns false, and
+getMessages() will return an array of messages that explain why the
+validation failed.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
 
 
 <h3 id="setName()">setName()</h3>
@@ -194,6 +270,7 @@ Set captcha name</p>
     </tr>
     </table>
 
+<p>Returns: \AdapterInterface </p>
 
 
 
@@ -268,7 +345,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-80824388-1', 'auto');
+  ga('create', 'UA-115800598-1', 'auto');
   ga('send', 'pageview');
 
 </script>

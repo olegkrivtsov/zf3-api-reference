@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Soap\Server -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-soap.html">zendframework/zend-soap</a>
+    &rarr;        <a href="../../../classes/Zend/Soap/Server.html">Class Server</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Server</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Soap\Server        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/Zend\Server\Server.html">Server</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addFunction()">
+            addFunction()
+            </a>
+        </td>
+        <td>
+            Attach a function as a server method        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#deregisterFaultException()">
+            deregisterFaultException()
+            </a>
+        </td>
+        <td>
+            Deregister a fault exception from the fault exception stack        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fault()">
+            fault()
+            </a>
+        </td>
+        <td>
+            Generate a server fault        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getActor()">
+            getActor()
+            </a>
+        </td>
+        <td>
+            Retrieve actor        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getClassmap()">
+            getClassmap()
+            </a>
+        </td>
+        <td>
+            Retrieve classmap        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEncoding()">
+            getEncoding()
+            </a>
+        </td>
+        <td>
+            Get encoding        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getException()">
+            getException()
+            </a>
+        </td>
+        <td>
+            Return caught exception during business code execution        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFaultExceptions()">
+            getFaultExceptions()
+            </a>
+        </td>
+        <td>
+            Return fault exceptions list        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFunctions()">
+            getFunctions()
+            </a>
+        </td>
+        <td>
+            Return a server definition array        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getLastRequest()">
+            getLastRequest()
+            </a>
+        </td>
+        <td>
+            Retrieve request XML        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getOptions()">
+            getOptions()
+            </a>
+        </td>
+        <td>
+            Return array of options suitable for using with SoapServer constructor        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getParseHuge()">
+            getParseHuge()
+            </a>
+        </td>
+        <td>
+            Get flag to allow DOMDocument->loadXML() to parse huge nodes        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPersistence()">
+            getPersistence()
+            </a>
+        </td>
+        <td>
+            Get server persistence        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResponse()">
+            getResponse()
+            </a>
+        </td>
+        <td>
+            Get response XML        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getReturnResponse()">
+            getReturnResponse()
+            </a>
+        </td>
+        <td>
+            Retrieve return response flag        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSendErrors()">
+            getSendErrors()
+            </a>
+        </td>
+        <td>
+            Get current SOAP send_errors option        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSoap()">
+            getSoap()
+            </a>
+        </td>
+        <td>
+            Get SoapServer object        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSoapFeatures()">
+            getSoapFeatures()
+            </a>
+        </td>
+        <td>
+            Return current SOAP Features options        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSoapVersion()">
+            getSoapVersion()
+            </a>
+        </td>
+        <td>
+            Get SOAP version        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTypemap()">
+            getTypemap()
+            </a>
+        </td>
+        <td>
+            Retrieve typemap        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUri()">
+            getUri()
+            </a>
+        </td>
+        <td>
+            Retrieve URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWSDL()">
+            getWSDL()
+            </a>
+        </td>
+        <td>
+            Retrieve wsdl        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWSDLCache()">
+            getWSDLCache()
+            </a>
+        </td>
+        <td>
+            Get current SOAP WSDL Caching option        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handle()">
+            handle()
+            </a>
+        </td>
+        <td>
+            Handle a request        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#handlePhpErrors()">
+            handlePhpErrors()
+            </a>
+        </td>
+        <td>
+            Throw PHP errors as SoapFaults        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isRegisteredAsFaultException()">
+            isRegisteredAsFaultException()
+            </a>
+        </td>
+        <td>
+            Checks if provided fault name is registered as valid in this server.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#loadFunctions()">
+            loadFunctions()
+            </a>
+        </td>
+        <td>
+            Unimplemented: Load server definition        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#registerFaultException()">
+            registerFaultException()
+            </a>
+        </td>
+        <td>
+            Validate and register fault exception        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setActor()">
+            setActor()
+            </a>
+        </td>
+        <td>
+            Set actor        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setClass()">
+            setClass()
+            </a>
+        </td>
+        <td>
+            Attach a class to a server        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setClassmap()">
+            setClassmap()
+            </a>
+        </td>
+        <td>
+            Set classmap        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDebugMode()">
+            setDebugMode()
+            </a>
+        </td>
+        <td>
+            Set the debug mode.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEncoding()">
+            setEncoding()
+            </a>
+        </td>
+        <td>
+            Set encoding        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setObject()">
+            setObject()
+            </a>
+        </td>
+        <td>
+            Attach an object to a server        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setOptions()">
+            setOptions()
+            </a>
+        </td>
+        <td>
+            Set Options        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setParseHuge()">
+            setParseHuge()
+            </a>
+        </td>
+        <td>
+            Set flag to allow DOMDocument->loadXML() to parse huge nodes        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPersistence()">
+            setPersistence()
+            </a>
+        </td>
+        <td>
+            Set server persistence        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setReturnResponse()">
+            setReturnResponse()
+            </a>
+        </td>
+        <td>
+            Set return response flag        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSendErrors()">
+            setSendErrors()
+            </a>
+        </td>
+        <td>
+            Set the SOAP send_errors Option        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSoapFeatures()">
+            setSoapFeatures()
+            </a>
+        </td>
+        <td>
+            Set the SOAP Feature options.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSoapVersion()">
+            setSoapVersion()
+            </a>
+        </td>
+        <td>
+            Set SOAP version        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTypemap()">
+            setTypemap()
+            </a>
+        </td>
+        <td>
+            Set typemap with xml to php type mappings with appropriate validation.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUri()">
+            setUri()
+            </a>
+        </td>
+        <td>
+            Set URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWSDL()">
+            setWSDL()
+            </a>
+        </td>
+        <td>
+            Set wsdl        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setWSDLCache()">
+            setWSDLCache()
+            </a>
+        </td>
+        <td>
+            Set the SOAP WSDL Caching Options        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validateUrn()">
+            validateUrn()
+            </a>
+        </td>
+        <td>
+            Check for valid URN        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Server.html">
+            Server            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+<p>Sets display_errors INI setting to off (prevent client errors due to bad
+XML in response). Registers {@link handlePhpErrors()} as error handler
+for E_USER_ERROR.</p>
+<p>If $wsdl is provided, it is passed on to {@link setWSDL()}; if any
+options are specified, they are passed on to {@link setOptions()}.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $wsdl        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="addFunction()">addFunction()</h3>
+
+<p>
+Attach a function as a server method</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $function        </td>
+        <td>
+            array|string        </td>
+        <td>
+            Function        </td>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+            Ignored        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="deregisterFaultException()">deregisterFaultException()</h3>
+
+<p>
+Deregister a fault exception from the fault exception stack</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="fault()">fault()</h3>
+
+<p>
+Generate a server fault</p>
+
+<p>Note that the arguments are reverse to those of SoapFault.</p>
+<p>If an exception is passed as the first argument, its message and code
+will be used to create the fault object if it has been registered via
+{@Link registerFaultException()}.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $fault        </td>
+        <td>
+            string|\Exception        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            string        </td>
+        <td>
+            SOAP        </td>
+    </tr>
+    </table>
+
+<p>Returns: \SoapFault </p>
+
+
+<h3 id="getActor()">getActor()</h3>
+
+<p>
+Retrieve actor</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getClassmap()">getClassmap()</h3>
+
+<p>
+Retrieve classmap</p>
+
+
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getEncoding()">getEncoding()</h3>
+
+<p>
+Get encoding</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getException()">getException()</h3>
+
+<p>
+Return caught exception during business code execution</p>
+
+
+
+<p>Returns: null|\Exception caught exception</p>
+
+
+<h3 id="getFaultExceptions()">getFaultExceptions()</h3>
+
+<p>
+Return fault exceptions list</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getFunctions()">getFunctions()</h3>
+
+<p>
+Return a server definition array</p>
+
+<p>Returns a list of all functions registered with {@link addFunction()},
+merged with all public methods of the class set with {@link setClass()}
+(if any).</p>
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getLastRequest()">getLastRequest()</h3>
+
+<p>
+Retrieve request XML</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getOptions()">getOptions()</h3>
+
+<p>
+Return array of options suitable for using with SoapServer constructor</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getParseHuge()">getParseHuge()</h3>
+
+<p>
+Get flag to allow DOMDocument->loadXML() to parse huge nodes</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="getPersistence()">getPersistence()</h3>
+
+<p>
+Get server persistence</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getResponse()">getResponse()</h3>
+
+<p>
+Get response XML</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getReturnResponse()">getReturnResponse()</h3>
+
+<p>
+Retrieve return response flag</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="getSendErrors()">getSendErrors()</h3>
+
+<p>
+Get current SOAP send_errors option</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="getSoap()">getSoap()</h3>
+
+<p>
+Get SoapServer object</p>
+
+<p>Uses {@link $wsdl} and return value of {@link getOptions()} to instantiate
+SoapServer object, and then registers any functions or class with it, as
+well as persistence.</p>
+
+
+<p>Returns: \SoapServer </p>
+
+
+<h3 id="getSoapFeatures()">getSoapFeatures()</h3>
+
+<p>
+Return current SOAP Features options</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getSoapVersion()">getSoapVersion()</h3>
+
+<p>
+Get SOAP version</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getTypemap()">getTypemap()</h3>
+
+<p>
+Retrieve typemap</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getUri()">getUri()</h3>
+
+<p>
+Retrieve URI</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getWSDL()">getWSDL()</h3>
+
+<p>
+Retrieve wsdl</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getWSDLCache()">getWSDLCache()</h3>
+
+<p>
+Get current SOAP WSDL Caching option</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="handle()">handle()</h3>
+
+<p>
+Handle a request</p>
+
+<p>Instantiates SoapServer object with options set in object, and
+dispatches its handle() method.</p>
+<p>$request may be any of:</p>
+<ul>
+<li>DOMDocument; if so, then cast to XML</li>
+<li>DOMNode; if so, then grab owner document and cast to XML</li>
+<li>SimpleXMLElement; if so, then cast to XML</li>
+<li>stdClass; if so, calls __toString() and verifies XML</li>
+<li>string; if so, verifies XML</li>
+</ul>
+<p>If no request is passed, pulls request using php:://input (for
+cross-platform compatibility purposes).</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $request        </td>
+        <td>
+            \DOMDocument|\DOMNode|\SimpleXMLElement|\stdClass|string        </td>
+        <td>
+            Optional        </td>
+    </tr>
+    </table>
+
+<p>Returns: void|string </p>
+
+
+<h3 id="handlePhpErrors()">handlePhpErrors()</h3>
+
+<p>
+Throw PHP errors as SoapFaults</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $errno        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $errstr        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="isRegisteredAsFaultException()">isRegisteredAsFaultException()</h3>
+
+<p>
+Checks if provided fault name is registered as valid in this server.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $fault        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="loadFunctions()">loadFunctions()</h3>
+
+<p>
+Unimplemented: Load server definition</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $definition        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="registerFaultException()">registerFaultException()</h3>
+
+<p>
+Validate and register fault exception</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            string|array        </td>
+        <td>
+            Exception        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setActor()">setActor()</h3>
+
+<p>
+Set actor</p>
+
+<p>Actor is the actor URI for the server.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $actor        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setClass()">setClass()</h3>
+
+<p>
+Attach a class to a server</p>
+
+<p>Accepts a class name to use when handling requests. Any additional
+arguments will be passed to that class' constructor when instantiated.</p>
+<p>See {@link setObject()} to set pre-configured object instances as request handlers.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            string|object        </td>
+        <td>
+            Class        </td>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $argv        </td>
+        <td>
+            null|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setClassmap()">setClassmap()</h3>
+
+<p>
+Set classmap</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $classmap        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setDebugMode()">setDebugMode()</h3>
+
+<p>
+Set the debug mode.</p>
+
+<p>In debug mode, all exceptions are send to the client.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $debug        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setEncoding()">setEncoding()</h3>
+
+<p>
+Set encoding</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $encoding        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setObject()">setObject()</h3>
+
+<p>
+Attach an object to a server</p>
+
+<p>Accepts an instantiated object to use when handling requests.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $object        </td>
+        <td>
+            object        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setOptions()">setOptions()</h3>
+
+<p>
+Set Options</p>
+
+<p>Allows setting options as an associative array of option =&gt; value pairs.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setParseHuge()">setParseHuge()</h3>
+
+<p>
+Set flag to allow DOMDocument->loadXML() to parse huge nodes</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $parseHuge        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setPersistence()">setPersistence()</h3>
+
+<p>
+Set server persistence</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $mode        </td>
+        <td>
+            int        </td>
+        <td>
+            SOAP_PERSISTENCE_SESSION        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setReturnResponse()">setReturnResponse()</h3>
+
+<p>
+Set return response flag</p>
+
+<p>If true, {@link handle()} will return the response instead of
+automatically sending it back to the requesting client.</p>
+<p>The response is always available via {@link getResponse()}.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $flag        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setSendErrors()">setSendErrors()</h3>
+
+<p>
+Set the SOAP send_errors Option</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $sendErrors        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setSoapFeatures()">setSoapFeatures()</h3>
+
+<p>
+Set the SOAP Feature options.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $feature        </td>
+        <td>
+            string|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setSoapVersion()">setSoapVersion()</h3>
+
+<p>
+Set SOAP version</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $version        </td>
+        <td>
+            int        </td>
+        <td>
+            One        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setTypemap()">setTypemap()</h3>
+
+<p>
+Set typemap with xml to php type mappings with appropriate validation.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $typeMap        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setUri()">setUri()</h3>
+
+<p>
+Set URI</p>
+
+<p>URI in SoapServer is actually the target namespace, not a URI; $uri must begin with 'urn:'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setWSDL()">setWSDL()</h3>
+
+<p>
+Set wsdl</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $wsdl        </td>
+        <td>
+            string        </td>
+        <td>
+            URI        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setWSDLCache()">setWSDLCache()</h3>
+
+<p>
+Set the SOAP WSDL Caching Options</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            string|int|bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="validateUrn()">validateUrn()</h3>
+
+<p>
+Check for valid URN</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $urn        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

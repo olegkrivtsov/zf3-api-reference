@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Session\AbstractContainer -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-session.html">zendframework/zend-session</a>
+    &rarr;        <a href="../../../classes/Zend/Session/AbstractContainer.html">Class AbstractContainer</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        AbstractContainer</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Session\AbstractContainer        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../classes/Zend\Stdlib\ArrayObject.html">ArrayObject</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Session storage container    </p>
+    <p>Allows for interacting with session storage in isolated containers, which
+may have their own expiries, or even expiries per key in the container.
+Additionally, expiries may be absolute TTLs or measured in "hops", which
+are based on how many times the key or container were accessed.</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__get()">
+            __get()
+            </a>
+        </td>
+        <td>
+            Returns the value at the specified key by reference        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__isset()">
+            __isset()
+            </a>
+        </td>
+        <td>
+            Returns whether the requested key exists        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__set()">
+            __set()
+            </a>
+        </td>
+        <td>
+            Sets the value at the specified key to value        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__unset()">
+            __unset()
+            </a>
+        </td>
+        <td>
+            Unsets the value at the specified key        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#append()">
+            append()
+            </a>
+        </td>
+        <td>
+            Appends the value        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#asort()">
+            asort()
+            </a>
+        </td>
+        <td>
+            Sort the entries by value        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#count()">
+            count()
+            </a>
+        </td>
+        <td>
+            Get the number of public properties in the ArrayObject        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#exchangeArray()">
+            exchangeArray()
+            </a>
+        </td>
+        <td>
+            Exchange the current array with another array or object.        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getArrayCopy()">
+            getArrayCopy()
+            </a>
+        </td>
+        <td>
+            Creates a copy of the specific container name        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultManager()">
+            getDefaultManager()
+            </a>
+        </td>
+        <td>
+            Get the default ManagerInterface instance        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFlags()">
+            getFlags()
+            </a>
+        </td>
+        <td>
+            Gets the behavior flags.        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getIterator()">
+            getIterator()
+            </a>
+        </td>
+        <td>
+            Iterate over session container        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getIteratorClass()">
+            getIteratorClass()
+            </a>
+        </td>
+        <td>
+            Gets the iterator classname for the ArrayObject.        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getManager()">
+            getManager()
+            </a>
+        </td>
+        <td>
+            Get manager instance        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getName()">
+            getName()
+            </a>
+        </td>
+        <td>
+            Get container name        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#ksort()">
+            ksort()
+            </a>
+        </td>
+        <td>
+            Sort the entries by key        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#natcasesort()">
+            natcasesort()
+            </a>
+        </td>
+        <td>
+            Sort an array using a case insensitive "natural order" algorithm        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#natsort()">
+            natsort()
+            </a>
+        </td>
+        <td>
+            Sort entries using a "natural order" algorithm        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#offsetExists()">
+            offsetExists()
+            </a>
+        </td>
+        <td>
+            Determine if the key exists        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#offsetGet()">
+            offsetGet()
+            </a>
+        </td>
+        <td>
+            Retrieve a specific key in the container        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#offsetSet()">
+            offsetSet()
+            </a>
+        </td>
+        <td>
+            Store a value within the container        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#offsetUnset()">
+            offsetUnset()
+            </a>
+        </td>
+        <td>
+            Unset a single key in the container        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#serialize()">
+            serialize()
+            </a>
+        </td>
+        <td>
+            Serialize an ArrayObject        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultManager()">
+            setDefaultManager()
+            </a>
+        </td>
+        <td>
+            Set the default ManagerInterface instance to use when none provided to constructor        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setExpirationHops()">
+            setExpirationHops()
+            </a>
+        </td>
+        <td>
+            Set expiration hops for the container, a single key, or set of keys        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setExpirationSeconds()">
+            setExpirationSeconds()
+            </a>
+        </td>
+        <td>
+            Set expiration TTL        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractContainer.html">
+            AbstractContainer            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFlags()">
+            setFlags()
+            </a>
+        </td>
+        <td>
+            Sets the behavior flags        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setIteratorClass()">
+            setIteratorClass()
+            </a>
+        </td>
+        <td>
+            Sets the iterator classname for the ArrayObject        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#uasort()">
+            uasort()
+            </a>
+        </td>
+        <td>
+            Sort the entries with a user-defined comparison function and maintain key association        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#uksort()">
+            uksort()
+            </a>
+        </td>
+        <td>
+            Sort the entries by keys using a user-defined comparison function        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#unserialize()">
+            unserialize()
+            </a>
+        </td>
+        <td>
+            Unserialize an ArrayObject        </td>
+        <td>
+            <a href="../../../classes/Zend\Stdlib\ArrayObject.html">
+            ArrayObject            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+<p>Provide a name ('Default' if none provided) and a ManagerInterface instance.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            null|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $manager        </td>
+        <td>
+            \Manager        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__get()">__get()</h3>
+
+<p>
+Returns the value at the specified key by reference</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="__isset()">__isset()</h3>
+
+<p>
+Returns whether the requested key exists</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="__set()">__set()</h3>
+
+<p>
+Sets the value at the specified key to value</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="__unset()">__unset()</h3>
+
+<p>
+Unsets the value at the specified key</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="append()">append()</h3>
+
+<p>
+Appends the value</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="asort()">asort()</h3>
+
+<p>
+Sort the entries by value</p>
+
+
+
+<p>Returns: void </p>
+
+
+<h3 id="count()">count()</h3>
+
+<p>
+Get the number of public properties in the ArrayObject</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="exchangeArray()">exchangeArray()</h3>
+
+<p>
+Exchange the current array with another array or object.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $input        </td>
+        <td>
+            array|object        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array Returns the old array</p>
+
+
+<h3 id="getArrayCopy()">getArrayCopy()</h3>
+
+<p>
+Creates a copy of the specific container name</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getDefaultManager()">getDefaultManager()</h3>
+
+<p>
+Get the default ManagerInterface instance</p>
+
+<p>If none provided, instantiates one of type {@link $managerDefaultClass}</p>
+
+
+<p>Returns: \Manager </p>
+
+
+<h3 id="getFlags()">getFlags()</h3>
+
+<p>
+Gets the behavior flags.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getIterator()">getIterator()</h3>
+
+<p>
+Iterate over session container</p>
+
+
+
+<p>Returns: \Iterator </p>
+
+
+<h3 id="getIteratorClass()">getIteratorClass()</h3>
+
+<p>
+Gets the iterator classname for the ArrayObject.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getManager()">getManager()</h3>
+
+<p>
+Get manager instance</p>
+
+
+
+<p>Returns: \Manager </p>
+
+
+<h3 id="getName()">getName()</h3>
+
+<p>
+Get container name</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="ksort()">ksort()</h3>
+
+<p>
+Sort the entries by key</p>
+
+
+
+<p>Returns: void </p>
+
+
+<h3 id="natcasesort()">natcasesort()</h3>
+
+<p>
+Sort an array using a case insensitive "natural order" algorithm</p>
+
+
+
+<p>Returns: void </p>
+
+
+<h3 id="natsort()">natsort()</h3>
+
+<p>
+Sort entries using a "natural order" algorithm</p>
+
+
+
+<p>Returns: void </p>
+
+
+<h3 id="offsetExists()">offsetExists()</h3>
+
+<p>
+Determine if the key exists</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="offsetGet()">offsetGet()</h3>
+
+<p>
+Retrieve a specific key in the container</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="offsetSet()">offsetSet()</h3>
+
+<p>
+Store a value within the container</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="offsetUnset()">offsetUnset()</h3>
+
+<p>
+Unset a single key in the container</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $key        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="serialize()">serialize()</h3>
+
+<p>
+Serialize an ArrayObject</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="setDefaultManager()">setDefaultManager()</h3>
+
+<p>
+Set the default ManagerInterface instance to use when none provided to constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $manager        </td>
+        <td>
+            \Manager        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="setExpirationHops()">setExpirationHops()</h3>
+
+<p>
+Set expiration hops for the container, a single key, or set of keys</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $hops        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $vars        </td>
+        <td>
+            null|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Container </p>
+
+
+<h3 id="setExpirationSeconds()">setExpirationSeconds()</h3>
+
+<p>
+Set expiration TTL</p>
+
+<p>Set the TTL for the entire container, a single key, or a set of keys.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $ttl        </td>
+        <td>
+            int        </td>
+        <td>
+            TTL        </td>
+    </tr>
+        <tr>
+        <td>
+            $vars        </td>
+        <td>
+            string|array|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Container </p>
+
+
+<h3 id="setFlags()">setFlags()</h3>
+
+<p>
+Sets the behavior flags</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $flags        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="setIteratorClass()">setIteratorClass()</h3>
+
+<p>
+Sets the iterator classname for the ArrayObject</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="uasort()">uasort()</h3>
+
+<p>
+Sort the entries with a user-defined comparison function and maintain key association</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $function        </td>
+        <td>
+            callable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="uksort()">uksort()</h3>
+
+<p>
+Sort the entries by keys using a user-defined comparison function</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $function        </td>
+        <td>
+            callable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="unserialize()">unserialize()</h3>
+
+<p>
+Unserialize an ArrayObject</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

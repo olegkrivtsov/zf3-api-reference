@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Session\AbstractManager -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-session.html">zendframework/zend-session</a>
+    &rarr;        <a href="../../../classes/Zend/Session/AbstractManager.html">Class AbstractManager</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        AbstractManager</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Session\AbstractManager        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/Zend\Session\ManagerInterface.html">ManagerInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Base ManagerInterface implementation    </p>
+    <p>Defines common constructor logic and getters for Storage and Configuration</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractManager.html">
+            AbstractManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getConfig()">
+            getConfig()
+            </a>
+        </td>
+        <td>
+            Retrieve configuration object        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractManager.html">
+            AbstractManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSaveHandler()">
+            getSaveHandler()
+            </a>
+        </td>
+        <td>
+            Get SaveHandler Object        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractManager.html">
+            AbstractManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getStorage()">
+            getStorage()
+            </a>
+        </td>
+        <td>
+            Retrieve storage object        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractManager.html">
+            AbstractManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setConfig()">
+            setConfig()
+            </a>
+        </td>
+        <td>
+            Set configuration object        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractManager.html">
+            AbstractManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSaveHandler()">
+            setSaveHandler()
+            </a>
+        </td>
+        <td>
+            Set session save handler object        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractManager.html">
+            AbstractManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setStorage()">
+            setStorage()
+            </a>
+        </td>
+        <td>
+            Set session storage object        </td>
+        <td>
+            <a href="../../../classes/Zend\Session\AbstractManager.html">
+            AbstractManager            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $storage        </td>
+        <td>
+            \Storage|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $saveHandler        </td>
+        <td>
+            \SaveHandler|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $validators        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="getConfig()">getConfig()</h3>
+
+<p>
+Retrieve configuration object</p>
+
+
+
+<p>Returns: \Config </p>
+
+
+<h3 id="getSaveHandler()">getSaveHandler()</h3>
+
+<p>
+Get SaveHandler Object</p>
+
+
+
+<p>Returns: \SaveHandler </p>
+
+
+<h3 id="getStorage()">getStorage()</h3>
+
+<p>
+Retrieve storage object</p>
+
+
+
+<p>Returns: \Storage </p>
+
+
+<h3 id="setConfig()">setConfig()</h3>
+
+<p>
+Set configuration object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            \Config        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractManager </p>
+
+
+<h3 id="setSaveHandler()">setSaveHandler()</h3>
+
+<p>
+Set session save handler object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $saveHandler        </td>
+        <td>
+            \SaveHandler        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractManager </p>
+
+
+<h3 id="setStorage()">setStorage()</h3>
+
+<p>
+Set session storage object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $storage        </td>
+        <td>
+            \Storage        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractManager </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Uri\File -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-uri.html">zendframework/zend-uri</a>
+    &rarr;        <a href="../../../classes/Zend/Uri/File.html">Class File</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        File</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Uri\File        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../classes/Zend\Uri\Uri.html">Uri</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    File URI handler    </p>
+    <p>The 'file:...' scheme is loosely defined in RFC-1738</p>
+</div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Create a new URI object        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Magic method to convert the URI to a string        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#encodePath()">
+            encodePath()
+            </a>
+        </td>
+        <td>
+            Encode the path        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#encodeQueryFragment()">
+            encodeQueryFragment()
+            </a>
+        </td>
+        <td>
+            URL-encode a query string or fragment based on RFC-3986 guidelines.        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#encodeUserInfo()">
+            encodeUserInfo()
+            </a>
+        </td>
+        <td>
+            URL-encode the user info part of a URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fromUnixPath()">
+            fromUnixPath()
+            </a>
+        </td>
+        <td>
+            Convert a UNIX file path to a valid file:// URL        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#fromWindowsPath()">
+            fromWindowsPath()
+            </a>
+        </td>
+        <td>
+            Convert a Windows file path to a valid file:// URL        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getEscaper()">
+            getEscaper()
+            </a>
+        </td>
+        <td>
+            Retrieve Escaper instance        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFragment()">
+            getFragment()
+            </a>
+        </td>
+        <td>
+            Get the URI fragment        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getHost()">
+            getHost()
+            </a>
+        </td>
+        <td>
+            Get the URI host        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPath()">
+            getPath()
+            </a>
+        </td>
+        <td>
+            Get the URI path        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPort()">
+            getPort()
+            </a>
+        </td>
+        <td>
+            Get the URI port        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getQuery()">
+            getQuery()
+            </a>
+        </td>
+        <td>
+            Get the URI query        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getQueryAsArray()">
+            getQueryAsArray()
+            </a>
+        </td>
+        <td>
+            Return the query string as an associative array of key => value pairs        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getScheme()">
+            getScheme()
+            </a>
+        </td>
+        <td>
+            Get the scheme part of the URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUserInfo()">
+            getUserInfo()
+            </a>
+        </td>
+        <td>
+            Get the User-info (usually user:password) part        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isAbsolute()">
+            isAbsolute()
+            </a>
+        </td>
+        <td>
+            Check if the URI is an absolute or relative URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isValid()">
+            isValid()
+            </a>
+        </td>
+        <td>
+            Check if the URI is a valid File URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isValidRelative()">
+            isValidRelative()
+            </a>
+        </td>
+        <td>
+            Check if the URI is a valid relative URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#makeRelative()">
+            makeRelative()
+            </a>
+        </td>
+        <td>
+            Convert the link to a relative link by substracting a base URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#merge()">
+            merge()
+            </a>
+        </td>
+        <td>
+            Merge a base URI and a relative URI into a new URI object        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#normalize()">
+            normalize()
+            </a>
+        </td>
+        <td>
+            Normalize the URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#parse()">
+            parse()
+            </a>
+        </td>
+        <td>
+            Parse a URI string        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#parseScheme()">
+            parseScheme()
+            </a>
+        </td>
+        <td>
+            Extract only the scheme part out of a URI string.        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removePathDotSegments()">
+            removePathDotSegments()
+            </a>
+        </td>
+        <td>
+            Remove any extra dot segments (/.        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#resolve()">
+            resolve()
+            </a>
+        </td>
+        <td>
+            Convert a relative URI into an absolute URI using a base absolute URI as
+a reference.        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setEscaper()">
+            setEscaper()
+            </a>
+        </td>
+        <td>
+            Set Escaper instance        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFragment()">
+            setFragment()
+            </a>
+        </td>
+        <td>
+            Fragment part is not used in file URIs        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setHost()">
+            setHost()
+            </a>
+        </td>
+        <td>
+            Set the URI host        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPath()">
+            setPath()
+            </a>
+        </td>
+        <td>
+            Set the path        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPort()">
+            setPort()
+            </a>
+        </td>
+        <td>
+            Set the port part of the URI        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setQuery()">
+            setQuery()
+            </a>
+        </td>
+        <td>
+            Set the query string        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setScheme()">
+            setScheme()
+            </a>
+        </td>
+        <td>
+            Set the URI scheme        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUserInfo()">
+            setUserInfo()
+            </a>
+        </td>
+        <td>
+            User Info part is not used in file URIs        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\File.html">
+            File            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toString()">
+            toString()
+            </a>
+        </td>
+        <td>
+            Compose the URI into a string        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validateHost()">
+            validateHost()
+            </a>
+        </td>
+        <td>
+            Validate the host part        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validatePath()">
+            validatePath()
+            </a>
+        </td>
+        <td>
+            Validate the path        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validatePort()">
+            validatePort()
+            </a>
+        </td>
+        <td>
+            Validate the port        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validateQueryFragment()">
+            validateQueryFragment()
+            </a>
+        </td>
+        <td>
+            Check if a URI query or fragment part is valid or not        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validateScheme()">
+            validateScheme()
+            </a>
+        </td>
+        <td>
+            Check if a scheme is valid or not        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validateUserInfo()">
+            validateUserInfo()
+            </a>
+        </td>
+        <td>
+            Check that the userInfo part of a URI is valid        </td>
+        <td>
+            <a href="../../../classes/Zend\Uri\Uri.html">
+            Uri            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Create a new URI object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            \Uri|string|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Magic method to convert the URI to a string</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="encodePath()">encodePath()</h3>
+
+<p>
+Encode the path</p>
+
+<p>Will replace all characters which are not strictly allowed in the path
+part with percent-encoded representation</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="encodeQueryFragment()">encodeQueryFragment()</h3>
+
+<p>
+URL-encode a query string or fragment based on RFC-3986 guidelines.</p>
+
+<p>Note that query and fragment encoding allows more unencoded characters
+than the usual rawurlencode() function would usually return - for example
+'/' and ':' are allowed as literals.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $input        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="encodeUserInfo()">encodeUserInfo()</h3>
+
+<p>
+URL-encode the user info part of a URI</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $userInfo        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="fromUnixPath()">fromUnixPath()</h3>
+
+<p>
+Convert a UNIX file path to a valid file:// URL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \File </p>
+
+
+<h3 id="fromWindowsPath()">fromWindowsPath()</h3>
+
+<p>
+Convert a Windows file path to a valid file:// URL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \File </p>
+
+
+<h3 id="getEscaper()">getEscaper()</h3>
+
+<p>
+Retrieve Escaper instance</p>
+
+<p>Lazy-loads one if none provided</p>
+
+
+<p>Returns: \Escaper </p>
+
+
+<h3 id="getFragment()">getFragment()</h3>
+
+<p>
+Get the URI fragment</p>
+
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getHost()">getHost()</h3>
+
+<p>
+Get the URI host</p>
+
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getPath()">getPath()</h3>
+
+<p>
+Get the URI path</p>
+
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getPort()">getPort()</h3>
+
+<p>
+Get the URI port</p>
+
+
+
+<p>Returns: int|null </p>
+
+
+<h3 id="getQuery()">getQuery()</h3>
+
+<p>
+Get the URI query</p>
+
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getQueryAsArray()">getQueryAsArray()</h3>
+
+<p>
+Return the query string as an associative array of key => value pairs</p>
+
+<p>This is an extension to RFC-3986 but is quite useful when working with
+most common URI types</p>
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getScheme()">getScheme()</h3>
+
+<p>
+Get the scheme part of the URI</p>
+
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="getUserInfo()">getUserInfo()</h3>
+
+<p>
+Get the User-info (usually user:password) part</p>
+
+
+
+<p>Returns: string|null </p>
+
+
+<h3 id="isAbsolute()">isAbsolute()</h3>
+
+<p>
+Check if the URI is an absolute or relative URI</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="isValid()">isValid()</h3>
+
+<p>
+Check if the URI is a valid File URI</p>
+
+<p>This applies additional specific validation rules beyond the ones
+required by the generic URI syntax.</p>
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="isValidRelative()">isValidRelative()</h3>
+
+<p>
+Check if the URI is a valid relative URI</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="makeRelative()">makeRelative()</h3>
+
+<p>
+Convert the link to a relative link by substracting a base URI</p>
+
+<p>This is the opposite of resolving a relative link - i.e. creating a
+relative reference link from an original URI and a base URI.</p>
+<p>If the two URIs do not intersect (e.g. the original URI is not in any
+way related to the base URI) the URI will not be modified.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $baseUri        </td>
+        <td>
+            \Uri|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="merge()">merge()</h3>
+
+<p>
+Merge a base URI and a relative URI into a new URI object</p>
+
+<p>This convenience method wraps ::resolve() to allow users to quickly
+create new absolute URLs without the need to instantiate and clone
+URI objects.</p>
+<p>If objects are passed in, none of the passed objects will be modified.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $baseUri        </td>
+        <td>
+            \Uri|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $relativeUri        </td>
+        <td>
+            \Uri|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="normalize()">normalize()</h3>
+
+<p>
+Normalize the URI</p>
+
+<p>Normalizing a URI includes removing any redundant parent directory or
+current directory references from the path (e.g. foo/bar/../baz becomes
+foo/baz), normalizing the scheme case, decoding any over-encoded
+characters etc.</p>
+<p>Eventually, two normalized URLs pointing to the same resource should be
+equal even if they were originally represented by two different strings</p>
+
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="parse()">parse()</h3>
+
+<p>
+Parse a URI string</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="parseScheme()">parseScheme()</h3>
+
+<p>
+Extract only the scheme part out of a URI string.</p>
+
+<p>This is used by the parse() method, but is useful as a standalone public
+method if one wants to test a URI string for it's scheme before doing
+anything with it.</p>
+<p>Will return the scheme if found, or NULL if no scheme found (URI may
+still be valid, but not full)</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uriString        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string|null </p>
+
+
+<h3 id="removePathDotSegments()">removePathDotSegments()</h3>
+
+<p>
+Remove any extra dot segments (/.</p>
+
+<p>./, /./) from a path</p>
+<p>Algorithm is adapted from RFC-3986 section 5.2.4
+(@link <a href="http://tools.ietf.org/html/rfc3986#section-5.2.4">http://tools.ietf.org/html/rfc3986#section-5.2.4</a>)</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="resolve()">resolve()</h3>
+
+<p>
+Convert a relative URI into an absolute URI using a base absolute URI as
+a reference.</p>
+
+<p>This is similar to merge() - only it uses the supplied URI as the
+base reference instead of using the current URI as the base reference.</p>
+<p>Merging algorithm is adapted from RFC-3986 section 5.2
+(@link <a href="http://tools.ietf.org/html/rfc3986#section-5.2">http://tools.ietf.org/html/rfc3986#section-5.2</a>)</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $baseUri        </td>
+        <td>
+            \Uri|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="setEscaper()">setEscaper()</h3>
+
+<p>
+Set Escaper instance</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $escaper        </td>
+        <td>
+            \Escaper        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setFragment()">setFragment()</h3>
+
+<p>
+Fragment part is not used in file URIs</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $fragment        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \File </p>
+
+
+<h3 id="setHost()">setHost()</h3>
+
+<p>
+Set the URI host</p>
+
+<p>Note that the generic syntax for URIs allows using host names which
+are not necessarily IPv4 addresses or valid DNS host names. For example,
+IPv6 addresses are allowed as well, and also an abstract "registered name"
+which may be any name composed of a valid set of characters, including,
+for example, tilda (~) and underscore (_) which are not allowed in DNS
+names.</p>
+<p>Subclasses of Uri may impose more strict validation of host names - for
+example the HTTP RFC clearly states that only IPv4 and valid DNS names
+are allowed in HTTP URIs.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $host        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="setPath()">setPath()</h3>
+
+<p>
+Set the path</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="setPort()">setPort()</h3>
+
+<p>
+Set the port part of the URI</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $port        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="setQuery()">setQuery()</h3>
+
+<p>
+Set the query string</p>
+
+<p>If an array is provided, will encode this array of parameters into a
+query string. Array values will be represented in the query string using
+PHP's common square bracket notation.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $query        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="setScheme()">setScheme()</h3>
+
+<p>
+Set the URI scheme</p>
+
+<p>If the scheme is not valid according to the generic scheme syntax or
+is not acceptable by the specific URI class (e.g. 'http' or 'https' are
+the only acceptable schemes for the Zend\Uri\Http class) an exception
+will be thrown.</p>
+<p>You can check if a scheme is valid before setting it using the
+validateScheme() method.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $scheme        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Uri </p>
+
+
+<h3 id="setUserInfo()">setUserInfo()</h3>
+
+<p>
+User Info part is not used in file URIs</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $userInfo        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \File </p>
+
+
+<h3 id="toString()">toString()</h3>
+
+<p>
+Compose the URI into a string</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="validateHost()">validateHost()</h3>
+
+<p>
+Validate the host part</p>
+
+<p>Users may control which host types to allow by passing a second parameter
+with a bitmask of HOST_* constants which are allowed. If not specified,
+all address types will be allowed.</p>
+<p>Note that the generic URI syntax allows different host representations,
+including IPv4 addresses, IPv6 addresses and future IP address formats
+enclosed in square brackets, and registered names which may be DNS names
+or even more complex names. This is different (and is much more loose)
+from what is commonly accepted as valid HTTP URLs for example.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $host        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $allowed        </td>
+        <td>
+            int        </td>
+        <td>
+            bitmask        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="validatePath()">validatePath()</h3>
+
+<p>
+Validate the path</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $path        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="validatePort()">validatePort()</h3>
+
+<p>
+Validate the port</p>
+
+<p>Valid values include numbers between 1 and 65535, and empty values</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $port        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="validateQueryFragment()">validateQueryFragment()</h3>
+
+<p>
+Check if a URI query or fragment part is valid or not</p>
+
+<p>Query and Fragment parts are both restricted by the same syntax rules,
+so the same validation method can be used for both.</p>
+<p>You can encode a query or fragment part to ensure it is valid by passing
+it through the encodeQueryFragment() method.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $input        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="validateScheme()">validateScheme()</h3>
+
+<p>
+Check if a scheme is valid or not</p>
+
+<p>Will check $scheme to be valid against the generic scheme syntax defined
+in RFC-3986. If the class also defines specific acceptable schemes, will
+also check that $scheme is one of them.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $scheme        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="validateUserInfo()">validateUserInfo()</h3>
+
+<p>
+Check that the userInfo part of a URI is valid</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $userInfo        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

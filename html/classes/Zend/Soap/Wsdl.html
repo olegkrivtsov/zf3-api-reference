@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Soap\Wsdl -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-soap.html">zendframework/zend-soap</a>
+    &rarr;        <a href="../../../classes/Zend/Soap/Wsdl.html">Class Wsdl</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Wsdl</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Soap\Wsdl        </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addBinding()">
+            addBinding()
+            </a>
+        </td>
+        <td>
+            Add a {@link http://www.w3.org/TR/wsdl#_bindings binding} element to WSDL        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addBindingOperation()">
+            addBindingOperation()
+            </a>
+        </td>
+        <td>
+            Add an operation to a binding element        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addComplexType()">
+            addComplexType()
+            </a>
+        </td>
+        <td>
+            Add a {@link http://www.w3.org/TR/wsdl#_types types} data type definition        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addDocumentation()">
+            addDocumentation()
+            </a>
+        </td>
+        <td>
+            Add a documentation element to any element in the WSDL.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addElement()">
+            addElement()
+            </a>
+        </td>
+        <td>
+            Add an xsd:element represented as an array to the schema.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addMessage()">
+            addMessage()
+            </a>
+        </td>
+        <td>
+            Add a {@link http://www.w3.org/TR/wsdl#_messages message} element to the WSDL        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addPortOperation()">
+            addPortOperation()
+            </a>
+        </td>
+        <td>
+            Add an {@link http://www.w3.org/TR/wsdl#request-response operation} element to a portType element        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addPortType()">
+            addPortType()
+            </a>
+        </td>
+        <td>
+            Add a {@link http://www.w3.org/TR/wsdl#_porttypes portType} element to the WSDL        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addSchemaTypeSection()">
+            addSchemaTypeSection()
+            </a>
+        </td>
+        <td>
+            This function makes sure a complex types section and schema additions are set.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addService()">
+            addService()
+            </a>
+        </td>
+        <td>
+            Add a {@link http://www.w3.org/TR/wsdl#_services service} element to the WSDL        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addSoapBinding()">
+            addSoapBinding()
+            </a>
+        </td>
+        <td>
+            Add a {@link http://www.w3.org/TR/wsdl#_soap:binding SOAP binding} element to a Binding element        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addSoapOperation()">
+            addSoapOperation()
+            </a>
+        </td>
+        <td>
+            Add a {@link http://www.w3.org/TR/wsdl#_soap:operation SOAP operation} to an operation element        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addType()">
+            addType()
+            </a>
+        </td>
+        <td>
+            Add a complex type name that is part of this WSDL and can be used in signatures.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addTypes()">
+            addTypes()
+            </a>
+        </td>
+        <td>
+            Add WSDL Types element        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#dump()">
+            dump()
+            </a>
+        </td>
+        <td>
+            Echo the WSDL as XML        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getClassMap()">
+            getClassMap()
+            </a>
+        </td>
+        <td>
+            Get the class map of php to wsdl mappings.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getComplexTypeStrategy()">
+            getComplexTypeStrategy()
+            </a>
+        </td>
+        <td>
+            Get the current complex type strategy        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSchema()">
+            getSchema()
+            </a>
+        </td>
+        <td>
+            Return the Schema node of the WSDL        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTargetNamespace()">
+            getTargetNamespace()
+            </a>
+        </td>
+        <td>
+            Retrieve target namespace of the WSDL document.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getType()">
+            getType()
+            </a>
+        </td>
+        <td>
+            Returns an XSD Type for the given PHP type        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTypes()">
+            getTypes()
+            </a>
+        </td>
+        <td>
+            Return an array of all currently included complex types        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUri()">
+            getUri()
+            </a>
+        </td>
+        <td>
+            Return WSDL uri        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#sanitizeUri()">
+            sanitizeUri()
+            </a>
+        </td>
+        <td>
+            Function for sanitizing uri        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setClassMap()">
+            setClassMap()
+            </a>
+        </td>
+        <td>
+            Set the class map of php to wsdl mappings.        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setComplexTypeStrategy()">
+            setComplexTypeStrategy()
+            </a>
+        </td>
+        <td>
+            Set a strategy for complex type detection and handling        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUri()">
+            setUri()
+            </a>
+        </td>
+        <td>
+            Set a new uri for this WSDL        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toDomDocument()">
+            toDomDocument()
+            </a>
+        </td>
+        <td>
+            Return DOM Document        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toXML()">
+            toXML()
+            </a>
+        </td>
+        <td>
+            Return the WSDL as XML        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#translateType()">
+            translateType()
+            </a>
+        </td>
+        <td>
+            Translate PHP type into WSDL QName        </td>
+        <td>
+            <a href="../../../classes/Zend\Soap\Wsdl.html">
+            Wsdl            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|\Uri        </td>
+        <td>
+            URI        </td>
+    </tr>
+        <tr>
+        <td>
+            $strategy        </td>
+        <td>
+            null|\ComplexTypeStrategy        </td>
+        <td>
+            Strategy        </td>
+    </tr>
+        <tr>
+        <td>
+            $classMap        </td>
+        <td>
+            null|array        </td>
+        <td>
+            Map        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="addBinding()">addBinding()</h3>
+
+<p>
+Add a {@link http://www.w3.org/TR/wsdl#_bindings binding} element to WSDL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+        <tr>
+        <td>
+            $portType        </td>
+        <td>
+            string        </td>
+        <td>
+            name        </td>
+    </tr>
+    </table>
+
+<p>Returns: \DOMElement The new binding's XML_Tree_Node for use with
+{@link function addBindingOperation} and {@link function addDocumentation}</p>
+
+
+<h3 id="addBindingOperation()">addBindingOperation()</h3>
+
+<p>
+Add an operation to a binding element</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $binding        </td>
+        <td>
+            \DOMElement        </td>
+        <td>
+            A        </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $input        </td>
+        <td>
+            array|bool        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $output        </td>
+        <td>
+            array|bool        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $fault        </td>
+        <td>
+            array|bool        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $soapVersion        </td>
+        <td>
+            int        </td>
+        <td>
+            SOAP        </td>
+    </tr>
+    </table>
+
+<p>Returns: \DOMElement The new Operation's XML_Tree_Node for use with {@link function addSoapOperation} and {@link function addDocumentation}</p>
+
+
+<h3 id="addComplexType()">addComplexType()</h3>
+
+<p>
+Add a {@link http://www.w3.org/TR/wsdl#_types types} data type definition</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+    </table>
+
+<p>Returns: string XSD Type for the given PHP type</p>
+
+
+<h3 id="addDocumentation()">addDocumentation()</h3>
+
+<p>
+Add a documentation element to any element in the WSDL.</p>
+
+<p>Note that the WSDL specification uses 'document', but the WSDL schema
+uses 'documentation' instead.</p>
+<p>The WS-I Basic Profile 1.1 recommends using 'documentation'.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $inputNode        </td>
+        <td>
+            \DOMElement        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $documentation        </td>
+        <td>
+            string        </td>
+        <td>
+            Human        </td>
+    </tr>
+    </table>
+
+<p>Returns: \DOMElement The documentation element</p>
+
+
+<h3 id="addElement()">addElement()</h3>
+
+<p>
+Add an xsd:element represented as an array to the schema.</p>
+
+<p>Array keys represent attribute names and values their respective value.
+The 'sequence', 'all' and 'choice' keys must have an array of elements as their value,
+to add them to a nested complexType.</p>
+<p>Example: array( 'name' =&gt; 'MyElement',</p>
+<pre><code>            'sequence' =&gt; array( array('name' =&gt; 'myString', 'type' =&gt; 'string'),
+                                 array('name' =&gt; 'myInteger', 'type' =&gt; 'int') ) );
+</code></pre>
+<p>Resulting XML: &lt;xsd:element name="MyElement"&gt;&lt;xsd:complexType&gt;&lt;xsd:sequence&gt;</p>
+<pre><code>             &lt;xsd:element name="myString" type="string"/&gt;
+             &lt;xsd:element name="myInteger" type="int"/&gt;
+           &lt;/xsd:sequence&gt;&lt;/xsd:complexType&gt;&lt;/xsd:element&gt;
+</code></pre>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $element        </td>
+        <td>
+            array        </td>
+        <td>
+            an        </td>
+    </tr>
+    </table>
+
+<p>Returns: string xsd:element for the given element array</p>
+
+
+<h3 id="addMessage()">addMessage()</h3>
+
+<p>
+Add a {@link http://www.w3.org/TR/wsdl#_messages message} element to the WSDL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $messageName        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+        <tr>
+        <td>
+            $parts        </td>
+        <td>
+            array        </td>
+        <td>
+            An        </td>
+    </tr>
+    </table>
+
+<p>Returns: \DOMElement The new message's XML_Tree_Node for use in {@link function addDocumentation}</p>
+
+
+<h3 id="addPortOperation()">addPortOperation()</h3>
+
+<p>
+Add an {@link http://www.w3.org/TR/wsdl#request-response operation} element to a portType element</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $portType        </td>
+        <td>
+            \DOMElement        </td>
+        <td>
+            a        </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Operation        </td>
+    </tr>
+        <tr>
+        <td>
+            $input        </td>
+        <td>
+            bool|string        </td>
+        <td>
+            Input        </td>
+    </tr>
+        <tr>
+        <td>
+            $output        </td>
+        <td>
+            bool|string        </td>
+        <td>
+            Output        </td>
+    </tr>
+        <tr>
+        <td>
+            $fault        </td>
+        <td>
+            bool|string        </td>
+        <td>
+            Fault        </td>
+    </tr>
+    </table>
+
+<p>Returns: \DOMElement The new operation's XML_Tree_Node for use in {@link function addDocumentation}</p>
+
+
+<h3 id="addPortType()">addPortType()</h3>
+
+<p>
+Add a {@link http://www.w3.org/TR/wsdl#_porttypes portType} element to the WSDL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            portType        </td>
+    </tr>
+    </table>
+
+<p>Returns: \DOMElement The new portType's XML_Tree_Node for use in
+{@link addPortOperation} and {@link addDocumentation}</p>
+
+
+<h3 id="addSchemaTypeSection()">addSchemaTypeSection()</h3>
+
+<p>
+This function makes sure a complex types section and schema additions are set.</p>
+
+
+
+<p>Returns: self </p>
+
+
+<h3 id="addService()">addService()</h3>
+
+<p>
+Add a {@link http://www.w3.org/TR/wsdl#_services service} element to the WSDL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Service        </td>
+    </tr>
+        <tr>
+        <td>
+            $portName        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+        <tr>
+        <td>
+            $binding        </td>
+        <td>
+            string        </td>
+        <td>
+            Binding        </td>
+    </tr>
+        <tr>
+        <td>
+            $location        </td>
+        <td>
+            string        </td>
+        <td>
+            SOAP        </td>
+    </tr>
+        <tr>
+        <td>
+            $soapVersion        </td>
+        <td>
+            int        </td>
+        <td>
+            SOAP        </td>
+    </tr>
+    </table>
+
+<p>Returns: \DOMElement The new service's XML_Tree_Node for use with {@link function addDocumentation}</p>
+
+
+<h3 id="addSoapBinding()">addSoapBinding()</h3>
+
+<p>
+Add a {@link http://www.w3.org/TR/wsdl#_soap:binding SOAP binding} element to a Binding element</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $binding        </td>
+        <td>
+            \DOMElement        </td>
+        <td>
+            A        </td>
+    </tr>
+        <tr>
+        <td>
+            $style        </td>
+        <td>
+            string        </td>
+        <td>
+            binding        </td>
+    </tr>
+        <tr>
+        <td>
+            $transport        </td>
+        <td>
+            string        </td>
+        <td>
+            Transport        </td>
+    </tr>
+        <tr>
+        <td>
+            $soapVersion        </td>
+        <td>
+            int        </td>
+        <td>
+            SOAP        </td>
+    </tr>
+    </table>
+
+<p>Returns: \DOMElement </p>
+
+
+<h3 id="addSoapOperation()">addSoapOperation()</h3>
+
+<p>
+Add a {@link http://www.w3.org/TR/wsdl#_soap:operation SOAP operation} to an operation element</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $operation        </td>
+        <td>
+            \DOMElement        </td>
+        <td>
+            An        </td>
+    </tr>
+        <tr>
+        <td>
+            $soapAction        </td>
+        <td>
+            string        </td>
+        <td>
+            SOAP        </td>
+    </tr>
+        <tr>
+        <td>
+            $soapVersion        </td>
+        <td>
+            int        </td>
+        <td>
+            SOAP        </td>
+    </tr>
+    </table>
+
+<p>Returns: \DOMElement </p>
+
+
+<h3 id="addType()">addType()</h3>
+
+<p>
+Add a complex type name that is part of this WSDL and can be used in signatures.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $wsdlType        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="addTypes()">addTypes()</h3>
+
+<p>
+Add WSDL Types element</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $types        </td>
+        <td>
+            \DOMDocument|\DOMNode|\DOMElement|\DOMDocumentFragment        </td>
+        <td>
+            A
+DOMDocument|DOMNode|DOMElement|DOMDocumentFragment        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="dump()">dump()</h3>
+
+<p>
+Echo the WSDL as XML</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $filename        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="getClassMap()">getClassMap()</h3>
+
+<p>
+Get the class map of php to wsdl mappings.</p>
+
+<p>.</p>
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getComplexTypeStrategy()">getComplexTypeStrategy()</h3>
+
+<p>
+Get the current complex type strategy</p>
+
+
+
+<p>Returns: \ComplexTypeStrategy </p>
+
+
+<h3 id="getSchema()">getSchema()</h3>
+
+<p>
+Return the Schema node of the WSDL</p>
+
+
+
+<p>Returns: \DOMElement </p>
+
+
+<h3 id="getTargetNamespace()">getTargetNamespace()</h3>
+
+<p>
+Retrieve target namespace of the WSDL document.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getType()">getType()</h3>
+
+<p>
+Returns an XSD Type for the given PHP type</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+            PHP        </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="getTypes()">getTypes()</h3>
+
+<p>
+Return an array of all currently included complex types</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getUri()">getUri()</h3>
+
+<p>
+Return WSDL uri</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="sanitizeUri()">sanitizeUri()</h3>
+
+<p>
+Function for sanitizing uri</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|\Uri        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="setClassMap()">setClassMap()</h3>
+
+<p>
+Set the class map of php to wsdl mappings.</p>
+
+<p>.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $classMap        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setComplexTypeStrategy()">setComplexTypeStrategy()</h3>
+
+<p>
+Set a strategy for complex type detection and handling</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $strategy        </td>
+        <td>
+            \ComplexTypeStrategy        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setUri()">setUri()</h3>
+
+<p>
+Set a new uri for this WSDL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $uri        </td>
+        <td>
+            string|\Uri        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="toDomDocument()">toDomDocument()</h3>
+
+<p>
+Return DOM Document</p>
+
+
+
+<p>Returns: \DOMDocument </p>
+
+
+<h3 id="toXML()">toXML()</h3>
+
+<p>
+Return the WSDL as XML</p>
+
+
+
+<p>Returns: string WSDL as XML</p>
+
+
+<h3 id="translateType()">translateType()</h3>
+
+<p>
+Translate PHP type into WSDL QName</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string QName</p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Permissions\Acl\Assertion\AssertionManager -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/zendframework/zend-permissions-acl.html">zendframework/zend-permissions-acl</a>
+    &rarr;        <a href="../../../../../classes/Zend/Permissions/Acl/Assertion/AssertionManager.html">Class AssertionManager</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        AssertionManager</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Permissions\Acl\Assertion\AssertionManager        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../../classes/Zend\ServiceManager\AbstractPluginManager.html">AbstractPluginManager</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\AbstractPluginManager.html">
+            AbstractPluginManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addAbstractFactory()">
+            addAbstractFactory()
+            </a>
+        </td>
+        <td>
+            Add an abstract factory for resolving services.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addDelegator()">
+            addDelegator()
+            </a>
+        </td>
+        <td>
+            Add a delegator for a given service.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addInitializer()">
+            addInitializer()
+            </a>
+        </td>
+        <td>
+            Add an initializer.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#build()">
+            build()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#configure()">
+            configure()
+            </a>
+        </td>
+        <td>
+            Override configure() to validate service instances.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\AbstractPluginManager.html">
+            AbstractPluginManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#get()">
+            get()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\AbstractPluginManager.html">
+            AbstractPluginManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAllowOverride()">
+            getAllowOverride()
+            </a>
+        </td>
+        <td>
+            Retrieve the flag indicating immutability status.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getServiceLocator()">
+            getServiceLocator()
+            </a>
+        </td>
+        <td>
+            Implemented for backwards compatibility with previous plugin managers only.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#has()">
+            has()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#mapLazyService()">
+            mapLazyService()
+            </a>
+        </td>
+        <td>
+            Create a lazy service mapping to a class.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAlias()">
+            setAlias()
+            </a>
+        </td>
+        <td>
+            Add an alias.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setAllowOverride()">
+            setAllowOverride()
+            </a>
+        </td>
+        <td>
+            Indicate whether or not the instance is immutable.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFactory()">
+            setFactory()
+            </a>
+        </td>
+        <td>
+            Specify a factory for a given service name.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setInvokableClass()">
+            setInvokableClass()
+            </a>
+        </td>
+        <td>
+            Add an invokable class mapping.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setService()">
+            setService()
+            </a>
+        </td>
+        <td>
+            Map a service.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setServiceLocator()">
+            setServiceLocator()
+            </a>
+        </td>
+        <td>
+            Implemented for backwards compatibility only.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\AbstractPluginManager.html">
+            AbstractPluginManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setShared()">
+            setShared()
+            </a>
+        </td>
+        <td>
+            Add a service sharing rule.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\ServiceManager\ServiceManager.html">
+            ServiceManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validate()">
+            validate()
+            </a>
+        </td>
+        <td>
+            Validate the plugin is of the expected type (v3).        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Permissions\Acl\Assertion\AssertionManager.html">
+            AssertionManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validatePlugin()">
+            validatePlugin()
+            </a>
+        </td>
+        <td>
+            Validate the plugin is of the expected type (v2).        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Permissions\Acl\Assertion\AssertionManager.html">
+            AssertionManager            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor.</p>
+
+<p>Sets the provided $parentLocator as the creation context for all
+factories; for $config, {@see \Zend\ServiceManager\ServiceManager::configure()}
+for details on its accepted structure.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $configInstanceOrParentLocator        </td>
+        <td>
+            null|\ConfigInterface|\ContainerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="addAbstractFactory()">addAbstractFactory()</h3>
+
+<p>
+Add an abstract factory for resolving services.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $factory        </td>
+        <td>
+            string|\Factory\AbstractFactoryInterface        </td>
+        <td>
+            Service        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="addDelegator()">addDelegator()</h3>
+
+<p>
+Add a delegator for a given service.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Service        </td>
+    </tr>
+        <tr>
+        <td>
+            $factory        </td>
+        <td>
+            string|callable|\Factory\DelegatorFactoryInterface        </td>
+        <td>
+            Delegator
+factory        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="addInitializer()">addInitializer()</h3>
+
+<p>
+Add an initializer.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $initializer        </td>
+        <td>
+            string|callable|\Initializer\InitializerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="build()">build()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="configure()">configure()</h3>
+
+<p>
+Override configure() to validate service instances.</p>
+
+<p>If an instance passed in the <code>services</code> configuration is invalid for the
+plugin manager, this method will raise an InvalidServiceException.</p>
+<p>{@inheritDoc}</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="get()">get()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Service        </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            null|array        </td>
+        <td>
+            Options        </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getAllowOverride()">getAllowOverride()</h3>
+
+<p>
+Retrieve the flag indicating immutability status.</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="getServiceLocator()">getServiceLocator()</h3>
+
+<p>
+Implemented for backwards compatibility with previous plugin managers only.</p>
+
+<p>Returns the creation context.</p>
+
+
+<p>Returns: \ContainerInterface </p>
+
+
+<h3 id="has()">has()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="mapLazyService()">mapLazyService()</h3>
+
+<p>
+Create a lazy service mapping to a class.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Service        </td>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            null|string        </td>
+        <td>
+            Class        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setAlias()">setAlias()</h3>
+
+<p>
+Add an alias.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $alias        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $target        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setAllowOverride()">setAllowOverride()</h3>
+
+<p>
+Indicate whether or not the instance is immutable.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $flag        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setFactory()">setFactory()</h3>
+
+<p>
+Specify a factory for a given service name.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Service        </td>
+    </tr>
+        <tr>
+        <td>
+            $factory        </td>
+        <td>
+            string|callable|\Factory\FactoryInterface        </td>
+        <td>
+            Factory        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setInvokableClass()">setInvokableClass()</h3>
+
+<p>
+Add an invokable class mapping.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Service        </td>
+    </tr>
+        <tr>
+        <td>
+            $class        </td>
+        <td>
+            null|string        </td>
+        <td>
+            Class        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setService()">setService()</h3>
+
+<p>
+Map a service.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Service        </td>
+    </tr>
+        <tr>
+        <td>
+            $service        </td>
+        <td>
+            array|object        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setServiceLocator()">setServiceLocator()</h3>
+
+<p>
+Implemented for backwards compatibility only.</p>
+
+<p>Returns the creation context.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+            \ContainerInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="setShared()">setShared()</h3>
+
+<p>
+Add a service sharing rule.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Service        </td>
+    </tr>
+        <tr>
+        <td>
+            $flag        </td>
+        <td>
+            bool        </td>
+        <td>
+            Whether        </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="validate()">validate()</h3>
+
+<p>
+Validate the plugin is of the expected type (v3).</p>
+
+<p>Validates against <code>$instanceOf</code>.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $instance        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="validatePlugin()">validatePlugin()</h3>
+
+<p>
+Validate the plugin is of the expected type (v2).</p>
+
+<p>Proxies to <code>validate()</code>.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $instance        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

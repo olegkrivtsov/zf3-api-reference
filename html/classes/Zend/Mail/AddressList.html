@@ -71,7 +71,7 @@
             Implements:
         </td>
         <td>
-                                    <a href="../../Countable.html">Countable</a>,                         <a href="../../Iterator.html">Iterator</a>                    </td>
+                                    <a href="../../../classes/Countable.html">Countable</a>,                         <a href="../../../classes/Iterator.html">Iterator</a>                    </td>
     </tr>
     </table>
 
@@ -99,7 +99,7 @@
         <td>
             Add an address to the list        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -114,7 +114,7 @@
  - "ZF Dev" <dev@zf.com>
  - dev@zf.com        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -127,7 +127,7 @@
         <td>
             Add many addresses at once        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -140,7 +140,7 @@
         <td>
             Return count of addresses        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -153,7 +153,7 @@
         <td>
             Return current item in iteration        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -166,7 +166,7 @@
         <td>
             Delete an address from the list        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -179,7 +179,7 @@
         <td>
             Get an address by email        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -192,7 +192,7 @@
         <td>
             Does the email exist in this list?        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -205,7 +205,7 @@
         <td>
             Return key of current item of iteration        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -218,7 +218,7 @@
         <td>
             Merge another address list into this one        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -231,7 +231,7 @@
         <td>
             Move to next item        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -244,7 +244,7 @@
         <td>
             Rewind iterator        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -257,7 +257,7 @@
         <td>
             Is the current item of iteration valid?        </td>
         <td>
-            <a href="../../Zend\Mail\AddressList.html">
+            <a href="../../../classes/Zend\Mail\AddressList.html">
             AddressList            </a>
         </td>
     </tr>
@@ -296,6 +296,8 @@ Add an address to the list</p>
     </tr>
     </table>
 
+<p>Returns: \AddressList </p>
+
 
 <h3 id="addFromString()">addFromString()</h3>
 
@@ -320,6 +322,8 @@ Add an address to the list from any valid string format, such as
                     </td>
     </tr>
     </table>
+
+<p>Returns: \AddressList </p>
 
 
 <h3 id="addMany()">addMany()</h3>
@@ -347,6 +351,8 @@ and, as such, can be either email strings or Address\AddressInterface objects.</
     </tr>
     </table>
 
+<p>Returns: \AddressList </p>
+
 
 <h3 id="count()">count()</h3>
 
@@ -355,6 +361,8 @@ Return count of addresses</p>
 
 
 
+<p>Returns: int </p>
+
 
 <h3 id="current()">current()</h3>
 
@@ -362,6 +370,8 @@ Return count of addresses</p>
 Return current item in iteration</p>
 
 
+
+<p>Returns: \Address </p>
 
 
 <h3 id="delete()">delete()</h3>
@@ -386,6 +396,8 @@ Delete an address from the list</p>
     </tr>
     </table>
 
+<p>Returns: bool </p>
+
 
 <h3 id="get()">get()</h3>
 
@@ -408,6 +420,8 @@ Get an address by email</p>
                     </td>
     </tr>
     </table>
+
+<p>Returns: bool|\Address\AddressInterface </p>
 
 
 <h3 id="has()">has()</h3>
@@ -432,6 +446,8 @@ Does the email exist in this list?</p>
     </tr>
     </table>
 
+<p>Returns: bool </p>
+
 
 <h3 id="key()">key()</h3>
 
@@ -439,6 +455,8 @@ Does the email exist in this list?</p>
 Return key of current item of iteration</p>
 
 
+
+<p>Returns: string </p>
 
 
 <h3 id="merge()">merge()</h3>
@@ -463,6 +481,8 @@ Merge another address list into this one</p>
     </tr>
     </table>
 
+<p>Returns: \AddressList </p>
+
 
 <h3 id="next()">next()</h3>
 
@@ -470,6 +490,9 @@ Merge another address list into this one</p>
 Move to next item</p>
 
 
+
+<p>Returns: mixed the addresses value in the next place that's pointed to by the
+internal array pointer, or false if there are no more elements.</p>
 
 
 <h3 id="rewind()">rewind()</h3>
@@ -479,6 +502,9 @@ Rewind iterator</p>
 
 
 
+<p>Returns: mixed the value of the first addresses element, or false if the addresses is
+empty.</p>
+
 
 <h3 id="valid()">valid()</h3>
 
@@ -487,6 +513,7 @@ Is the current item of iteration valid?</p>
 
 
 
+<p>Returns: bool </p>
 
 
 
@@ -561,7 +588,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-80824388-1', 'auto');
+  ga('create', 'UA-115800598-1', 'auto');
   ga('send', 'pageview');
 
 </script>

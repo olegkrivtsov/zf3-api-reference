@@ -71,7 +71,7 @@
             Extends:
         </td>
         <td>
-                                    <a href="../../Zend\Mvc\Controller\AbstractController.html">AbstractController</a>                    </td>
+                                    <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">AbstractController</a>                    </td>
     </tr>
         </table>
 
@@ -99,7 +99,7 @@
         <td>
             Method overloading: return/call plugins        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -112,7 +112,7 @@
         <td>
                     </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\MiddlewareController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\MiddlewareController.html">
             MiddlewareController            </a>
         </td>
     </tr>
@@ -125,7 +125,7 @@
         <td>
             Dispatch a request        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -138,7 +138,7 @@
         <td>
             Get the attached event        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -151,7 +151,7 @@
         <td>
             Retrieve the event manager        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -164,7 +164,7 @@
         <td>
             Transform an "action" token into a method name        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -177,7 +177,7 @@
         <td>
             Get plugin manager        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -190,7 +190,7 @@
         <td>
             Get request object        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -203,7 +203,7 @@
         <td>
             Get response object        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -216,7 +216,7 @@
         <td>
             {@inheritDoc}        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\MiddlewareController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\MiddlewareController.html">
             MiddlewareController            </a>
         </td>
     </tr>
@@ -229,7 +229,7 @@
         <td>
             Get plugin instance        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -242,7 +242,7 @@
         <td>
             Set an event to use during dispatch        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -255,7 +255,7 @@
         <td>
             Set the event manager instance used by this context        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -268,7 +268,7 @@
         <td>
             Set plugin manager        </td>
         <td>
-            <a href="../../Zend\Mvc\Controller\AbstractController.html">
+            <a href="../../../../classes/Zend\Mvc\Controller\AbstractController.html">
             AbstractController            </a>
         </td>
     </tr>
@@ -308,6 +308,8 @@ Otherwise, return the plugin instance.</p>
                     </td>
     </tr>
     </table>
+
+<p>Returns: mixed </p>
 
 
 <h3 id="__construct()">__construct()</h3>
@@ -356,6 +358,8 @@ Otherwise, return the plugin instance.</p>
     </tr>
     </table>
 
+<p>Returns: void</p>
+
 
 <h3 id="dispatch()">dispatch()</h3>
 
@@ -387,6 +391,8 @@ Dispatch a request</p>
     </tr>
     </table>
 
+<p>Returns: \Response|mixed </p>
+
 
 <h3 id="getEvent()">getEvent()</h3>
 
@@ -396,6 +402,8 @@ Get the attached event</p>
 <p>Will create a new MvcEvent if none provided.</p>
 
 
+<p>Returns: \MvcEvent </p>
+
 
 <h3 id="getEventManager()">getEventManager()</h3>
 
@@ -404,6 +412,8 @@ Retrieve the event manager</p>
 
 <p>Lazy-loads an EventManager instance if none registered.</p>
 
+
+<p>Returns: \EventManagerInterface </p>
 
 
 <h3 id="getMethodFromAction()">getMethodFromAction()</h3>
@@ -428,6 +438,8 @@ Transform an "action" token into a method name</p>
     </tr>
     </table>
 
+<p>Returns: string </p>
+
 
 <h3 id="getPluginManager()">getPluginManager()</h3>
 
@@ -435,6 +447,8 @@ Transform an "action" token into a method name</p>
 Get plugin manager</p>
 
 
+
+<p>Returns: \PluginManager </p>
 
 
 <h3 id="getRequest()">getRequest()</h3>
@@ -444,6 +458,8 @@ Get request object</p>
 
 
 
+<p>Returns: \Request </p>
+
 
 <h3 id="getResponse()">getResponse()</h3>
 
@@ -451,6 +467,8 @@ Get request object</p>
 Get response object</p>
 
 
+
+<p>Returns: \Response </p>
 
 
 <h3 id="onDispatch()">onDispatch()</h3>
@@ -474,6 +492,8 @@ Get response object</p>
                     </td>
     </tr>
     </table>
+
+<p>Returns: </p>
 
 
 <h3 id="plugin()">plugin()</h3>
@@ -506,6 +526,8 @@ Get plugin instance</p>
     </tr>
     </table>
 
+<p>Returns: mixed </p>
+
 
 <h3 id="setEvent()">setEvent()</h3>
 
@@ -530,6 +552,8 @@ Set an event to use during dispatch</p>
     </tr>
     </table>
 
+<p>Returns: void </p>
+
 
 <h3 id="setEventManager()">setEventManager()</h3>
 
@@ -552,6 +576,8 @@ Set the event manager instance used by this context</p>
                     </td>
     </tr>
     </table>
+
+<p>Returns: \AbstractController </p>
 
 
 <h3 id="setPluginManager()">setPluginManager()</h3>
@@ -576,6 +602,7 @@ Set plugin manager</p>
     </tr>
     </table>
 
+<p>Returns: \AbstractController </p>
 
 
 
@@ -650,7 +677,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-80824388-1', 'auto');
+  ga('create', 'UA-115800598-1', 'auto');
   ga('send', 'pageview');
 
 </script>

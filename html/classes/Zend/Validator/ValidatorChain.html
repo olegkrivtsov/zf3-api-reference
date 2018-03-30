@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Validator\ValidatorChain -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-validator.html">zendframework/zend-validator</a>
+    &rarr;        <a href="../../../classes/Zend/Validator/ValidatorChain.html">Class ValidatorChain</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        ValidatorChain</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Validator\ValidatorChain        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/Countable.html">Countable</a>,                         <a href="../../../classes/Zend\Validator\ValidatorInterface.html">ValidatorInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__clone()">
+            __clone()
+            </a>
+        </td>
+        <td>
+            Deep clone handling        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Initialize validator chain        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__invoke()">
+            __invoke()
+            </a>
+        </td>
+        <td>
+            Invoke chain as command        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__sleep()">
+            __sleep()
+            </a>
+        </td>
+        <td>
+            Prepare validator chain for serialization        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addByName()">
+            addByName()
+            </a>
+        </td>
+        <td>
+            Proxy to attachByName() to keep BC        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addValidator()">
+            addValidator()
+            </a>
+        </td>
+        <td>
+            Proxy to attach() to keep BC        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#attach()">
+            attach()
+            </a>
+        </td>
+        <td>
+            Attach a validator to the end of the chain        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#attachByName()">
+            attachByName()
+            </a>
+        </td>
+        <td>
+            Use the plugin manager to add a validator by name        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#count()">
+            count()
+            </a>
+        </td>
+        <td>
+            Return the count of attached validators        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMessages()">
+            getMessages()
+            </a>
+        </td>
+        <td>
+            Returns array of validation failure messages        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPluginManager()">
+            getPluginManager()
+            </a>
+        </td>
+        <td>
+            Get plugin manager instance        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getValidators()">
+            getValidators()
+            </a>
+        </td>
+        <td>
+            Get all the validators        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isValid()">
+            isValid()
+            </a>
+        </td>
+        <td>
+            Returns true if and only if $value passes all validations in the chain        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#merge()">
+            merge()
+            </a>
+        </td>
+        <td>
+            Merge the validator chain with the one given in parameter        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#plugin()">
+            plugin()
+            </a>
+        </td>
+        <td>
+            Retrieve a validator by name        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#prependByName()">
+            prependByName()
+            </a>
+        </td>
+        <td>
+            Use the plugin manager to prepend a validator by name        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#prependValidator()">
+            prependValidator()
+            </a>
+        </td>
+        <td>
+            Adds a validator to the beginning of the chain        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPluginManager()">
+            setPluginManager()
+            </a>
+        </td>
+        <td>
+            Set plugin manager instance        </td>
+        <td>
+            <a href="../../../classes/Zend\Validator\ValidatorChain.html">
+            ValidatorChain            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__clone()">__clone()</h3>
+
+<p>
+Deep clone handling</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Initialize validator chain</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="__invoke()">__invoke()</h3>
+
+<p>
+Invoke chain as command</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="__sleep()">__sleep()</h3>
+
+<p>
+Prepare validator chain for serialization</p>
+
+<p>Plugin manager (property 'plugins') cannot
+be serialized. On wakeup the property remains unset
+and next invocation to getPluginManager() sets
+the default plugin manager instance (ValidatorPluginManager).</p>
+
+
+<p>Returns: array </p>
+
+
+<h3 id="addByName()">addByName()</h3>
+
+<p>
+Proxy to attachByName() to keep BC</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $breakChainOnFailure        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \ValidatorChain </p>
+
+
+<h3 id="addValidator()">addValidator()</h3>
+
+<p>
+Proxy to attach() to keep BC</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $validator        </td>
+        <td>
+            \ValidatorInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $breakChainOnFailure        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \ValidatorChain Provides a fluent interface</p>
+
+
+<h3 id="attach()">attach()</h3>
+
+<p>
+Attach a validator to the end of the chain</p>
+
+<p>If $breakChainOnFailure is true, then if the validator fails, the next validator in the chain,
+if one exists, will not be executed.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $validator        </td>
+        <td>
+            \ValidatorInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $breakChainOnFailure        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+            int        </td>
+        <td>
+            Priority        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="attachByName()">attachByName()</h3>
+
+<p>
+Use the plugin manager to add a validator by name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $breakChainOnFailure        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $priority        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \ValidatorChain </p>
+
+
+<h3 id="count()">count()</h3>
+
+<p>
+Return the count of attached validators</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getMessages()">getMessages()</h3>
+
+<p>
+Returns array of validation failure messages</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getPluginManager()">getPluginManager()</h3>
+
+<p>
+Get plugin manager instance</p>
+
+
+
+<p>Returns: \ValidatorPluginManager </p>
+
+
+<h3 id="getValidators()">getValidators()</h3>
+
+<p>
+Get all the validators</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="isValid()">isValid()</h3>
+
+<p>
+Returns true if and only if $value passes all validations in the chain</p>
+
+<p>Validators are run in the order in which they were added to the chain (FIFO).</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $value        </td>
+        <td>
+            mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $context        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Extra        </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="merge()">merge()</h3>
+
+<p>
+Merge the validator chain with the one given in parameter</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $validatorChain        </td>
+        <td>
+            \ValidatorChain        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \ValidatorChain </p>
+
+
+<h3 id="plugin()">plugin()</h3>
+
+<p>
+Retrieve a validator by name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+            Name        </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            null|array        </td>
+        <td>
+            Options        </td>
+    </tr>
+    </table>
+
+<p>Returns: \ValidatorInterface </p>
+
+
+<h3 id="prependByName()">prependByName()</h3>
+
+<p>
+Use the plugin manager to prepend a validator by name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $breakChainOnFailure        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \ValidatorChain </p>
+
+
+<h3 id="prependValidator()">prependValidator()</h3>
+
+<p>
+Adds a validator to the beginning of the chain</p>
+
+<p>If $breakChainOnFailure is true, then if the validator fails, the next validator in the chain,
+if one exists, will not be executed.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $validator        </td>
+        <td>
+            \ValidatorInterface        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $breakChainOnFailure        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \ValidatorChain Provides a fluent interface</p>
+
+
+<h3 id="setPluginManager()">setPluginManager()</h3>
+
+<p>
+Set plugin manager instance</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugins        </td>
+        <td>
+            \ValidatorPluginManager        </td>
+        <td>
+            Plugin        </td>
+    </tr>
+    </table>
+
+<p>Returns: \ValidatorChain </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

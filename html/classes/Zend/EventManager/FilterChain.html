@@ -71,7 +71,7 @@
             Implements:
         </td>
         <td>
-                                    <a href="../../Zend\EventManager\Filter\FilterInterface.html">FilterInterface</a>                    </td>
+                                    <a href="../../../classes/Zend\EventManager\Filter\FilterInterface.html">FilterInterface</a>                    </td>
     </tr>
     </table>
 
@@ -99,7 +99,7 @@
         <td>
             Constructor        </td>
         <td>
-            <a href="../../Zend\EventManager\FilterChain.html">
+            <a href="../../../classes/Zend\EventManager\FilterChain.html">
             FilterChain            </a>
         </td>
     </tr>
@@ -112,7 +112,7 @@
         <td>
             Connect a filter to the chain        </td>
         <td>
-            <a href="../../Zend\EventManager\FilterChain.html">
+            <a href="../../../classes/Zend\EventManager\FilterChain.html">
             FilterChain            </a>
         </td>
     </tr>
@@ -125,7 +125,7 @@
         <td>
             Clear all filters        </td>
         <td>
-            <a href="../../Zend\EventManager\FilterChain.html">
+            <a href="../../../classes/Zend\EventManager\FilterChain.html">
             FilterChain            </a>
         </td>
     </tr>
@@ -138,7 +138,7 @@
         <td>
             Detach a filter from the chain        </td>
         <td>
-            <a href="../../Zend\EventManager\FilterChain.html">
+            <a href="../../../classes/Zend\EventManager\FilterChain.html">
             FilterChain            </a>
         </td>
     </tr>
@@ -151,7 +151,7 @@
         <td>
             Retrieve all filters        </td>
         <td>
-            <a href="../../Zend\EventManager\FilterChain.html">
+            <a href="../../../classes/Zend\EventManager\FilterChain.html">
             FilterChain            </a>
         </td>
     </tr>
@@ -164,7 +164,7 @@
         <td>
             Return current responses        </td>
         <td>
-            <a href="../../Zend\EventManager\FilterChain.html">
+            <a href="../../../classes/Zend\EventManager\FilterChain.html">
             FilterChain            </a>
         </td>
     </tr>
@@ -177,7 +177,7 @@
         <td>
             Apply the filters        </td>
         <td>
-            <a href="../../Zend\EventManager\FilterChain.html">
+            <a href="../../../classes/Zend\EventManager\FilterChain.html">
             FilterChain            </a>
         </td>
     </tr>
@@ -193,6 +193,8 @@ Constructor</p>
 
 <p>Initializes Filter\FilterIterator in which filters will be aggregated</p>
 
+
+<p>Returns: </p>
 
 
 <h3 id="attach()">attach()</h3>
@@ -225,6 +227,8 @@ Connect a filter to the chain</p>
     </tr>
     </table>
 
+<p>Returns: \CallbackHandler (to allow later unsubscribe)</p>
+
 
 <h3 id="clearFilters()">clearFilters()</h3>
 
@@ -232,6 +236,8 @@ Connect a filter to the chain</p>
 Clear all filters</p>
 
 
+
+<p>Returns: void </p>
 
 
 <h3 id="detach()">detach()</h3>
@@ -256,6 +262,8 @@ Detach a filter from the chain</p>
     </tr>
     </table>
 
+<p>Returns: bool Returns true if filter found and unsubscribed; returns false otherwise</p>
+
 
 <h3 id="getFilters()">getFilters()</h3>
 
@@ -263,6 +271,8 @@ Detach a filter from the chain</p>
 Retrieve all filters</p>
 
 
+
+<p>Returns: \Filter\FilterIterator </p>
 
 
 <h3 id="getResponses()">getResponses()</h3>
@@ -273,6 +283,8 @@ Return current responses</p>
 <p>Only available while the chain is still being iterated. Returns the
 current ResponseCollection.</p>
 
+
+<p>Returns: null|\ResponseCollection </p>
 
 
 <h3 id="run()">run()</h3>
@@ -306,6 +318,7 @@ Apply the filters</p>
     </tr>
     </table>
 
+<p>Returns: mixed </p>
 
 
 
@@ -380,7 +393,7 @@ jQuery(document).ready(function($){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-80824388-1', 'auto');
+  ga('create', 'UA-115800598-1', 'auto');
   ga('send', 'pageview');
 
 </script>

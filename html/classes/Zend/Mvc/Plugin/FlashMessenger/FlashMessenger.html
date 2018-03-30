@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Mvc\Plugin\FlashMessenger\FlashMessenger -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/zendframework/zend-mvc-plugin-flashmessenger.html">zendframework/zend-mvc-plugin-flashmessenger</a>
+    &rarr;        <a href="../../../../../classes/Zend/Mvc/Plugin/FlashMessenger/FlashMessenger.html">Class FlashMessenger</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        FlashMessenger</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Mvc\Plugin\FlashMessenger\FlashMessenger        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../../classes/Zend\Mvc\Controller\Plugin\AbstractPlugin.html">AbstractPlugin</a>                    </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../../../classes/IteratorAggregate.html">IteratorAggregate</a>,                         <a href="../../../../../classes/Countable.html">Countable</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+    Flash Messenger - implement session-based messages    </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addErrorMessage()">
+            addErrorMessage()
+            </a>
+        </td>
+        <td>
+            Add a message with "error" type        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addInfoMessage()">
+            addInfoMessage()
+            </a>
+        </td>
+        <td>
+            Add a message with "info" type        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addMessage()">
+            addMessage()
+            </a>
+        </td>
+        <td>
+            Add a message        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addSuccessMessage()">
+            addSuccessMessage()
+            </a>
+        </td>
+        <td>
+            Add a message with "success" type        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addWarningMessage()">
+            addWarningMessage()
+            </a>
+        </td>
+        <td>
+            Add a message with "warning" type        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearCurrentMessages()">
+            clearCurrentMessages()
+            </a>
+        </td>
+        <td>
+            Clear messages from the current request and current namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearCurrentMessagesFromContainer()">
+            clearCurrentMessagesFromContainer()
+            </a>
+        </td>
+        <td>
+            Clear messages from the container        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearCurrentMessagesFromNamespace()">
+            clearCurrentMessagesFromNamespace()
+            </a>
+        </td>
+        <td>
+            Clear messages from the current namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearMessages()">
+            clearMessages()
+            </a>
+        </td>
+        <td>
+            Clear all messages from the previous request & current namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearMessagesFromContainer()">
+            clearMessagesFromContainer()
+            </a>
+        </td>
+        <td>
+            Clear all messages from the container        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearMessagesFromNamespace()">
+            clearMessagesFromNamespace()
+            </a>
+        </td>
+        <td>
+            Clear all messages from specific namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#count()">
+            count()
+            </a>
+        </td>
+        <td>
+            Complete the countable interface        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getContainer()">
+            getContainer()
+            </a>
+        </td>
+        <td>
+            Get session container for flash messages        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getController()">
+            getController()
+            </a>
+        </td>
+        <td>
+            Get the current controller instance        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Controller\Plugin\AbstractPlugin.html">
+            AbstractPlugin            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrentErrorMessages()">
+            getCurrentErrorMessages()
+            </a>
+        </td>
+        <td>
+            Get messages that have been added to the "error"
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrentInfoMessages()">
+            getCurrentInfoMessages()
+            </a>
+        </td>
+        <td>
+            Get messages that have been added to the "info"
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrentMessages()">
+            getCurrentMessages()
+            </a>
+        </td>
+        <td>
+            Get messages that have been added to the current
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrentMessagesFromNamespace()">
+            getCurrentMessagesFromNamespace()
+            </a>
+        </td>
+        <td>
+            Get messages that have been added to the current
+namespace in specific namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrentSuccessMessages()">
+            getCurrentSuccessMessages()
+            </a>
+        </td>
+        <td>
+            Get messages that have been added to the "success"
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrentWarningMessages()">
+            getCurrentWarningMessages()
+            </a>
+        </td>
+        <td>
+            Get messages that have been added to the "warning"
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getErrorMessages()">
+            getErrorMessages()
+            </a>
+        </td>
+        <td>
+            Get messages from "error" namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getInfoMessages()">
+            getInfoMessages()
+            </a>
+        </td>
+        <td>
+            Get messages from "info" namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getIterator()">
+            getIterator()
+            </a>
+        </td>
+        <td>
+            Complete the IteratorAggregate interface, for iterating        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMessages()">
+            getMessages()
+            </a>
+        </td>
+        <td>
+            Get messages from a specific namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getMessagesFromNamespace()">
+            getMessagesFromNamespace()
+            </a>
+        </td>
+        <td>
+            Get messages from a specific namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getNamespace()">
+            getNamespace()
+            </a>
+        </td>
+        <td>
+            Get the message namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSessionManager()">
+            getSessionManager()
+            </a>
+        </td>
+        <td>
+            Retrieve the session manager        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getSuccessMessages()">
+            getSuccessMessages()
+            </a>
+        </td>
+        <td>
+            Get messages from "success" namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getWarningMessages()">
+            getWarningMessages()
+            </a>
+        </td>
+        <td>
+            Get messages from "warning" namespace        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasCurrentErrorMessages()">
+            hasCurrentErrorMessages()
+            </a>
+        </td>
+        <td>
+            Check to see if messages have been added to "error"
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasCurrentInfoMessages()">
+            hasCurrentInfoMessages()
+            </a>
+        </td>
+        <td>
+            Check to see if messages have been added to "info"
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasCurrentMessages()">
+            hasCurrentMessages()
+            </a>
+        </td>
+        <td>
+            Check to see if messages have been added to the current
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasCurrentSuccessMessages()">
+            hasCurrentSuccessMessages()
+            </a>
+        </td>
+        <td>
+            Check to see if messages have been added to "success"
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasCurrentWarningMessages()">
+            hasCurrentWarningMessages()
+            </a>
+        </td>
+        <td>
+            Check to see if messages have been added to "warning"
+namespace within this request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasErrorMessages()">
+            hasErrorMessages()
+            </a>
+        </td>
+        <td>
+            Whether "error" namespace has messages        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasInfoMessages()">
+            hasInfoMessages()
+            </a>
+        </td>
+        <td>
+            Whether "info" namespace has messages        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasMessages()">
+            hasMessages()
+            </a>
+        </td>
+        <td>
+            Whether a specific namespace has messages        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasSuccessMessages()">
+            hasSuccessMessages()
+            </a>
+        </td>
+        <td>
+            Whether "success" namespace has messages        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasWarningMessages()">
+            hasWarningMessages()
+            </a>
+        </td>
+        <td>
+            Whether "warning" namespace has messages        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setController()">
+            setController()
+            </a>
+        </td>
+        <td>
+            Set the current controller instance        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Controller\Plugin\AbstractPlugin.html">
+            AbstractPlugin            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setNamespace()">
+            setNamespace()
+            </a>
+        </td>
+        <td>
+            Change the namespace messages are added to        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSessionManager()">
+            setSessionManager()
+            </a>
+        </td>
+        <td>
+            Set the session manager        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Mvc\Plugin\FlashMessenger\FlashMessenger.html">
+            FlashMessenger            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="addErrorMessage()">addErrorMessage()</h3>
+
+<p>
+Add a message with "error" type</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \FlashMessenger </p>
+
+
+<h3 id="addInfoMessage()">addInfoMessage()</h3>
+
+<p>
+Add a message with "info" type</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \FlashMessenger </p>
+
+
+<h3 id="addMessage()">addMessage()</h3>
+
+<p>
+Add a message</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            null|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $hops        </td>
+        <td>
+            null|int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \FlashMessenger Provides a fluent interface</p>
+
+
+<h3 id="addSuccessMessage()">addSuccessMessage()</h3>
+
+<p>
+Add a message with "success" type</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \FlashMessenger </p>
+
+
+<h3 id="addWarningMessage()">addWarningMessage()</h3>
+
+<p>
+Add a message with "warning" type</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \FlashMessenger </p>
+
+
+<h3 id="clearCurrentMessages()">clearCurrentMessages()</h3>
+
+<p>
+Clear messages from the current request and current namespace</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool True if current messages were cleared, false if none existed.</p>
+
+
+<h3 id="clearCurrentMessagesFromContainer()">clearCurrentMessagesFromContainer()</h3>
+
+<p>
+Clear messages from the container</p>
+
+
+
+<p>Returns: bool True if current messages were cleared from the container, false if none existed.</p>
+
+
+<h3 id="clearCurrentMessagesFromNamespace()">clearCurrentMessagesFromNamespace()</h3>
+
+<p>
+Clear messages from the current namespace</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespaceToClear        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool True if current messages were cleared from the given namespace, false if none existed.</p>
+
+
+<h3 id="clearMessages()">clearMessages()</h3>
+
+<p>
+Clear all messages from the previous request & current namespace</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool True if messages were cleared, false if none existed</p>
+
+
+<h3 id="clearMessagesFromContainer()">clearMessagesFromContainer()</h3>
+
+<p>
+Clear all messages from the container</p>
+
+
+
+<p>Returns: bool True if messages were cleared, false if none existed</p>
+
+
+<h3 id="clearMessagesFromNamespace()">clearMessagesFromNamespace()</h3>
+
+<p>
+Clear all messages from specific namespace</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespaceToClear        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool True if messages were cleared, false if none existed</p>
+
+
+<h3 id="count()">count()</h3>
+
+<p>
+Complete the countable interface</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getContainer()">getContainer()</h3>
+
+<p>
+Get session container for flash messages</p>
+
+
+
+<p>Returns: \Container </p>
+
+
+<h3 id="getController()">getController()</h3>
+
+<p>
+Get the current controller instance</p>
+
+
+
+<p>Returns: null|\Dispatchable </p>
+
+
+<h3 id="getCurrentErrorMessages()">getCurrentErrorMessages()</h3>
+
+<p>
+Get messages that have been added to the "error"
+namespace within this request</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getCurrentInfoMessages()">getCurrentInfoMessages()</h3>
+
+<p>
+Get messages that have been added to the "info"
+namespace within this request</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getCurrentMessages()">getCurrentMessages()</h3>
+
+<p>
+Get messages that have been added to the current
+namespace within this request</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="getCurrentMessagesFromNamespace()">getCurrentMessagesFromNamespace()</h3>
+
+<p>
+Get messages that have been added to the current
+namespace in specific namespace</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespaceToGet        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="getCurrentSuccessMessages()">getCurrentSuccessMessages()</h3>
+
+<p>
+Get messages that have been added to the "success"
+namespace within this request</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getCurrentWarningMessages()">getCurrentWarningMessages()</h3>
+
+<p>
+Get messages that have been added to the "warning"
+namespace within this request</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getErrorMessages()">getErrorMessages()</h3>
+
+<p>
+Get messages from "error" namespace</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getInfoMessages()">getInfoMessages()</h3>
+
+<p>
+Get messages from "info" namespace</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getIterator()">getIterator()</h3>
+
+<p>
+Complete the IteratorAggregate interface, for iterating</p>
+
+
+
+<p>Returns: \ArrayIterator </p>
+
+
+<h3 id="getMessages()">getMessages()</h3>
+
+<p>
+Get messages from a specific namespace</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="getMessagesFromNamespace()">getMessagesFromNamespace()</h3>
+
+<p>
+Get messages from a specific namespace</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespaceToGet        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="getNamespace()">getNamespace()</h3>
+
+<p>
+Get the message namespace</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getSessionManager()">getSessionManager()</h3>
+
+<p>
+Retrieve the session manager</p>
+
+<p>If none composed, lazy-loads a SessionManager instance</p>
+
+
+<p>Returns: \Manager </p>
+
+
+<h3 id="getSuccessMessages()">getSuccessMessages()</h3>
+
+<p>
+Get messages from "success" namespace</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getWarningMessages()">getWarningMessages()</h3>
+
+<p>
+Get messages from "warning" namespace</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="hasCurrentErrorMessages()">hasCurrentErrorMessages()</h3>
+
+<p>
+Check to see if messages have been added to "error"
+namespace within this request</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasCurrentInfoMessages()">hasCurrentInfoMessages()</h3>
+
+<p>
+Check to see if messages have been added to "info"
+namespace within this request</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasCurrentMessages()">hasCurrentMessages()</h3>
+
+<p>
+Check to see if messages have been added to the current
+namespace within this request</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasCurrentSuccessMessages()">hasCurrentSuccessMessages()</h3>
+
+<p>
+Check to see if messages have been added to "success"
+namespace within this request</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasCurrentWarningMessages()">hasCurrentWarningMessages()</h3>
+
+<p>
+Check to see if messages have been added to "warning"
+namespace within this request</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasErrorMessages()">hasErrorMessages()</h3>
+
+<p>
+Whether "error" namespace has messages</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasInfoMessages()">hasInfoMessages()</h3>
+
+<p>
+Whether "info" namespace has messages</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasMessages()">hasMessages()</h3>
+
+<p>
+Whether a specific namespace has messages</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasSuccessMessages()">hasSuccessMessages()</h3>
+
+<p>
+Whether "success" namespace has messages</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasWarningMessages()">hasWarningMessages()</h3>
+
+<p>
+Whether "warning" namespace has messages</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="setController()">setController()</h3>
+
+<p>
+Set the current controller instance</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controller        </td>
+        <td>
+            \Dispatchable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
+
+
+<h3 id="setNamespace()">setNamespace()</h3>
+
+<p>
+Change the namespace messages are added to</p>
+
+<p>Useful for per action controller messaging between requests</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $namespace        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \FlashMessenger Provides a fluent interface</p>
+
+
+<h3 id="setSessionManager()">setSessionManager()</h3>
+
+<p>
+Set the session manager</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $manager        </td>
+        <td>
+            \Manager        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \FlashMessenger </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

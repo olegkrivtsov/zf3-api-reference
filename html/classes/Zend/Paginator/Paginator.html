@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Paginator\Paginator -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../index.html">All Components</a>
+    &rarr;        <a href="../../../components/zendframework/zend-paginator.html">zendframework/zend-paginator</a>
+    &rarr;        <a href="../../../classes/Zend/Paginator/Paginator.html">Class Paginator</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Paginator</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Paginator\Paginator        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/Countable.html">Countable</a>,                         <a href="../../../classes/IteratorAggregate.html">IteratorAggregate</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Constructor.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__toString()">
+            __toString()
+            </a>
+        </td>
+        <td>
+            Serializes the object as a string.  Proxies to {@link render()}.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#clearPageItemCache()">
+            clearPageItemCache()
+            </a>
+        </td>
+        <td>
+            Clear the page item cache.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#count()">
+            count()
+            </a>
+        </td>
+        <td>
+            Returns the number of pages.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAbsoluteItemNumber()">
+            getAbsoluteItemNumber()
+            </a>
+        </td>
+        <td>
+            Returns the absolute item number for the specified item.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getAdapter()">
+            getAdapter()
+            </a>
+        </td>
+        <td>
+            Returns the adapter.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrentItemCount()">
+            getCurrentItemCount()
+            </a>
+        </td>
+        <td>
+            Returns the number of items for the current page.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrentItems()">
+            getCurrentItems()
+            </a>
+        </td>
+        <td>
+            Returns the items for the current page.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getCurrentPageNumber()">
+            getCurrentPageNumber()
+            </a>
+        </td>
+        <td>
+            Returns the current page number.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultItemCountPerPage()">
+            getDefaultItemCountPerPage()
+            </a>
+        </td>
+        <td>
+            Get the default item count per page        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getDefaultScrollingStyle()">
+            getDefaultScrollingStyle()
+            </a>
+        </td>
+        <td>
+            Returns the default scrolling style.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getFilter()">
+            getFilter()
+            </a>
+        </td>
+        <td>
+            Get the filter        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getItem()">
+            getItem()
+            </a>
+        </td>
+        <td>
+            Returns an item from a page.  The current page is used if there's no
+page specified.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getItemCount()">
+            getItemCount()
+            </a>
+        </td>
+        <td>
+            Returns the number of items in a collection.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getItemCountPerPage()">
+            getItemCountPerPage()
+            </a>
+        </td>
+        <td>
+            Returns the number of items per page.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getItemsByPage()">
+            getItemsByPage()
+            </a>
+        </td>
+        <td>
+            Returns the items for a given page.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getIterator()">
+            getIterator()
+            </a>
+        </td>
+        <td>
+            Returns a foreach-compatible iterator.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPageItemCache()">
+            getPageItemCache()
+            </a>
+        </td>
+        <td>
+            Returns the page item cache.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPageRange()">
+            getPageRange()
+            </a>
+        </td>
+        <td>
+            Returns the page range (see property declaration above).        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPages()">
+            getPages()
+            </a>
+        </td>
+        <td>
+            Returns the page collection.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getPagesInRange()">
+            getPagesInRange()
+            </a>
+        </td>
+        <td>
+            Returns a subset of pages within a given range.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getScrollingStylePluginManager()">
+            getScrollingStylePluginManager()
+            </a>
+        </td>
+        <td>
+            Returns the scrolling style manager.  If it doesn't exist it's
+created.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTotalItemCount()">
+            getTotalItemCount()
+            </a>
+        </td>
+        <td>
+            Returns the total number of items available.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getView()">
+            getView()
+            </a>
+        </td>
+        <td>
+            Retrieves the view instance.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#normalizeItemNumber()">
+            normalizeItemNumber()
+            </a>
+        </td>
+        <td>
+            Brings the item number in range of the page.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#normalizePageNumber()">
+            normalizePageNumber()
+            </a>
+        </td>
+        <td>
+            Brings the page number in range of the paginator.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#render()">
+            render()
+            </a>
+        </td>
+        <td>
+            Renders the paginator.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCache()">
+            setCache()
+            </a>
+        </td>
+        <td>
+            Sets a cache object        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCacheEnabled()">
+            setCacheEnabled()
+            </a>
+        </td>
+        <td>
+            Enables/Disables the cache for this instance        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCurrentPageNumber()">
+            setCurrentPageNumber()
+            </a>
+        </td>
+        <td>
+            Sets the current page number.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultItemCountPerPage()">
+            setDefaultItemCountPerPage()
+            </a>
+        </td>
+        <td>
+            Set the default item count per page        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setDefaultScrollingStyle()">
+            setDefaultScrollingStyle()
+            </a>
+        </td>
+        <td>
+            Sets the default scrolling style.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setFilter()">
+            setFilter()
+            </a>
+        </td>
+        <td>
+            Set a filter chain        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setGlobalConfig()">
+            setGlobalConfig()
+            </a>
+        </td>
+        <td>
+            Set a global config        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setItemCountPerPage()">
+            setItemCountPerPage()
+            </a>
+        </td>
+        <td>
+            Sets the number of items per page.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setPageRange()">
+            setPageRange()
+            </a>
+        </td>
+        <td>
+            Sets the page range (see property declaration above).        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setScrollingStylePluginManager()">
+            setScrollingStylePluginManager()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setView()">
+            setView()
+            </a>
+        </td>
+        <td>
+            Sets the view object.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#toJson()">
+            toJson()
+            </a>
+        </td>
+        <td>
+            Returns the items of the current page as JSON.        </td>
+        <td>
+            <a href="../../../classes/Zend\Paginator\Paginator.html">
+            Paginator            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Constructor.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $adapter        </td>
+        <td>
+            \AdapterInterface|\AdapterAggregateInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="__toString()">__toString()</h3>
+
+<p>
+Serializes the object as a string.  Proxies to {@link render()}.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="clearPageItemCache()">clearPageItemCache()</h3>
+
+<p>
+Clear the page item cache.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pageNumber        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Paginator </p>
+
+
+<h3 id="count()">count()</h3>
+
+<p>
+Returns the number of pages.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getAbsoluteItemNumber()">getAbsoluteItemNumber()</h3>
+
+<p>
+Returns the absolute item number for the specified item.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $relativeItemNumber        </td>
+        <td>
+            int        </td>
+        <td>
+            Relative        </td>
+    </tr>
+        <tr>
+        <td>
+            $pageNumber        </td>
+        <td>
+            int        </td>
+        <td>
+            Page        </td>
+    </tr>
+    </table>
+
+<p>Returns: int </p>
+
+
+<h3 id="getAdapter()">getAdapter()</h3>
+
+<p>
+Returns the adapter.</p>
+
+
+
+<p>Returns: \AdapterInterface </p>
+
+
+<h3 id="getCurrentItemCount()">getCurrentItemCount()</h3>
+
+<p>
+Returns the number of items for the current page.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getCurrentItems()">getCurrentItems()</h3>
+
+<p>
+Returns the items for the current page.</p>
+
+
+
+<p>Returns: \Traversable </p>
+
+
+<h3 id="getCurrentPageNumber()">getCurrentPageNumber()</h3>
+
+<p>
+Returns the current page number.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getDefaultItemCountPerPage()">getDefaultItemCountPerPage()</h3>
+
+<p>
+Get the default item count per page</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getDefaultScrollingStyle()">getDefaultScrollingStyle()</h3>
+
+<p>
+Returns the default scrolling style.</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getFilter()">getFilter()</h3>
+
+<p>
+Get the filter</p>
+
+
+
+<p>Returns: \FilterInterface </p>
+
+
+<h3 id="getItem()">getItem()</h3>
+
+<p>
+Returns an item from a page.  The current page is used if there's no
+page specified.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $itemNumber        </td>
+        <td>
+            int        </td>
+        <td>
+            Item        </td>
+    </tr>
+        <tr>
+        <td>
+            $pageNumber        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getItemCount()">getItemCount()</h3>
+
+<p>
+Returns the number of items in a collection.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $items        </td>
+        <td>
+            mixed        </td>
+        <td>
+            Items        </td>
+    </tr>
+    </table>
+
+<p>Returns: int </p>
+
+
+<h3 id="getItemCountPerPage()">getItemCountPerPage()</h3>
+
+<p>
+Returns the number of items per page.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getItemsByPage()">getItemsByPage()</h3>
+
+<p>
+Returns the items for a given page.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pageNumber        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: mixed </p>
+
+
+<h3 id="getIterator()">getIterator()</h3>
+
+<p>
+Returns a foreach-compatible iterator.</p>
+
+
+
+<p>Returns: \Traversable </p>
+
+
+<h3 id="getPageItemCache()">getPageItemCache()</h3>
+
+<p>
+Returns the page item cache.</p>
+
+
+
+<p>Returns: array </p>
+
+
+<h3 id="getPageRange()">getPageRange()</h3>
+
+<p>
+Returns the page range (see property declaration above).</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getPages()">getPages()</h3>
+
+<p>
+Returns the page collection.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $scrollingStyle        </td>
+        <td>
+            string        </td>
+        <td>
+            Scrolling        </td>
+    </tr>
+    </table>
+
+<p>Returns: \stdClass </p>
+
+
+<h3 id="getPagesInRange()">getPagesInRange()</h3>
+
+<p>
+Returns a subset of pages within a given range.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $lowerBound        </td>
+        <td>
+            int        </td>
+        <td>
+            Lower        </td>
+    </tr>
+        <tr>
+        <td>
+            $upperBound        </td>
+        <td>
+            int        </td>
+        <td>
+            Upper        </td>
+    </tr>
+    </table>
+
+<p>Returns: array </p>
+
+
+<h3 id="getScrollingStylePluginManager()">getScrollingStylePluginManager()</h3>
+
+<p>
+Returns the scrolling style manager.  If it doesn't exist it's
+created.</p>
+
+
+
+<p>Returns: \ScrollingStylePluginManager </p>
+
+
+<h3 id="getTotalItemCount()">getTotalItemCount()</h3>
+
+<p>
+Returns the total number of items available.</p>
+
+
+
+<p>Returns: int </p>
+
+
+<h3 id="getView()">getView()</h3>
+
+<p>
+Retrieves the view instance.</p>
+
+<p>If none registered, instantiates a PhpRenderer instance.</p>
+
+
+<p>Returns: \Zend\View\Renderer\RendererInterface|null </p>
+
+
+<h3 id="normalizeItemNumber()">normalizeItemNumber()</h3>
+
+<p>
+Brings the item number in range of the page.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $itemNumber        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: int </p>
+
+
+<h3 id="normalizePageNumber()">normalizePageNumber()</h3>
+
+<p>
+Brings the page number in range of the paginator.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pageNumber        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: int </p>
+
+
+<h3 id="render()">render()</h3>
+
+<p>
+Renders the paginator.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $view        </td>
+        <td>
+            \Zend\View\Renderer\RendererInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string </p>
+
+
+<h3 id="setCache()">setCache()</h3>
+
+<p>
+Sets a cache object</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $cache        </td>
+        <td>
+            \CacheStorage        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setCacheEnabled()">setCacheEnabled()</h3>
+
+<p>
+Enables/Disables the cache for this instance</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $enable        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Paginator </p>
+
+
+<h3 id="setCurrentPageNumber()">setCurrentPageNumber()</h3>
+
+<p>
+Sets the current page number.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pageNumber        </td>
+        <td>
+            int        </td>
+        <td>
+            Page        </td>
+    </tr>
+    </table>
+
+<p>Returns: \Paginator $this</p>
+
+
+<h3 id="setDefaultItemCountPerPage()">setDefaultItemCountPerPage()</h3>
+
+<p>
+Set the default item count per page</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $count        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setDefaultScrollingStyle()">setDefaultScrollingStyle()</h3>
+
+<p>
+Sets the default scrolling style.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $scrollingStyle        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setFilter()">setFilter()</h3>
+
+<p>
+Set a filter chain</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $filter        </td>
+        <td>
+            \FilterInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Paginator </p>
+
+
+<h3 id="setGlobalConfig()">setGlobalConfig()</h3>
+
+<p>
+Set a global config</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $config        </td>
+        <td>
+            array|\Traversable        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setItemCountPerPage()">setItemCountPerPage()</h3>
+
+<p>
+Sets the number of items per page.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $itemCountPerPage        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Paginator $this</p>
+
+
+<h3 id="setPageRange()">setPageRange()</h3>
+
+<p>
+Sets the page range (see property declaration above).</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $pageRange        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Paginator $this</p>
+
+
+<h3 id="setScrollingStylePluginManager()">setScrollingStylePluginManager()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $scrollingAdapters        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void</p>
+
+
+<h3 id="setView()">setView()</h3>
+
+<p>
+Sets the view object.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $view        </td>
+        <td>
+            \Zend\View\Renderer\RendererInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Paginator </p>
+
+
+<h3 id="toJson()">toJson()</h3>
+
+<p>
+Returns the items of the current page as JSON.</p>
+
+
+
+<p>Returns: string </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

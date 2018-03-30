@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Test\PHPUnit\Controller\AbstractControllerTestCase -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../../components/zendframework/zend-test.html">zendframework/zend-test</a>
+    &rarr;        <a href="../../../../../classes/Zend/Test/PHPUnit/Controller/AbstractControllerTestCase.html">Class AbstractControllerTestCase</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        AbstractControllerTestCase</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Test\PHPUnit\Controller\AbstractControllerTestCase        </td>
+    </tr>
+        <tr>
+        <td>
+            Extends:
+        </td>
+        <td>
+                                    <a href="../../../../../classes/PHPUnit\Framework\TestCase.html">TestCase</a>                    </td>
+    </tr>
+        </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertActionName()">
+            assertActionName()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used the given action        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertApplicationException()">
+            assertApplicationException()
+            </a>
+        </td>
+        <td>
+            Assert the application exception and message        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertControllerClass()">
+            assertControllerClass()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used the given controller class        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertControllerName()">
+            assertControllerName()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used the given controller name        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertMatchedRouteName()">
+            assertMatchedRouteName()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used the given route name        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertModuleName()">
+            assertModuleName()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used the given module        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertModulesLoaded()">
+            assertModulesLoaded()
+            </a>
+        </td>
+        <td>
+            Assert modules were loaded with the module manager        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertNoMatchedRoute()">
+            assertNoMatchedRoute()
+            </a>
+        </td>
+        <td>
+            Assert that the application did not match any route        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertNotActionName()">
+            assertNotActionName()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used NOT the given action        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertNotControllerClass()">
+            assertNotControllerClass()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used NOT the given controller class        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertNotControllerName()">
+            assertNotControllerName()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used NOT the given controller name        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertNotMatchedRouteName()">
+            assertNotMatchedRouteName()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used NOT the given route name        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertNotModuleName()">
+            assertNotModuleName()
+            </a>
+        </td>
+        <td>
+            Assert that the application route match used NOT the given module        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertNotModulesLoaded()">
+            assertNotModulesLoaded()
+            </a>
+        </td>
+        <td>
+            Assert modules were not loaded with the module manager        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertNotResponseStatusCode()">
+            assertNotResponseStatusCode()
+            </a>
+        </td>
+        <td>
+            Assert not response status code        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertNotTemplateName()">
+            assertNotTemplateName()
+            </a>
+        </td>
+        <td>
+            Assert not template name
+Assert that a template was not used somewhere in the view model tree        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertResponseStatusCode()">
+            assertResponseStatusCode()
+            </a>
+        </td>
+        <td>
+            Assert response status code        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#assertTemplateName()">
+            assertTemplateName()
+            </a>
+        </td>
+        <td>
+            Assert template name
+Assert that a template was used somewhere in the view model tree        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#dispatch()">
+            dispatch()
+            </a>
+        </td>
+        <td>
+            Dispatch the MVC with a URL
+Accept a HTTP (simulate a customer action) or console route.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getApplication()">
+            getApplication()
+            </a>
+        </td>
+        <td>
+            Get the application object        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getApplicationConfig()">
+            getApplicationConfig()
+            </a>
+        </td>
+        <td>
+            Get the application config        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getApplicationServiceLocator()">
+            getApplicationServiceLocator()
+            </a>
+        </td>
+        <td>
+            Get the service manager of the application object        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRequest()">
+            getRequest()
+            </a>
+        </td>
+        <td>
+            Get the application request object        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResponse()">
+            getResponse()
+            </a>
+        </td>
+        <td>
+            Get the application response object        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTraceError()">
+            getTraceError()
+            </a>
+        </td>
+        <td>
+            Get the trace error flag        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUseConsoleRequest()">
+            getUseConsoleRequest()
+            </a>
+        </td>
+        <td>
+            Get the usage of the console router or not        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#reset()">
+            reset()
+            </a>
+        </td>
+        <td>
+            Reset the request        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setApplicationConfig()">
+            setApplicationConfig()
+            </a>
+        </td>
+        <td>
+            Set the application config        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTraceError()">
+            setTraceError()
+            </a>
+        </td>
+        <td>
+            Set the trace error flag        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUseConsoleRequest()">
+            setUseConsoleRequest()
+            </a>
+        </td>
+        <td>
+            Set the usage of the console router or not        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#triggerApplicationEvent()">
+            triggerApplicationEvent()
+            </a>
+        </td>
+        <td>
+            Trigger an application event        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#url()">
+            url()
+            </a>
+        </td>
+        <td>
+            Set the request URL        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Test\PHPUnit\Controller\AbstractControllerTestCase.html">
+            AbstractControllerTestCase            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="assertActionName()">assertActionName()</h3>
+
+<p>
+Assert that the application route match used the given action</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $action        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertApplicationException()">assertApplicationException()</h3>
+
+<p>
+Assert the application exception and message</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            application        </td>
+        <td>
+            $message        </td>
+        <td>
+            exception        </td>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $message        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertControllerClass()">assertControllerClass()</h3>
+
+<p>
+Assert that the application route match used the given controller class</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controller        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertControllerName()">assertControllerName()</h3>
+
+<p>
+Assert that the application route match used the given controller name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controller        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertMatchedRouteName()">assertMatchedRouteName()</h3>
+
+<p>
+Assert that the application route match used the given route name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $route        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertModuleName()">assertModuleName()</h3>
+
+<p>
+Assert that the application route match used the given module</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $module        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertModulesLoaded()">assertModulesLoaded()</h3>
+
+<p>
+Assert modules were loaded with the module manager</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $modules        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertNoMatchedRoute()">assertNoMatchedRoute()</h3>
+
+<p>
+Assert that the application did not match any route</p>
+
+
+
+<p>Returns: </p>
+
+
+<h3 id="assertNotActionName()">assertNotActionName()</h3>
+
+<p>
+Assert that the application route match used NOT the given action</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $action        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertNotControllerClass()">assertNotControllerClass()</h3>
+
+<p>
+Assert that the application route match used NOT the given controller class</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controller        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertNotControllerName()">assertNotControllerName()</h3>
+
+<p>
+Assert that the application route match used NOT the given controller name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $controller        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertNotMatchedRouteName()">assertNotMatchedRouteName()</h3>
+
+<p>
+Assert that the application route match used NOT the given route name</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $route        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertNotModuleName()">assertNotModuleName()</h3>
+
+<p>
+Assert that the application route match used NOT the given module</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $module        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertNotModulesLoaded()">assertNotModulesLoaded()</h3>
+
+<p>
+Assert modules were not loaded with the module manager</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $modules        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertNotResponseStatusCode()">assertNotResponseStatusCode()</h3>
+
+<p>
+Assert not response status code</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertNotTemplateName()">assertNotTemplateName()</h3>
+
+<p>
+Assert not template name
+Assert that a template was not used somewhere in the view model tree</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $templateName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertResponseStatusCode()">assertResponseStatusCode()</h3>
+
+<p>
+Assert response status code</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $code        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="assertTemplateName()">assertTemplateName()</h3>
+
+<p>
+Assert template name
+Assert that a template was used somewhere in the view model tree</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $templateName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="dispatch()">dispatch()</h3>
+
+<p>
+Dispatch the MVC with a URL
+Accept a HTTP (simulate a customer action) or console route.</p>
+
+<p>The URL provided set the request URI in the request object.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            array|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $isXmlHttpRequest        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="getApplication()">getApplication()</h3>
+
+<p>
+Get the application object</p>
+
+
+
+<p>Returns: \Zend\Mvc\ApplicationInterface </p>
+
+
+<h3 id="getApplicationConfig()">getApplicationConfig()</h3>
+
+<p>
+Get the application config</p>
+
+
+
+<p>Returns: array the application config</p>
+
+
+<h3 id="getApplicationServiceLocator()">getApplicationServiceLocator()</h3>
+
+<p>
+Get the service manager of the application object</p>
+
+
+
+<p>Returns: \Zend\ServiceManager\ServiceManager </p>
+
+
+<h3 id="getRequest()">getRequest()</h3>
+
+<p>
+Get the application request object</p>
+
+
+
+<p>Returns: \Zend\Stdlib\RequestInterface </p>
+
+
+<h3 id="getResponse()">getResponse()</h3>
+
+<p>
+Get the application response object</p>
+
+
+
+<p>Returns: \ResponseInterface </p>
+
+
+<h3 id="getTraceError()">getTraceError()</h3>
+
+<p>
+Get the trace error flag</p>
+
+
+
+<p>Returns: bool </p>
+
+
+<h3 id="getUseConsoleRequest()">getUseConsoleRequest()</h3>
+
+<p>
+Get the usage of the console router or not</p>
+
+
+
+<p>Returns: bool $boolean</p>
+
+
+<h3 id="reset()">reset()</h3>
+
+<p>
+Reset the request</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $keepPersistence        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractControllerTestCase </p>
+
+
+<h3 id="setApplicationConfig()">setApplicationConfig()</h3>
+
+<p>
+Set the application config</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $applicationConfig        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractControllerTestCase </p>
+
+
+<h3 id="setTraceError()">setTraceError()</h3>
+
+<p>
+Set the trace error flag</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $traceError        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractControllerTestCase </p>
+
+
+<h3 id="setUseConsoleRequest()">setUseConsoleRequest()</h3>
+
+<p>
+Set the usage of the console router or not</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $boolean        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractControllerTestCase </p>
+
+
+<h3 id="triggerApplicationEvent()">triggerApplicationEvent()</h3>
+
+<p>
+Trigger an application event</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $eventName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Zend\EventManager\ResponseCollection </p>
+
+
+<h3 id="url()">url()</h3>
+
+<p>
+Set the request URL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $url        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+            string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $params        </td>
+        <td>
+            array|null        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \AbstractControllerTestCase </p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+

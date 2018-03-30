@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Zend Framework 3 API Reference">
+<meta name="keywords" content="php,zend framework,api,reference">
+<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
+<link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
+<title>Class Zend\Permissions\Acl\Acl -- Zend Framework 3 API Reference</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="header-body">
+            <div class="book-title">
+                <a href="../../../../index.html">Zend Framework 3 API Reference</a>
+            </div>
+            <nav>
+                <div class="menu">
+                                        <div class="link">
+                        <a href="https://olegkrivtsov.github.io/zf3-api-reference/html">Home</a>
+                    </div>
+                                        <div class="link">
+                        <a href="https://github.com/olegkrivtsov/zf3-api-reference">Contribute</a>
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>    
+    </div>
+</header>    
+<div id="container">
+
+<!-- Navigation -->
+<div class="breadcrumbs">
+            <a href="../../../../index.html">All Components</a>
+    &rarr;        <a href="../../../../components/zendframework/zend-permissions-acl.html">zendframework/zend-permissions-acl</a>
+    &rarr;        <a href="../../../../classes/Zend/Permissions/Acl/Acl.html">Class Acl</a>
+        </div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ZF3 API Reference - Upper Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3933778336056438"
+     data-ad-slot="7172748715"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Content -->
+<div id="chapter_content">
+    <h1>Class 
+        Acl</h1>        
+</div>
+
+<h2 id="inheritance">Summary</h2>
+
+<table class="table">
+    <tr>
+        <td>
+            Fully Qualified Name:
+        </td>
+        <td>
+            Zend\Permissions\Acl\Acl        </td>
+    </tr>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../../classes/Zend\Permissions\Acl\AclInterface.html">AclInterface</a>                    </td>
+    </tr>
+    </table>
+
+<h2>Description</h2>
+
+<div class="description">
+    <p>
+        </p>
+    </div>
+
+<h2 id="methods">Methods</h2>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addResource()">
+            addResource()
+            </a>
+        </td>
+        <td>
+            Adds a Resource having an identifier unique to the ACL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#addRole()">
+            addRole()
+            </a>
+        </td>
+        <td>
+            Adds a Role having an identifier unique to the registry        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#allow()">
+            allow()
+            </a>
+        </td>
+        <td>
+            Adds an "allow" rule to the ACL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#deny()">
+            deny()
+            </a>
+        </td>
+        <td>
+            Adds a "deny" rule to the ACL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResource()">
+            getResource()
+            </a>
+        </td>
+        <td>
+            Returns the identified Resource        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getResources()">
+            getResources()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRole()">
+            getRole()
+            </a>
+        </td>
+        <td>
+            Returns the identified Role        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getRoles()">
+            getRoles()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasResource()">
+            hasResource()
+            </a>
+        </td>
+        <td>
+            Returns true if and only if the Resource exists in the ACL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#hasRole()">
+            hasRole()
+            </a>
+        </td>
+        <td>
+            Returns true if and only if the Role exists in the registry        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#inheritsResource()">
+            inheritsResource()
+            </a>
+        </td>
+        <td>
+            Returns true if and only if $resource inherits from $inherit        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#inheritsRole()">
+            inheritsRole()
+            </a>
+        </td>
+        <td>
+            Returns true if and only if $role inherits from $inherit        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isAllowed()">
+            isAllowed()
+            </a>
+        </td>
+        <td>
+            Returns true if and only if the Role has access to the Resource        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeAllow()">
+            removeAllow()
+            </a>
+        </td>
+        <td>
+            Removes "allow" permissions from the ACL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeDeny()">
+            removeDeny()
+            </a>
+        </td>
+        <td>
+            Removes "deny" restrictions from the ACL        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeResource()">
+            removeResource()
+            </a>
+        </td>
+        <td>
+            Removes a Resource and all of its children        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeResourceAll()">
+            removeResourceAll()
+            </a>
+        </td>
+        <td>
+            Removes all Resources        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeRole()">
+            removeRole()
+            </a>
+        </td>
+        <td>
+            Removes the Role from the registry        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#removeRoleAll()">
+            removeRoleAll()
+            </a>
+        </td>
+        <td>
+            Removes all Roles from the registry        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setRule()">
+            setRule()
+            </a>
+        </td>
+        <td>
+            Performs operations on ACL rules        </td>
+        <td>
+            <a href="../../../../classes/Zend\Permissions\Acl\Acl.html">
+            Acl            </a>
+        </td>
+    </tr>
+    </table>
+
+<h2 id="method-details">Method Details</h2>
+
+
+<h3 id="addResource()">addResource()</h3>
+
+<p>
+Adds a Resource having an identifier unique to the ACL</p>
+
+<p>The $parent parameter may be a reference to, or the string identifier for,
+the existing Resource from which the newly added Resource will inherit.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $resource        </td>
+        <td>
+            \Resource\ResourceInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $parent        </td>
+        <td>
+            \Resource\ResourceInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="addRole()">addRole()</h3>
+
+<p>
+Adds a Role having an identifier unique to the registry</p>
+
+<p>The $parents parameter may be a reference to, or the string identifier for,
+a Role existing in the registry, or $parents may be passed as an array of
+these - mixing string identifiers and objects is ok - to indicate the Roles
+from which the newly added Role will directly inherit.</p>
+<p>In order to resolve potential ambiguities with conflicting rules inherited
+from different parents, the most recently added parent takes precedence over
+parents that were previously added. In other words, the first parent added
+will have the least priority, and the last parent added will have the
+highest priority.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $role        </td>
+        <td>
+            \Role\RoleInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $parents        </td>
+        <td>
+            \Role\RoleInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="allow()">allow()</h3>
+
+<p>
+Adds an "allow" rule to the ACL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $roles        </td>
+        <td>
+            \Role\RoleInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $resources        </td>
+        <td>
+            \Resource\ResourceInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $privileges        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $assert        </td>
+        <td>
+            \Assertion\AssertionInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="deny()">deny()</h3>
+
+<p>
+Adds a "deny" rule to the ACL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $roles        </td>
+        <td>
+            \Role\RoleInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $resources        </td>
+        <td>
+            \Resource\ResourceInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $privileges        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $assert        </td>
+        <td>
+            \Assertion\AssertionInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="getResource()">getResource()</h3>
+
+<p>
+Returns the identified Resource</p>
+
+<p>The $resource parameter can either be a Resource or a Resource identifier.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $resource        </td>
+        <td>
+            \Resource\ResourceInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: resource </p>
+
+
+<h3 id="getResources()">getResources()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: array of registered resources</p>
+
+
+<h3 id="getRole()">getRole()</h3>
+
+<p>
+Returns the identified Role</p>
+
+<p>The $role parameter can either be a Role or Role identifier.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $role        </td>
+        <td>
+            \Role\RoleInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Role\RoleInterface </p>
+
+
+<h3 id="getRoles()">getRoles()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: array of registered roles</p>
+
+
+<h3 id="hasResource()">hasResource()</h3>
+
+<p>
+Returns true if and only if the Resource exists in the ACL</p>
+
+<p>The $resource parameter can either be a Resource or a Resource identifier.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $resource        </td>
+        <td>
+            \Resource\ResourceInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="hasRole()">hasRole()</h3>
+
+<p>
+Returns true if and only if the Role exists in the registry</p>
+
+<p>The $role parameter can either be a Role or a Role identifier.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $role        </td>
+        <td>
+            \Role\RoleInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="inheritsResource()">inheritsResource()</h3>
+
+<p>
+Returns true if and only if $resource inherits from $inherit</p>
+
+<p>Both parameters may be either a Resource or a Resource identifier. If
+$onlyParent is true, then $resource must inherit directly from
+$inherit in order to return true. By default, this method looks
+through the entire inheritance tree to determine whether $resource
+inherits from $inherit through its ancestor Resources.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $resource        </td>
+        <td>
+            \Resource\ResourceInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $        </td>
+        <td>
+            \Resource\ResourceInterface|string        </td>
+        <td>
+            inherit        </td>
+    </tr>
+        <tr>
+        <td>
+            $onlyParent        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $inherit        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="inheritsRole()">inheritsRole()</h3>
+
+<p>
+Returns true if and only if $role inherits from $inherit</p>
+
+<p>Both parameters may be either a Role or a Role identifier. If
+$onlyParents is true, then $role must inherit directly from
+$inherit in order to return true. By default, this method looks
+through the entire inheritance DAG to determine whether $role
+inherits from $inherit through its ancestor Roles.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $role        </td>
+        <td>
+            \Role\RoleInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $inherit        </td>
+        <td>
+            \Role\RoleInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $onlyParents        </td>
+        <td>
+            bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="isAllowed()">isAllowed()</h3>
+
+<p>
+Returns true if and only if the Role has access to the Resource</p>
+
+<p>The $role and $resource parameters may be references to, or the string identifiers for,
+an existing Resource and Role combination.</p>
+<p>If either $role or $resource is null, then the query applies to all Roles or all Resources,
+respectively. Both may be null to query whether the ACL has a "blacklist" rule
+(allow everything to all). By default, Zend\Permissions\Acl creates a "whitelist" rule (deny
+everything to all), and this method would return false unless this default has
+been overridden (i.e., by executing $acl-&gt;allow()).</p>
+<p>If a $privilege is not provided, then this method returns false if and only if the
+Role is denied access to at least one privilege upon the Resource. In other words, this
+method returns true if and only if the Role is allowed all privileges on the Resource.</p>
+<p>This method checks Role inheritance using a depth-first traversal of the Role registry.
+The highest priority parent (i.e., the parent most recently added) is checked first,
+and its respective parents are checked similarly before the lower-priority parents of
+the Role are checked.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $role        </td>
+        <td>
+            \Role\RoleInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $resource        </td>
+        <td>
+            \Resource\ResourceInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $privilege        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: bool </p>
+
+
+<h3 id="removeAllow()">removeAllow()</h3>
+
+<p>
+Removes "allow" permissions from the ACL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $roles        </td>
+        <td>
+            \Role\RoleInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $resources        </td>
+        <td>
+            \Resource\ResourceInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $privileges        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="removeDeny()">removeDeny()</h3>
+
+<p>
+Removes "deny" restrictions from the ACL</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $roles        </td>
+        <td>
+            \Role\RoleInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $resources        </td>
+        <td>
+            \Resource\ResourceInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $privileges        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="removeResource()">removeResource()</h3>
+
+<p>
+Removes a Resource and all of its children</p>
+
+<p>The $resource parameter can either be a Resource or a Resource identifier.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $resource        </td>
+        <td>
+            \Resource\ResourceInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="removeResourceAll()">removeResourceAll()</h3>
+
+<p>
+Removes all Resources</p>
+
+
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="removeRole()">removeRole()</h3>
+
+<p>
+Removes the Role from the registry</p>
+
+<p>The $role parameter can either be a Role or a Role identifier.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $role        </td>
+        <td>
+            \Role\RoleInterface|string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="removeRoleAll()">removeRoleAll()</h3>
+
+<p>
+Removes all Roles from the registry</p>
+
+
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+<h3 id="setRule()">setRule()</h3>
+
+<p>
+Performs operations on ACL rules</p>
+
+<p>The $operation parameter may be either OP_ADD or OP_REMOVE, depending on whether the
+user wants to add or remove a rule, respectively:</p>
+<p>OP_ADD specifics:</p>
+<pre><code> A rule is added that would allow one or more Roles access to [certain $privileges
+ upon] the specified Resource(s).
+</code></pre>
+<p>OP_REMOVE specifics:</p>
+<pre><code> The rule is removed only in the context of the given Roles, Resources, and privileges.
+ Existing rules to which the remove operation does not apply would remain in the
+ ACL.
+</code></pre>
+<p>The $type parameter may be either TYPE_ALLOW or TYPE_DENY, depending on whether the
+rule is intended to allow or deny permission, respectively.</p>
+<p>The $roles and $resources parameters may be references to, or the string identifiers for,
+existing Resources/Roles, or they may be passed as arrays of these - mixing string identifiers
+and objects is ok - to indicate the Resources and Roles to which the rule applies. If either
+$roles or $resources is null, then the rule applies to all Roles or all Resources, respectively.
+Both may be null in order to work with the default rule of the ACL.</p>
+<p>The $privileges parameter may be used to further specify that the rule applies only
+to certain privileges upon the Resource(s) in question. This may be specified to be a single
+privilege with a string, and multiple privileges may be specified as an array of strings.</p>
+<p>If $assert is provided, then its assert() method must return true in order for
+the rule to apply. If $assert is provided with $roles, $resources, and $privileges all
+equal to null, then a rule having a type of:</p>
+<pre><code> TYPE_ALLOW will imply a type of TYPE_DENY, and
+
+ TYPE_DENY will imply a type of TYPE_ALLOW
+</code></pre>
+<p>when the rule's assertion fails. This is because the ACL needs to provide expected
+behavior when an assertion upon the default ACL rule fails.</p>
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $operation        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $type        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $roles        </td>
+        <td>
+            \Role\RoleInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $resources        </td>
+        <td>
+            \Resource\ResourceInterface|string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $privileges        </td>
+        <td>
+            string|array        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $assert        </td>
+        <td>
+            \Assertion\AssertionInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Acl Provides a fluent interface</p>
+
+
+
+<!-- Ads -->
+<div id="ads-chapter-bottom">
+<div>
+</div>
+</div>
+    
+<div id="disqus_thread"></div>
+
+        
+</div>
+<footer>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="copyright">
+                Copyright (c) 2018 by Oleg Krivtsov            </div>
+            <div class="generated-by">
+                Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
+            </div>
+        </div>    
+    </div>
+</footer>
+
+<a href="#0" class="cd-top">Top</a>
+
+<script src="../../../../assets/js/jquery.min.js"></script>
+<script src="../../../../assets/js/loadCSS.js"></script>
+
+<script src="../../../../assets/js/prism.js"></script>
+
+
+<script>
+loadCSS("../../../../assets/css/prism.css");
+</script>
+
+<script>
+jQuery(document).ready(function($){
+    // browser window scroll (in pixels) after which the "back to top" link is shown
+    var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+    //hide or show the "back to top" link
+    $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) { 
+                    $back_to_top.addClass('cd-fade-out');
+            }
+    });
+
+    //smooth scroll to top
+    $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                    scrollTop: 0 ,
+                    }, scroll_top_duration
+            );
+    });
+
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-115800598-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>    
+
