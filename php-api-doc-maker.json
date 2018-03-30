@@ -37,11 +37,31 @@
         "zendframework/zend-mail",
         "zendframework/zend-modulemanager",
         "zendframework/zend-mvc",
-        "zendframework/zend-view"
+        "zendframework/zend-mvc-console",
+        "zendframework/zend-mvc-i18n",
+        "zendframework/zend-mvc-plugin-fileprg",
+        "zendframework/zend-mvc-plugin-flashmessenger",
+        "zendframework/zend-mvc-plugin-identity",
+        "zendframework/zend-mvc-plugin-prg",
+        "zendframework/zend-navigation",
+        "zendframework/zend-paginator",
+        "zendframework/zend-permissions-acl",
+        "zendframework/zend-permissions-rbac",
+        "zendframework/zend-router",
+        "zendframework/zend-serializer",
+        "zendframework/zend-servicemanager",
+        "zendframework/zend-session",
+        "zendframework/zend-soap",
+        "zendframework/zend-stdlib",
+        "zendframework/zend-test",
+        "zendframework/zend-uri",
+        "zendframework/zend-validator",
+        "zendframework/zend-view",
+        "zendramework/zend-xmlrpc"
     ],
     "google_analytics": {
         "enabled": true,
-        "account_id": "UA-80824388-1"
+        "account_id": "UA-115800598-1"
     },
     "google_adsence": {
         "enabled": true, 
