@@ -35,6 +35,7 @@
         "zendframework/zend-json",
         "zendframework/zend-log",
         "zendframework/zend-mail",
+        "zendframework/zend-math",
         "zendframework/zend-modulemanager",
         "zendframework/zend-mvc",
         "zendframework/zend-mvc-console",
