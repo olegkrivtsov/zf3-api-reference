@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
-<title>Class Zend\Authentication\Validator\Authentication -- Zend Framework 3 API Reference</title>
+<title>Class Zend\Authentication\Validator\Authentication &ndash; Zend Framework 3 API Reference</title>
 </head>
 <body>
 <header>
@@ -358,7 +358,7 @@ message variable.        </td>
             </a>
         </td>
         <td>
-            Is Valid        </td>
+            Returns true if and only if authentication result is valid        </td>
         <td>
             <a href="../../../../classes/Zend\Authentication\Validator\Authentication.html">
             Authentication            </a>
@@ -582,7 +582,7 @@ Sets validator options</p>
         <td>
             $options        </td>
         <td>
-            mixed        </td>
+            array|\Traversable        </td>
         <td>
                     </td>
     </tr>
@@ -830,8 +830,11 @@ Is translation enabled?</p>
 <h3 id="isValid()">isValid()</h3>
 
 <p>
-Is Valid</p>
+Returns true if and only if authentication result is valid</p>
 
+<p>If authentication result fails validation, then this method returns false, and
+getMessages() will return an array of messages that explain why the
+validation failed.</p>
 
 <table class="table">
     <tr>
@@ -843,17 +846,17 @@ Is Valid</p>
         <td>
             $value        </td>
         <td>
-            mixed        </td>
+            null|mixed        </td>
         <td>
-                    </td>
+            OPTIONAL        </td>
     </tr>
         <tr>
         <td>
             $context        </td>
         <td>
-            array        </td>
+            null|array        </td>
         <td>
-                    </td>
+            OPTIONAL        </td>
     </tr>
     </table>
 
@@ -893,7 +896,7 @@ Set Adapter</p>
     </tr>
     </table>
 
-<p>Returns: \Authentication </p>
+<p>Returns: self Provides a fluent interface</p>
 
 
 <h3 id="setCredential()">setCredential()</h3>
@@ -918,7 +921,7 @@ Set Credential</p>
     </tr>
     </table>
 
-<p>Returns: \Authentication </p>
+<p>Returns: self Provides a fluent interface</p>
 
 
 <h3 id="setDefaultTranslator()">setDefaultTranslator()</h3>
@@ -1001,7 +1004,7 @@ Set Identity</p>
     </tr>
     </table>
 
-<p>Returns: \Authentication </p>
+<p>Returns: self Provides a fluent interface</p>
 
 
 <h3 id="setMessage()">setMessage()</h3>
@@ -1135,7 +1138,7 @@ Set Service</p>
     </tr>
     </table>
 
-<p>Returns: \Authentication </p>
+<p>Returns: self Provides a fluent interface</p>
 
 
 <h3 id="setTranslator()">setTranslator()</h3>
@@ -1273,6 +1276,7 @@ Set flag indicating whether or not value should be obfuscated in messages</p>
 
 <script src="../../../../assets/js/jquery.min.js"></script>
 <script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
 
 <script src="../../../../assets/js/prism.js"></script>
 

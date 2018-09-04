@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
-<title>Class Zend\Cache\Storage\Adapter\FilesystemOptions -- Zend Framework 3 API Reference</title>
+<title>Class Zend\Cache\Storage\Adapter\FilesystemOptions &ndash; Zend Framework 3 API Reference</title>
 </head>
 <body>
 <header>
@@ -313,6 +313,32 @@
     </tr>
         <tr>
         <td>
+            <a href="#getSuffix()">
+            getSuffix()
+            </a>
+        </td>
+        <td>
+            Get the suffix for cache files        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Cache\Storage\Adapter\FilesystemOptions.html">
+            FilesystemOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getTagSuffix()">
+            getTagSuffix()
+            </a>
+        </td>
+        <td>
+            Get the suffix for tag files        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Cache\Storage\Adapter\FilesystemOptions.html">
+            FilesystemOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
             <a href="#getTtl()">
             getTtl()
             </a>
@@ -530,6 +556,32 @@
         <td>
             <a href="../../../../../classes/Zend\Cache\Storage\Adapter\AdapterOptions.html">
             AdapterOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setSuffix()">
+            setSuffix()
+            </a>
+        </td>
+        <td>
+            Set the suffix for cache files        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Cache\Storage\Adapter\FilesystemOptions.html">
+            FilesystemOptions            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setTagSuffix()">
+            setTagSuffix()
+            </a>
+        </td>
+        <td>
+            Set the suffix for cache files        </td>
+        <td>
+            <a href="../../../../../classes/Zend\Cache\Storage\Adapter\FilesystemOptions.html">
+            FilesystemOptions            </a>
         </td>
     </tr>
         <tr>
@@ -842,6 +894,26 @@ If reading data from cache enabled.</p>
 <p>Returns: bool </p>
 
 
+<h3 id="getSuffix()">getSuffix()</h3>
+
+<p>
+Get the suffix for cache files</p>
+
+
+
+<p>Returns: string </p>
+
+
+<h3 id="getTagSuffix()">getTagSuffix()</h3>
+
+<p>
+Get the suffix for tag files</p>
+
+
+
+<p>Returns: \the $tagSuffix</p>
+
+
 <h3 id="getTtl()">getTtl()</h3>
 
 <p>
@@ -894,7 +966,7 @@ Adapter using this instance</p>
     </tr>
     </table>
 
-<p>Returns: \AdapterOptions </p>
+<p>Returns: \AdapterOptions Provides a fluent interface</p>
 
 
 <h3 id="setCacheDir()">setCacheDir()</h3>
@@ -919,7 +991,7 @@ Set cache dir</p>
     </tr>
     </table>
 
-<p>Returns: \FilesystemOptions </p>
+<p>Returns: \FilesystemOptions Provides a fluent interface</p>
 
 
 <h3 id="setClearStatCache()">setClearStatCache()</h3>
@@ -944,7 +1016,7 @@ Set clear stat cache</p>
     </tr>
     </table>
 
-<p>Returns: \FilesystemOptions </p>
+<p>Returns: \FilesystemOptions Provides a fluent interface</p>
 
 
 <h3 id="setDirLevel()">setDirLevel()</h3>
@@ -969,7 +1041,7 @@ Set dir level</p>
     </tr>
     </table>
 
-<p>Returns: \FilesystemOptions </p>
+<p>Returns: \FilesystemOptions Provides a fluent interface</p>
 
 
 <h3 id="setDirPermission()">setDirPermission()</h3>
@@ -994,7 +1066,7 @@ Set permission to create directories on unix systems</p>
     </tr>
     </table>
 
-<p>Returns: \FilesystemOptions </p>
+<p>Returns: \FilesystemOptions Provides a fluent interface</p>
 
 
 <h3 id="setFileLocking()">setFileLocking()</h3>
@@ -1019,7 +1091,7 @@ Set file locking</p>
     </tr>
     </table>
 
-<p>Returns: \FilesystemOptions </p>
+<p>Returns: \FilesystemOptions Provides a fluent interface</p>
 
 
 <h3 id="setFilePermission()">setFilePermission()</h3>
@@ -1044,7 +1116,7 @@ Set permission to create files on unix systems</p>
     </tr>
     </table>
 
-<p>Returns: \FilesystemOptions </p>
+<p>Returns: \FilesystemOptions Provides a fluent interface</p>
 
 
 <h3 id="setFromArray()">setFromArray()</h3>
@@ -1096,7 +1168,7 @@ Set key pattern</p>
     </tr>
     </table>
 
-<p>Returns: \AdapterOptions </p>
+<p>Returns: \AdapterOptions Provides a fluent interface</p>
 
 
 <h3 id="setNamespace()">setNamespace()</h3>
@@ -1121,7 +1193,7 @@ Set namespace.</p>
     </tr>
     </table>
 
-<p>Returns: \AdapterOptions </p>
+<p>Returns: \AdapterOptions Provides a fluent interface</p>
 
 
 <h3 id="setNamespaceSeparator()">setNamespaceSeparator()</h3>
@@ -1146,7 +1218,7 @@ Set namespace separator</p>
     </tr>
     </table>
 
-<p>Returns: \FilesystemOptions </p>
+<p>Returns: \FilesystemOptions Provides a fluent interface</p>
 
 
 <h3 id="setNoAtime()">setNoAtime()</h3>
@@ -1171,7 +1243,7 @@ Set no atime</p>
     </tr>
     </table>
 
-<p>Returns: \FilesystemOptions </p>
+<p>Returns: \FilesystemOptions Provides a fluent interface</p>
 
 
 <h3 id="setNoCtime()">setNoCtime()</h3>
@@ -1221,7 +1293,57 @@ Enable/Disable reading data from cache.</p>
     </tr>
     </table>
 
-<p>Returns: \AbstractAdapter </p>
+<p>Returns: \AdapterOptions Provides a fluent interface</p>
+
+
+<h3 id="setSuffix()">setSuffix()</h3>
+
+<p>
+Set the suffix for cache files</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $suffix        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="setTagSuffix()">setTagSuffix()</h3>
+
+<p>
+Set the suffix for cache files</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $tagSuffix        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
 
 
 <h3 id="setTtl()">setTtl()</h3>
@@ -1246,7 +1368,7 @@ Set time to live.</p>
     </tr>
     </table>
 
-<p>Returns: \AdapterOptions </p>
+<p>Returns: \AdapterOptions Provides a fluent interface</p>
 
 
 <h3 id="setUmask()">setUmask()</h3>
@@ -1297,7 +1419,7 @@ Enable/Disable writing data to cache.</p>
     </tr>
     </table>
 
-<p>Returns: \AdapterOptions </p>
+<p>Returns: \AdapterOptions Provides a fluent interface</p>
 
 
 <h3 id="toArray()">toArray()</h3>
@@ -1337,6 +1459,7 @@ Cast to array</p>
 
 <script src="../../../../../assets/js/jquery.min.js"></script>
 <script src="../../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../../assets/js/popup.js"></script>
 
 <script src="../../../../../assets/js/prism.js"></script>
 

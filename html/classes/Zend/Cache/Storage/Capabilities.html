@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
-<title>Class Zend\Cache\Storage\Capabilities -- Zend Framework 3 API Reference</title>
+<title>Class Zend\Cache\Storage\Capabilities &ndash; Zend Framework 3 API Reference</title>
 </head>
 <body>
 <header>
@@ -124,12 +124,25 @@
     </tr>
         <tr>
         <td>
+            <a href="#getLockOnExpire()">
+            getLockOnExpire()
+            </a>
+        </td>
+        <td>
+            Get "lock-on-expire" support in seconds.        </td>
+        <td>
+            <a href="../../../../classes/Zend\Cache\Storage\Capabilities.html">
+            Capabilities            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
             <a href="#getMaxKeyLength()">
             getMaxKeyLength()
             </a>
         </td>
         <td>
-            Get maximum key lenth        </td>
+            Get maximum key length        </td>
         <td>
             <a href="../../../../classes/Zend\Cache\Storage\Capabilities.html">
             Capabilities            </a>
@@ -261,6 +274,19 @@ or dynamic (on read)        </td>
         </td>
         <td>
             Set if expired items are readable        </td>
+        <td>
+            <a href="../../../../classes/Zend\Cache\Storage\Capabilities.html">
+            Capabilities            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setLockOnExpire()">
+            setLockOnExpire()
+            </a>
+        </td>
+        <td>
+            Set "lock-on-expire" support in seconds.        </td>
         <td>
             <a href="../../../../classes/Zend\Cache\Storage\Capabilities.html">
             Capabilities            </a>
@@ -470,10 +496,22 @@ Get if expired items are readable</p>
 <p>Returns: bool </p>
 
 
+<h3 id="getLockOnExpire()">getLockOnExpire()</h3>
+
+<p>
+Get "lock-on-expire" support in seconds.</p>
+
+
+
+<p>Returns: int 0  = Expired items will never be retrieved
+>0 = Time in seconds an expired item could be retrieved
+-1 = Expired items could be retrieved forever</p>
+
+
 <h3 id="getMaxKeyLength()">getMaxKeyLength()</h3>
 
 <p>
-Get maximum key lenth</p>
+Get maximum key length</p>
 
 
 
@@ -596,6 +634,39 @@ Set if expired items are readable</p>
             $flag        </td>
         <td>
             bool        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \Capabilities Fluent interface</p>
+
+
+<h3 id="setLockOnExpire()">setLockOnExpire()</h3>
+
+<p>
+Set "lock-on-expire" support in seconds.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $marker        </td>
+        <td>
+            \stdClass        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $timeout        </td>
+        <td>
+            int        </td>
         <td>
                     </td>
     </tr>
@@ -961,6 +1032,7 @@ Set use request time</p>
 
 <script src="../../../../assets/js/jquery.min.js"></script>
 <script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
 
 <script src="../../../../assets/js/prism.js"></script>
 

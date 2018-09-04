@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
-<title>Class Zend\Code\Generator\TraitUsageGenerator -- Zend Framework 3 API Reference</title>
+<title>Class Zend\Code\Generator\TraitUsageGenerator &ndash; Zend Framework 3 API Reference</title>
 </head>
 <body>
 <header>
@@ -73,7 +73,14 @@
         <td>
                                     <a href="../../../../classes/Zend\Code\Generator\AbstractGenerator.html">AbstractGenerator</a>                    </td>
     </tr>
-        </table>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../../classes/Zend\Code\Generator\TraitUsageInterface.html">TraitUsageInterface</a>                    </td>
+    </tr>
+    </table>
 
 <h2>Description</h2>
 
@@ -248,6 +255,19 @@
     </tr>
         <tr>
         <td>
+            <a href="#getUseAlias()">
+            getUseAlias()
+            </a>
+        </td>
+        <td>
+            Returns the alias of the provided FQCN        </td>
+        <td>
+            <a href="../../../../classes/Zend\Code\Generator\TraitUsageGenerator.html">
+            TraitUsageGenerator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
             <a href="#getUses()">
             getUses()
             </a>
@@ -309,6 +329,19 @@
         <td>
             <a href="../../../../classes/Zend\Code\Generator\AbstractGenerator.html">
             AbstractGenerator            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#isUseAlias()">
+            isUseAlias()
+            </a>
+        </td>
+        <td>
+            Returns true if the alias is defined in the use list        </td>
+        <td>
+            <a href="../../../../classes/Zend\Code\Generator\TraitUsageGenerator.html">
+            TraitUsageGenerator            </a>
         </td>
     </tr>
         <tr>
@@ -662,6 +695,31 @@
 <p>Returns: </p>
 
 
+<h3 id="getUseAlias()">getUseAlias()</h3>
+
+<p>
+Returns the alias of the provided FQCN</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $use        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: string|null </p>
+
+
 <h3 id="getUses()">getUses()</h3>
 
 <p>
@@ -711,17 +769,9 @@
     </tr>
         <tr>
         <td>
-                    </td>
-        <td>
             $use        </td>
         <td>
-                    </td>
-    </tr>
-        <tr>
-        <td>
-            $use        </td>
-        <td>
-                    </td>
+            string        </td>
         <td>
                     </td>
     </tr>
@@ -744,17 +794,9 @@
     </tr>
         <tr>
         <td>
-                    </td>
-        <td>
             $use        </td>
         <td>
-                    </td>
-    </tr>
-        <tr>
-        <td>
-            $use        </td>
-        <td>
-                    </td>
+            string        </td>
         <td>
                     </td>
     </tr>
@@ -769,6 +811,31 @@
 </p>
 
 
+
+<p>Returns: bool </p>
+
+
+<h3 id="isUseAlias()">isUseAlias()</h3>
+
+<p>
+Returns true if the alias is defined in the use list</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $alias        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
 
 <p>Returns: bool </p>
 
@@ -845,17 +912,9 @@
     </tr>
         <tr>
         <td>
-                    </td>
-        <td>
             $use        </td>
         <td>
-                    </td>
-    </tr>
-        <tr>
-        <td>
-            $use        </td>
-        <td>
-                    </td>
+            string        </td>
         <td>
                     </td>
     </tr>
@@ -878,17 +937,9 @@
     </tr>
         <tr>
         <td>
-                    </td>
-        <td>
             $use        </td>
         <td>
-                    </td>
-    </tr>
-        <tr>
-        <td>
-            $use        </td>
-        <td>
-                    </td>
+            string        </td>
         <td>
                     </td>
     </tr>
@@ -1024,6 +1075,7 @@
 
 <script src="../../../../assets/js/jquery.min.js"></script>
 <script src="../../../../assets/js/loadCSS.js"></script>
+<script src="../../../../assets/js/popup.js"></script>
 
 <script src="../../../../assets/js/prism.js"></script>
 
