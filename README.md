@@ -1,6 +1,6 @@
 # ZF3 API Reference
 
-This project's ame is to provide a reference of Zend Framework 3 components and their PHP classes (API). The latest published version of the reference can be found on the [API website](https://olegkrivtsov.github.io/zf3-api-reference/html/).
+This project's ame is to provide a reference of Zend Framework 3 components and their PHP classes (API). The latest published version of the reference can be found on the [ZF3 API website](https://olegkrivtsov.github.io/zf3-api-reference/html/).
 
 # Background
 
