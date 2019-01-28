@@ -4,7 +4,7 @@ This project's ame is to provide a reference of Zend Framework 3 components and 
 
 # Background
 
-Some time ago I wanted to read a well-structured API reference for Zend Framework 3 in an HTML format to read it online. Unfortunatelly, I couldn't find one, so I decided to generate it myself. To do that, I've created a tool, [php-api-doc-maker](https://github.com/olegkrivtsov/php-api-doc-maker).
+Some time ago I wanted to have a well-structured API reference for Zend Framework 3 in an HTML format to read it online. Unfortunatelly, I couldn't find one, so I decided to generate it myself. To do that, I've created a tool, [php-api-doc-maker](https://github.com/olegkrivtsov/php-api-doc-maker).
 
 # Generating Yourself
 
