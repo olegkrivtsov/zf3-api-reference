@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Zend Framework 3 API Reference">
 <meta name="keywords" content="php,zend framework,api,reference">
-<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="author" content="(c) 2019 by Oleg Krivtsov">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
@@ -82,11 +82,12 @@
     FileInput is a special Input type for handling uploaded files.    </p>
     <p>It differs from Input in a few ways:</p>
 <ol>
-<li><p>It expects the raw value to be in the $_FILES array format.</p>
+<li><p>It expects the raw value to either be in the $_FILES array format, or an
+array of PSR-7 UploadedFileInterface instances.</p>
 </li>
 <li><p>The validators are run <strong>before</strong> the filters (the opposite behavior of Input).
-This is so is_uploaded_file() validation can be run prior to any filters that
-may rename/move/modify the file.</p>
+This is so validation can be run prior to any filters that may
+rename/move/modify the file.</p>
 </li>
 <li><p>Instead of adding a NotEmpty validator, it will (by default) automatically add
 a Zend\Validator\File\Upload validator.</p>
@@ -369,10 +370,10 @@ a Zend\Validator\File\Upload validator.</p>
             </a>
         </td>
         <td>
-            Reset input value to the default state.        </td>
+                    </td>
         <td>
-            <a href="../../../classes/Zend\InputFilter\Input.html">
-            Input            </a>
+            <a href="../../../classes/Zend\InputFilter\FileInput.html">
+            FileInput            </a>
         </td>
     </tr>
         <tr>
@@ -512,10 +513,10 @@ a Zend\Validator\File\Upload validator.</p>
             </a>
         </td>
         <td>
-            Set the input value.        </td>
+                    </td>
         <td>
-            <a href="../../../classes/Zend\InputFilter\Input.html">
-            Input            </a>
+            <a href="../../../classes/Zend\InputFilter\FileInput.html">
+            FileInput            </a>
         </td>
     </tr>
     </table>
@@ -796,11 +797,11 @@ Checks if the raw input value is an empty file input eg: no file was uploaded</p
 <h3 id="resetValue()">resetValue()</h3>
 
 <p>
-Reset input value to the default state.</p>
+</p>
 
 
 
-<p>Returns: \Input </p>
+<p>Returns: void</p>
 
 
 <h3 id="setAllowEmpty()">setAllowEmpty()</h3>
@@ -1056,9 +1057,8 @@ Reset input value to the default state.</p>
 <h3 id="setValue()">setValue()</h3>
 
 <p>
-Set the input value.</p>
+</p>
 
-<p>If you want to remove/unset the current value use {@link Input::resetValue()}.</p>
 
 <table class="table">
     <tr>
@@ -1070,7 +1070,7 @@ Set the input value.</p>
         <td>
             $value        </td>
         <td>
-            mixed        </td>
+            array|\UploadedFile        </td>
         <td>
                     </td>
     </tr>
@@ -1094,7 +1094,7 @@ Set the input value.</p>
     <div class="footer">
         <div class="footer-body">
             <div class="copyright">
-                Copyright (c) 2018 by Oleg Krivtsov            </div>
+                Copyright (c) 2019 by Oleg Krivtsov            </div>
             <div class="generated-by">
                 Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
             </div>

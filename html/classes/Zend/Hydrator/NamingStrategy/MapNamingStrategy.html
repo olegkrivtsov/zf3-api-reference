@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Zend Framework 3 API Reference">
 <meta name="keywords" content="php,zend framework,api,reference">
-<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="author" content="(c) 2019 by Oleg Krivtsov">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
@@ -92,12 +92,38 @@
     </tr>
         <tr>
         <td>
-            <a href="#__construct()">
-            __construct()
+            <a href="#createFromAsymmetricMap()">
+            createFromAsymmetricMap()
             </a>
         </td>
         <td>
-            Initialize.        </td>
+                    </td>
+        <td>
+            <a href="../../../../classes/Zend\Hydrator\NamingStrategy\MapNamingStrategy.html">
+            MapNamingStrategy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#createFromExtractionMap()">
+            createFromExtractionMap()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/Zend\Hydrator\NamingStrategy\MapNamingStrategy.html">
+            MapNamingStrategy            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#createFromHydrationMap()">
+            createFromHydrationMap()
+            </a>
+        </td>
+        <td>
+                    </td>
         <td>
             <a href="../../../../classes/Zend\Hydrator\NamingStrategy\MapNamingStrategy.html">
             MapNamingStrategy            </a>
@@ -110,7 +136,7 @@
             </a>
         </td>
         <td>
-            Converts the given name so that it can be hydrated by the hydrator.        </td>
+            {@inheritDoc}        </td>
         <td>
             <a href="../../../../classes/Zend\Hydrator\NamingStrategy\MapNamingStrategy.html">
             MapNamingStrategy            </a>
@@ -123,7 +149,7 @@
             </a>
         </td>
         <td>
-            Converts the given name so that it can be extracted by the hydrator.        </td>
+            {@inheritDoc}        </td>
         <td>
             <a href="../../../../classes/Zend\Hydrator\NamingStrategy\MapNamingStrategy.html">
             MapNamingStrategy            </a>
@@ -134,10 +160,10 @@
 <h2 id="method-details">Method Details</h2>
 
 
-<h3 id="__construct()">__construct()</h3>
+<h3 id="createFromAsymmetricMap()">createFromAsymmetricMap()</h3>
 
 <p>
-Initialize.</p>
+</p>
 
 
 <table class="table">
@@ -148,54 +174,112 @@ Initialize.</p>
     </tr>
         <tr>
         <td>
-            $mapping        </td>
+            $extractionMap        </td>
         <td>
-            array        </td>
+                    </td>
         <td>
-            Map        </td>
+                    </td>
     </tr>
         <tr>
         <td>
-            $reverse        </td>
+            $hydrationMap        </td>
         <td>
-            array        </td>
+                    </td>
         <td>
-            Reverse        </td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void</p>
+
+
+<h3 id="createFromExtractionMap()">createFromExtractionMap()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $extractionMap        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void</p>
+
+
+<h3 id="createFromHydrationMap()">createFromHydrationMap()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $hydrationMap        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void</p>
+
+
+<h3 id="extract()">extract()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $object        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
     </tr>
     </table>
 
 <p>Returns: </p>
 
 
-<h3 id="extract()">extract()</h3>
-
-<p>
-Converts the given name so that it can be hydrated by the hydrator.</p>
-
-
-<table class="table">
-    <tr>
-        <th>Parameter Name</th>
-        <th>Type</th>
-        <th>Description</th>
-    </tr>
-        <tr>
-        <td>
-            $name        </td>
-        <td>
-            string        </td>
-        <td>
-            The        </td>
-    </tr>
-    </table>
-
-<p>Returns: mixed The extracted name</p>
-
-
 <h3 id="hydrate()">hydrate()</h3>
 
 <p>
-Converts the given name so that it can be extracted by the hydrator.</p>
+{@inheritDoc}</p>
 
 
 <table class="table">
@@ -208,13 +292,21 @@ Converts the given name so that it can be extracted by the hydrator.</p>
         <td>
             $name        </td>
         <td>
-            string        </td>
+                    </td>
         <td>
-            The        </td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $data        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
     </tr>
     </table>
 
-<p>Returns: mixed The hydrated name</p>
+<p>Returns: </p>
 
 
 
@@ -232,7 +324,7 @@ Converts the given name so that it can be extracted by the hydrator.</p>
     <div class="footer">
         <div class="footer-body">
             <div class="copyright">
-                Copyright (c) 2018 by Oleg Krivtsov            </div>
+                Copyright (c) 2019 by Oleg Krivtsov            </div>
             <div class="generated-by">
                 Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
             </div>

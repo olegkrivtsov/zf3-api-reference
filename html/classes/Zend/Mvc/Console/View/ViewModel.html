@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Zend Framework 3 API Reference">
 <meta name="keywords" content="php,zend framework,api,reference">
-<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="author" content="(c) 2019 by Oleg Krivtsov">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
@@ -89,6 +89,19 @@
         <th>Name</th>
         <th>Description</th>
         <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__clone()">
+            __clone()
+            </a>
+        </td>
+        <td>
+            Called after this view model is cloned.        </td>
+        <td>
+            <a href="../../../../../classes/Zend\View\Model\ViewModel.html">
+            ViewModel            </a>
+        </td>
     </tr>
         <tr>
         <td>
@@ -535,6 +548,18 @@
     </table>
 
 <h2 id="method-details">Method Details</h2>
+
+
+<h3 id="__clone()">__clone()</h3>
+
+<p>
+Called after this view model is cloned.</p>
+
+<p>Clones $variables property so changes done to variables in the new
+instance don't change the current one.</p>
+
+
+<p>Returns: void </p>
 
 
 <h3 id="__construct()">__construct()</h3>
@@ -1260,7 +1285,7 @@ Is this considered a terminal or standalone model?</p>
     <div class="footer">
         <div class="footer-body">
             <div class="copyright">
-                Copyright (c) 2018 by Oleg Krivtsov            </div>
+                Copyright (c) 2019 by Oleg Krivtsov            </div>
             <div class="generated-by">
                 Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
             </div>

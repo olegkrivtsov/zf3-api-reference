@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Zend Framework 3 API Reference">
 <meta name="keywords" content="php,zend framework,api,reference">
-<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="author" content="(c) 2019 by Oleg Krivtsov">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
@@ -124,9 +124,7 @@ order to identify a specific filter.        </td>
             </a>
         </td>
         <td>
-            Filter the composite based on the AND and OR condition
-Will return true if one from the "or conditions" and all from
-the "and condition" returns true. Otherwise false        </td>
+            Filter the composite based on the AND and OR condition        </td>
         <td>
             <a href="../../../../classes/Zend\Hydrator\Filter\FilterComposite.html">
             FilterComposite            </a>
@@ -179,7 +177,7 @@ We can pass a list of OR/AND filters through construct</p>
         <td>
             $orFilters        </td>
         <td>
-            array        </td>
+            callable[]|\FilterInterface[]        </td>
         <td>
                     </td>
     </tr>
@@ -187,7 +185,7 @@ We can pass a list of OR/AND filters through construct</p>
         <td>
             $andFilters        </td>
         <td>
-            array        </td>
+            callable[]|\FilterInterface[]        </td>
         <td>
                     </td>
     </tr>
@@ -223,14 +221,6 @@ $composite-&gt;addFilter('exclude',</p>
     </tr>
         <tr>
         <td>
-            $name        </td>
-        <td>
-            string        </td>
-        <td>
-                    </td>
-    </tr>
-        <tr>
-        <td>
             $filter        </td>
         <td>
             callable|\FilterInterface        </td>
@@ -245,18 +235,26 @@ $composite-&gt;addFilter('exclude',</p>
         <td>
             Can        </td>
     </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
     </table>
 
-<p>Returns: \FilterComposite </p>
+<p>Returns: </p>
 
 
 <h3 id="filter()">filter()</h3>
 
 <p>
-Filter the composite based on the AND and OR condition
-Will return true if one from the "or conditions" and all from
-the "and condition" returns true. Otherwise false</p>
+Filter the composite based on the AND and OR condition</p>
 
+<p>Will return true if one from the "or conditions" and all from
+the "and condition" returns true. Otherwise false</p>
 
 <table class="table">
     <tr>
@@ -266,23 +264,15 @@ the "and condition" returns true. Otherwise false</p>
     </tr>
         <tr>
         <td>
-            string        </td>
-        <td>
             $property        </td>
+        <td>
+            string        </td>
         <td>
             Parameter        </td>
     </tr>
-        <tr>
-        <td>
-            $property        </td>
-        <td>
-                    </td>
-        <td>
-                    </td>
-    </tr>
     </table>
 
-<p>Returns: bool </p>
+<p>Returns: </p>
 
 
 <h3 id="hasFilter()">hasFilter()</h3>
@@ -299,14 +289,6 @@ Check if $name has a filter registered</p>
     </tr>
         <tr>
         <td>
-            string        </td>
-        <td>
-            $name        </td>
-        <td>
-            Identifier        </td>
-    </tr>
-        <tr>
-        <td>
             $name        </td>
         <td>
                     </td>
@@ -315,7 +297,7 @@ Check if $name has a filter registered</p>
     </tr>
     </table>
 
-<p>Returns: bool </p>
+<p>Returns: </p>
 
 
 <h3 id="removeFilter()">removeFilter()</h3>
@@ -332,14 +314,6 @@ Remove a filter from the composition</p>
     </tr>
         <tr>
         <td>
-            string        </td>
-        <td>
-            $name        </td>
-        <td>
-            Identifier        </td>
-    </tr>
-        <tr>
-        <td>
             $name        </td>
         <td>
                     </td>
@@ -348,7 +322,7 @@ Remove a filter from the composition</p>
     </tr>
     </table>
 
-<p>Returns: \FilterComposite </p>
+<p>Returns: </p>
 
 
 
@@ -366,7 +340,7 @@ Remove a filter from the composition</p>
     <div class="footer">
         <div class="footer-body">
             <div class="copyright">
-                Copyright (c) 2018 by Oleg Krivtsov            </div>
+                Copyright (c) 2019 by Oleg Krivtsov            </div>
             <div class="generated-by">
                 Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
             </div>

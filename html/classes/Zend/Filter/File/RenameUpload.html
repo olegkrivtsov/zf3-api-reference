@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Zend Framework 3 API Reference">
 <meta name="keywords" content="php,zend framework,api,reference">
-<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="author" content="(c) 2019 by Oleg Krivtsov">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" />
@@ -170,8 +170,34 @@
     </tr>
         <tr>
         <td>
+            <a href="#getStreamFactory()">
+            getStreamFactory()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/Zend\Filter\File\RenameUpload.html">
+            RenameUpload            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
             <a href="#getTarget()">
             getTarget()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/Zend\Filter\File\RenameUpload.html">
+            RenameUpload            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#getUploadFileFactory()">
+            getUploadFileFactory()
             </a>
         </td>
         <td>
@@ -261,8 +287,34 @@
     </tr>
         <tr>
         <td>
+            <a href="#setStreamFactory()">
+            setStreamFactory()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/Zend\Filter\File\RenameUpload.html">
+            RenameUpload            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
             <a href="#setTarget()">
             setTarget()
+            </a>
+        </td>
+        <td>
+                    </td>
+        <td>
+            <a href="../../../../classes/Zend\Filter\File\RenameUpload.html">
+            RenameUpload            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setUploadFileFactory()">
+            setUploadFileFactory()
             </a>
         </td>
         <td>
@@ -372,13 +424,16 @@ Returns the file $value, removing all but digit characters</p>
         <td>
             $value        </td>
         <td>
-            string|array        </td>
+            string|array|\UploadedFileInterface        </td>
         <td>
             Full        </td>
     </tr>
     </table>
 
-<p>Returns: string|array The new filename which has been set, or false when there were errors</p>
+<p>Returns: string|array|\UploadedFileInterface Returns one of the following:
+- New filename, for string $value
+- Array with tmp_name and name keys for array $value
+- UploadedFileInterface for UploadedFileInterface $value</p>
 
 
 <h3 id="getOptions()">getOptions()</h3>
@@ -411,6 +466,16 @@ Retrieve options representing object state</p>
 <p>Returns: bool </p>
 
 
+<h3 id="getStreamFactory()">getStreamFactory()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: null|\StreamFactoryInterface </p>
+
+
 <h3 id="getTarget()">getTarget()</h3>
 
 <p>
@@ -419,6 +484,16 @@ Retrieve options representing object state</p>
 
 
 <p>Returns: string Target file path or directory</p>
+
+
+<h3 id="getUploadFileFactory()">getUploadFileFactory()</h3>
+
+<p>
+</p>
+
+
+
+<p>Returns: null|\UploadedFileFactoryInterface </p>
 
 
 <h3 id="getUseUploadExtension()">getUseUploadExtension()</h3>
@@ -526,6 +601,31 @@ Retrieve options representing object state</p>
 <p>Returns: self </p>
 
 
+<h3 id="setStreamFactory()">setStreamFactory()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $factory        </td>
+        <td>
+            \StreamFactoryInterface        </td>
+        <td>
+            Factory        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
 <h3 id="setTarget()">setTarget()</h3>
 
 <p>
@@ -545,6 +645,31 @@ Retrieve options representing object state</p>
             string        </td>
         <td>
             Target        </td>
+    </tr>
+    </table>
+
+<p>Returns: self </p>
+
+
+<h3 id="setUploadFileFactory()">setUploadFileFactory()</h3>
+
+<p>
+</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $factory        </td>
+        <td>
+            \UploadedFileFactoryInterface        </td>
+        <td>
+            Factory        </td>
     </tr>
     </table>
 
@@ -616,7 +741,7 @@ Retrieve options representing object state</p>
     <div class="footer">
         <div class="footer-body">
             <div class="copyright">
-                Copyright (c) 2018 by Oleg Krivtsov            </div>
+                Copyright (c) 2019 by Oleg Krivtsov            </div>
             <div class="generated-by">
                 Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
             </div>

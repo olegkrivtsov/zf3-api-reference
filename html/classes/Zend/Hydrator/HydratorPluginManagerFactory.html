@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Zend Framework 3 API Reference">
 <meta name="keywords" content="php,zend framework,api,reference">
-<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="author" content="(c) 2019 by Oleg Krivtsov">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
@@ -66,14 +66,7 @@
         <td>
             Zend\Hydrator\HydratorPluginManagerFactory        </td>
     </tr>
-            <tr>
-        <td>
-            Implements:
-        </td>
-        <td>
-                                    <a href="../../../classes/Zend\ServiceManager\FactoryInterface.html">FactoryInterface</a>                    </td>
-    </tr>
-    </table>
+        </table>
 
 <h2>Description</h2>
 
@@ -97,33 +90,7 @@
             </a>
         </td>
         <td>
-            {@inheritDoc}        </td>
-        <td>
-            <a href="../../../classes/Zend\Hydrator\HydratorPluginManagerFactory.html">
-            HydratorPluginManagerFactory            </a>
-        </td>
-    </tr>
-        <tr>
-        <td>
-            <a href="#createService()">
-            createService()
-            </a>
-        </td>
-        <td>
-            {@inheritDoc}        </td>
-        <td>
-            <a href="../../../classes/Zend\Hydrator\HydratorPluginManagerFactory.html">
-            HydratorPluginManagerFactory            </a>
-        </td>
-    </tr>
-        <tr>
-        <td>
-            <a href="#setCreationOptions()">
-            setCreationOptions()
-            </a>
-        </td>
-        <td>
-            zend-servicemanager v2 support for invocation options.        </td>
+            Create a HydratorPluginManager instance.        </td>
         <td>
             <a href="../../../classes/Zend\Hydrator\HydratorPluginManagerFactory.html">
             HydratorPluginManagerFactory            </a>
@@ -137,8 +104,12 @@
 <h3 id="__invoke()">__invoke()</h3>
 
 <p>
-{@inheritDoc}</p>
+Create a HydratorPluginManager instance.</p>
 
+<p>If the <code>config</code> service is available, and the top-level key <code>hydrators</code>
+exists and is an array, that value will be used to configure the plugin
+manager. In such cases, the array should follow standard container
+configuration.</p>
 
 <table class="table">
     <tr>
@@ -172,73 +143,7 @@
     </tr>
     </table>
 
-<p>Returns: \HydratorPluginManager </p>
-
-
-<h3 id="createService()">createService()</h3>
-
-<p>
-{@inheritDoc}</p>
-
-
-<table class="table">
-    <tr>
-        <th>Parameter Name</th>
-        <th>Type</th>
-        <th>Description</th>
-    </tr>
-        <tr>
-        <td>
-            $container        </td>
-        <td>
-                    </td>
-        <td>
-                    </td>
-    </tr>
-        <tr>
-        <td>
-            $name        </td>
-        <td>
-                    </td>
-        <td>
-                    </td>
-    </tr>
-        <tr>
-        <td>
-            $requestedName        </td>
-        <td>
-                    </td>
-        <td>
-                    </td>
-    </tr>
-    </table>
-
-<p>Returns: \HydratorPluginManager </p>
-
-
-<h3 id="setCreationOptions()">setCreationOptions()</h3>
-
-<p>
-zend-servicemanager v2 support for invocation options.</p>
-
-
-<table class="table">
-    <tr>
-        <th>Parameter Name</th>
-        <th>Type</th>
-        <th>Description</th>
-    </tr>
-        <tr>
-        <td>
-            $options        </td>
-        <td>
-            array        </td>
-        <td>
-                    </td>
-    </tr>
-    </table>
-
-<p>Returns: void </p>
+<p>Returns: </p>
 
 
 
@@ -256,7 +161,7 @@ zend-servicemanager v2 support for invocation options.</p>
     <div class="footer">
         <div class="footer-body">
             <div class="copyright">
-                Copyright (c) 2018 by Oleg Krivtsov            </div>
+                Copyright (c) 2019 by Oleg Krivtsov            </div>
             <div class="generated-by">
                 Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
             </div>

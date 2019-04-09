@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="description" content="Zend Framework 3 API Reference">
 <meta name="keywords" content="php,zend framework,api,reference">
-<meta name="author" content="(c) 2018 by Oleg Krivtsov">
+<meta name="author" content="(c) 2019 by Oleg Krivtsov">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../../../favicon.ico" rel="shortcut icon" type="image/ico" />
 <link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" />
@@ -129,9 +129,12 @@ Return configuration for this component.</p>
 <p>
 Return dependency mappings for this component.</p>
 
+<p>If zend-servicemanager is installed, this will alias the HydratorPluginManager
+to the <code>HydratorManager</code> service; otherwise, it aliases the
+StandaloneHydratorPluginManager.</p>
 
 
-<p>Returns: array </p>
+<p>Returns: string[][] </p>
 
 
 
@@ -149,7 +152,7 @@ Return dependency mappings for this component.</p>
     <div class="footer">
         <div class="footer-body">
             <div class="copyright">
-                Copyright (c) 2018 by Oleg Krivtsov            </div>
+                Copyright (c) 2019 by Oleg Krivtsov            </div>
             <div class="generated-by">
                 Generated using <a href="https://github.com/olegkrivtsov/php-api-doc-maker">PHP API Doc Maker</a>
             </div>
