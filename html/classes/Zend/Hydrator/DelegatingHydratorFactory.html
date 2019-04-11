@@ -66,7 +66,14 @@
         <td>
             Zend\Hydrator\DelegatingHydratorFactory        </td>
     </tr>
-        </table>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/Zend\ServiceManager\FactoryInterface.html">FactoryInterface</a>                    </td>
+    </tr>
+    </table>
 
 <h2>Description</h2>
 
@@ -90,7 +97,20 @@
             </a>
         </td>
         <td>
-            Creates DelegatingHydrator        </td>
+            Creates DelegatingHydrator (v3)        </td>
+        <td>
+            <a href="../../../classes/Zend\Hydrator\DelegatingHydratorFactory.html">
+            DelegatingHydratorFactory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#createService()">
+            createService()
+            </a>
+        </td>
+        <td>
+            Creates DelegatingHydrator (v2)        </td>
         <td>
             <a href="../../../classes/Zend\Hydrator\DelegatingHydratorFactory.html">
             DelegatingHydratorFactory            </a>
@@ -104,7 +124,7 @@
 <h3 id="__invoke()">__invoke()</h3>
 
 <p>
-Creates DelegatingHydrator</p>
+Creates DelegatingHydrator (v3)</p>
 
 
 <table class="table">
@@ -117,13 +137,54 @@ Creates DelegatingHydrator</p>
         <td>
             $container        </td>
         <td>
+            \ContainerInterface        </td>
+        <td>
                     </td>
+    </tr>
+        <tr>
+        <td>
+            $requestedName        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array|null        </td>
         <td>
                     </td>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \DelegatingHydrator </p>
+
+
+<h3 id="createService()">createService()</h3>
+
+<p>
+Creates DelegatingHydrator (v2)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $serviceLocator        </td>
+        <td>
+            \ServiceLocatorInterface        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \DelegatingHydrator </p>
 
 
 

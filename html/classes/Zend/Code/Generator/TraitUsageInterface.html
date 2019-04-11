@@ -296,7 +296,7 @@ key: method value: trait method</p>
 <p>$alias:
 Alias is a string representing the new method name.</p>
 <p>$visibilty:
-ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PRIVATE | ReflectionMethod::IS_PROTECTED</p>
+ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PRIVATE| ReflectionMethod::IS_PROTECTED</p>
 
 <table class="table">
     <tr>
@@ -322,9 +322,17 @@ ReflectionMethod::IS_PUBLIC | ReflectionMethod::IS_PRIVATE | ReflectionMethod::I
     </tr>
         <tr>
         <td>
+            $visiblity        </td>
+        <td>
+            int        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
             $visibility        </td>
         <td>
-            null|int        </td>
+                    </td>
         <td>
                     </td>
     </tr>
@@ -367,9 +375,17 @@ Option 2: Array of strings of traits to replace</p>
     </tr>
         <tr>
         <td>
-            $traitsToReplace        </td>
+            $traitToReplace        </td>
         <td>
             mixed        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $traitsToReplace        </td>
+        <td>
+                    </td>
         <td>
                     </td>
     </tr>
@@ -393,11 +409,19 @@ configurations</p>
     </tr>
         <tr>
         <td>
-            $traits        </td>
+            $traitName        </td>
         <td>
             array        </td>
         <td>
             Array        </td>
+    </tr>
+        <tr>
+        <td>
+            $traits        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
     </tr>
     </table>
 
@@ -493,7 +517,7 @@ Check to see if the class has a trait defined</p>
         <td>
             $traitName        </td>
         <td>
-            string        </td>
+            \strint        </td>
         <td>
                     </td>
     </tr>
@@ -516,9 +540,17 @@ Remove a trait by its name</p>
     </tr>
         <tr>
         <td>
+                    </td>
+        <td>
             $traitName        </td>
         <td>
-            string        </td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $traitName        </td>
+        <td>
+                    </td>
         <td>
                     </td>
     </tr>
@@ -552,9 +584,9 @@ Option 2: Array of strings of traits to replace</p>
     </tr>
         <tr>
         <td>
-            $method        </td>
+                    </td>
         <td>
-            mixed        </td>
+            $traitAndMethod        </td>
         <td>
                     </td>
     </tr>
@@ -562,13 +594,21 @@ Option 2: Array of strings of traits to replace</p>
         <td>
             $overridesToRemove        </td>
         <td>
-            mixed        </td>
+            null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $method        </td>
+        <td>
+                    </td>
         <td>
                     </td>
     </tr>
     </table>
 
-<p>Returns: self </p>
+<p>Returns: $this </p>
 
 
 

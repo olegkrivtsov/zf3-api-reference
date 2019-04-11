@@ -71,9 +71,16 @@
             Extends:
         </td>
         <td>
-                                    <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">ClassMethodsHydrator</a>                    </td>
+                                    <a href="../../../classes/Zend\Hydrator\AbstractHydrator.html">AbstractHydrator</a>                    </td>
     </tr>
-        </table>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/Zend\Hydrator\HydratorOptionsInterface.html">HydratorOptionsInterface</a>                    </td>
+    </tr>
+    </table>
 
 <h2>Description</h2>
 
@@ -99,8 +106,8 @@
         <td>
             Define if extract values will use camel case or name with underscore        </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -112,8 +119,8 @@
         <td>
             {@inheritDoc}        </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -138,8 +145,8 @@
         <td>
             Extract values from an object with class methods        </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -190,8 +197,8 @@
         <td>
                     </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -229,8 +236,8 @@
         <td>
                     </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -281,8 +288,8 @@
         <td>
             Hydrate an object by populating getter/setter methods        </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -320,8 +327,8 @@
         <td>
             {@inheritDoc}        </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -333,8 +340,8 @@
         <td>
             {@inheritDoc}        </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -359,8 +366,8 @@
         <td>
                     </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -372,8 +379,8 @@
         <td>
             {@inheritDoc}        </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -385,8 +392,8 @@
         <td>
                     </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
         <tr>
@@ -398,8 +405,8 @@
         <td>
                     </td>
         <td>
-            <a href="../../../classes/Zend\Hydrator\ClassMethodsHydrator.html">
-            ClassMethodsHydrator            </a>
+            <a href="../../../classes/Zend\Hydrator\ClassMethods.html">
+            ClassMethods            </a>
         </td>
     </tr>
     </table>
@@ -423,7 +430,7 @@ Define if extract values will use camel case or name with underscore</p>
         <td>
             $underscoreSeparatedKeys        </td>
         <td>
-                    </td>
+            bool|array        </td>
         <td>
                     </td>
     </tr>
@@ -511,7 +518,7 @@ Adds the given strategy under the given name.</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \AbstractHydrator </p>
 
 
 <h3 id="extract()">extract()</h3>
@@ -520,7 +527,6 @@ Adds the given strategy under the given name.</p>
 Extract values from an object with class methods</p>
 
 <p>Extracts the getter/setter of the given $object.</p>
-<p>{@inheritDoc}</p>
 
 <table class="table">
     <tr>
@@ -532,13 +538,13 @@ Extract values from an object with class methods</p>
         <td>
             $object        </td>
         <td>
-                    </td>
+            object        </td>
         <td>
                     </td>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: array </p>
 
 
 <h3 id="extractName()">extractName()</h3>
@@ -565,7 +571,7 @@ Convert a name for extraction. If no naming strategy exists, the plain value is 
         <td>
             $object        </td>
         <td>
-            null|object        </td>
+            null        </td>
         <td>
             The        </td>
     </tr>
@@ -606,7 +612,7 @@ Converts a value for extraction. If no strategy exists the plain value is return
         <td>
             $object        </td>
         <td>
-            null|object        </td>
+            mixed        </td>
         <td>
             The        </td>
     </tr>
@@ -622,7 +628,7 @@ Get the filter instance</p>
 
 
 
-<p>Returns: </p>
+<p>Returns: \Filter\FilterComposite </p>
 
 
 <h3 id="getMethodExistsCheck()">getMethodExistsCheck()</h3>
@@ -632,7 +638,7 @@ Get the filter instance</p>
 
 
 
-<p>Returns: void</p>
+<p>Returns: bool </p>
 
 
 <h3 id="getNamingStrategy()">getNamingStrategy()</h3>
@@ -640,12 +646,9 @@ Get the filter instance</p>
 <p>
 Gets the naming strategy.</p>
 
-<p>If no naming strategy is registered, registers the
-<code>IdentityNamingStrategy</code>, which acts essentially as a no-op.</p>
-<p>{@inheritDoc}</p>
 
 
-<p>Returns: </p>
+<p>Returns: \NamingStrategy\NamingStrategyInterface </p>
 
 
 <h3 id="getStrategy()">getStrategy()</h3>
@@ -670,7 +673,7 @@ Gets the strategy with the given name.</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \Strategy\StrategyInterface </p>
 
 
 <h3 id="getUnderscoreSeparatedKeys()">getUnderscoreSeparatedKeys()</h3>
@@ -680,7 +683,7 @@ Gets the strategy with the given name.</p>
 
 
 
-<p>Returns: void</p>
+<p>Returns: bool </p>
 
 
 <h3 id="hasFilter()">hasFilter()</h3>
@@ -701,11 +704,11 @@ Check whether a specific filter exists at key $name or not</p>
         <td>
             string        </td>
         <td>
-            Index/name        </td>
+            Index        </td>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: bool </p>
 
 
 <h3 id="hasNamingStrategy()">hasNamingStrategy()</h3>
@@ -715,7 +718,7 @@ Checks if a naming strategy exists.</p>
 
 
 
-<p>Returns: </p>
+<p>Returns: bool </p>
 
 
 <h3 id="hasStrategy()">hasStrategy()</h3>
@@ -740,7 +743,7 @@ Checks if the strategy with the given name exists.</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: bool </p>
 
 
 <h3 id="hydrate()">hydrate()</h3>
@@ -749,7 +752,6 @@ Checks if the strategy with the given name exists.</p>
 Hydrate an object by populating getter/setter methods</p>
 
 <p>Hydrates an object by getter/setter methods of the object.</p>
-<p>{@inheritDoc}</p>
 
 <table class="table">
     <tr>
@@ -761,7 +763,7 @@ Hydrate an object by populating getter/setter methods</p>
         <td>
             $data        </td>
         <td>
-                    </td>
+            array        </td>
         <td>
                     </td>
     </tr>
@@ -769,13 +771,13 @@ Hydrate an object by populating getter/setter methods</p>
         <td>
             $object        </td>
         <td>
-                    </td>
+            object        </td>
         <td>
                     </td>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: object </p>
 
 
 <h3 id="hydrateName()">hydrateName()</h3>
@@ -802,13 +804,13 @@ Converts a value for hydration. If no naming strategy exists, the plain value is
         <td>
             $data        </td>
         <td>
-            null|array        </td>
+            array        </td>
         <td>
             The        </td>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: mixed </p>
 
 
 <h3 id="hydrateValue()">hydrateValue()</h3>
@@ -843,7 +845,7 @@ Converts a value for hydration. If no strategy exists the plain value is returne
         <td>
             $data        </td>
         <td>
-            null|array        </td>
+            array        </td>
         <td>
             The        </td>
     </tr>
@@ -909,7 +911,7 @@ Removes the strategy with the given name.</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \HydratorInterface </p>
 
 
 <h3 id="setMethodExistsCheck()">setMethodExistsCheck()</h3>
@@ -928,13 +930,13 @@ Removes the strategy with the given name.</p>
         <td>
             $methodExistsCheck        </td>
         <td>
-                    </td>
+            bool        </td>
         <td>
                     </td>
     </tr>
     </table>
 
-<p>Returns: void</p>
+<p>Returns: \ClassMethods </p>
 
 
 <h3 id="setNamingStrategy()">setNamingStrategy()</h3>
@@ -978,13 +980,13 @@ Removes the strategy with the given name.</p>
         <td>
             $options        </td>
         <td>
-            array        </td>
+            array|\Traversable        </td>
         <td>
                     </td>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \ClassMethods </p>
 
 
 <h3 id="setUnderscoreSeparatedKeys()">setUnderscoreSeparatedKeys()</h3>
@@ -1003,13 +1005,13 @@ Removes the strategy with the given name.</p>
         <td>
             $underscoreSeparatedKeys        </td>
         <td>
-                    </td>
+            bool        </td>
         <td>
                     </td>
     </tr>
     </table>
 
-<p>Returns: void</p>
+<p>Returns: \ClassMethods </p>
 
 
 

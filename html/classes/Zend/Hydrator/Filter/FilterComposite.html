@@ -124,7 +124,9 @@ order to identify a specific filter.        </td>
             </a>
         </td>
         <td>
-            Filter the composite based on the AND and OR condition        </td>
+            Filter the composite based on the AND and OR condition
+Will return true if one from the "or conditions" and all from
+the "and condition" returns true. Otherwise false        </td>
         <td>
             <a href="../../../../classes/Zend\Hydrator\Filter\FilterComposite.html">
             FilterComposite            </a>
@@ -177,7 +179,7 @@ We can pass a list of OR/AND filters through construct</p>
         <td>
             $orFilters        </td>
         <td>
-            callable[]|\FilterInterface[]        </td>
+            array        </td>
         <td>
                     </td>
     </tr>
@@ -185,7 +187,7 @@ We can pass a list of OR/AND filters through construct</p>
         <td>
             $andFilters        </td>
         <td>
-            callable[]|\FilterInterface[]        </td>
+            array        </td>
         <td>
                     </td>
     </tr>
@@ -221,6 +223,14 @@ $composite-&gt;addFilter('exclude',</p>
     </tr>
         <tr>
         <td>
+            $name        </td>
+        <td>
+            string        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
             $filter        </td>
         <td>
             callable|\FilterInterface        </td>
@@ -235,26 +245,18 @@ $composite-&gt;addFilter('exclude',</p>
         <td>
             Can        </td>
     </tr>
-        <tr>
-        <td>
-            $name        </td>
-        <td>
-                    </td>
-        <td>
-                    </td>
-    </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \FilterComposite </p>
 
 
 <h3 id="filter()">filter()</h3>
 
 <p>
-Filter the composite based on the AND and OR condition</p>
-
-<p>Will return true if one from the "or conditions" and all from
+Filter the composite based on the AND and OR condition
+Will return true if one from the "or conditions" and all from
 the "and condition" returns true. Otherwise false</p>
+
 
 <table class="table">
     <tr>
@@ -264,15 +266,23 @@ the "and condition" returns true. Otherwise false</p>
     </tr>
         <tr>
         <td>
-            $property        </td>
-        <td>
             string        </td>
+        <td>
+            $property        </td>
         <td>
             Parameter        </td>
     </tr>
+        <tr>
+        <td>
+            $property        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: bool </p>
 
 
 <h3 id="hasFilter()">hasFilter()</h3>
@@ -289,6 +299,14 @@ Check if $name has a filter registered</p>
     </tr>
         <tr>
         <td>
+            string        </td>
+        <td>
+            $name        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+        <tr>
+        <td>
             $name        </td>
         <td>
                     </td>
@@ -297,7 +315,7 @@ Check if $name has a filter registered</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: bool </p>
 
 
 <h3 id="removeFilter()">removeFilter()</h3>
@@ -314,6 +332,14 @@ Remove a filter from the composition</p>
     </tr>
         <tr>
         <td>
+            string        </td>
+        <td>
+            $name        </td>
+        <td>
+            Identifier        </td>
+    </tr>
+        <tr>
+        <td>
             $name        </td>
         <td>
                     </td>
@@ -322,7 +348,7 @@ Remove a filter from the composition</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \FilterComposite </p>
 
 
 

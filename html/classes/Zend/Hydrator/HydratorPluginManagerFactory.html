@@ -66,7 +66,14 @@
         <td>
             Zend\Hydrator\HydratorPluginManagerFactory        </td>
     </tr>
-        </table>
+            <tr>
+        <td>
+            Implements:
+        </td>
+        <td>
+                                    <a href="../../../classes/Zend\ServiceManager\FactoryInterface.html">FactoryInterface</a>                    </td>
+    </tr>
+    </table>
 
 <h2>Description</h2>
 
@@ -90,7 +97,33 @@
             </a>
         </td>
         <td>
-            Create a HydratorPluginManager instance.        </td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../../classes/Zend\Hydrator\HydratorPluginManagerFactory.html">
+            HydratorPluginManagerFactory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#createService()">
+            createService()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc}        </td>
+        <td>
+            <a href="../../../classes/Zend\Hydrator\HydratorPluginManagerFactory.html">
+            HydratorPluginManagerFactory            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#setCreationOptions()">
+            setCreationOptions()
+            </a>
+        </td>
+        <td>
+            zend-servicemanager v2 support for invocation options.        </td>
         <td>
             <a href="../../../classes/Zend\Hydrator\HydratorPluginManagerFactory.html">
             HydratorPluginManagerFactory            </a>
@@ -104,12 +137,8 @@
 <h3 id="__invoke()">__invoke()</h3>
 
 <p>
-Create a HydratorPluginManager instance.</p>
+{@inheritDoc}</p>
 
-<p>If the <code>config</code> service is available, and the top-level key <code>hydrators</code>
-exists and is an array, that value will be used to configure the plugin
-manager. In such cases, the array should follow standard container
-configuration.</p>
 
 <table class="table">
     <tr>
@@ -143,7 +172,73 @@ configuration.</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \HydratorPluginManager </p>
+
+
+<h3 id="createService()">createService()</h3>
+
+<p>
+{@inheritDoc}</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $container        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $requestedName        </td>
+        <td>
+                    </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: \HydratorPluginManager </p>
+
+
+<h3 id="setCreationOptions()">setCreationOptions()</h3>
+
+<p>
+zend-servicemanager v2 support for invocation options.</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $options        </td>
+        <td>
+            array        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: void </p>
 
 
 

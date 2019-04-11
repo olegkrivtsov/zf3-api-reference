@@ -71,7 +71,7 @@
             Implements:
         </td>
         <td>
-                                    <a href="../../../classes/Zend\Hydrator\HydratorInterface.html">HydratorInterface</a>,                         <a href="../../../classes/Zend\Hydrator\Strategy\StrategyEnabledInterface.html">StrategyEnabledInterface</a>,                         <a href="../../../classes/Zend\Hydrator\Filter\FilterEnabledInterface.html">FilterEnabledInterface</a>,                         <a href="../../../classes/Zend\Hydrator\NamingStrategy\NamingStrategyEnabledInterface.html">NamingStrategyEnabledInterface</a>                    </td>
+                                    <a href="../../../classes/Zend\Hydrator\HydratorInterface.html">HydratorInterface</a>,                         <a href="../../../classes/Zend\Hydrator\StrategyEnabledInterface.html">StrategyEnabledInterface</a>,                         <a href="../../../classes/Zend\Hydrator\FilterEnabledInterface.html">FilterEnabledInterface</a>,                         <a href="../../../classes/Zend\Hydrator\NamingStrategyEnabledInterface.html">NamingStrategyEnabledInterface</a>                    </td>
     </tr>
     </table>
 
@@ -89,6 +89,19 @@
         <th>Name</th>
         <th>Description</th>
         <th>Defined By</th>
+    </tr>
+        <tr>
+        <td>
+            <a href="#__construct()">
+            __construct()
+            </a>
+        </td>
+        <td>
+            Initializes a new instance of this class.        </td>
+        <td>
+            <a href="../../../classes/Zend\Hydrator\AbstractHydrator.html">
+            AbstractHydrator            </a>
+        </td>
     </tr>
         <tr>
         <td>
@@ -303,6 +316,16 @@
 <h2 id="method-details">Method Details</h2>
 
 
+<h3 id="__construct()">__construct()</h3>
+
+<p>
+Initializes a new instance of this class.</p>
+
+
+
+<p>Returns: </p>
+
+
 <h3 id="addFilter()">addFilter()</h3>
 
 <p>
@@ -348,13 +371,13 @@ $composite-&gt;addFilter("servicelocator",</p>
         <td>
             $condition        </td>
         <td>
-                    </td>
+            int        </td>
         <td>
                     </td>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \Filter\FilterComposite </p>
 
 
 <h3 id="addStrategy()">addStrategy()</h3>
@@ -387,7 +410,7 @@ Adds the given strategy under the given name.</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \AbstractHydrator </p>
 
 
 <h3 id="extractName()">extractName()</h3>
@@ -414,7 +437,7 @@ Convert a name for extraction. If no naming strategy exists, the plain value is 
         <td>
             $object        </td>
         <td>
-            null|object        </td>
+            null        </td>
         <td>
             The        </td>
     </tr>
@@ -455,7 +478,7 @@ Converts a value for extraction. If no strategy exists the plain value is return
         <td>
             $object        </td>
         <td>
-            null|object        </td>
+            mixed        </td>
         <td>
             The        </td>
     </tr>
@@ -471,7 +494,7 @@ Get the filter instance</p>
 
 
 
-<p>Returns: </p>
+<p>Returns: \Filter\FilterComposite </p>
 
 
 <h3 id="getNamingStrategy()">getNamingStrategy()</h3>
@@ -479,12 +502,9 @@ Get the filter instance</p>
 <p>
 Gets the naming strategy.</p>
 
-<p>If no naming strategy is registered, registers the
-<code>IdentityNamingStrategy</code>, which acts essentially as a no-op.</p>
-<p>{@inheritDoc}</p>
 
 
-<p>Returns: </p>
+<p>Returns: \NamingStrategy\NamingStrategyInterface </p>
 
 
 <h3 id="getStrategy()">getStrategy()</h3>
@@ -509,7 +529,7 @@ Gets the strategy with the given name.</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \Strategy\StrategyInterface </p>
 
 
 <h3 id="hasFilter()">hasFilter()</h3>
@@ -530,11 +550,11 @@ Check whether a specific filter exists at key $name or not</p>
         <td>
             string        </td>
         <td>
-            Index/name        </td>
+            Index        </td>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: bool </p>
 
 
 <h3 id="hasNamingStrategy()">hasNamingStrategy()</h3>
@@ -544,7 +564,7 @@ Checks if a naming strategy exists.</p>
 
 
 
-<p>Returns: </p>
+<p>Returns: bool </p>
 
 
 <h3 id="hasStrategy()">hasStrategy()</h3>
@@ -569,7 +589,7 @@ Checks if the strategy with the given name exists.</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: bool </p>
 
 
 <h3 id="hydrateName()">hydrateName()</h3>
@@ -596,13 +616,13 @@ Converts a value for hydration. If no naming strategy exists, the plain value is
         <td>
             $data        </td>
         <td>
-            null|array        </td>
+            array        </td>
         <td>
             The        </td>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: mixed </p>
 
 
 <h3 id="hydrateValue()">hydrateValue()</h3>
@@ -637,7 +657,7 @@ Converts a value for hydration. If no strategy exists the plain value is returne
         <td>
             $data        </td>
         <td>
-            null|array        </td>
+            array        </td>
         <td>
             The        </td>
     </tr>
@@ -651,7 +671,7 @@ Converts a value for hydration. If no strategy exists the plain value is returne
 <p>
 Remove a filter from the composition.</p>
 
-<p>To not extract "has" methods, unregister the filter.</p>
+<p>To not extract "has" methods, you simply need to unregister it</p>
 <p><code>
 $filterComposite-&gt;removeFilter('has');
 </code></p>
@@ -664,6 +684,14 @@ $filterComposite-&gt;removeFilter('has');
     </tr>
         <tr>
         <td>
+                    </td>
+        <td>
+            $name        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
             $name        </td>
         <td>
                     </td>
@@ -672,7 +700,7 @@ $filterComposite-&gt;removeFilter('has');
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \Filter\FilterComposite </p>
 
 
 <h3 id="removeNamingStrategy()">removeNamingStrategy()</h3>
@@ -682,7 +710,7 @@ Removes the naming strategy</p>
 
 
 
-<p>Returns: </p>
+<p>Returns: self </p>
 
 
 <h3 id="removeStrategy()">removeStrategy()</h3>
@@ -707,7 +735,7 @@ Removes the strategy with the given name.</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: \HydratorInterface </p>
 
 
 <h3 id="setNamingStrategy()">setNamingStrategy()</h3>
@@ -732,7 +760,7 @@ Adds the given naming strategy</p>
     </tr>
     </table>
 
-<p>Returns: </p>
+<p>Returns: self </p>
 
 
 

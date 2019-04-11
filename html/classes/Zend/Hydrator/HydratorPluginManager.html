@@ -73,14 +73,7 @@
         <td>
                                     <a href="../../../classes/Zend\ServiceManager\AbstractPluginManager.html">AbstractPluginManager</a>                    </td>
     </tr>
-            <tr>
-        <td>
-            Implements:
-        </td>
-        <td>
-                                    <a href="../../../classes/Zend\Hydrator\HydratorPluginManagerInterface.html">HydratorPluginManagerInterface</a>                    </td>
-    </tr>
-    </table>
+        </table>
 
 <h2>Description</h2>
 
@@ -339,7 +332,20 @@
             </a>
         </td>
         <td>
-            Validate the plugin is of the expected type.        </td>
+            Validate the plugin is of the expected type (v3).        </td>
+        <td>
+            <a href="../../../classes/Zend\Hydrator\HydratorPluginManager.html">
+            HydratorPluginManager            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            <a href="#validatePlugin()">
+            validatePlugin()
+            </a>
+        </td>
+        <td>
+            {@inheritDoc} (v2)        </td>
         <td>
             <a href="../../../classes/Zend\Hydrator\HydratorPluginManager.html">
             HydratorPluginManager            </a>
@@ -862,9 +868,10 @@ Add a service sharing rule.</p>
 <h3 id="validate()">validate()</h3>
 
 <p>
-Validate the plugin is of the expected type.</p>
+Validate the plugin is of the expected type (v3).</p>
 
-<p>Checks that the filter loaded is a valid hydrator.</p>
+<p>Checks that the filter loaded is either a valid callback or an instance
+of FilterInterface.</p>
 
 <table class="table">
     <tr>
@@ -877,6 +884,31 @@ Validate the plugin is of the expected type.</p>
             $instance        </td>
         <td>
             mixed        </td>
+        <td>
+                    </td>
+    </tr>
+    </table>
+
+<p>Returns: </p>
+
+
+<h3 id="validatePlugin()">validatePlugin()</h3>
+
+<p>
+{@inheritDoc} (v2)</p>
+
+
+<table class="table">
+    <tr>
+        <th>Parameter Name</th>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+        <tr>
+        <td>
+            $plugin        </td>
+        <td>
+                    </td>
         <td>
                     </td>
     </tr>

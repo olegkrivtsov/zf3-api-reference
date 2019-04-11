@@ -131,19 +131,6 @@
     </tr>
         <tr>
         <td>
-            <a href="#copyMethodSignature()">
-            copyMethodSignature()
-            </a>
-        </td>
-        <td>
-            Returns a MethodGenerator based on a MethodReflection with only the signature copied.        </td>
-        <td>
-            <a href="../../../../classes/Zend\Code\Generator\MethodGenerator.html">
-            MethodGenerator            </a>
-        </td>
-    </tr>
-        <tr>
-        <td>
             <a href="#fromArray()">
             fromArray()
             </a>
@@ -681,33 +668,6 @@
 <p>Returns: \AbstractMemberGenerator </p>
 
 
-<h3 id="copyMethodSignature()">copyMethodSignature()</h3>
-
-<p>
-Returns a MethodGenerator based on a MethodReflection with only the signature copied.</p>
-
-<p>This is similar to fromReflection() but without the method body and phpdoc as this is quite heavy to copy.
-It's for example useful when creating proxies where you normally change the method body anyway.</p>
-
-<table class="table">
-    <tr>
-        <th>Parameter Name</th>
-        <th>Type</th>
-        <th>Description</th>
-    </tr>
-        <tr>
-        <td>
-            $reflectionMethod        </td>
-        <td>
-                    </td>
-        <td>
-                    </td>
-    </tr>
-    </table>
-
-<p>Returns: </p>
-
-
 <h3 id="fromArray()">fromArray()</h3>
 
 <p>
@@ -1212,9 +1172,17 @@ Generate from array</p>
     </tr>
         <tr>
         <td>
-            $returnType        </td>
+            $        </td>
         <td>
             string|null        </td>
+        <td>
+                    </td>
+    </tr>
+        <tr>
+        <td>
+            $returnType        </td>
+        <td>
+                    </td>
         <td>
                     </td>
     </tr>
