@@ -33,6 +33,6 @@
         "zendframework/zend-xmlrpc": "^2.6",
         "zendframework/zend-paginator": "^2.8",
         "zendframework/zend-permissions-acl": "^2.6",
-        "zendframework/zend-permissions-rbac": "^2.6"
+        "zendframework/zend-permissions-rbac": "^3.0"
     }
 }
